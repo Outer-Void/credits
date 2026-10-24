@@ -13,6 +13,7 @@ standards:
   - repo:blux-ca
   - repo:blux-system
   - repo:blux-coga
+  - repo:dat
   url: https://json-schema.org
   verification: VERIFIED
   evidence:
@@ -103,3 +104,13 @@ standards:
   verification: VERIFIED
   evidence:
   - 'voidforge THIRD_PARTY_NOTICES: protocol references, no upstream code copied'
+- id: std:sarif-2.1.0
+  name: SARIF 2.1.0 (OASIS Static Analysis Results Interchange Format)
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:dat
+  url: https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html
+  verification: VERIFIED
+  evidence:
+  - dat 4.0 src/dat/render.py emits SARIF 2.1.0

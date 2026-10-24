@@ -110,6 +110,7 @@ libraries:
   evidence: []
   verification: REVIEW_REQUIRED
   unresolved: UNR-013
+  notes: DAT 3.x dependency; removed in DAT 4.0 (Stage 03, dat ba58386). Kept for provenance of DAT history.
 - id: lib:pypi/bcrypt
   name: bcrypt
   ecosystem: pypi
@@ -187,6 +188,7 @@ libraries:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: REVIEW_REQUIRED
   unresolved: UNR-016
+  notes: DAT 3.x dependency; removed in DAT 4.0 (Stage 03, dat ba58386). Kept for provenance of DAT history.
 - id: lib:pypi/cryptography
   name: cryptography
   ecosystem: pypi
@@ -202,6 +204,7 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
+  notes: DAT 3.x dependency; removed in DAT 4.0 (Stage 03, dat ba58386). Kept for provenance of DAT history.
 - id: lib:pypi/email-validator
   name: email-validator
   ecosystem: pypi
@@ -330,6 +333,7 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
+  notes: DAT 3.x dependency; removed in DAT 4.0 (Stage 03, dat ba58386). Kept for provenance of DAT history.
 - id: lib:pypi/passlib
   name: passlib
   ecosystem: pypi
@@ -474,6 +478,7 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
+  notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386); other listed repos still use it.
 - id: lib:pypi/referencing
   name: referencing
   ecosystem: pypi
@@ -507,6 +512,7 @@ libraries:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: REVIEW_REQUIRED
   unresolved: UNR-016
+  notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386); other listed repos still use it.
 - id: lib:pypi/requests
   name: requests
   ecosystem: pypi
@@ -523,6 +529,7 @@ libraries:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: REVIEW_REQUIRED
   unresolved: UNR-016
+  notes: DAT 3.x dependency; removed in DAT 4.0 (Stage 03, dat ba58386). Kept for provenance of DAT history.
 - id: lib:pypi/rich
   name: rich
   ecosystem: pypi
@@ -540,6 +547,7 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
+  notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386); other listed repos still use it.
 - id: lib:pypi/ruff
   name: ruff
   ecosystem: pypi
@@ -569,6 +577,7 @@ libraries:
   evidence: []
   verification: REVIEW_REQUIRED
   unresolved: UNR-013
+  notes: DAT 3.x dependency; removed in DAT 4.0 (Stage 03, dat ba58386). Kept for provenance of DAT history.
 - id: lib:pypi/sqlalchemy
   name: sqlalchemy
   ecosystem: pypi
@@ -633,6 +642,7 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
+  notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386); other listed repos still use it.
 - id: lib:pypi/uvicorn
   name: uvicorn
   ecosystem: pypi

@@ -186,14 +186,14 @@ ledger:
 - id: AIL-023
   tool: ai:claude-code
   repo: repo:blux
-  commits: 4
+  commits: 5
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers)'
   verification: VERIFIED
 - id: AIL-024
   tool: ai:claude-code
@@ -282,4 +282,16 @@ ledger:
   - documentation
   - review
   evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 02 execution truth layer, ebdf84c)'
+  verification: VERIFIED
+- id: AIL-036
+  tool: ai:claude-code
+  repo: repo:dat
+  commits: 1
+  categories:
+  - research
+  - architecture_planning
+  - code_generation
+  - documentation
+  - review
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 03 DAT 4.0 rebuild, ba58386)'
   verification: VERIFIED
