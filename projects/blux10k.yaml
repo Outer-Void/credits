@@ -1,0 +1,28 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:blux10k
+  path: ~/ov/blux10k
+  origin: git@github.com:Outer-Void/blux10k.git
+  products:
+  - blux10k shell environment
+  visibility: public
+  current_license: NONE; contains MIT-derived dotfiles/.p10k.zsh
+  decision: MIXED_WITH_THIRD_PARTY_NOTICES
+  intended_license: LicenseRef-OuterVoid-Proprietary for Outer Void portions; powerlevel10k MIT notice travels
+  relicensing_evidence: null
+  surviving_obligations:
+  - lib:powerlevel10k
+  traveling_notices:
+  - THIRD_PARTY_NOTICES.md
+  - licenses/MIT-powerlevel10k.txt
+  excluded_third_party:
+  - Third-party components listed in surviving_obligations keep their own licences
+  lineage:
+  - LIN-006
+  credits: []
+  unresolved: []
+  audited: '2026-10-24'

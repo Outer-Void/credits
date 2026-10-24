@@ -1,0 +1,274 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+# Categories: brainstorming, architecture_planning, code_generation, review, debugging, research, documentation, design_asset, runtime, api_backend.
+# No prompts, conversations, credentials or personal data are recorded. Absence of an entry is not evidence of non-use.
+schema_version: 1
+ledger:
+- id: AIL-001
+  tool: ai:openai-codex
+  repo: repo:axiom
+  merged_prs_from_codex_branches: 35
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-002
+  tool: ai:openai-codex
+  repo: repo:blhermes-agent
+  merged_prs_from_codex_branches: 12
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-003
+  tool: ai:openai-codex
+  repo: repo:blux-app
+  merged_prs_from_codex_branches: 6
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-004
+  tool: ai:openai-codex
+  repo: repo:blux-ca
+  merged_prs_from_codex_branches: 4
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-005
+  tool: ai:openai-codex
+  repo: repo:blux-ca-dataset
+  merged_prs_from_codex_branches: 1
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-006
+  tool: ai:openai-codex
+  repo: repo:blux-coga
+  merged_prs_from_codex_branches: 5
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-007
+  tool: ai:openai-codex
+  repo: repo:blux-coga-dataset
+  merged_prs_from_codex_branches: 12
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-008
+  tool: ai:openai-codex
+  repo: repo:blux-system
+  merged_prs_from_codex_branches: 6
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-009
+  tool: ai:openai-codex
+  repo: repo:blux10k
+  merged_prs_from_codex_branches: 17
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-010
+  tool: ai:openai-codex
+  repo: repo:dat
+  merged_prs_from_codex_branches: 1
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-011
+  tool: ai:openai-codex
+  repo: repo:docs
+  merged_prs_from_codex_branches: 1
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-012
+  tool: ai:openai-codex
+  repo: repo:dotgithub
+  merged_prs_from_codex_branches: 1
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-013
+  tool: ai:openai-codex
+  repo: repo:lrc
+  merged_prs_from_codex_branches: 1
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-014
+  tool: ai:openai-codex
+  repo: repo:resolver
+  merged_prs_from_codex_branches: 2
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-015
+  tool: ai:openai-codex
+  repo: repo:roughin
+  merged_prs_from_codex_branches: 1
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-016
+  tool: ai:openai-codex
+  repo: repo:theresolver
+  merged_prs_from_codex_branches: 16
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-017
+  tool: ai:openai-codex
+  repo: repo:vigyl
+  merged_prs_from_codex_branches: 1
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-018
+  tool: ai:openai-codex
+  repo: repo:void-os
+  merged_prs_from_codex_branches: 1
+  categories:
+  - code_generation
+  - documentation
+  verification: INFERRED
+- id: AIL-019
+  tool: ai:claude-code
+  repo: repo:void-os
+  commits: 6
+  categories:
+  - code_generation
+  - debugging
+  evidence: 'Co-authored-by: Claude Sonnet 4.6'
+  verification: VERIFIED
+- id: AIL-020
+  tool: ai:claude-code
+  repo: repo:void-game
+  commits: 2
+  categories:
+  - code_generation
+  evidence: 'Co-authored-by: Claude Sonnet 4.6'
+  verification: VERIFIED
+- id: AIL-021
+  tool: ai:claude-code
+  repo: repo:void-sys
+  commits: 1
+  categories:
+  - code_generation
+  evidence: 'Co-authored-by: Claude Sonnet 4.6'
+  verification: VERIFIED
+- id: AIL-022
+  tool: ai:claude-code
+  repo: repo:resolver
+  commits: 1
+  categories:
+  - code_generation
+  evidence: 'Co-authored-by: Claude Sonnet 4.6'
+  verification: VERIFIED
+- id: AIL-023
+  tool: ai:claude-code
+  repo: repo:blux
+  commits: 2
+  categories:
+  - research
+  - architecture_planning
+  - code_generation
+  - documentation
+  - review
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI)'
+  verification: VERIFIED
+- id: AIL-024
+  tool: ai:claude-code
+  repo: repo:credits
+  commits: 1
+  categories:
+  - research
+  - documentation
+  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A
+  verification: VERIFIED
+- id: AIL-025
+  tool: ai:gemini-code-assist
+  repo: repo:resolver
+  commits: 2
+  categories:
+  - review
+  evidence: 'Co-authored-by: gemini-code-assist[bot]'
+  verification: VERIFIED
+- id: AIL-026
+  tool: ai:github-copilot
+  repo: repo:theresolver
+  commits: 7
+  categories:
+  - code_generation
+  evidence: author copilot-swe-agent[bot]
+  verification: VERIFIED
+- id: AIL-027
+  tool: ai:github-copilot
+  repo: repo:god
+  commits: 1
+  categories:
+  - debugging
+  evidence: 'Co-authored-by: Copilot Autofix powered by AI'
+  verification: VERIFIED
+- id: AIL-028
+  tool: model:openai-gpt
+  repo: repo:blux-gpt
+  categories:
+  - api_backend
+  verification: VERIFIED
+- id: AIL-029
+  tool: model:anthropic-claude
+  repo: repo:blux-gpt
+  categories:
+  - api_backend
+  verification: VERIFIED
+- id: AIL-030
+  tool: model:deepseek
+  repo: repo:blux-gpt
+  categories:
+  - api_backend
+  verification: VERIFIED
+- id: AIL-031
+  tool: model:openai-gpt
+  repo: repo:resolver
+  categories:
+  - api_backend
+  verification: VERIFIED
+- id: AIL-032
+  tool: model:llama-cpp
+  repo: repo:jadis-toolbox
+  categories:
+  - runtime (documented)
+  verification: VERIFIED
+- id: AIL-033
+  tool: model:hermes-providers
+  repo: repo:blhermes-agent
+  categories:
+  - api_backend
+  verification: VERIFIED
+- id: AIL-034
+  tool: proj:hermes-agent
+  repo: repo:blhermes-agent
+  categories:
+  - upstream_history
+  verification: VERIFIED
+  evidence: Upstream history contains AI trailers (Claude, Cursor, others). Those record upstream contributors'
+    tooling, not Outer Void use.

@@ -1,0 +1,30 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:voidforge
+  path: ~/ov/voidforge
+  origin: git@github.com:Outer-Void/voidforge.git
+  products:
+  - VoidForge
+  visibility: public
+  current_license: Apache-2.0 (with THIRD_PARTY_NOTICES)
+  decision: REVIEW_REQUIRED
+  intended_license: owner decision (UNR-008)
+  relicensing_evidence: Outer Void-authored per git history; AI-assisted commits present (see provenance/ai-assistance.yaml)
+  surviving_obligations:
+  - tool:gradle
+  - tool:kotlin
+  - lib:maven/androidx.room:room-runtime
+  traveling_notices:
+  - LICENSE
+  - THIRD_PARTY_NOTICES
+  excluded_third_party:
+  - Third-party components listed in surviving_obligations keep their own licences
+  lineage: []
+  credits: []
+  unresolved:
+  - UNR-008
+  audited: '2026-10-24'

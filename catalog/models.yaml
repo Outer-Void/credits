@@ -1,0 +1,93 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+models:
+- id: model:openai-gpt
+  name: OpenAI GPT models via API
+  relationship:
+  - MODEL_OR_RUNTIME
+  vendor: org:openai
+  affects:
+  - repo:blux-gpt
+  - repo:resolver
+  - repo:axiom
+  shipped: api-backend
+  verification: VERIFIED
+  evidence:
+  - blux-gpt default lane gpt-5-mini
+  - resolver openai SDK dependency
+- id: model:anthropic-claude
+  name: Anthropic Claude models via API
+  relationship:
+  - MODEL_OR_RUNTIME
+  vendor: org:anthropic
+  affects:
+  - repo:blux-gpt
+  shipped: api-backend
+  verification: VERIFIED
+  evidence:
+  - blux-gpt lane claude-haiku-4.5
+- id: model:deepseek
+  name: DeepSeek chat/reasoner via API
+  relationship:
+  - MODEL_OR_RUNTIME
+  vendor: org:deepseek
+  affects:
+  - repo:blux-gpt
+  shipped: api-backend
+  verification: VERIFIED
+  evidence:
+  - blux-gpt lanes deepseek-chat, deepseek-reasoner
+- id: model:deepseek-r1-distill-qwen-gguf
+  name: DeepSeek-R1-Distill-Qwen-1.5B GGUF (bartowski quantization)
+  relationship:
+  - MODEL_OR_RUNTIME
+  - DOCUMENTATION_OR_REFERENCE
+  vendor: org:deepseek
+  affects:
+  - repo:jadis-toolbox
+  shipped: documentation-only
+  license: UNKNOWN
+  unresolved: UNR-010
+  verification: REVIEW_REQUIRED
+  evidence:
+  - jadis.toolbox docs/termux-llm-vulcan.md download link (huggingface.co/bartowski)
+  notes: Model weights not redistributed. Base-model licences (DeepSeek, Qwen) not verified.
+- id: model:llama-cpp
+  name: llama.cpp inference runtime
+  relationship:
+  - MODEL_OR_RUNTIME
+  vendor: org:ggml
+  affects:
+  - repo:jadis-toolbox
+  license: MIT
+  license_file: licenses/MIT-llama.cpp.txt
+  shipped: documentation-only
+  verification: VERIFIED
+  evidence:
+  - build guide
+- id: model:hermes-providers
+  name: Hermes Agent provider integrations (Nous Portal, OpenRouter, OpenAI, Anthropic, Gemini, DeepSeek, others)
+  relationship:
+  - MODEL_OR_RUNTIME
+  vendor: org:nous-research
+  affects:
+  - repo:blhermes-agent
+  shipped: api-backend
+  verification: VERIFIED
+  evidence:
+  - upstream provider modules; Stage 00 upstream-hook inventory
+- id: model:blux-ca-coga
+  name: BLUX cA / CogA deterministic engines
+  relationship:
+  - MODEL_OR_RUNTIME
+  vendor: org:outer-void
+  affects:
+  - repo:blux-ca
+  - repo:blux-coga
+  shipped: shipped
+  verification: VERIFIED
+  evidence:
+  - engine packages; no third-party model weights

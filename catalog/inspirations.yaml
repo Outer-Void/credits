@@ -1,0 +1,49 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+# Inspiration is voluntary credit. It is not a licence notice and implies no code derivation.
+schema_version: 1
+inspirations:
+- id: insp:debian-feel
+  name: Debian user experience ('Everything should feel like Debian')
+  relationship:
+  - INSPIRATION
+  affects:
+  - repo:axiom
+  verification: VERIFIED
+  evidence:
+  - axiom README doctrine
+- id: insp:hermes-agent-architecture
+  name: Hermes Agent learning-loop / skills architecture
+  relationship:
+  - INSPIRATION
+  - UPSTREAM_SOURCE
+  affects:
+  - repo:blhermes-agent
+  - repo:blux
+  verification: VERIFIED
+  evidence:
+  - blhermes fork; BLUX Stage 00 notes on BLHERMES as candidate agent layer
+  notes: Influence on BLUX planning; no Hermes code is in blux (Stage 01).
+- id: insp:nova-lawnchair-icon-packs
+  name: Nova / Lawnchair icon-pack conventions (appfilter.xml)
+  relationship:
+  - INSPIRATION
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:void-sys
+  verification: VERIFIED
+  evidence:
+  - void.sys README compatibility section
+- id: insp:termux-llm-tutorial
+  name: Android Termux LLM tutorial (Jie-Qiao)
+  relationship:
+  - INSPIRATION
+  affects:
+  - repo:jadis-toolbox
+  verification: INFERRED
+  evidence:
+  - linked from jadis.toolbox guide
+  refs:
+  - proj:android-termux-llm-tutorial

@@ -1,0 +1,343 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+organizations:
+- id: org:outer-void
+  name: Outer Void (Outer-Void)
+  relationship:
+  - COPYRIGHT_HOLDER
+  url: https://github.com/Outer-Void
+  notes: Owner of Outer-Void original work. Owner identity JADIS / Justadudeinspace per LICENSE files and git history.
+  verification: VERIFIED
+  evidence:
+  - LICENSE files in Outer-Void repos
+  - git author identities ~JADIS, JADIS, Justadudeinspace
+- id: org:nous-research
+  name: Nous Research
+  relationship:
+  - COPYRIGHT_HOLDER
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  url: https://nousresearch.com
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2025 Nous Research
+  evidence:
+  - blhermes-agent/LICENSE
+  - 'GitHub API: Outer-Void/blhermes-agent fork=true'
+  verification: VERIFIED
+- id: org:openai
+  name: OpenAI
+  relationship:
+  - AI_ASSISTANCE
+  - MODEL_OR_RUNTIME
+  url: https://openai.com
+  affects:
+  - repo:axiom
+  - repo:blux-gpt
+  - repo:resolver
+  - ai:openai-codex
+  verification: VERIFIED
+  evidence:
+  - openai SDK in blux-gpt and resolver requirements
+  - codex/* PR branches (see ai:openai-codex)
+  notes: No endorsement, sponsorship or affiliation implied.
+- id: org:anthropic
+  name: Anthropic
+  relationship:
+  - AI_ASSISTANCE
+  - MODEL_OR_RUNTIME
+  url: https://www.anthropic.com
+  affects:
+  - repo:blux-gpt
+  - repo:blux
+  - repo:void-os
+  - repo:void-game
+  - repo:void-sys
+  - repo:resolver
+  verification: VERIFIED
+  evidence:
+  - Co-authored-by Claude trailers
+  - anthropic SDK in blux-gpt
+  notes: No endorsement implied.
+- id: org:google
+  name: Google
+  relationship:
+  - AI_ASSISTANCE
+  - TOOLCHAIN
+  - DEPENDENCY
+  - ASSET_SOURCE
+  url: https://about.google
+  affects:
+  - repo:resolver
+  - repo:void-os
+  - repo:void-sys
+  - repo:void-game
+  - repo:voidforge
+  - repo:termux-background
+  - repo:roughin
+  verification: VERIFIED
+  evidence:
+  - gemini-code-assist[bot] trailers in resolver
+  - AndroidX/AOSP Apache-2.0 POMs
+  - Workbox (Copyright 2018 Google LLC)
+  - Noto/Roboto font projects
+  notes: Android, AndroidX, Gemini Code Assist, Workbox, Google Fonts-hosted projects. No endorsement implied.
+- id: org:github
+  name: GitHub (Microsoft)
+  relationship:
+  - TOOLCHAIN
+  - AI_ASSISTANCE
+  - DOCUMENTATION_OR_REFERENCE
+  url: https://github.com
+  affects:
+  - '*'
+  verification: VERIFIED
+  evidence:
+  - origin remotes
+  - copilot-swe-agent[bot] in theresolver
+  - Copilot Autofix in god
+  - dependabot in resolver
+  - github/gitignore templates (CC0-1.0)
+- id: org:microsoft
+  name: Microsoft Corporation
+  relationship:
+  - COPYRIGHT_HOLDER
+  - ASSET_SOURCE
+  affects:
+  - repo:void-os
+  required_notice: © 2021 Microsoft Corporation. All Rights Reserved.
+  license: OFL-1.1
+  evidence:
+  - 'font name table: cascadia_code.ttf / caskaydiacove_nerd.ttf'
+  verification: VERIFIED
+- id: org:deepseek
+  name: DeepSeek
+  relationship:
+  - MODEL_OR_RUNTIME
+  affects:
+  - repo:blux-gpt
+  - repo:jadis-toolbox
+  verification: VERIFIED
+  evidence:
+  - blux-gpt provider lanes deepseek-chat / deepseek-reasoner
+  - 'jadis.toolbox docs/termux-llm-vulcan.md: DeepSeek-R1-Distill-Qwen GGUF'
+  notes: Runtime/API backend and documented local model. No evidence of DeepSeek use as a development assistant.
+- id: org:meta
+  name: Meta Platforms, Inc.
+  relationship:
+  - COPYRIGHT_HOLDER
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  - repo:roughin
+  license: MIT
+  required_notice: Copyright (c) Meta Platforms, Inc. and affiliates. / Copyright (c) Facebook, Inc. and its affiliates.
+  evidence:
+  - node_modules/react/LICENSE (19.2.3, 18.3.1)
+  verification: VERIFIED
+  notes: React. No Llama-family model use found anywhere in Outer Void (see ai:meta-llama).
+- id: org:vercel
+  name: Vercel, Inc.
+  relationship:
+  - COPYRIGHT_HOLDER
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  license: MIT
+  required_notice: Copyright (c) 2025 Vercel, Inc.
+  evidence:
+  - node_modules/next/license.md (16.1.6)
+  verification: VERIFIED
+- id: org:jetbrains
+  name: JetBrains
+  relationship:
+  - TOOLCHAIN
+  - DEPENDENCY
+  - ASSET_SOURCE
+  affects:
+  - repo:void-os
+  - repo:void-game
+  - repo:void-sys
+  - repo:voidforge
+  license: Apache-2.0
+  evidence:
+  - kotlin-stdlib-1.9.20.pom
+  - JetBrains Mono font name table
+  verification: VERIFIED
+- id: org:termux
+  name: Termux project
+  relationship:
+  - COMMUNITY
+  - DOCUMENTATION_OR_REFERENCE
+  - TOOLCHAIN
+  url: https://github.com/termux
+  affects:
+  - repo:termux-background
+  - repo:blhermes-agent
+  - repo:jadis-toolbox
+  - repo:axiom
+  verification: VERIFIED
+  evidence:
+  - termux-background/docs/ANDROID_TERMUX_BRIDGE.md links termux-app RUN_COMMAND docs
+  - 'termux-app LICENSE.md: GPLv3 only'
+  notes: Interface/documentation reference only; no termux-app code copied (no foreign headers found).
+- id: org:termux-monet
+  name: Termux:Monet project
+  relationship:
+  - DOCUMENTATION_OR_REFERENCE
+  url: https://github.com/Termux-Monet/termux-monet
+  affects:
+  - repo:termux-background
+  license: GPL-3.0-only
+  evidence:
+  - 'GitHub API license: GPL-3.0'
+  - README cites TermuxBackgroundManager.java as interface reference
+  verification: VERIFIED
+  notes: Target interface only. Copying Monet code would import GPL-3.0 obligations; keep it a boundary.
+- id: org:ggml
+  name: The ggml authors (llama.cpp)
+  relationship:
+  - DOCUMENTATION_OR_REFERENCE
+  - MODEL_OR_RUNTIME
+  url: https://github.com/ggml-org/llama.cpp
+  affects:
+  - repo:jadis-toolbox
+  license: MIT
+  required_notice: Copyright (c) 2023-2026 The ggml authors
+  evidence:
+  - llama.cpp LICENSE
+  - jadis.toolbox build guide
+  verification: VERIFIED
+  notes: Documented as a locally built inference runtime; not bundled.
+- id: org:libgdx
+  name: libGDX authors
+  relationship:
+  - COPYRIGHT_HOLDER
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  url: https://libgdx.com
+  affects:
+  - repo:void-game
+  - repo:void-os
+  license: Apache-2.0
+  evidence:
+  - gdx-1.12.1.pom
+  - libgdx AUTHORS (licenses/libgdx-AUTHORS.txt)
+  verification: VERIFIED
+- id: org:gradle
+  name: Gradle, Inc. and the Gradle authors
+  relationship:
+  - TOOLCHAIN
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  - repo:void-game
+  - repo:void-sys
+  - repo:voidforge
+  - repo:termux-background
+  license: Apache-2.0
+  required_notice: Copyright © 2015-2021 the original authors.
+  evidence:
+  - gradlew header
+  - gradle/wrapper/gradle-wrapper.jar
+  verification: VERIFIED
+- id: org:cursor
+  name: Anysphere (Cursor)
+  relationship:
+  - AI_ASSISTANCE
+  affects:
+  - proj:hermes-agent
+  verification: VERIFIED
+  evidence:
+  - '164 Co-authored-by: Cursor trailers in upstream hermes-agent history'
+  notes: Upstream contributors' tooling, not Outer Void use.
+- id: org:blackbox-ai
+  name: BLACKBOX AI
+  relationship:
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  affects:
+  - repo:void-sys
+  - repo:void-os
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-012
+  evidence:
+  - void.sys icon_map.json maps codes.side.blackbox / com.blackboxai.app to a VOID.SYS icon
+  notes: Appears only as a third-party app icon mapping (trademark depiction). No evidence of development use; not
+    credited as AI assistance unless the owner confirms.
+- id: org:adobe
+  name: Adobe
+  relationship:
+  - COPYRIGHT_HOLDER
+  - ASSET_SOURCE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  required_notice: © 2023 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'
+  evidence:
+  - 'font name tables: Source Code Pro, Source Sans 3, Source Serif 4, SauceCodePro NF'
+  verification: VERIFIED
+- id: org:ibm
+  name: IBM Corp.
+  relationship:
+  - COPYRIGHT_HOLDER
+  - ASSET_SOURCE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  required_notice: Copyright 2017 IBM Corp. All rights reserved.
+  evidence:
+  - ibm_plex_mono.ttf name table
+  verification: VERIFIED
+- id: org:canonical
+  name: Canonical Ltd.
+  relationship:
+  - COPYRIGHT_HOLDER
+  - ASSET_SOURCE
+  affects:
+  - repo:void-os
+  license: Ubuntu-font-1.0
+  required_notice: Copyright 2011 Canonical Ltd.
+  evidence:
+  - ubuntu_mono.ttf name table
+  verification: VERIFIED
+- id: org:source-foundry
+  name: Source Foundry Authors
+  relationship:
+  - COPYRIGHT_HOLDER
+  - ASSET_SOURCE
+  affects:
+  - repo:void-os
+  license: MIT AND Bitstream-Vera
+  required_notice: Copyright (c) 2018 Source Foundry Authors / Copyright (c) 2003 by Bitstream, Inc.
+  evidence:
+  - hack.ttf name table
+  - Hack LICENSE.md
+  verification: VERIFIED
+- id: org:indian-type-foundry
+  name: Indian Type Foundry
+  relationship:
+  - COPYRIGHT_HOLDER
+  - ASSET_SOURCE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  required_notice: Copyright (c) 2014 Indian Type Foundry
+  evidence:
+  - rajdhani.ttf name table
+  verification: VERIFIED
+- id: org:react-training
+  name: React Training LLC / Remix Software
+  relationship:
+  - COPYRIGHT_HOLDER
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license: MIT
+  required_notice: Copyright (c) React Training LLC 2015-2019
+  evidence:
+  - react-router LICENSE 6.30.6
+  verification: VERIFIED

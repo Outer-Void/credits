@@ -1,0 +1,814 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+assets:
+- id: asset:font/cascadia-code
+  name: CaskaydiaCove NF
+  file: void.os/app/src/main/res/font/cascadia_code.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: © 2021 Microsoft Corporation. All Rights Reserved.
+  font_version: Version 2111.001; VTT 6.35;Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  notes: 'File name says Cascadia Code but the font is the CaskaydiaCove NF (Nerd Fonts) patch. Nerd Fonts patched
+    build: added glyph-set licences tracked under UNR-003.'
+- id: asset:font/caskaydiacove-nerd
+  name: CaskaydiaCove NF
+  file: void.os/app/src/main/res/font/caskaydiacove_nerd.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: © 2021 Microsoft Corporation. All Rights Reserved.
+  font_version: Version 2111.001; VTT 6.35;Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003.'
+- id: asset:font/exo-2
+  name: Exo 2
+  file: void.os/app/src/main/res/font/exo_2.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2013 The Exo 2 Project Authors (https://github.com/googlefonts/Exo-2.0)
+  font_version: Version 2.010
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/fira-code
+  name: Fira Code Light
+  file: void.os/app/src/main/res/font/fira_code.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2014-2020 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+  font_version: Version 5.002
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/firacode-nerd
+  name: FiraCode Nerd Font
+  file: void.os/app/src/main/res/font/firacode_nerd.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2014-2021 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+  font_version: Version 6.002;Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003.'
+- id: asset:font/hack
+  name: Hack Nerd Font
+  file: void.os/app/src/main/res/font/hack.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: MIT AND Bitstream-Vera
+  license_file: licenses/Hack-LICENSE.md
+  required_notice: Copyright (c) 2018 Source Foundry Authors / Copyright (c) 2003 by Bitstream, Inc. All Rights
+    Reserved.
+  font_version: Version 3.003;[3114f1256]-release; ttfautohint (v1.7) -l 6 -r 50 -G 200 -x 10 -H 181 -D latn -f
+    latn -m "Hack-Regular-TA.txt" -w G -W -t -X "";Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003.'
+- id: asset:font/hack-nerd
+  name: Hack Nerd Font
+  file: void.os/app/src/main/res/font/hack_nerd.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: MIT AND Bitstream-Vera
+  license_file: licenses/Hack-LICENSE.md
+  required_notice: Copyright (c) 2018 Source Foundry Authors / Copyright (c) 2003 by Bitstream, Inc. All Rights
+    Reserved.
+  font_version: Version 3.003;[3114f1256]-release; ttfautohint (v1.7) -l 6 -r 50 -G 200 -x 10 -H 181 -D latn -f
+    latn -m "Hack-Regular-TA.txt" -w G -W -t -X "";Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003.'
+- id: asset:font/ibm-plex-mono
+  name: IBM Plex Mono
+  file: void.os/app/src/main/res/font/ibm_plex_mono.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2017 IBM Corp. All rights reserved.
+  font_version: Version 2.3
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/inconsolata
+  name: Inconsolata
+  file: void.os/app/src/main/res/font/inconsolata.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2006 The Inconsolata Project Authors (https://github.com/cyrealtype/Inconsolata)
+  font_version: Version 3.001
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/inter
+  name: Inter
+  file: void.os/app/src/main/res/font/inter.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
+  font_version: Version 4.001;git-66647c0bb
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/iosevka-nerd
+  name: Iosevka NF
+  file: void.os/app/src/main/res/font/iosevka_nerd.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2015-2024, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).
+  font_version: Version 29.0.4; ttfautohint (v1.8.4);Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003.'
+- id: asset:font/jetbrains-mono
+  name: JetBrains Mono
+  file: void.os/app/src/main/res/font/jetbrains_mono.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+  font_version: Version 2.211
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/jetbrainsmono-nerd
+  name: JetBrainsMono NF
+  file: void.os/app/src/main/res/font/jetbrainsmono_nerd.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+  font_version: Version 2.304; ttfautohint (v1.8.4.7-5d5b);Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003.'
+- id: asset:font/lato
+  name: Lato
+  file: void.os/app/src/main/res/font/lato.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright (c) 2011-2015 by tyPoland Lukasz Dziedzic (http://www.typoland.com/) with Reserved
+    Font Name "Lato". Licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).
+  font_version: Version 2.015; 2015-08-06; http://www.latofonts.com/
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/libre-baskerville
+  name: Libre Baskerville
+  file: void.os/app/src/main/res/font/libre_baskerville.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2012 The Libre Baskerville Project Authors (https://github.com/impallari/Libre-Baskerville)
+  font_version: Version 2.005
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/manrope
+  name: Manrope ExtraLight
+  file: void.os/app/src/main/res/font/manrope.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2019 The Manrope Project Authors (https://github.com/sharanda/manrope)
+  font_version: Version 4.504
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/merriweather
+  name: Merriweather Light
+  file: void.os/app/src/main/res/font/merriweather.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2024 The Merriweather Project Authors (https://github.com/EbenSorkin/Merriweather4)
+    with Reserved Font Name "Merriweather".
+  font_version: Version 2.100
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/meslolgs-nerd
+  name: MesloLGS Nerd Font
+  file: void.os/app/src/main/res/font/meslolgs_nerd.ttf
+  relationship:
+  - ASSET_SOURCE
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  affects:
+  - repo:void-os
+  license: UNKNOWN
+  license_file: null
+  required_notice: Copyright © 2009 Apple Inc. Copyright ©  2006 by Tavmjong Bah. Copyright © 2003 by Bitstream,
+    Inc. All Rights Reserved.
+  font_version: Version 1.210;Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: REVIEW_REQUIRED
+  upstream: proj:nerd-fonts
+  unresolved: UNR-002
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003. Embedded name table has no licence
+    statement; do not infer from upstream.'
+- id: asset:font/monaspace
+  name: MonaspiceRn NF
+  file: void.os/app/src/main/res/font/monaspace.otf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: copyright missing
+  font_version: Version 001.101;Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  unresolved: UNR-002
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003. Licence stated (OFL-1.1) but
+    copyright notice missing from the file.'
+- id: asset:font/mononoki-nerd
+  name: Mononoki Nerd Font
+  file: void.os/app/src/main/res/font/mononoki_nerd.ttf
+  relationship:
+  - ASSET_SOURCE
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  affects:
+  - repo:void-os
+  license: UNKNOWN
+  license_file: null
+  required_notice: null
+  font_version: Version 1.006;Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: REVIEW_REQUIRED
+  upstream: proj:nerd-fonts
+  unresolved: UNR-002
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003. Embedded name table has no licence
+    statement; do not infer from upstream.'
+- id: asset:font/montserrat
+  name: Montserrat Thin
+  file: void.os/app/src/main/res/font/montserrat.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2011 The Montserrat Project Authors (https://github.com/JulietaUla/Montserrat)
+  font_version: Version 9.000
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/noto-sans
+  name: Noto Sans
+  file: void.os/app/src/main/res/font/noto_sans.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2022 The Noto Project Authors (https://github.com/notofonts/latin-greek-cyrillic)
+  font_version: Version 2.015
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/noto-serif
+  name: Noto Serif
+  file: void.os/app/src/main/res/font/noto_serif.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2022 The Noto Project Authors (https://github.com/notofonts/latin-greek-cyrillic)
+  font_version: Version 2.015
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/open-sans
+  name: Open Sans
+  file: void.os/app/src/main/res/font/open_sans.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2020 The Open Sans Project Authors (https://github.com/googlefonts/opensans)
+  font_version: Version 3.003
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/orbitron
+  name: Orbitron
+  file: void.os/app/src/main/res/font/orbitron.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: 'Copyright 2018 The Orbitron Project Authors (https://github.com/theleagueof/orbitron), with
+    Reserved Font Name: "Orbitron".'
+  font_version: Version 2.001
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/oxanium
+  name: Oxanium ExtraLight
+  file: void.os/app/src/main/res/font/oxanium.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2019 The Oxanium Project Authors (https://github.com/sevmeyer/oxanium)
+  font_version: Version 2.000
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/playfair-display
+  name: Playfair Display
+  file: void.os/app/src/main/res/font/playfair_display.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display),
+    with Reserved Font Name "Playfair Display".
+  font_version: Version 1.203
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/poppins
+  name: Poppins
+  file: void.os/app/src/main/res/font/poppins.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
+  font_version: '4.004'
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/rajdhani
+  name: Rajdhani
+  file: void.os/app/src/main/res/font/rajdhani.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright (c) 2014 Indian Type Foundry (info@indiantypefoundry.com)
+  font_version: Version 1.201;PS 1.0;hotconv 1.0.78;makeotf.lib2.5.61930; ttfautohint (v1.1) -l 7 -r 28 -G 50 -x
+    13 -D latn -f deva -w G
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/roboto
+  name: Roboto
+  file: void.os/app/src/main/res/font/roboto.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2011 The Roboto Project Authors (https://github.com/googlefonts/roboto-classic)
+  font_version: Version 3.015; 2026
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/roboto-mono
+  name: Roboto Mono
+  file: void.os/app/src/main/res/font/roboto_mono.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2015 The Roboto Mono Project Authors (https://github.com/googlefonts/robotomono)
+  font_version: Version 3.001
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/saucecodepro-nerd
+  name: SauceCodePro NF
+  file: void.os/app/src/main/res/font/saucecodepro_nerd.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: © 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’
+  font_version: Version 2.042;hotconv 1.1.0;makeotfexe 2.6.0;Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003.'
+- id: asset:font/share-tech-mono
+  name: Share Tech Mono
+  file: void.os/app/src/main/res/font/share_tech_mono.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright (c) 2012, Carrois Type Design, Ralph du Carrois (post@carrois.com www.carrois.com),
+    with Reserved Font Name 'Share'
+  font_version: Version 1.003
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/source-code-pro
+  name: Source Code Pro ExtraLight
+  file: void.os/app/src/main/res/font/source_code_pro.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: © 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’
+  font_version: Version 1.026;hotconv 1.1.0;makeotfexe 2.6.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/source-sans-3
+  name: Source Sans 3 ExtraLight
+  file: void.os/app/src/main/res/font/source_sans_3.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: © 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’
+  font_version: Version 3.052;hotconv 1.1.0;makeotfexe 2.6.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/source-serif-4
+  name: Source Serif 4
+  file: void.os/app/src/main/res/font/source_serif_4.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: © 2014 - 2021 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’.
+  font_version: Version 4.004;hotconv 1.0.116;makeotfexe 2.5.65601
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/space-mono
+  name: Space Mono
+  file: void.os/app/src/main/res/font/space_mono.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2016 The Space Mono Project Authors (https://github.com/googlefonts/spacemono)
+  font_version: Version 1.003; ttfautohint (v1.8.4.7-5d5b)
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:font/ubuntu-mono
+  name: UbuntuMono Nerd Font
+  file: void.os/app/src/main/res/font/ubuntu_mono.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: Ubuntu-font-1.0
+  license_file: licenses/Ubuntu-font-1.0.txt
+  required_notice: Copyright 2011 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0
+  font_version: Version 0.80;Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003.'
+- id: asset:font/ubuntumono-nerd
+  name: UbuntuMono Nerd Font
+  file: void.os/app/src/main/res/font/ubuntumono_nerd.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: Ubuntu-font-1.0
+  license_file: licenses/Ubuntu-font-1.0.txt
+  required_notice: Copyright 2011 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0
+  font_version: Version 0.80;Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003.'
+- id: asset:font/victormono-nerd
+  name: VictorMono NF
+  file: void.os/app/src/main/res/font/victormono_nerd.ttf
+  relationship:
+  - ASSET_SOURCE
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  affects:
+  - repo:void-os
+  license: UNKNOWN
+  license_file: null
+  required_notice: Copyright © 2024 by Rune Bjørnerås. All rights reserved.
+  font_version: Version 1.560;Nerd Fonts 3.3.0
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: REVIEW_REQUIRED
+  upstream: proj:nerd-fonts
+  unresolved: UNR-002
+  notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003. Embedded name table has no licence
+    statement; do not infer from upstream.'
+- id: asset:font/work-sans
+  name: Work Sans
+  file: void.os/app/src/main/res/font/work_sans.ttf
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Copyright 2019 The Work Sans Project Authors (https://github.com/weiweihuanghuang/Work-Sans)
+  font_version: Version 2.012
+  shipped: shipped (APK res/font)
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- id: asset:void-sys-icons
+  name: VOID.SYS icon artwork (590 SVG sources, generated PNGs)
+  relationship:
+  - ASSET_SOURCE
+  affects:
+  - repo:void-sys
+  - repo:void-os
+  license: LicenseRef-OuterVoid-AllRightsReserved
+  verification: OWNER_REPORTED
+  evidence:
+  - 'README: SVG files are the source of truth'
+  - 620/620 PNG blobs mirrored into void.os
+  notes: Authorship claimed by Outer Void; no third-party icon source identified.
+- id: asset:third-party-marks-in-icons
+  name: Third-party brand marks depicted by VOID.SYS icons (e.g. ChatGPT, Claude, Gemini, Copilot, Perplexity, BLACKBOX
+    AI)
+  relationship:
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  affects:
+  - repo:void-sys
+  - repo:void-os
+  license: UNKNOWN
+  unresolved: UNR-004
+  verification: REVIEW_REQUIRED
+  evidence:
+  - res/drawable-*/chatgpt.png, claude.png, gemini.png, copilot.png, perplexity.png, blackbox.png
+  - icon_map.json component mappings
+  notes: 'Trademark question, not copyright: depicting marks to theme third-party launchers. Implies no endorsement
+    or affiliation.'
+- id: asset:libgdx-natives
+  name: libGDX native libraries (libgdx.so x4)
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-game
+  license: Apache-2.0
+  license_file: licenses/Apache-2.0.txt
+  shipped: shipped (jniLibs)
+  verification: VERIFIED
+  evidence:
+  - arm64-v8a libgdx.so sha256 prefix 6bace080aa384af7 == gdx-platform-1.12.1-natives-arm64-v8a.jar
+- id: asset:axiom-wallpaper
+  name: AXIOM launcher wallpaper and docs artwork
+  relationship:
+  - ASSET_SOURCE
+  affects:
+  - repo:void-os
+  license: LicenseRef-OuterVoid-AllRightsReserved
+  verification: OWNER_REPORTED
+  evidence:
+  - docs/assets/axiom-launcher-wallpaper.png
+  notes: Generation method not recorded; see UNR-005.
+  unresolved: UNR-005
+- id: asset:resolver-mascot-images
+  name: TheResolverBot character/banner images
+  relationship:
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  affects:
+  - repo:resolver
+  - repo:theresolver
+  license: UNKNOWN
+  unresolved: UNR-005
+  verification: REVIEW_REQUIRED
+  evidence:
+  - 'resolver: 16 PNG'
+  - 'theresolver: assets/resolver-*.png, resolver_banner.png'
+  notes: Origin (commissioned, generated, stock) not recorded.
+- id: asset:blhermes-banner
+  name: BLHERMES assets/banner.png
+  relationship:
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  affects:
+  - repo:blhermes-agent
+  license: UNKNOWN
+  unresolved: UNR-005
+  verification: REVIEW_REQUIRED
+  evidence:
+  - fork commits dceb35b84f..88a3799487 'Add banner.png'
+- id: asset:org-logos
+  name: BLUX / Outer-Void logos (.github, lrc, dat, god)
+  relationship:
+  - ASSET_SOURCE
+  affects:
+  - repo:dotgithub
+  - repo:lrc
+  - repo:dat
+  - repo:god
+  license: LicenseRef-OuterVoid-AllRightsReserved
+  verification: OWNER_REPORTED
+  evidence:
+  - docs/assets/*.png
+  unresolved: UNR-005
+- id: asset:operationrestore-media
+  name: operationrestore.net seal, banner, PDFs
+  relationship:
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  affects:
+  - repo:operationrestore
+  license: UNKNOWN
+  unresolved: UNR-006
+  verification: REVIEW_REQUIRED
+  evidence:
+  - assets/seal-web.jpg, banner-web.jpg, downloads/*.pdf

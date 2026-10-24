@@ -1,0 +1,31 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:blhermes-agent
+  path: ~/ov/blhermes-agent
+  origin: git@github.com:Outer-Void/blhermes-agent.git
+  products:
+  - BLHERMES Agent
+  visibility: public
+  current_license: MIT (Copyright (c) 2025 Nous Research) + 23 nested upstream licences
+  decision: UPSTREAM_LICENSE_RETAINED
+  intended_license: MIT retained; Outer Void modifications may carry additional notices but cannot remove upstream
+    terms
+  relicensing_evidence: null
+  surviving_obligations:
+  - proj:hermes-agent
+  - lib:blhermes-dependency-graph
+  traveling_notices:
+  - LICENSE
+  excluded_third_party:
+  - Third-party components listed in surviving_obligations keep their own licences
+  lineage:
+  - LIN-001
+  credits: []
+  unresolved:
+  - UNR-001
+  - UNR-005
+  audited: '2026-10-24'

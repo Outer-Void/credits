@@ -1,0 +1,105 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+standards:
+- id: std:json-schema-2020-12
+  name: JSON Schema Draft 2020-12
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-system
+  - repo:blux-coga
+  url: https://json-schema.org
+  verification: VERIFIED
+  evidence:
+  - $schema in contract files
+- id: std:rfc3339
+  name: RFC 3339 timestamps
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:blux
+  verification: VERIFIED
+  evidence:
+  - blux contracts/v1/common.schema.json
+- id: std:ulid
+  name: ULID specification (ulid/spec)
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:blux
+  url: https://github.com/ulid/spec
+  verification: VERIFIED
+  evidence:
+  - blux_sdk/ids.py
+  notes: Independent implementation; no code copied.
+- id: std:crockford-base32
+  name: Crockford Base32
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:blux
+  verification: VERIFIED
+  evidence:
+  - blux_sdk/ids.py alphabet
+- id: std:semver
+  name: Semantic Versioning 2.0.0
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:blux
+  url: https://semver.org
+  verification: VERIFIED
+  evidence:
+  - semver pattern in common.schema.json
+- id: std:spdx
+  name: SPDX license list and expressions
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:credits
+  url: https://spdx.org/licenses
+  verification: VERIFIED
+  evidence:
+  - tools/validate.py
+  - licenses/ texts from spdx/license-list-data
+- id: std:opentype-name-table
+  name: OpenType 'name' table
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:credits
+  verification: VERIFIED
+  evidence:
+  - font audit method
+- id: std:android-run-command
+  name: Termux RUN_COMMAND intent
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:termux-background
+  verification: VERIFIED
+  evidence:
+  - docs/ANDROID_TERMUX_BRIDGE.md
+- id: std:telegram-bot-api
+  name: Telegram Bot API
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:resolver
+  verification: VERIFIED
+  evidence:
+  - aiogram dependency
+- id: std:adb-fastboot
+  name: Android ADB / Fastboot protocols
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:voidforge
+  verification: VERIFIED
+  evidence:
+  - 'voidforge THIRD_PARTY_NOTICES: protocol references, no upstream code copied'

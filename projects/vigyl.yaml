@@ -1,0 +1,25 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:vigyl
+  path: ~/ov/vigyl
+  origin: git@github.com:Outer-Void/vigyl.git
+  products:
+  - Vigyl
+  visibility: public
+  current_license: LicenseRef-Vigyl-Proprietary
+  decision: PUBLIC_SOURCE_PROPRIETARY
+  intended_license: LicenseRef-Vigyl-Proprietary
+  relicensing_evidence: null
+  surviving_obligations: []
+  traveling_notices:
+  - LICENSE
+  excluded_third_party: []
+  lineage: []
+  credits: []
+  unresolved:
+  - UNR-014
+  audited: '2026-10-24'

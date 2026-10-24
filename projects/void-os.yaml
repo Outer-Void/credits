@@ -1,0 +1,85 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:void-os
+  path: ~/ov/void.os
+  origin: git@github.com:Outer-Void/void.os.git
+  products:
+  - AXIOM Launcher
+  visibility: public
+  current_license: LicenseRef-OuterVoid-AllRightsReserved; bundles 41 fonts, libGDX, AndroidX
+  decision: MIXED_WITH_THIRD_PARTY_NOTICES
+  intended_license: Proprietary + font/Apache notices
+  relicensing_evidence: null
+  surviving_obligations:
+  - asset:font/cascadia-code
+  - asset:font/caskaydiacove-nerd
+  - asset:font/exo-2
+  - asset:font/fira-code
+  - asset:font/firacode-nerd
+  - asset:font/hack
+  - asset:font/hack-nerd
+  - asset:font/ibm-plex-mono
+  - asset:font/inconsolata
+  - asset:font/inter
+  - asset:font/iosevka-nerd
+  - asset:font/jetbrains-mono
+  - asset:font/jetbrainsmono-nerd
+  - asset:font/lato
+  - asset:font/libre-baskerville
+  - asset:font/manrope
+  - asset:font/merriweather
+  - asset:font/meslolgs-nerd
+  - asset:font/monaspace
+  - asset:font/mononoki-nerd
+  - asset:font/montserrat
+  - asset:font/noto-sans
+  - asset:font/noto-serif
+  - asset:font/open-sans
+  - asset:font/orbitron
+  - asset:font/oxanium
+  - asset:font/playfair-display
+  - asset:font/poppins
+  - asset:font/rajdhani
+  - asset:font/roboto
+  - asset:font/roboto-mono
+  - asset:font/saucecodepro-nerd
+  - asset:font/share-tech-mono
+  - asset:font/source-code-pro
+  - asset:font/source-sans-3
+  - asset:font/source-serif-4
+  - asset:font/space-mono
+  - asset:font/ubuntu-mono
+  - asset:font/ubuntumono-nerd
+  - asset:font/victormono-nerd
+  - asset:font/work-sans
+  - lib:maven/com.badlogicgames.gdx:gdx
+  - lib:maven/androidx.core:core-ktx
+  - tool:kotlin
+  - tool:gradle
+  traveling_notices:
+  - LICENSE
+  - THIRD_PARTY_NOTICES.md
+  - licenses/Apache-2.0.txt
+  - licenses/OFL-1.1.txt
+  - licenses/Ubuntu-font-1.0.txt
+  - licenses/Hack-LICENSE.md
+  excluded_third_party:
+  - Third-party components listed in surviving_obligations keep their own licences
+  lineage:
+  - LIN-002
+  - LIN-003
+  - LIN-005
+  credits:
+  - asset:void-sys-icons
+  - ai:claude-code
+  unresolved:
+  - UNR-002
+  - UNR-003
+  - UNR-004
+  - UNR-005
+  - UNR-014
+  audited: '2026-10-24'

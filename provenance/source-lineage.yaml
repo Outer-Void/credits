@@ -1,0 +1,78 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+lineage:
+- id: LIN-001
+  target: repo:blhermes-agent
+  source: proj:hermes-agent
+  kind: FORK_OR_DERIVATIVE
+  verification: VERIFIED
+  facts:
+    merge_base: 3fa571a51a6bf1220dfe9a7a23fcd5bb9482a1af
+    upstream_main_observed_stage00: 55ee4acdd822b73fb9573a2321531ae3a9d0b3e0
+    upstream_main_observed_stage01a: 5894e750c3dba980d43b25aa29e3958149ba2c61
+    fork_head: 75624a7a0b5d188b15fc9597c8258ae5970a0e98
+    fork_commits_since_base: 14
+    files_changed_vs_base: 4257
+    known_hermes_derived: all of the tree except files added by fork commits (MIT, Nous Research)
+    outer_void_modifications:
+    - README/branding rename (67c8a453c7, 661cd4900a)
+    - BLHermes textual rebrand across 4,257 files (23a035474c)
+    - Termux qualification + acceptance tooling and BLHERMES_*.md docs (168931886a, 1e6c382569, 75624a7a0b)
+    - assets/banner.png (UNR-005)
+    unknown_areas: file-level attribution of the rebrand commit; see UNR-001
+  gates:
+    stage_11: refine file/subsystem lineage during migration
+    stage_16: audit this record
+    stage_17: BLHERMES cannot retire until MIT notice + nested licences + this lineage survive independently in
+      every successor distribution
+- id: LIN-002
+  target: repo:void-os
+  source: repo:void-game
+  kind: VENDORED_COPY
+  verification: VERIFIED
+  facts:
+    kotlin_files_upstream: 27
+    differing: 22
+    note: diverged copy; single source of truth undecided (Stage 00)
+- id: LIN-003
+  target: repo:void-os
+  source: repo:void-sys
+  kind: VENDORED_ASSETS
+  verification: VERIFIED
+  facts:
+    png_blobs_identical: 620/620
+- id: LIN-004
+  target: repo:void-game
+  source: lib:maven/com.badlogicgames.gdx:gdx-platform
+  kind: VENDORED_BINARY
+  verification: VERIFIED
+  facts:
+    artifact: gdx-platform 1.12.1 natives
+    sha256_prefix_arm64: 6bace080aa384af7
+- id: LIN-005
+  target: repo:void-os
+  source: proj:nerd-fonts
+  kind: VENDORED_ASSETS
+  verification: VERIFIED
+  facts:
+    fonts: 41
+    see: catalog/assets.yaml asset:font/*
+- id: LIN-006
+  target: repo:blux10k
+  source: lib:powerlevel10k
+  kind: GENERATED_FROM_TEMPLATE
+  verification: VERIFIED
+  facts:
+    file: dotfiles/.p10k.zsh
+    template: config/p10k-lean.zsh
+- id: LIN-007
+  target: repo:blux
+  source: proj:gitignore-templates
+  kind: TEMPLATE
+  verification: INFERRED
+  facts:
+    file: .gitignore
+    license: CC0-1.0

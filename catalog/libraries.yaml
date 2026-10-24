@@ -1,0 +1,1409 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+# Direct dependencies with licences as declared by package metadata. Transitive graphs: see each repo's lockfile.
+schema_version: 1
+libraries:
+- id: lib:pypi/aiogram
+  name: aiogram
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:resolver
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 3.31.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/aiohttp
+  name: aiohttp
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:resolver
+  license_as_declared: Apache-2.0 AND MIT
+  spdx: Apache-2.0 AND MIT
+  versions_observed:
+  - 3.14.5
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/aiosqlite
+  name: aiosqlite
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: 'OSI Approved :: MIT License'
+  spdx: MIT
+  versions_observed:
+  - 0.22.1
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/alembic
+  name: alembic
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 1.20.1
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/anthropic
+  name: anthropic
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux-gpt
+  license_as_declared: 'OSI Approved :: Apache Software License'
+  spdx: NOASSERTION
+  versions_observed:
+  - 2.3.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-016
+- id: lib:pypi/asyncpg
+  name: asyncpg
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: Apache-2.0
+  spdx: Apache-2.0
+  versions_observed:
+  - 0.32.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/bandit
+  name: bandit
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:dat
+  license_as_declared: UNKNOWN
+  spdx: UNKNOWN
+  versions_observed: []
+  shipped: runtime-installed (not bundled in source)
+  evidence: []
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-013
+- id: lib:pypi/bcrypt
+  name: bcrypt
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: 'OSI Approved :: Apache Software License'
+  spdx: NOASSERTION
+  versions_observed:
+  - 3.2.2
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-016
+- id: lib:pypi/boto3
+  name: boto3
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: Apache-2.0
+  spdx: Apache-2.0
+  versions_observed:
+  - 1.43.118
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/cachetools
+  name: cachetools
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:resolver
+  license_as_declared: 'OSI Approved :: MIT License'
+  spdx: MIT
+  versions_observed:
+  - 5.5.2
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/click
+  name: click
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:god
+  license_as_declared: BSD-3-Clause
+  spdx: BSD-3-Clause
+  versions_observed:
+  - 8.5.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/colorama
+  name: colorama
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:dat
+  license_as_declared: 'OSI Approved :: BSD License'
+  spdx: NOASSERTION
+  versions_observed:
+  - 0.4.6
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-016
+- id: lib:pypi/cryptography
+  name: cryptography
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:dat
+  license_as_declared: Apache-2.0 OR BSD-3-Clause
+  spdx: Apache-2.0 OR BSD-3-Clause
+  versions_observed:
+  - 50.0.2
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/email-validator
+  name: email-validator
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  - repo:vigyl
+  license_as_declared: 'OSI Approved :: The Unlicense (Unlicense)'
+  spdx: Unlicense
+  versions_observed:
+  - 2.2.0
+  - 2.3.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/fastapi
+  name: fastapi
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  - repo:vigyl
+  license_as_declared: 'OSI Approved :: MIT License'
+  spdx: MIT
+  versions_observed:
+  - 0.116.1
+  - 0.162.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/greenlet
+  name: greenlet
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT AND PSF-2.0
+  spdx: MIT AND PSF-2.0
+  versions_observed:
+  - 3.5.6
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/httpx
+  name: httpx
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: 'OSI Approved :: BSD License'
+  spdx: NOASSERTION
+  versions_observed:
+  - 0.28.1
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-016
+- id: lib:pypi/jsonschema
+  name: jsonschema
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-system
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 4.26.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/openai
+  name: openai
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux-gpt
+  - repo:resolver
+  license_as_declared: Apache-2.0
+  spdx: Apache-2.0
+  versions_observed:
+  - 1.109.1
+  - 3.37.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/orjson
+  name: orjson
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:lrc
+  license_as_declared: UNKNOWN
+  spdx: UNKNOWN
+  versions_observed: []
+  shipped: runtime-installed (not bundled in source)
+  evidence: []
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-013
+- id: lib:pypi/packaging
+  name: packaging
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:dat
+  license_as_declared: Apache-2.0 OR BSD-2-Clause
+  spdx: Apache-2.0 OR BSD-2-Clause
+  versions_observed:
+  - '26.3'
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/passlib
+  name: passlib
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: BSD
+  spdx: NOASSERTION
+  versions_observed:
+  - 1.7.4
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-016
+- id: lib:pypi/pillow
+  name: pillow
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:lrc
+  license_as_declared: MIT-CMU
+  spdx: MIT-CMU
+  versions_observed:
+  - 13.0.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/pydantic
+  name: pydantic
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:resolver
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 2.11.7
+  - 2.13.5
+  - 2.14.1
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/pydantic-settings
+  name: pydantic-settings
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:resolver
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 2.16.1
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/python-dateutil
+  name: python-dateutil
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:lrc
+  license_as_declared: 'OSI Approved :: BSD License'
+  spdx: NOASSERTION
+  versions_observed:
+  - 2.9.0.post0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-016
+- id: lib:pypi/python-dotenv
+  name: python-dotenv
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux-gpt
+  - repo:resolver
+  license_as_declared: BSD-3-Clause
+  spdx: BSD-3-Clause
+  versions_observed:
+  - 1.2.4
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/python-jose
+  name: python-jose
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: 'OSI Approved :: MIT License'
+  spdx: MIT
+  versions_observed:
+  - 3.5.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/python-multipart
+  name: python-multipart
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: Apache-2.0
+  spdx: Apache-2.0
+  versions_observed:
+  - 0.0.32
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/pyyaml
+  name: pyyaml
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux
+  - repo:dat
+  license_as_declared: 'OSI Approved :: MIT License'
+  spdx: MIT
+  versions_observed:
+  - 6.0.3
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/referencing
+  name: referencing
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 0.37.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/reportlab
+  name: reportlab
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:dat
+  - repo:lrc
+  - repo:roughin
+  license_as_declared: 'OSI Approved :: BSD License'
+  spdx: NOASSERTION
+  versions_observed:
+  - 5.1.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-016
+- id: lib:pypi/requests
+  name: requests
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:dat
+  license_as_declared: 'OSI Approved :: Apache Software License'
+  spdx: NOASSERTION
+  versions_observed:
+  - 2.34.2
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-016
+- id: lib:pypi/rich
+  name: rich
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux-gpt
+  - repo:dat
+  - repo:god
+  license_as_declared: 'OSI Approved :: MIT License'
+  spdx: MIT
+  versions_observed:
+  - 15.0.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/ruff
+  name: ruff
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 0.17.2
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/safety
+  name: safety
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:dat
+  license_as_declared: UNKNOWN
+  spdx: UNKNOWN
+  versions_observed: []
+  shipped: runtime-installed (not bundled in source)
+  evidence: []
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-013
+- id: lib:pypi/sqlalchemy
+  name: sqlalchemy
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 2.0.43
+  - 2.1.6
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/stripe
+  name: stripe
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: 'OSI Approved :: MIT License'
+  spdx: MIT
+  versions_observed:
+  - 16.0.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/tqdm
+  name: tqdm
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:lrc
+  license_as_declared: MPL-2.0 AND MIT
+  spdx: MPL-2.0 AND MIT
+  versions_observed:
+  - 4.70.1
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/typer
+  name: typer
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux-gpt
+  - repo:dat
+  - repo:god
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 0.27.3
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:pypi/uvicorn
+  name: uvicorn
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  - repo:vigyl
+  license_as_declared: BSD-3-Clause
+  spdx: BSD-3-Clause
+  versions_observed:
+  - 0.35.0
+  - 0.54.0
+  shipped: runtime-installed (not bundled in source)
+  evidence:
+  - dist-info METADATA in Stage 00/01 audit venvs
+  verification: VERIFIED
+- id: lib:maven/androidx.activity:activity-compose
+  name: androidx.activity:activity-compose
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: &id001
+  - repo:void-os
+  - repo:void-sys
+  - repo:voidforge
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.9.1
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.compose.foundation:foundation
+  name: androidx.compose.foundation:foundation
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.6.8
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.compose.material3:material3
+  name: androidx.compose.material3:material3
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.2.1
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.compose.material:material-icons-extended
+  name: androidx.compose.material:material-icons-extended
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.6.8
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.compose.ui:ui
+  name: androidx.compose.ui:ui
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.6.8
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.compose.ui:ui-tooling
+  name: androidx.compose.ui:ui-tooling
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.6.8
+  shipped: development-only
+  license_file: null
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.compose.ui:ui-tooling-preview
+  name: androidx.compose.ui:ui-tooling-preview
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.6.8
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.core:core-ktx
+  name: androidx.core:core-ktx
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.13.0
+  - 1.13.1
+  - 1.17.0
+  - 1.2.0
+  - 1.8.0
+  - 1.9.0
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.datastore:datastore-preferences
+  name: androidx.datastore:datastore-preferences
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.0.0
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.lifecycle:lifecycle-runtime-ktx
+  name: androidx.lifecycle:lifecycle-runtime-ktx
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 2.6.1
+  - 2.6.2
+  - 2.8.4
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.lifecycle:lifecycle-viewmodel-compose
+  name: androidx.lifecycle:lifecycle-viewmodel-compose
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 2.8.4
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.room:room-compiler
+  name: androidx.room:room-compiler
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 2.6.1
+  shipped: development-only
+  license_file: null
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.room:room-runtime
+  name: androidx.room:room-runtime
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 2.6.1
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.room:room-testing
+  name: androidx.room:room-testing
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 2.6.1
+  shipped: development-only
+  license_file: null
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.test.ext:junit
+  name: androidx.test.ext:junit
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.1.5
+  - 1.2.1
+  shipped: development-only
+  license_file: null
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.test:core
+  name: androidx.test:core
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.5.0
+  - 1.6.1
+  shipped: development-only
+  license_file: null
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/androidx.test:runner
+  name: androidx.test:runner
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  affects: *id001
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.5.2
+  - 1.6.2
+  shipped: development-only
+  license_file: null
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/com.badlogicgames.gdx:gdx
+  name: com.badlogicgames.gdx:gdx
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: &id002
+  - repo:void-game
+  - repo:void-os
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.12.1
+  - 1.14.2
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/com.badlogicgames.gdx:gdx-backend-android
+  name: com.badlogicgames.gdx:gdx-backend-android
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects: *id002
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.12.1
+  - 1.14.2
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/com.badlogicgames.gdx:gdx-platform
+  name: com.badlogicgames.gdx:gdx-platform
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-game
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.12.1
+  - 1.14.2
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/junit:junit
+  name: junit:junit
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:void-os
+  - repo:voidforge
+  license_as_declared: Eclipse Public License 1.0
+  spdx: EPL-1.0
+  versions_cached:
+  - 4.13.2
+  shipped: development-only
+  license_file: null
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:maven/org.jetbrains.kotlinx:kotlinx-coroutines-core
+  name: org.jetbrains.kotlinx:kotlinx-coroutines-core
+  ecosystem: maven
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:voidforge
+  license_as_declared: The Apache Software License, Version 2.0
+  spdx: Apache-2.0
+  versions_cached:
+  - 1.5.0
+  - 1.6.1
+  - 1.6.4
+  - 1.7.1
+  - 1.7.3
+  - 1.8.1
+  shipped: shipped (APK)
+  license_file: licenses/Apache-2.0.txt
+  evidence:
+  - cached POM <license><name>
+  verification: VERIFIED
+- id: lib:npm/roughin/@vitejs/plugin-react
+  name: '@vitejs/plugin-react'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 4.7.0
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/roughin/autoprefixer
+  name: autoprefixer
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 10.6.1
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/roughin/axios
+  name: axios
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 1.20.0
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-axios.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/roughin/postcss
+  name: postcss
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 8.5.31
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/roughin/react
+  name: react
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 18.3.1
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-react-18.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/roughin/react-dom
+  name: react-dom
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 18.3.1
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-react-dom-18.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/roughin/react-router-dom
+  name: react-router-dom
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 6.30.6
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-react-router.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/roughin/tailwindcss
+  name: tailwindcss
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 3.4.19
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/roughin/vite
+  name: vite
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 5.4.21
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/roughin/vite-plugin-pwa
+  name: vite-plugin-pwa
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 0.20.5
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/@cloudflare/workers-types
+  name: '@cloudflare/workers-types'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT OR Apache-2.0
+  spdx: MIT OR Apache-2.0
+  version: 4.20260213.0
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/@tailwindcss/postcss
+  name: '@tailwindcss/postcss'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT
+  spdx: MIT
+  version: 4.1.18
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/@types/node
+  name: '@types/node'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT
+  spdx: MIT
+  version: 20.19.33
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/@types/react
+  name: '@types/react'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT
+  spdx: MIT
+  version: 19.2.14
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/@types/react-dom
+  name: '@types/react-dom'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT
+  spdx: MIT
+  version: 19.2.3
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/eslint
+  name: eslint
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT
+  spdx: MIT
+  version: 9.39.2
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/eslint-config-next
+  name: eslint-config-next
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT
+  spdx: MIT
+  version: 16.1.6
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/next
+  name: next
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT
+  spdx: MIT
+  version: 16.1.6
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-next.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/react
+  name: react
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT
+  spdx: MIT
+  version: 19.2.3
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-react-19.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/react-dom
+  name: react-dom
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT
+  spdx: MIT
+  version: 19.2.3
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-react-dom-19.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/tailwindcss
+  name: tailwindcss
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  license_as_declared: MIT
+  spdx: MIT
+  version: 4.1.18
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/theresolver/typescript
+  name: typescript
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:theresolver
+  license_as_declared: Apache-2.0
+  spdx: Apache-2.0
+  version: 5.9.3
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field
+  verification: VERIFIED
+- id: lib:npm/roughin/workbox
+  name: workbox-* runtime (via vite-plugin-pwa)
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 7.4.1
+  shipped: shipped (generated sw.js / workbox-*.js)
+  license_file: licenses/MIT-workbox.txt
+  required_notice: Copyright 2018 Google LLC
+  evidence:
+  - dist/workbox-*.js in Stage 00 build
+  - workbox-core LICENSE
+  verification: VERIFIED
+- id: lib:powerlevel10k
+  name: romkatv/powerlevel10k (p10k-lean.zsh config template)
+  ecosystem: git
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blux10k
+  license_as_declared: MIT
+  spdx: MIT
+  license_file: licenses/MIT-powerlevel10k.txt
+  shipped: source-distributed (dotfiles/.p10k.zsh)
+  evidence:
+  - 'dotfiles/.p10k.zsh header: ''Based on romkatv/powerlevel10k/config/p10k-lean.zsh'''
+  verification: VERIFIED
+- id: lib:blhermes-dependency-graph
+  name: BLHERMES full dependency graph
+  ecosystem: mixed
+  relationship:
+  - DEPENDENCY
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  affects:
+  - repo:blhermes-agent
+  license_as_declared: UNKNOWN
+  spdx: UNKNOWN
+  unresolved: UNR-001
+  shipped: mixed
+  evidence:
+  - pyproject.toml/uv.lock, pm/, package-lock.json, nested sidecar locks
+  verification: REVIEW_REQUIRED
+  notes: Thousands of transitive packages; per-package ledger deferred to Stage 11 migration.

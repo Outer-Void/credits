@@ -1,0 +1,33 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:resolver
+  path: ~/ov/resolver
+  origin: git@github.com:Outer-Void/resolver.git
+  products:
+  - TheResolverBot (Telegram bot)
+  visibility: private
+  current_license: LicenseRef-OuterVoid-Proprietary
+  decision: PRIVATE_PROPRIETARY
+  intended_license: LicenseRef-OuterVoid-Proprietary
+  relicensing_evidence: null
+  surviving_obligations: []
+  traveling_notices:
+  - LICENSE
+  excluded_third_party: []
+  lineage: []
+  credits:
+  - ai:gemini-code-assist
+  - ai:claude-code
+  - ai:dependabot
+  - lib:pypi/aiogram
+  - model:openai-gpt
+  - std:telegram-bot-api
+  unresolved:
+  - UNR-005
+  - UNR-009
+  audited: '2026-10-24'
+  public_ledger_note: 'Private repository: only public-safe facts are recorded here.'

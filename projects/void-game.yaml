@@ -1,0 +1,34 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:void-game
+  path: ~/ov/void.game
+  origin: git@github.com:Outer-Void/void.game.git
+  products:
+  - AXIOM Shooter / VOID.GAME
+  visibility: public
+  current_license: LicenseRef-OuterVoid-AllRightsReserved; bundles Apache-2.0 libGDX natives
+  decision: MIXED_WITH_THIRD_PARTY_NOTICES
+  intended_license: Proprietary + Apache-2.0 notices
+  relicensing_evidence: null
+  surviving_obligations:
+  - asset:libgdx-natives
+  - lib:maven/com.badlogicgames.gdx:gdx
+  - lib:maven/com.badlogicgames.gdx:gdx-backend-android
+  - tool:gradle
+  traveling_notices:
+  - LICENSE
+  - THIRD_PARTY_NOTICES.md
+  - licenses/Apache-2.0.txt
+  excluded_third_party:
+  - Third-party components listed in surviving_obligations keep their own licences
+  lineage:
+  - LIN-004
+  credits:
+  - ai:claude-code
+  unresolved:
+  - UNR-014
+  audited: '2026-10-24'

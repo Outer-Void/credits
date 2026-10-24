@@ -1,0 +1,33 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:theresolver
+  path: ~/ov/ov-webpages/theresolver
+  origin: git@github.com:Outer-Void/theresolver.git
+  products:
+  - TheResolverBot website (theresolverbot.net)
+  visibility: private
+  current_license: NONE; bundles MIT Next.js/React when built
+  decision: MIXED_WITH_THIRD_PARTY_NOTICES
+  intended_license: Proprietary + MIT notices for bundled runtime
+  relicensing_evidence: null
+  surviving_obligations:
+  - lib:npm/theresolver/next
+  - lib:npm/theresolver/react
+  - lib:npm/theresolver/react-dom
+  traveling_notices:
+  - THIRD_PARTY_NOTICES.md
+  excluded_third_party:
+  - Third-party components listed in surviving_obligations keep their own licences
+  lineage: []
+  credits:
+  - ai:github-copilot
+  - ai:openai-codex
+  - tool:cloudflare-pages
+  unresolved:
+  - UNR-005
+  audited: '2026-10-24'
+  public_ledger_note: 'Private repository: only public-safe facts are recorded here.'

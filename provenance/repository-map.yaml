@@ -1,0 +1,192 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+repositories:
+- repo: repo:dotgithub
+  path: .github
+  products:
+  - Outer-Void organization profile
+  visibility: public
+  upstream: null
+- repo: repo:dotgithub-private
+  path: .github-private
+  products:
+  - Outer-Void member profile
+  visibility: private
+  upstream: null
+- repo: repo:axiom
+  path: axiom
+  products:
+  - AXIOM (ax) terminal cockpit
+  visibility: public
+  upstream: null
+- repo: repo:blhermes-agent
+  path: blhermes-agent
+  products:
+  - BLHERMES Agent
+  visibility: public
+  upstream: proj:hermes-agent
+- repo: repo:blux
+  path: blux
+  products:
+  - BLUX
+  visibility: public
+  upstream: null
+- repo: repo:blux-app
+  path: blux-app
+  products:
+  - BLUX App
+  visibility: public
+  upstream: null
+- repo: repo:blux-ca
+  path: blux-ca
+  products:
+  - BLUX cA engine
+  visibility: public
+  upstream: null
+- repo: repo:blux-ca-dataset
+  path: blux-ca-dataset
+  products:
+  - BLUX cA dataset
+  visibility: public
+  upstream: null
+- repo: repo:blux-coga
+  path: blux-coga
+  products:
+  - BLUX CogA engine
+  visibility: public
+  upstream: null
+- repo: repo:blux-coga-dataset
+  path: blux-coga-dataset
+  products:
+  - BLUX CogA dataset
+  visibility: public
+  upstream: null
+- repo: repo:blux-gpt
+  path: blux-gpt
+  products:
+  - BluxGPT
+  visibility: public
+  upstream: null
+- repo: repo:blux-system
+  path: blux-system
+  products:
+  - BLUX System
+  visibility: public
+  upstream: null
+- repo: repo:blux10k
+  path: blux10k
+  products:
+  - blux10k shell environment
+  visibility: public
+  upstream: null
+- repo: repo:credits
+  path: credits
+  products:
+  - Outer Void Credits
+  visibility: public
+  upstream: null
+- repo: repo:dat
+  path: dat
+  products:
+  - DAT - Developer's Audit Tool
+  visibility: public
+  upstream: null
+- repo: repo:docs
+  path: docs
+  products:
+  - Outer-Void legal/policy docs
+  visibility: public
+  upstream: null
+- repo: repo:god
+  path: god
+  products:
+  - GOD - global help indexer
+  visibility: public
+  upstream: null
+- repo: repo:jadis-toolbox
+  path: jadis.toolbox
+  products:
+  - jadis.toolbox
+  visibility: public
+  upstream: null
+- repo: repo:lrc
+  path: lrc
+  products:
+  - LRC - Local Repo Compiler
+  visibility: public
+  upstream: null
+- repo: repo:resolver
+  path: resolver
+  products:
+  - TheResolverBot (Telegram bot)
+  visibility: private
+  upstream: null
+- repo: repo:roughin
+  path: roughin
+  products:
+  - Roughin
+  visibility: public
+  upstream: null
+- repo: repo:termux-background
+  path: termux-background
+  products:
+  - Termux Background
+  visibility: public
+  upstream: null
+- repo: repo:vigyl
+  path: vigyl
+  products:
+  - Vigyl
+  visibility: public
+  upstream: null
+- repo: repo:void-game
+  path: void.game
+  products:
+  - AXIOM Shooter / VOID.GAME
+  visibility: public
+  upstream: null
+- repo: repo:void-os
+  path: void.os
+  products:
+  - AXIOM Launcher
+  visibility: public
+  upstream: null
+- repo: repo:void-sys
+  path: void.sys
+  products:
+  - VOID.SYS icon pack
+  visibility: public
+  upstream: null
+- repo: repo:voidforge
+  path: voidforge
+  products:
+  - VoidForge
+  visibility: public
+  upstream: null
+- repo: repo:bluxai-app
+  path: ov-webpages/bluxai.app
+  products:
+  - bluxai.app website
+  visibility: private
+  upstream: null
+- repo: repo:ivrp
+  path: ov-webpages/ivrp
+  products:
+  - IVRP website
+  visibility: private
+  upstream: null
+- repo: repo:operationrestore
+  path: ov-webpages/operationrestore
+  products:
+  - operationrestore.net website
+  visibility: private
+  upstream: null
+- repo: repo:theresolver
+  path: ov-webpages/theresolver
+  products:
+  - TheResolverBot website (theresolverbot.net)
+  visibility: private
+  upstream: null

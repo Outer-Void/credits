@@ -1,0 +1,327 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+assets:
+- asset: asset:font/cascadia-code
+  file: void.os/app/src/main/res/font/cascadia_code.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+- asset: asset:font/caskaydiacove-nerd
+  file: void.os/app/src/main/res/font/caskaydiacove_nerd.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+- asset: asset:font/exo-2
+  file: void.os/app/src/main/res/font/exo_2.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/fira-code
+  file: void.os/app/src/main/res/font/fira_code.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/firacode-nerd
+  file: void.os/app/src/main/res/font/firacode_nerd.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+- asset: asset:font/hack
+  file: void.os/app/src/main/res/font/hack.ttf
+  license: MIT AND Bitstream-Vera
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+- asset: asset:font/hack-nerd
+  file: void.os/app/src/main/res/font/hack_nerd.ttf
+  license: MIT AND Bitstream-Vera
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+- asset: asset:font/ibm-plex-mono
+  file: void.os/app/src/main/res/font/ibm_plex_mono.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/inconsolata
+  file: void.os/app/src/main/res/font/inconsolata.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/inter
+  file: void.os/app/src/main/res/font/inter.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/iosevka-nerd
+  file: void.os/app/src/main/res/font/iosevka_nerd.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+- asset: asset:font/jetbrains-mono
+  file: void.os/app/src/main/res/font/jetbrains_mono.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/jetbrainsmono-nerd
+  file: void.os/app/src/main/res/font/jetbrainsmono_nerd.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+- asset: asset:font/lato
+  file: void.os/app/src/main/res/font/lato.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/libre-baskerville
+  file: void.os/app/src/main/res/font/libre_baskerville.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/manrope
+  file: void.os/app/src/main/res/font/manrope.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/merriweather
+  file: void.os/app/src/main/res/font/merriweather.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/meslolgs-nerd
+  file: void.os/app/src/main/res/font/meslolgs_nerd.ttf
+  license: UNKNOWN
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: REVIEW_REQUIRED
+  upstream: proj:nerd-fonts
+  unresolved: UNR-002
+- asset: asset:font/monaspace
+  file: void.os/app/src/main/res/font/monaspace.otf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+  unresolved: UNR-002
+- asset: asset:font/mononoki-nerd
+  file: void.os/app/src/main/res/font/mononoki_nerd.ttf
+  license: UNKNOWN
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: REVIEW_REQUIRED
+  upstream: proj:nerd-fonts
+  unresolved: UNR-002
+- asset: asset:font/montserrat
+  file: void.os/app/src/main/res/font/montserrat.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/noto-sans
+  file: void.os/app/src/main/res/font/noto_sans.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/noto-serif
+  file: void.os/app/src/main/res/font/noto_serif.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/open-sans
+  file: void.os/app/src/main/res/font/open_sans.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/orbitron
+  file: void.os/app/src/main/res/font/orbitron.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/oxanium
+  file: void.os/app/src/main/res/font/oxanium.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/playfair-display
+  file: void.os/app/src/main/res/font/playfair_display.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/poppins
+  file: void.os/app/src/main/res/font/poppins.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/rajdhani
+  file: void.os/app/src/main/res/font/rajdhani.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/roboto
+  file: void.os/app/src/main/res/font/roboto.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/roboto-mono
+  file: void.os/app/src/main/res/font/roboto_mono.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/saucecodepro-nerd
+  file: void.os/app/src/main/res/font/saucecodepro_nerd.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+- asset: asset:font/share-tech-mono
+  file: void.os/app/src/main/res/font/share_tech_mono.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/source-code-pro
+  file: void.os/app/src/main/res/font/source_code_pro.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/source-sans-3
+  file: void.os/app/src/main/res/font/source_sans_3.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/source-serif-4
+  file: void.os/app/src/main/res/font/source_serif_4.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/space-mono
+  file: void.os/app/src/main/res/font/space_mono.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:font/ubuntu-mono
+  file: void.os/app/src/main/res/font/ubuntu_mono.ttf
+  license: Ubuntu-font-1.0
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+- asset: asset:font/ubuntumono-nerd
+  file: void.os/app/src/main/res/font/ubuntumono_nerd.ttf
+  license: Ubuntu-font-1.0
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+  upstream: proj:nerd-fonts
+- asset: asset:font/victormono-nerd
+  file: void.os/app/src/main/res/font/victormono_nerd.ttf
+  license: UNKNOWN
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: REVIEW_REQUIRED
+  upstream: proj:nerd-fonts
+  unresolved: UNR-002
+- asset: asset:font/work-sans
+  file: void.os/app/src/main/res/font/work_sans.ttf
+  license: OFL-1.1
+  evidence:
+  - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
+  verification: VERIFIED
+- asset: asset:void-sys-icons
+  file: null
+  license: LicenseRef-OuterVoid-AllRightsReserved
+  evidence:
+  - 'README: SVG files are the source of truth'
+  - 620/620 PNG blobs mirrored into void.os
+  verification: OWNER_REPORTED
+- asset: asset:third-party-marks-in-icons
+  file: null
+  license: UNKNOWN
+  evidence:
+  - res/drawable-*/chatgpt.png, claude.png, gemini.png, copilot.png, perplexity.png, blackbox.png
+  - icon_map.json component mappings
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-004
+- asset: asset:libgdx-natives
+  file: null
+  license: Apache-2.0
+  evidence:
+  - arm64-v8a libgdx.so sha256 prefix 6bace080aa384af7 == gdx-platform-1.12.1-natives-arm64-v8a.jar
+  verification: VERIFIED
+- asset: asset:axiom-wallpaper
+  file: null
+  license: LicenseRef-OuterVoid-AllRightsReserved
+  evidence:
+  - docs/assets/axiom-launcher-wallpaper.png
+  verification: OWNER_REPORTED
+  unresolved: UNR-005
+- asset: asset:resolver-mascot-images
+  file: null
+  license: UNKNOWN
+  evidence:
+  - 'resolver: 16 PNG'
+  - 'theresolver: assets/resolver-*.png, resolver_banner.png'
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-005
+- asset: asset:blhermes-banner
+  file: null
+  license: UNKNOWN
+  evidence:
+  - fork commits dceb35b84f..88a3799487 'Add banner.png'
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-005
+- asset: asset:org-logos
+  file: null
+  license: LicenseRef-OuterVoid-AllRightsReserved
+  evidence:
+  - docs/assets/*.png
+  verification: OWNER_REPORTED
+  unresolved: UNR-005
+- asset: asset:operationrestore-media
+  file: null
+  license: UNKNOWN
+  evidence:
+  - assets/seal-web.jpg, banner-web.jpg, downloads/*.pdf
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-006

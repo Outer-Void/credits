@@ -1,0 +1,147 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+# Credit for assistance is not a claim of authorship by, or endorsement from, the vendor.
+schema_version: 1
+ai:
+- id: ai:openai-codex
+  name: OpenAI Codex (cloud coding agent)
+  relationship:
+  - AI_ASSISTANCE
+  vendor: org:openai
+  affects:
+  - repo:dotgithub
+  - repo:axiom
+  - repo:blhermes-agent
+  - repo:blux-app
+  - repo:blux-ca
+  - repo:blux-ca-dataset
+  - repo:blux-coga
+  - repo:blux-coga-dataset
+  - repo:blux-system
+  - repo:blux10k
+  - repo:dat
+  - repo:docs
+  - repo:lrc
+  - repo:resolver
+  - repo:roughin
+  - repo:vigyl
+  - repo:void-os
+  - repo:theresolver
+  assistance:
+  - code_generation
+  - documentation
+  - review
+  verification: INFERRED
+  evidence:
+  - merged PRs from Outer-Void/codex/* branches (branch prefix used by Codex cloud tasks); counts per repo in provenance/ai-assistance.yaml
+- id: ai:chatgpt
+  name: ChatGPT
+  relationship:
+  - AI_ASSISTANCE
+  vendor: org:openai
+  affects:
+  - repo:axiom
+  assistance:
+  - REVIEW_REQUIRED
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-011
+  evidence:
+  - 3 axiom commit messages mention ChatGPT/GPT
+  notes: Mentioned; nature of use not established.
+- id: ai:claude-code
+  name: Claude / Claude Code
+  relationship:
+  - AI_ASSISTANCE
+  vendor: org:anthropic
+  affects:
+  - repo:blux
+  - repo:void-os
+  - repo:void-game
+  - repo:void-sys
+  - repo:resolver
+  - repo:credits
+  assistance:
+  - architecture_planning
+  - code_generation
+  - debugging
+  - documentation
+  - research
+  verification: VERIFIED
+  evidence:
+  - 'Co-authored-by: Claude Sonnet 4.6 (void.os 6, void.game 2, void.sys 1, resolver 1)'
+  - 'Co-authored-by: Claude Opus 5.5 (blux Stage 00/01 commits; this credits ledger)'
+- id: ai:gemini-code-assist
+  name: Gemini Code Assist
+  relationship:
+  - AI_ASSISTANCE
+  vendor: org:google
+  affects:
+  - repo:resolver
+  assistance:
+  - review
+  verification: VERIFIED
+  evidence:
+  - '2 Co-authored-by: gemini-code-assist[bot] trailers'
+- id: ai:github-copilot
+  name: GitHub Copilot (coding agent, Autofix)
+  relationship:
+  - AI_ASSISTANCE
+  vendor: org:github
+  affects:
+  - repo:theresolver
+  - repo:god
+  assistance:
+  - code_generation
+  - debugging
+  verification: VERIFIED
+  evidence:
+  - 7 commits by copilot-swe-agent[bot] in theresolver
+  - 'Co-authored-by: Copilot Autofix powered by AI in god'
+- id: ai:dependabot
+  name: Dependabot
+  relationship:
+  - TOOLCHAIN
+  vendor: org:github
+  affects:
+  - repo:resolver
+  assistance:
+  - dependency_updates
+  verification: VERIFIED
+  evidence:
+  - dependabot[bot] commits
+  notes: Automation, not generative AI.
+- id: ai:deepseek-dev
+  name: DeepSeek (as development assistant)
+  relationship:
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  vendor: org:deepseek
+  affects: []
+  assistance: []
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-011
+  evidence: []
+  notes: No evidence of development use. Runtime/provider use is recorded in models.yaml.
+- id: ai:blackbox-dev
+  name: BLACKBOX AI (as development assistant)
+  relationship:
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  vendor: org:blackbox-ai
+  affects: []
+  assistance: []
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-011
+  evidence: []
+  notes: No evidence found.
+- id: ai:meta-llama
+  name: Meta Llama family
+  relationship:
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  vendor: org:meta
+  affects: []
+  assistance: []
+  verification: REVIEW_REQUIRED
+  unresolved: UNR-011
+  evidence: []
+  notes: No Llama-family model reference found; llama.cpp (ggml) is a separate project and is credited as org:ggml.

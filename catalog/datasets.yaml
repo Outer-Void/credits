@@ -1,0 +1,52 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+datasets:
+- id: ds:blux-ca-fixtures
+  name: blux-ca-dataset fixtures
+  relationship:
+  - DATASET_SOURCE
+  affects:
+  - repo:blux-ca-dataset
+  license: LicenseRef-BLUX-Proprietary
+  verification: VERIFIED
+  evidence:
+  - generated from the blux-ca engine (README)
+  notes: Outer Void original; no third-party data identified.
+- id: ds:blux-coga-fixtures
+  name: blux-coga-dataset fixtures
+  relationship:
+  - DATASET_SOURCE
+  affects:
+  - repo:blux-coga-dataset
+  license: LicenseRef-BLUX-Proprietary
+  verification: VERIFIED
+  evidence:
+  - records real blux-coga engine outputs (README)
+- id: ds:resolver-curated-kb
+  name: resolver curated knowledge-base data file
+  relationship:
+  - DATASET_SOURCE
+  - UNKNOWN_OR_REVIEW_REQUIRED
+  affects:
+  - repo:resolver
+  license: UNKNOWN
+  unresolved: UNR-009
+  verification: REVIEW_REQUIRED
+  evidence:
+  - tracked knowledge-base file
+  notes: Origin of entries not established.
+- id: ds:void-sys-icon-map
+  name: VOID.SYS app component map (icon_map.json / appfilter.xml)
+  relationship:
+  - DATASET_SOURCE
+  affects:
+  - repo:void-sys
+  - repo:void-os
+  license: LicenseRef-OuterVoid-AllRightsReserved
+  verification: OWNER_REPORTED
+  evidence:
+  - tools/generate_icon_map.py, icon_mappings.json
+  notes: Package/activity names of third-party apps are factual identifiers.

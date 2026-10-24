@@ -1,0 +1,32 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:roughin
+  path: ~/ov/roughin
+  origin: git@github.com:Outer-Void/roughin.git
+  products:
+  - Roughin
+  visibility: public
+  current_license: 'LicenseRef-OuterVoid-Proprietary (header: proprietary and confidential)'
+  decision: MIXED_WITH_THIRD_PARTY_NOTICES
+  intended_license: Proprietary + MIT notices for bundled frontend runtime
+  relicensing_evidence: null
+  surviving_obligations:
+  - lib:npm/roughin/react
+  - lib:npm/roughin/react-dom
+  - lib:npm/roughin/react-router-dom
+  - lib:npm/roughin/axios
+  - lib:npm/roughin/workbox
+  traveling_notices:
+  - LICENSE
+  - THIRD_PARTY_NOTICES.md
+  excluded_third_party:
+  - Third-party components listed in surviving_obligations keep their own licences
+  lineage: []
+  credits: []
+  unresolved:
+  - UNR-014
+  audited: '2026-10-24'

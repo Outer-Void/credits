@@ -1,0 +1,23 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:dotgithub
+  path: ~/ov/.github
+  origin: git@github.com:Outer-Void/.github.git
+  products:
+  - Outer-Void organization profile
+  visibility: public
+  current_license: NONE (all rights reserved by default)
+  decision: PUBLIC_SOURCE_PROPRIETARY
+  intended_license: LicenseRef-OuterVoid-Proprietary
+  relicensing_evidence: null
+  surviving_obligations: []
+  traveling_notices: []
+  excluded_third_party: []
+  lineage: []
+  credits: []
+  unresolved: []
+  audited: '2026-10-24'

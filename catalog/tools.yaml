@@ -1,0 +1,241 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+tools:
+- id: tool:git
+  name: Git
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - '*'
+  license: GPL-2.0-only
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - all repos are git repositories
+- id: tool:github-actions
+  name: GitHub Actions
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blux
+  - repo:blhermes-agent
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  - repo:resolver
+  - repo:termux-background
+  - repo:void-os
+  - repo:voidforge
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - .github/workflows
+- id: tool:python
+  name: Python (CPython)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blux
+  - repo:blux-app
+  - repo:blux-ca
+  - repo:blux-coga
+  - repo:blux-system
+  - repo:blux-gpt
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  - repo:resolver
+  - repo:roughin
+  - repo:vigyl
+  - repo:blhermes-agent
+  license: PSF-2.0
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - pyproject.toml / requirements files
+- id: tool:node
+  name: Node.js / npm
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:theresolver
+  - repo:roughin
+  - repo:blhermes-agent
+  license: MIT
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - package.json
+- id: tool:gradle
+  name: Gradle wrapper
+  relationship:
+  - TOOLCHAIN
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-os
+  - repo:void-game
+  - repo:void-sys
+  - repo:voidforge
+  - repo:termux-background
+  license: Apache-2.0
+  license_file: licenses/Apache-2.0.txt
+  shipped: source-distributed
+  verification: VERIFIED
+  evidence:
+  - gradle/wrapper/gradle-wrapper.jar
+  - gradlew header
+- id: tool:kotlin
+  name: Kotlin (compiler + stdlib)
+  relationship:
+  - TOOLCHAIN
+  - DEPENDENCY
+  affects:
+  - repo:void-os
+  - repo:void-game
+  - repo:void-sys
+  - repo:voidforge
+  license: Apache-2.0
+  shipped: shipped
+  verification: VERIFIED
+  evidence:
+  - kotlin-stdlib-1.9.20.pom
+- id: tool:openjdk
+  name: OpenJDK 21
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:void-os
+  - repo:void-game
+  - repo:void-sys
+  - repo:voidforge
+  - repo:termux-background
+  license: GPL-2.0-only WITH Classpath-exception-2.0
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - 'voidforge README: JDK 21'
+  - host /usr/lib/jvm/java-21-openjdk-arm64
+- id: tool:android-sdk
+  name: Android SDK / Android Gradle Plugin (AOSP)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:void-os
+  - repo:void-game
+  - repo:void-sys
+  - repo:voidforge
+  - repo:termux-background
+  license: Apache-2.0
+  shipped: development-only
+  verification: INFERRED
+  evidence:
+  - com.android.application plugin
+  notes: AGP licence per voidforge THIRD_PARTY_NOTICES; SDK terms apply separately.
+- id: tool:debian
+  name: Debian GNU/Linux
+  relationship:
+  - TOOLCHAIN
+  - INSPIRATION
+  affects:
+  - repo:axiom
+  - repo:blhermes-agent
+  - repo:jadis-toolbox
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - 'axiom README: ''Debian is home'''
+  - build host
+- id: tool:termux
+  name: Termux
+  relationship:
+  - TOOLCHAIN
+  - COMMUNITY
+  affects:
+  - repo:axiom
+  - repo:blhermes-agent
+  - repo:termux-background
+  - repo:jadis-toolbox
+  - repo:blux10k
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - host /data/data/com.termux
+  - termux docs in repos
+- id: tool:linux
+  name: Linux kernel / Android kernel
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - '*'
+  license: GPL-2.0-only
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - build host uname
+- id: tool:proot-distro
+  name: PRoot Distro
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blhermes-agent
+  - repo:blux-ca
+  - repo:blux-coga
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - cA_proot.sh / CogA_proot.sh
+  - host OS PRoot-Distro
+- id: tool:ruff-mypy-pytest
+  name: ruff, mypy, pytest
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blux
+  - repo:dat
+  - repo:lrc
+  - repo:god
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - blux requirements-dev.txt
+  - pyproject dev extras
+- id: tool:shellcheck
+  name: ShellCheck
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:axiom
+  - repo:blux10k
+  license: GPL-3.0-only
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - Stage 00 checks
+- id: tool:cloudflare-pages
+  name: Cloudflare Pages / cloudflared
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:theresolver
+  - repo:operationrestore
+  - repo:resolver
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - _headers/_redirects
+  - README deploy notes
+  - resolver tunnel/deploy tooling
+- id: tool:fonttools
+  name: fontTools
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:credits
+  license: MIT
+  shipped: development-only
+  verification: VERIFIED
+  evidence:
+  - used to read font name tables during this audit

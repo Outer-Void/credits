@@ -1,0 +1,94 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+# Named people only where an authoritative copyright/licence notice or public git authorship names them.
+schema_version: 1
+people:
+- id: person:jadis
+  name: JADIS (Justadudeinspace)
+  relationship:
+  - COPYRIGHT_HOLDER
+  affects:
+  - org:outer-void
+  evidence:
+  - LICENSE files (dat, jadis.toolbox, lrc, vigyl, void.*)
+  - git authors
+  verification: VERIFIED
+  notes: Outer Void owner. Public handle as used in LICENSE files.
+- id: person:robby-russell
+  name: Robby Russell and contributors
+  relationship:
+  - COPYRIGHT_HOLDER
+  affects:
+  - lib:powerlevel10k
+  evidence:
+  - powerlevel10k LICENSE
+  verification: VERIFIED
+- id: person:lukasz-dziedzic
+  name: Łukasz Dziedzic (tyPoland)
+  relationship:
+  - COPYRIGHT_HOLDER
+  affects:
+  - asset:font/lato
+  evidence:
+  - lato.ttf name table
+  verification: VERIFIED
+- id: person:renzhi-li
+  name: Renzhi Li (Belleve Invis)
+  relationship:
+  - COPYRIGHT_HOLDER
+  affects:
+  - asset:font/iosevka-nerd
+  evidence:
+  - iosevka_nerd.ttf name table
+  verification: VERIFIED
+- id: person:ralph-du-carrois
+  name: Ralph du Carrois (Carrois Type Design)
+  relationship:
+  - COPYRIGHT_HOLDER
+  affects:
+  - asset:font/share-tech-mono
+  evidence:
+  - share_tech_mono.ttf name table
+  verification: VERIFIED
+- id: person:rune-bjorneras
+  name: Rune Bjørnerås
+  relationship:
+  - COPYRIGHT_HOLDER
+  affects:
+  - asset:font/victormono-nerd
+  evidence:
+  - victormono_nerd.ttf name table
+  verification: VERIFIED
+- id: person:tavmjong-bah
+  name: Tavmjong Bah
+  relationship:
+  - COPYRIGHT_HOLDER
+  affects:
+  - asset:font/meslolgs-nerd
+  evidence:
+  - meslolgs_nerd.ttf name table
+  verification: VERIFIED
+- id: person:matt-zabriskie
+  name: Matt Zabriskie & Collaborators
+  relationship:
+  - COPYRIGHT_HOLDER
+  affects:
+  - lib:npm/roughin/axios
+  evidence:
+  - axios LICENSE 1.20.0
+  verification: VERIFIED
+- id: person:hermes-upstream-contributors
+  name: Hermes Agent upstream contributors
+  relationship:
+  - UPSTREAM_SOURCE
+  - COMMUNITY
+  affects:
+  - proj:hermes-agent
+  verification: VERIFIED
+  evidence:
+  - git log of blhermes-agent (57,531 commits)
+  notes: 'Most frequent upstream git author identities as recorded (aliases not merged, roles not inferred): Teknium
+    (16200), teknium1 (7611), kshitijk4poor (4382), Brooklyn Nicholson (3279), ethernet (2277), brooklyn! (1304).
+    Copyright is held as stated in the upstream LICENSE (Nous Research).'

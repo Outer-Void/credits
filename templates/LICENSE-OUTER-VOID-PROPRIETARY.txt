@@ -1,0 +1,29 @@
+Outer Void Proprietary License
+Version 1.0 (template, 2026-10-24)
+
+Copyright (c) {YEAR} Outer Void (JADIS / Justadudeinspace). All rights reserved.
+
+1. Ownership. The Outer Void-authored portions of this {REPOSITORY_OR_PRODUCT} (the "Work") are owned by
+   Outer Void. No ownership is claimed over third-party material.
+
+2. No licence by default. Except as expressly stated in writing by Outer Void, no right to use, copy,
+   modify, distribute, sublicense, sell, or create derivative works of the Work is granted.
+
+3. Public visibility. If the Work is published in a publicly viewable location, you may view it there and
+   make transient copies necessary for viewing. Public visibility is not a licence to use or redistribute.
+
+4. Third-party material. Components owned by others remain under their own licences, which are listed in
+   THIRD_PARTY_NOTICES.md (or NOTICE) and reproduced under licenses/. Those licences govern those
+   components and are not narrowed or replaced by this licence. Where they conflict with this licence for
+   those components, they prevail.
+
+5. Notices. You must not remove copyright, licence, attribution or provenance notices from the Work or
+   from any third-party component.
+
+6. No warranty. THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO
+   EVENT SHALL OUTER VOID BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE WORK.
+
+7. Contact. Permission requests: theoutervoid@outlook.com
+
+This template is an internal starting point and is not legal advice. Have qualified counsel review it before
+commercial distribution or before applying it to any repository that currently carries another licence.

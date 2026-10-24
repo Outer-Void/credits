@@ -1,0 +1,37 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+project:
+  id: repo:void-sys
+  path: ~/ov/void.sys
+  origin: git@github.com:Outer-Void/void.sys.git
+  products:
+  - VOID.SYS icon pack
+  visibility: public
+  current_license: LicenseRef-OuterVoid-AllRightsReserved; bundles AndroidX
+  decision: MIXED_WITH_THIRD_PARTY_NOTICES
+  intended_license: Proprietary + Apache-2.0 notices
+  relicensing_evidence: null
+  surviving_obligations:
+  - lib:maven/androidx.activity:activity-compose
+  - lib:maven/androidx.compose.ui:ui
+  - lib:maven/androidx.compose.material3:material3
+  - tool:gradle
+  traveling_notices:
+  - LICENSE
+  - THIRD_PARTY_NOTICES.md
+  - licenses/Apache-2.0.txt
+  excluded_third_party:
+  - Third-party components listed in surviving_obligations keep their own licences
+  lineage: []
+  credits:
+  - asset:void-sys-icons
+  - asset:third-party-marks-in-icons
+  - insp:nova-lawnchair-icon-packs
+  - ai:claude-code
+  unresolved:
+  - UNR-004
+  - UNR-014
+  audited: '2026-10-24'

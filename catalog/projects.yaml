@@ -1,0 +1,87 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Audited 2026-10-24. Not legal advice.
+schema_version: 1
+projects:
+- id: proj:hermes-agent
+  name: Hermes Agent (NousResearch/hermes-agent)
+  url: https://github.com/NousResearch/hermes-agent
+  relationship:
+  - UPSTREAM_SOURCE
+  - FORK_OR_DERIVATIVE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  license_file: licenses/MIT-hermes-agent-NousResearch.txt
+  required_notice: Copyright (c) 2025 Nous Research
+  obligations:
+  - Retain MIT copyright + permission notice in all copies or substantial portions
+  - Retain 23 nested upstream LICENSE files under skills/, optional-skills/, plugins/, apps/
+  shipped: shipped
+  evidence:
+  - LICENSE
+  - merge base 3fa571a51a6bf1220dfe9a7a23fcd5bb9482a1af
+  verification: VERIFIED
+- id: proj:gitignore-templates
+  name: github/gitignore
+  url: https://github.com/github/gitignore
+  relationship:
+  - UPSTREAM_SOURCE
+  license: CC0-1.0
+  affects:
+  - repo:blux
+  - repo:blux-gpt
+  - repo:docs
+  - repo:vigyl
+  shipped: development-only
+  evidence:
+  - identical Python.gitignore header
+  - github/gitignore LICENSE (CC0 1.0)
+  verification: INFERRED
+  notes: 'CC0: no notice obligation; credited voluntarily.'
+- id: proj:termux-app
+  name: termux/termux-app
+  url: https://github.com/termux/termux-app
+  relationship:
+  - DOCUMENTATION_OR_REFERENCE
+  license: GPL-3.0-only
+  affects:
+  - repo:termux-background
+  shipped: documentation-only
+  evidence:
+  - docs/ANDROID_TERMUX_BRIDGE.md links
+  verification: VERIFIED
+- id: proj:android-termux-llm-tutorial
+  name: Jie-Qiao/Android-Termux-LLM-Tutorial
+  url: https://github.com/Jie-Qiao/Android-Termux-LLM-Tutorial
+  relationship:
+  - DOCUMENTATION_OR_REFERENCE
+  - INSPIRATION
+  affects:
+  - repo:jadis-toolbox
+  license: UNKNOWN
+  unresolved: UNR-010
+  shipped: documentation-only
+  evidence:
+  - jadis.toolbox docs/termux-llm-vulcan.md link
+  verification: REVIEW_REQUIRED
+- id: proj:nerd-fonts
+  name: ryanoasis/nerd-fonts
+  url: https://github.com/ryanoasis/nerd-fonts
+  relationship:
+  - UPSTREAM_SOURCE
+  - ASSET_SOURCE
+  license: LicenseRef-Nerd-Fonts-Mixed
+  license_file: licenses/Nerd-Fonts-LICENSE.md
+  affects:
+  - repo:void-os
+  shipped: shipped
+  unresolved: UNR-003
+  evidence:
+  - Nerd Font family names in bundled fonts
+  - void.os README link
+  verification: REVIEW_REQUIRED
+  notes: Patched fonts keep the base font licence; added glyph sets carry their own licences (see Nerd Fonts LICENSE).
+    Per-glyph-set notices not yet enumerated.
