@@ -464,6 +464,7 @@ libraries:
   - DEPENDENCY
   affects:
   - repo:blux
+  - repo:blux-system
   - repo:dat
   license_as_declared: 'OSI Approved :: MIT License'
   spdx: MIT

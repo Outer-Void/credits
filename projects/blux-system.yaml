@@ -19,7 +19,11 @@ project:
   - LICENSE
   excluded_third_party: []
   lineage: []
-  credits: []
+  credits:
+  - ai:claude-code
+  - ai:openai-codex
+  - lib:pypi/jsonschema
+  - lib:pypi/pyyaml
   unresolved:
   - UNR-014
   audited: '2026-10-24'
