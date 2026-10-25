@@ -8,7 +8,7 @@ project:
   path: ~/ov/god
   origin: git@github.com:Outer-Void/god.git
   products:
-  - GOD - global help indexer
+  - GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer
   visibility: public
   current_license: MIT (published to PyPI as god-cli 1.0.1)
   decision: REVIEW_REQUIRED
@@ -20,7 +20,15 @@ project:
   excluded_third_party: []
   lineage: []
   credits:
+  - ai:claude-code
   - ai:github-copilot
+  - asset:org-logos
+  - lib:pypi/jsonschema
+  - lib:pypi/pyyaml
+  - lib:pypi/referencing
+  - tool:github-actions
+  - tool:python
+  - tool:ruff-mypy-pytest
   unresolved:
   - UNR-008
   audited: '2026-10-24'

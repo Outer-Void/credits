@@ -172,6 +172,7 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
+  notes: GOD 1.x dependency; removed in GOD 2.0 (Stage 05, god 26fa415). Kept for provenance of GOD history.
 - id: lib:pypi/colorama
   name: colorama
   ecosystem: pypi
@@ -279,6 +280,7 @@ libraries:
   - repo:blux
   - repo:blux-ca
   - repo:blux-system
+  - repo:god
   license_as_declared: MIT
   spdx: MIT
   versions_observed:
@@ -473,6 +475,7 @@ libraries:
   - repo:blux
   - repo:blux-system
   - repo:dat
+  - repo:god
   license_as_declared: 'OSI Approved :: MIT License'
   spdx: MIT
   versions_observed:
@@ -489,6 +492,7 @@ libraries:
   - DEPENDENCY
   affects:
   - repo:blux
+  - repo:god
   license_as_declared: MIT
   spdx: MIT
   versions_observed:
@@ -550,7 +554,7 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
-  notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386); other listed repos still use it.
+  notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386) and GOD in 2.0 (Stage 05, god 26fa415); blux-gpt still uses it.
 - id: lib:pypi/ruff
   name: ruff
   ecosystem: pypi
@@ -646,7 +650,7 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
-  notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386); other listed repos still use it.
+  notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386) and GOD in 2.0 (Stage 05, god 26fa415); blux-gpt still uses it.
 - id: lib:pypi/uvicorn
   name: uvicorn
   ecosystem: pypi
