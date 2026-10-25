@@ -45,4 +45,4 @@ and added proprietary licences to blux10k, theresolver, ivrp and `.github-privat
 Outer Void identities and automation; ownership of AI-assisted output is OWNER_REPORTED. Copies and releases
 published before that date keep their previous licence; god-cli 1.0.1 on PyPI stays MIT. Third-party
 components keep their own licences. Not relicensed: blhermes-agent (upstream MIT, Nous Research, owner
-instruction) and operationrestore (authorship pending, `UNR-006`).
+instruction). operationrestore followed the same day once the owner confirmed its authorship (`UNR-006` resolved).

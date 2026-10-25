@@ -49,6 +49,8 @@ unresolved:
   owner: human
   detail: All commits are by a contributor other than the Outer Void owner identities (name withheld from this public
     ledger). Ownership/assignment and media rights must be confirmed before any licence decision.
+  status: resolved
+  resolution: '2026-10-25: the owner states operationrestore is theirs, including the commits recorded under another name and the site media (OWNER_REPORTED; the name stays withheld). Relicensed as proprietary (Outer-Void Proprietary License). Google Fonts are loaded remotely, not bundled.'
 - id: UNR-007
   title: termux-background LICENSE copyright holder
   affects:

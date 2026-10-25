@@ -10,16 +10,16 @@ project:
   products:
   - operationrestore.net website
   visibility: private
-  current_license: NONE
-  decision: REVIEW_REQUIRED
-  intended_license: pending ownership confirmation (UNR-006)
-  relicensing_evidence: Outer Void-authored per git history; AI-assisted commits present (see provenance/ai-assistance.yaml)
+  current_license: 'LicenseRef-OuterVoid-Proprietary since 2026-10-25'
+  decision: PRIVATE_PROPRIETARY
+  intended_license: LicenseRef-OuterVoid-Proprietary
+  relicensing_evidence: 'Owner decision 2026-10-25 (UNR-006 resolved): the owner states the site, its commits and its media are theirs (OWNER_REPORTED); AI-assisted commits present (see provenance/ai-assistance.yaml)'
   surviving_obligations: []
-  traveling_notices: []
+  traveling_notices:
+  - LICENSE
   excluded_third_party: []
   lineage: []
   credits: []
-  unresolved:
-  - UNR-006
-  audited: '2026-10-24'
+  unresolved: []
+  audited: '2026-10-25'
   public_ledger_note: 'Private repository: only public-safe facts are recorded here.'

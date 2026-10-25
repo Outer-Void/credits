@@ -805,11 +805,10 @@ assets:
 - id: asset:operationrestore-media
   name: operationrestore.net seal, banner, PDFs
   relationship:
-  - UNKNOWN_OR_REVIEW_REQUIRED
+  - ASSET_SOURCE
   affects:
   - repo:operationrestore
-  license: UNKNOWN
-  unresolved: UNR-006
-  verification: REVIEW_REQUIRED
+  license: LicenseRef-OuterVoid-Proprietary
+  verification: OWNER_REPORTED
   evidence:
   - assets/seal-web.jpg, banner-web.jpg, downloads/*.pdf

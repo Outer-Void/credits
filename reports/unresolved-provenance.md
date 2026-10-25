@@ -10,7 +10,7 @@ Unknown provenance is listed here instead of guessed. Each item names its owner 
 | UNR-003 | open | Nerd Fonts glyph-set notices | human | `proj:nerd-fonts`, `repo:void-os` |
 | UNR-004 | open | Third-party trademarks depicted in VOID.SYS icons | human/counsel | `asset:third-party-marks-in-icons`, `org:blackbox-ai`, `repo:void-os`, `repo:void-sys` |
 | UNR-005 | open | Origin of artwork (wallpaper, mascot images, banners, logos) | human | `asset:axiom-wallpaper`, `asset:resolver-mascot-images`, `asset:blhermes-banner`, `asset:org-logos`, `repo:blhermes-agent`, `repo:resolver` (+2 more) |
-| UNR-006 | open | operationrestore authorship and licence | human | `asset:operationrestore-media`, `repo:operationrestore` |
+| UNR-006 | resolved | operationrestore authorship and licence | human | - |
 | UNR-007 | resolved | termux-background LICENSE copyright holder | human | - |
 | UNR-008 | resolved | Relicensing of Outer Void repos currently under Apache-2.0 / MIT | human/counsel | - |
 | UNR-009 | open | resolver curated knowledge base origin | human | `ds:resolver-curated-kb`, `repo:resolver` |
@@ -50,6 +50,8 @@ Record whether each was hand-made, commissioned, stock, or AI-generated (and wit
 ### UNR-006: operationrestore authorship and licence
 
 All commits are by a contributor other than the Outer Void owner identities (name withheld from this public ledger). Ownership/assignment and media rights must be confirmed before any licence decision.
+
+**Resolved:** 2026-10-25: the owner states operationrestore is theirs, including the commits recorded under another name and the site media (OWNER_REPORTED; the name stays withheld). Relicensed as proprietary (Outer-Void Proprietary License). Google Fonts are loaded remotely, not bundled.
 
 ### UNR-007: termux-background LICENSE copyright holder
 
