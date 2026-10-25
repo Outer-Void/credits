@@ -24,6 +24,7 @@ tools:
   - repo:blhermes-agent
   - repo:dat
   - repo:god
+  - repo:blux-coga
   - repo:lrc
   - repo:resolver
   - repo:termux-background
@@ -197,6 +198,7 @@ tools:
   - repo:dat
   - repo:lrc
   - repo:god
+  - repo:blux-coga
   shipped: development-only
   verification: VERIFIED
   evidence:

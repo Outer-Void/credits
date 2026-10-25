@@ -66,6 +66,7 @@ ai:
   - repo:dat
   - repo:lrc
   - repo:god
+  - repo:blux-coga
   assistance:
   - architecture_planning
   - code_generation
@@ -75,7 +76,7 @@ ai:
   verification: VERIFIED
   evidence:
   - 'Co-authored-by: Claude Sonnet 4.6 (void.os 6, void.game 2, void.sys 1, resolver 1)'
-  - 'Co-authored-by: Claude Opus 5.5 (blux Stage 00/01/01A/02/03/04/05 commits; blux-system Stage 02; dat Stage 03; lrc Stage 04; god Stage 05; this credits ledger)'
+  - 'Co-authored-by: Claude Opus 5.5 (blux Stage 00/01/01A/02/03/04/05/06 commits; blux-system Stage 02; dat Stage 03; lrc Stage 04; god Stage 05; blux-coga Stage 06; this credits ledger)'
 - id: ai:gemini-code-assist
   name: Gemini Code Assist
   relationship:
