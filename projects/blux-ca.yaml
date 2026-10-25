@@ -19,8 +19,16 @@ project:
   - LICENSE
   excluded_third_party: []
   lineage: []
-  credits: []
+  credits:
+  - ai:claude-code
+  - ai:openai-codex
+  - lib:pypi/jsonschema
+  - model:blux-ca-coga
+  - std:json-schema-2020-12
+  - tool:github-actions
+  - tool:proot-distro
+  - tool:python
+  - tool:ruff-mypy-pytest
   unresolved:
-  - UNR-013
   - UNR-014
   audited: '2026-10-24'

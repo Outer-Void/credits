@@ -25,6 +25,7 @@ tools:
   - repo:dat
   - repo:god
   - repo:blux-coga
+  - repo:blux-ca
   - repo:lrc
   - repo:resolver
   - repo:termux-background
@@ -199,6 +200,7 @@ tools:
   - repo:lrc
   - repo:god
   - repo:blux-coga
+  - repo:blux-ca
   shipped: development-only
   verification: VERIFIED
   evidence:

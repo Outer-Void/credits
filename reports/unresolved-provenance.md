@@ -17,7 +17,7 @@ Unknown provenance is listed here instead of guessed. Each item names its owner 
 | UNR-010 | Documentation references with unverified licences | human | `model:deepseek-r1-distill-qwen-gguf`, `proj:android-termux-llm-tutorial`, `repo:jadis-toolbox` |
 | UNR-011 | AI tools named by policy without repository evidence | human | `ai:chatgpt`, `ai:deepseek-dev`, `ai:blackbox-dev`, `ai:meta-llama` |
 | UNR-012 | BLACKBOX AI relationship | human | `org:blackbox-ai` |
-| UNR-013 | Outer Void packages without licence metadata | maintainers | `lib:pypi/bandit`, `lib:pypi/orjson`, `lib:pypi/safety`, `repo:blux-ca`, `repo:blux-gpt` |
+| UNR-013 | Outer Void packages without licence metadata | maintainers | `lib:pypi/bandit`, `lib:pypi/orjson`, `lib:pypi/safety`, `repo:blux-gpt` |
 | UNR-016 | Python dependencies whose licence is declared only by an ambiguous trove classifier | maintainers | `lib:pypi/anthropic`, `lib:pypi/bcrypt`, `lib:pypi/colorama`, `lib:pypi/httpx`, `lib:pypi/passlib`, `lib:pypi/python-dateutil` (+2 more) |
 | UNR-014 | Public visibility of proprietary repositories | human | `repo:blux-app`, `repo:blux-ca-dataset`, `repo:blux-ca`, `repo:blux-coga-dataset`, `repo:blux-coga`, `repo:blux-system` (+5 more) |
 | UNR-015 | Unread non-repository directory under ~/ov | human | - |
@@ -74,7 +74,7 @@ Only an icon mapping found. Confirm whether BLACKBOX AI was used in development.
 
 ### UNR-013: Outer Void packages without licence metadata
 
-blux-ca and bluxgpt dist metadata declare no licence field; add license to pyproject.
+bluxgpt dist metadata declares no licence field; add license to pyproject. (blux-ca declares the BLUX Proprietary License since Stage 07, blux-ca cacae89.)
 
 ### UNR-016: Python dependencies whose licence is declared only by an ambiguous trove classifier
 
