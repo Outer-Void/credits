@@ -1052,7 +1052,7 @@ No third-party credits recorded yet.
 - **AI and machine assistance**: Claude / Claude Code
 - **Models and runtimes**: Anthropic Claude models via API, DeepSeek chat/reasoner via API, OpenAI GPT models via API
 - **Languages, platforms and tooling**: GitHub Actions, GitHub's official actions (checkout, setup-python, setup-java, upload/download-artifact), GNU Bash, GNU tools (bash, coreutils, diffutils and the GNU userland), PyPA packaging tools (pip, setuptools, build), Python (CPython), Python Package Index (PyPI), ruff, mypy, pytest, typeshed (types-* stub packages)
-- **Libraries and frameworks**: build, jsonschema, mypy, pytest, pyyaml, referencing, setuptools
+- **Libraries and frameworks**: build, jsonschema, mypy, pytest, pyyaml, referencing, setuptools, tomli
 - **Standards and specifications**: Crockford Base32, JSON (RFC 8259 / ECMA-404), JSON Schema Draft 2020-12, RFC 3339 timestamps, Semantic Versioning 2.0.0, SHA-256 (FIPS 180-4 Secure Hash Standard), ULID specification (ulid/spec), YAML 1.2
 - **Inspirations (voluntary credit; no code derivation implied)**: Hermes Agent learning-loop / skills architecture
 

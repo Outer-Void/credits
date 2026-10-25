@@ -619,6 +619,22 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
+- id: lib:pypi/tomli
+  name: tomli
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 2.5.0
+  shipped: runtime-installed on Python 3.10 only (not bundled in source); reads the blux CLI config file
+  evidence:
+  - 'dist-info METADATA (License-Expression: MIT) and LICENSE (Copyright (c) 2021 Taneli Hukkinen), Stage 10 venv'
+  - blux pyproject.toml dependency tomli>=1.1; python_version < "3.11"
+  verification: VERIFIED
 - id: lib:pypi/tqdm
   name: tqdm
   ecosystem: pypi

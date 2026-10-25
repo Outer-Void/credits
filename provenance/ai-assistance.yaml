@@ -153,56 +153,56 @@ ledger:
 - id: AIL-019
   tool: ai:claude-code
   repo: repo:void-os
-  commits: 6
+  commits: 8
   categories:
   - code_generation
   - debugging
-  evidence: 'Co-authored-by: Claude Sonnet 4.6'
+  evidence: 'Co-authored-by: Claude Sonnet 4.6; also Claude Opus 5.5: Stage 01A third-party notices and the 2026-10-25 licence update (standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-020
   tool: ai:claude-code
   repo: repo:void-game
-  commits: 2
+  commits: 4
   categories:
   - code_generation
-  evidence: 'Co-authored-by: Claude Sonnet 4.6'
+  evidence: 'Co-authored-by: Claude Sonnet 4.6; also Claude Opus 5.5: Stage 01A third-party notices and the 2026-10-25 licence update (standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-021
   tool: ai:claude-code
   repo: repo:void-sys
-  commits: 1
+  commits: 3
   categories:
   - code_generation
-  evidence: 'Co-authored-by: Claude Sonnet 4.6'
+  evidence: 'Co-authored-by: Claude Sonnet 4.6; also Claude Opus 5.5: Stage 01A third-party notices and the 2026-10-25 licence update (standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-022
   tool: ai:claude-code
   repo: repo:resolver
-  commits: 1
+  commits: 2
   categories:
   - code_generation
-  evidence: 'Co-authored-by: Claude Sonnet 4.6'
+  evidence: 'Co-authored-by: Claude Sonnet 4.6; also Claude Opus 5.5: the 2026-10-25 licence update (standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-023
   tool: ai:claude-code
   repo: repo:blux
-  commits: 11
+  commits: 14
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin, Stage 09 Model API v1)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin, Stage 09 Model API v1); also Stage 10 direct blux CLI; 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); operationrestore licensing mirror'
   verification: VERIFIED
 - id: AIL-024
   tool: ai:claude-code
   repo: repo:credits
-  commits: 10
+  commits: 16
   categories:
   - research
   - documentation
-  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08, in the Stage 08 comprehensive attribution pass, and in Stage 09 (Co-authored-by trailers)
+  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08, in the Stage 08 comprehensive attribution pass, and in Stage 09 (Co-authored-by trailers); also the 2026-10-25 relicensing record (UNR-008, UNR-007, UNR-006) and Stage 10
   verification: VERIFIED
 - id: AIL-025
   tool: ai:gemini-code-assist
@@ -275,65 +275,29 @@ ledger:
 - id: AIL-035
   tool: ai:claude-code
   repo: repo:blux-system
-  commits: 1
+  commits: 2
   categories:
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 02 execution truth layer, ebdf84c)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 02 execution truth layer, ebdf84c); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-036
   tool: ai:claude-code
   repo: repo:dat
-  commits: 1
+  commits: 2
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 03 DAT 4.0 rebuild, ba58386)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 03 DAT 4.0 rebuild, ba58386); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-037
   tool: ai:claude-code
   repo: repo:lrc
-  commits: 2
-  categories:
-  - research
-  - architecture_planning
-  - code_generation
-  - documentation
-  - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 04 LRC 2.0 rebuild, e64c138 and 9b99551)'
-  verification: VERIFIED
-- id: AIL-038
-  tool: ai:claude-code
-  repo: repo:god
-  commits: 2
-  categories:
-  - research
-  - architecture_planning
-  - code_generation
-  - documentation
-  - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 05 GOD 2.0 rebuild, 26fa415; Stage 09 blux-sdk 0.2 pin, 8a02a1d)'
-  verification: VERIFIED
-- id: AIL-039
-  tool: ai:claude-code
-  repo: repo:blux-coga
-  commits: 1
-  categories:
-  - research
-  - architecture_planning
-  - code_generation
-  - documentation
-  - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 06 CogA 2.0 reasoning engine, 64375dc)'
-  verification: VERIFIED
-- id: AIL-040
-  tool: ai:claude-code
-  repo: repo:blux-ca
   commits: 3
   categories:
   - research
@@ -341,31 +305,67 @@ ledger:
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 07 cA 2.0 construction and repair engine, 930e902; licence metadata, cacae89; Stage 08 path-through-file fix, 6dcfcd7)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 04 LRC 2.0 rebuild, e64c138 and 9b99551); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
+  verification: VERIFIED
+- id: AIL-038
+  tool: ai:claude-code
+  repo: repo:god
+  commits: 3
+  categories:
+  - research
+  - architecture_planning
+  - code_generation
+  - documentation
+  - review
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 05 GOD 2.0 rebuild, 26fa415; Stage 09 blux-sdk 0.2 pin, 8a02a1d); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
+  verification: VERIFIED
+- id: AIL-039
+  tool: ai:claude-code
+  repo: repo:blux-coga
+  commits: 2
+  categories:
+  - research
+  - architecture_planning
+  - code_generation
+  - documentation
+  - review
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 06 CogA 2.0 reasoning engine, 64375dc); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
+  verification: VERIFIED
+- id: AIL-040
+  tool: ai:claude-code
+  repo: repo:blux-ca
+  commits: 4
+  categories:
+  - research
+  - architecture_planning
+  - code_generation
+  - documentation
+  - review
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 07 cA 2.0 construction and repair engine, 930e902; licence metadata, cacae89; Stage 08 path-through-file fix, 6dcfcd7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-041
   tool: ai:claude-code
   repo: repo:blux-coga-dataset
-  commits: 1
+  commits: 2
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 08 dataset v2 rebuild, 2c88726)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 08 dataset v2 rebuild, 2c88726); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-042
   tool: ai:claude-code
   repo: repo:blux-ca-dataset
-  commits: 1
+  commits: 2
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 08 dataset v2 rebuild, db29214)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 08 dataset v2 rebuild, db29214); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-043
   tool: ai:claude-code
@@ -380,29 +380,132 @@ ledger:
 - id: AIL-044
   tool: ai:claude-code
   repo: repo:dotgithub
-  commits: 1
+  commits: 2
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (ethics charter attribution principle, 9444a0a)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (ethics charter attribution principle, 9444a0a); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-045
   tool: ai:claude-code
   repo: repo:docs
-  commits: 2
+  commits: 3
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle,
-    0c456f7)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
   verification: VERIFIED
 - id: AIL-046
   tool: ai:claude-code
   repo: repo:blux-gpt
-  commits: 2
+  commits: 3
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 09 BluxGPT 2.0 gateway, dc34f80; CI conformance, 4141690)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 09 BluxGPT 2.0 gateway, dc34f80; CI conformance, 4141690); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
+  verification: VERIFIED
+- id: AIL-047
+  tool: ai:claude-code
+  repo: repo:axiom
+  commits: 1
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-048
+  tool: ai:claude-code
+  repo: repo:blux-app
+  commits: 1
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (License: standard copyright and contact lines; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-049
+  tool: ai:claude-code
+  repo: repo:blux10k
+  commits: 2
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 01A third-party notices and verbatim licence texts; proprietary LICENSE added; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-050
+  tool: ai:claude-code
+  repo: repo:bluxai-app
+  commits: 1
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-051
+  tool: ai:claude-code
+  repo: repo:dotgithub-private
+  commits: 1
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (proprietary LICENSE added; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-052
+  tool: ai:claude-code
+  repo: repo:ivrp
+  commits: 1
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (proprietary LICENSE added; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-053
+  tool: ai:claude-code
+  repo: repo:jadis-toolbox
+  commits: 1
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-054
+  tool: ai:claude-code
+  repo: repo:operationrestore
+  commits: 1
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (proprietary LICENSE added; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-055
+  tool: ai:claude-code
+  repo: repo:roughin
+  commits: 2
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 01A third-party notices and verbatim licence texts; standard copyright and contact lines; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-056
+  tool: ai:claude-code
+  repo: repo:termux-background
+  commits: 2
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 01A third-party notices and verbatim licence texts (#10); relicense as proprietary; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-057
+  tool: ai:claude-code
+  repo: repo:theresolver
+  commits: 2
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 01A third-party notices and verbatim licence texts; proprietary LICENSE added; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-058
+  tool: ai:claude-code
+  repo: repo:vigyl
+  commits: 1
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (License: standard copyright and contact lines; 2026-10-25)'
+  verification: VERIFIED
+- id: AIL-059
+  tool: ai:claude-code
+  repo: repo:voidforge
+  commits: 1
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary (ADR-008); 2026-10-25)'
   verification: VERIFIED
