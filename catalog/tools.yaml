@@ -26,6 +26,8 @@ tools:
   - repo:god
   - repo:blux-coga
   - repo:blux-ca
+  - repo:blux-coga-dataset
+  - repo:blux-ca-dataset
   - repo:lrc
   - repo:resolver
   - repo:termux-background
@@ -43,7 +45,9 @@ tools:
   - repo:blux
   - repo:blux-app
   - repo:blux-ca
+  - repo:blux-ca-dataset
   - repo:blux-coga
+  - repo:blux-coga-dataset
   - repo:blux-system
   - repo:blux-gpt
   - repo:dat
@@ -201,6 +205,8 @@ tools:
   - repo:god
   - repo:blux-coga
   - repo:blux-ca
+  - repo:blux-coga-dataset
+  - repo:blux-ca-dataset
   shipped: development-only
   verification: VERIFIED
   evidence:

@@ -11,8 +11,10 @@ standards:
   affects:
   - repo:blux
   - repo:blux-ca
+  - repo:blux-ca-dataset
   - repo:blux-system
   - repo:blux-coga
+  - repo:blux-coga-dataset
   - repo:dat
   - repo:lrc
   url: https://json-schema.org

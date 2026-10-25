@@ -14,7 +14,7 @@ datasets:
   verification: VERIFIED
   evidence:
   - generated from the blux-ca engine (README)
-  notes: Outer Void original; no third-party data identified.
+  notes: Outer Void original; no third-party data identified. Frozen v1.0; in legacy/ since Stage 08.
 - id: ds:blux-coga-fixtures
   name: blux-coga-dataset fixtures
   relationship:
@@ -25,6 +25,33 @@ datasets:
   verification: VERIFIED
   evidence:
   - records real blux-coga engine outputs (README)
+  notes: Frozen v1.0; in legacy/ since Stage 08.
+- id: ds:blux-coga-records-v2
+  name: blux-coga-dataset v2 records
+  relationship:
+  - DATASET_SOURCE
+  affects:
+  - repo:blux-coga-dataset
+  license: LicenseRef-BLUX-Proprietary
+  verification: VERIFIED
+  evidence:
+  - dataset.json, data/manifest.json (blux-coga-dataset 2c88726)
+  - every record states origin synthetic-authored and the pinned engine commit
+  notes: Outer Void original. Authored synthetic seeds run through blux-coga 2.0.0; privacy-gated; no third-party,
+    personal or private project data; no model reasoning text.
+- id: ds:blux-ca-records-v2
+  name: blux-ca-dataset v2 records
+  relationship:
+  - DATASET_SOURCE
+  affects:
+  - repo:blux-ca-dataset
+  license: LicenseRef-BLUX-Proprietary
+  verification: VERIFIED
+  evidence:
+  - dataset.json, data/manifest.json (blux-ca-dataset db29214)
+  - every record states origin synthetic-authored and the pinned engine commits
+  notes: Outer Void original. Authored synthetic repository snapshots run through blux-ca 2.0.1 and DAT 4.0.0;
+    privacy-gated; no third-party, personal or private project data.
 - id: ds:resolver-curated-kb
   name: resolver curated knowledge-base data file
   relationship:

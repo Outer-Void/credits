@@ -186,23 +186,23 @@ ledger:
 - id: AIL-023
   tool: ai:claude-code
   repo: repo:blux
-  commits: 9
+  commits: 10
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin)'
   verification: VERIFIED
 - id: AIL-024
   tool: ai:claude-code
   repo: repo:credits
-  commits: 7
+  commits: 8
   categories:
   - research
   - documentation
-  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06 and 07 (Co-authored-by trailers)
+  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08 (Co-authored-by trailers)
   verification: VERIFIED
 - id: AIL-025
   tool: ai:gemini-code-assist
@@ -334,12 +334,36 @@ ledger:
 - id: AIL-040
   tool: ai:claude-code
   repo: repo:blux-ca
-  commits: 2
+  commits: 3
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 07 cA 2.0 construction and repair engine, 930e902; licence metadata, cacae89)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 07 cA 2.0 construction and repair engine, 930e902; licence metadata, cacae89; Stage 08 path-through-file fix, 6dcfcd7)'
+  verification: VERIFIED
+- id: AIL-041
+  tool: ai:claude-code
+  repo: repo:blux-coga-dataset
+  commits: 1
+  categories:
+  - research
+  - architecture_planning
+  - code_generation
+  - documentation
+  - review
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 08 dataset v2 rebuild, 2c88726)'
+  verification: VERIFIED
+- id: AIL-042
+  tool: ai:claude-code
+  repo: repo:blux-ca-dataset
+  commits: 1
+  categories:
+  - research
+  - architecture_planning
+  - code_generation
+  - documentation
+  - review
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 08 dataset v2 rebuild, db29214)'
   verification: VERIFIED

@@ -87,6 +87,8 @@ models:
   affects:
   - repo:blux-ca
   - repo:blux-coga
+  - repo:blux-ca-dataset
+  - repo:blux-coga-dataset
   shipped: shipped
   verification: VERIFIED
   evidence:

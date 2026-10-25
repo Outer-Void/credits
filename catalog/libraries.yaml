@@ -279,6 +279,8 @@ libraries:
   affects:
   - repo:blux
   - repo:blux-ca
+  - repo:blux-ca-dataset
+  - repo:blux-coga-dataset
   - repo:blux-system
   - repo:god
   license_as_declared: MIT
