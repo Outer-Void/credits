@@ -318,6 +318,7 @@ libraries:
   evidence: []
   verification: REVIEW_REQUIRED
   unresolved: UNR-013
+  notes: LRC 1.x optional extra (pdf/perf/all); removed in LRC 2.0 (Stage 04, lrc 9b99551). Kept for provenance of LRC history.
 - id: lib:pypi/packaging
   name: packaging
   ecosystem: pypi
@@ -365,6 +366,7 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
+  notes: LRC 1.x optional extra (pdf/perf/all); removed in LRC 2.0 (Stage 04, lrc 9b99551). Kept for provenance of LRC history.
 - id: lib:pypi/pydantic
   name: pydantic
   ecosystem: pypi
@@ -415,6 +417,7 @@ libraries:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: REVIEW_REQUIRED
   unresolved: UNR-016
+  notes: LRC 1.x optional extra (pdf/perf/all); removed in LRC 2.0 (Stage 04, lrc 9b99551). Kept for provenance of LRC history.
 - id: lib:pypi/python-dotenv
   name: python-dotenv
   ecosystem: pypi
@@ -512,7 +515,7 @@ libraries:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: REVIEW_REQUIRED
   unresolved: UNR-016
-  notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386); other listed repos still use it.
+  notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386) and LRC in 2.0 (Stage 04, lrc 9b99551); roughin still uses it.
 - id: lib:pypi/requests
   name: requests
   ecosystem: pypi
@@ -625,6 +628,7 @@ libraries:
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: VERIFIED
+  notes: LRC 1.x optional extra (pdf/perf/all); removed in LRC 2.0 (Stage 04, lrc 9b99551). Kept for provenance of LRC history.
 - id: lib:pypi/typer
   name: typer
   ecosystem: pypi

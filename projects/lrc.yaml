@@ -19,7 +19,15 @@ project:
   - LICENSE
   excluded_third_party: []
   lineage: []
-  credits: []
+  credits:
+  - ai:claude-code
+  - ai:openai-codex
+  - asset:org-logos
+  - std:json-schema-2020-12
+  - tool:git
+  - tool:github-actions
+  - tool:python
+  - tool:ruff-mypy-pytest
   unresolved:
   - UNR-008
   audited: '2026-10-24'
