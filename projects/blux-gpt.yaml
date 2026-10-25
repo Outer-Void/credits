@@ -25,7 +25,13 @@ project:
   - model:deepseek
   - lib:pypi/openai
   - lib:pypi/anthropic
+  - std:openai-chat-completions-api
+  - std:anthropic-messages-api
+  - std:server-sent-events
+  - tool:python
+  - tool:github-actions
+  - tool:ruff-mypy-pytest
+  - ai:claude-code
   unresolved:
   - UNR-008
-  - UNR-013
   audited: '2026-10-24'

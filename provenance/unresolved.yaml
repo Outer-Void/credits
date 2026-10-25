@@ -107,11 +107,13 @@ unresolved:
     mapping remains a trademark matter (UNR-004).'
 - id: UNR-013
   title: Outer Void packages without licence metadata
-  affects:
-  - repo:blux-gpt
+  affects: []
   owner: maintainers
-  detail: bluxgpt dist metadata declares no licence field; add license to pyproject. (blux-ca declares
-    the BLUX Proprietary License since Stage 07, blux-ca cacae89.)
+  detail: bluxgpt dist metadata declared no licence field. (blux-ca declares the BLUX Proprietary License since Stage 07,
+    blux-ca cacae89.)
+  status: resolved
+  resolution: '2026-10-25: bluxgpt 2.0.0 (blux-gpt dc34f80) declares license = Apache-2.0 with license-files = [LICENSE],
+    matching its LICENSE. blux-ca was resolved in cacae89. Third-party packages listed against this item are tracked in libraries.yaml.'
 - id: UNR-016
   title: Python dependencies whose licence is declared only by an ambiguous trove classifier
   affects:

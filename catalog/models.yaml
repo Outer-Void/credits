@@ -10,6 +10,7 @@ models:
   - MODEL_OR_RUNTIME
   vendor: org:openai
   affects:
+  - repo:blux
   - repo:blux-gpt
   - repo:resolver
   - repo:axiom
@@ -24,6 +25,7 @@ models:
   - MODEL_OR_RUNTIME
   vendor: org:anthropic
   affects:
+  - repo:blux
   - repo:blux-gpt
   shipped: api-backend
   verification: VERIFIED
@@ -35,6 +37,7 @@ models:
   - MODEL_OR_RUNTIME
   vendor: org:deepseek
   affects:
+  - repo:blux
   - repo:blux-gpt
   shipped: api-backend
   verification: VERIFIED
@@ -61,6 +64,7 @@ models:
   - MODEL_OR_RUNTIME
   vendor: org:ggml
   affects:
+  - repo:blux-gpt
   - repo:jadis-toolbox
   license: MIT
   license_file: licenses/MIT-llama.cpp.txt

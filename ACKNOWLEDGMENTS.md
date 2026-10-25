@@ -51,6 +51,12 @@ Used by: AXIOM Launcher, VOID.SYS icon pack, VoidForge.
 
 - **Google**: Jetpack Compose is Google's Android UI toolkit. ([documentation](https://developer.android.com/compose))
 
+### Anthropic Messages API
+
+Used by: BluxGPT.
+
+- **Anthropic**: Publishes the Messages API. ([documentation](https://docs.anthropic.com/en/api/messages))
+
 ### BLACKBOX AI (as development assistant)
 
 - **BLACKBOX AI**: Develops this AI product or model family. ([website](https://www.blackbox.ai/))
@@ -81,6 +87,21 @@ Used by: AXIOM Launcher, VOID.SYS icon pack, VoidForge.
 ### BLUX
 
 - **Hermes Agent (NousResearch/hermes-agent)**: Hermes's agent architecture informs BLUX's plans for an agent layer (BLHermes migration); no Hermes code is in BLUX. (documentation (ov:blux/docs/ecosystem/baseline-report.md))
+- **Anthropic Claude models via API**: Served through BLUX's default Model API routes (via BluxGPT). (repository (ov:blux/runtime/blux_runtime/models/default_routes.json))
+- **DeepSeek chat/reasoner via API**: Served through BLUX's default Model API routes (via BluxGPT). (repository (ov:blux/runtime/blux_runtime/models/default_routes.json))
+- **OpenAI GPT models via API**: Served through BLUX's default Model API routes (via BluxGPT). (repository (ov:blux/runtime/blux_runtime/models/default_routes.json))
+
+### BluxGPT
+
+- **anthropic**: A BluxGPT 1.0 runtime dependency; BluxGPT 2.0 (Stage 09) replaced it with the standard library. (replaced) (git_history (ov:blux-gpt))
+- **openai**: A BluxGPT 1.0 runtime dependency; BluxGPT 2.0 (Stage 09) replaced it with the standard library. (replaced) (git_history (ov:blux-gpt))
+- **python-dotenv**: A BluxGPT 1.0 runtime dependency; BluxGPT 2.0 (Stage 09) replaced it with the standard library. (replaced) (git_history (ov:blux-gpt))
+- **rich**: A BluxGPT 1.0 runtime dependency; BluxGPT 2.0 (Stage 09) replaced it with the standard library. (replaced) (git_history (ov:blux-gpt))
+- **typer**: A BluxGPT 1.0 runtime dependency; BluxGPT 2.0 (Stage 09) replaced it with the standard library. (replaced) (git_history (ov:blux-gpt))
+- **llama.cpp inference runtime**: BluxGPT can route to llama.cpp's OpenAI-compatible llama-server as an optional local provider (not used by default). ([documentation](https://raw.githubusercontent.com/ggml-org/llama.cpp/master/tools/server/README.md), repository (ov:blux-gpt/bluxgpt/providers/__init__.py))
+- **Anthropic Messages API**: BluxGPT implements the Messages API, including streaming events. (repository (ov:blux-gpt/bluxgpt/providers/anthropic.py))
+- **OpenAI Chat Completions API (OpenAPI specification)**: BluxGPT implements the Chat Completions wire format for OpenAI, DeepSeek and OpenAI-compatible servers. (repository (ov:blux-gpt/bluxgpt/providers/openai_compat.py))
+- **Server-sent events (WHATWG HTML Living Standard)**: Provider streaming is parsed as Server-sent events. (repository (ov:blux-gpt/bluxgpt/transport.py))
 
 ### build
 
@@ -96,7 +117,7 @@ Used by: AXIOM (ax) terminal cockpit.
 
 ### Claude / Claude Code
 
-Used by: AXIOM Launcher, AXIOM Shooter / VOID.GAME, BLHERMES Agent, BLUX, BLUX CogA dataset, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX System, BLUX cA dataset, BLUX cA engine, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler, Outer Void Credits, Outer-Void legal/policy docs, Outer-Void organization profile, TheResolverBot (Telegram bot), VOID.SYS icon pack.
+Used by: AXIOM Launcher, AXIOM Shooter / VOID.GAME, BLHERMES Agent, BLUX, BLUX CogA dataset, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX System, BLUX cA dataset, BLUX cA engine, BluxGPT, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler, Outer Void Credits, Outer-Void legal/policy docs, Outer-Void organization profile, TheResolverBot (Telegram bot), VOID.SYS icon pack.
 
 - **Anthropic**: Develops Claude and Claude Code. ([documentation](https://docs.anthropic.com/en/docs/claude-code/overview))
 
@@ -437,7 +458,7 @@ Used by: every Outer Void repository.
 
 ### llama.cpp inference runtime
 
-Used by: jadis.toolbox.
+Used by: BluxGPT, jadis.toolbox.
 
 - **The ggml authors (llama.cpp)**: Copyright 'The ggml authors' (llama.cpp licence). ([license_file](https://raw.githubusercontent.com/ggml-org/llama.cpp/master/LICENSE))
 - **ggml.ai**: Supports the development of ggml, the library under llama.cpp. [INFERRED] ([official_history](https://ggml.ai/))
@@ -472,6 +493,13 @@ Used by: BLHERMES Agent, Roughin, TheResolverBot website (theresolverbot.net).
 Used by: BLHERMES Agent, Roughin, TheResolverBot website (theresolverbot.net).
 
 - **GitHub (Microsoft)**: npm is operated by GitHub. [INFERRED] ([documentation](https://docs.npmjs.com/about-npm))
+
+### OpenAI Chat Completions API (OpenAPI specification)
+
+Used by: BluxGPT.
+
+- **DeepSeek**: DeepSeek's API is OpenAI-compatible, which is why one BluxGPT provider serves both. [INFERRED] ([documentation](https://api-docs.deepseek.com/))
+- **OpenAI**: Publishes the OpenAI API and its machine-readable OpenAPI specification. ([specification](https://raw.githubusercontent.com/openai/openai-openapi/master/README.md))
 
 ### OpenJDK 21
 
@@ -633,6 +661,12 @@ Used by: BLUX.
 
 - **Tom Preston-Werner**: Author of the Semantic Versioning specification. ([specification](https://semver.org/))
 - **Semantic Versioning contributors**: Maintain the specification. [INFERRED] ([repository](https://github.com/semver/semver))
+
+### Server-sent events (WHATWG HTML Living Standard)
+
+Used by: BluxGPT.
+
+- **WHATWG (Web Hypertext Application Technology Working Group)**: Publishes Server-sent events in the HTML Living Standard. ([specification](https://html.spec.whatwg.org/multipage/server-sent-events.html))
 
 ### setuptools
 
@@ -875,14 +909,14 @@ Used by: BLUX cA engine.
 - **Adobe**: Related to AXIOM Launcher.
 - **Android Open Source Project contributors**: Contribute to the Android platform.
 - **android-actions/setup-android contributors**: Open-source action maintained with its contributors.
-- **Anthropic**: Develops Claude and Claude Code. Published by Anthropic, PBC. under the Apache License 2.0. Named in the component's licence: 'Apache-2.0 (claude-plugins-official, Anthropic, PBC.); see NOTICE'.
+- **Anthropic**: Develops Claude and Claude Code. Published by Anthropic, PBC. under the Apache License 2.0. Named in the component's licence: 'Apache-2.0 (claude-plugins-official, Anthropic, PBC.); see NOTICE'. Publishes the Messages API.
 - **Anysphere (Cursor)**: Related to Hermes Agent (NousResearch/hermes-agent).
 - **BLACKBOX AI**: Develops this AI product or model family.
 - **Canonical Ltd.**: Related to AXIOM Launcher.
 - **Coldtea AI**: Named in the component's licence: 'Copyright (c) 2026 Coldtea AI'.
 - **Contributors to GitHub's official actions**: Co-copyright holders with GitHub.
 - **CycloneDX project**: Develops the CycloneDX Gradle plugin.
-- **DeepSeek**: Develops this AI product or model family.
+- **DeepSeek**: Develops this AI product or model family. DeepSeek's API is OpenAI-compatible, which is why one BluxGPT provider serves both.
 - **detekt contributors**: Develop detekt.
 - **DiffPlug**: Publishes the Spotless formatter plugin.
 - **Docker, Inc.**: Develops Docker and curates Docker Official Images (node, python base images).
@@ -915,7 +949,7 @@ Used by: BLUX cA engine.
 - **Node.js contributors**: Copyright 'Node.js contributors'.
 - **Nous Research**: Copyright (c) 2025 Nous Research (MIT). Builds Hermes Agent ('the self-improving AI agent built by Nous Research'). Named in the component's licence: 'Copyright (c) 2026 Nous Research'. Named in the component's licence: 'Copyright (c) 2026 Nous Research'. Named in the component's licence: 'Copyright (c) 2026 Nous Research'. Named in the component's licence: 'Copyright (c) 2026 Nous Research'. Named in the component's licence: 'Copyright (c) 2026 Nous Research'.
 - **OASIS Open**: SARIF is an OASIS standard.
-- **OpenAI**: Develops this AI product or model family.
+- **OpenAI**: Develops this AI product or model family. Publishes the OpenAI API and its machine-readable OpenAPI specification.
 - **OpenJDK Community**: Develop the OpenJDK.
 - **OpenJS Foundation**: Node.js is a project of the OpenJS Foundation. Copyright 'OpenJS Foundation and other contributors'.
 - **Oracle**: Publishes the Java SE specifications.
@@ -957,6 +991,7 @@ Used by: BLUX cA engine.
 - **Vercel, Inc.**: Holds the copyright of Next.js (per its licence).
 - **Vite contributors**: Copyright 'VoidZero Inc. and Vite contributors'.
 - **VoidZero Inc.**: Copyright 'VoidZero Inc. and Vite contributors'.
+- **WHATWG (Web Hypertext Application Technology Working Group)**: Publishes Server-sent events in the HTML Living Standard.
 - **Z shell developers (zsh.org)**: Maintain zsh today (its author no longer does).
 - **zlib contributors**: Contribute to zlib's releases.
 
@@ -966,22 +1001,22 @@ AI tools are credited as assistance or as models and runtimes. They are not auth
 Verification says how each use is known: commit evidence (VERIFIED/INFERRED) or the owner's
 declaration (OWNER_REPORTED).
 
-- **Anthropic Claude models via API** (Anthropic): BluxGPT. Verification: VERIFIED.
+- **Anthropic Claude models via API** (Anthropic): BLUX, BluxGPT. Verification: VERIFIED.
 - **BLACKBOX AI (as development assistant)** (BLACKBOX AI): Outer Void (Outer-Void). Verification: OWNER_REPORTED.
 - **BLUX cA / CogA deterministic engines** (Outer Void (Outer-Void)): BLUX CogA dataset, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX cA dataset, BLUX cA engine. Verification: VERIFIED.
 - **ChatGPT** (OpenAI): AXIOM (ax) terminal cockpit, Outer Void (Outer-Void). Verification: OWNER_REPORTED.
-- **Claude / Claude Code** (Anthropic): AXIOM Launcher, AXIOM Shooter / VOID.GAME, BLHERMES Agent, BLUX, BLUX CogA dataset, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX System, BLUX cA dataset, BLUX cA engine, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler, Outer Void Credits, Outer-Void legal/policy docs, Outer-Void organization profile, TheResolverBot (Telegram bot), VOID.SYS icon pack. Verification: VERIFIED.
+- **Claude / Claude Code** (Anthropic): AXIOM Launcher, AXIOM Shooter / VOID.GAME, BLHERMES Agent, BLUX, BLUX CogA dataset, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX System, BLUX cA dataset, BLUX cA engine, BluxGPT, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler, Outer Void Credits, Outer-Void legal/policy docs, Outer-Void organization profile, TheResolverBot (Telegram bot), VOID.SYS icon pack. Verification: VERIFIED.
 - **DeepSeek (as development assistant)** (DeepSeek): Outer Void (Outer-Void). Verification: OWNER_REPORTED.
-- **DeepSeek chat/reasoner via API** (DeepSeek): BluxGPT. Verification: VERIFIED.
+- **DeepSeek chat/reasoner via API** (DeepSeek): BLUX, BluxGPT. Verification: VERIFIED.
 - **DeepSeek-R1-Distill-Qwen-1.5B GGUF (bartowski quantization)** (DeepSeek): jadis.toolbox. Verification: REVIEW_REQUIRED.
 - **Dependabot** (GitHub (Microsoft)): TheResolverBot (Telegram bot). Verification: VERIFIED.
 - **Gemini Code Assist** (Google): TheResolverBot (Telegram bot). Verification: VERIFIED.
 - **GitHub Copilot (coding agent, Autofix)** (GitHub (Microsoft)): GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, TheResolverBot website (theresolverbot.net). Verification: VERIFIED.
 - **Hermes Agent provider integrations (Nous Portal, OpenRouter, OpenAI, Anthropic, Gemini, DeepSeek, others)** (Nous Research): BLHERMES Agent. Verification: VERIFIED.
-- **llama.cpp inference runtime** (The ggml authors (llama.cpp)): jadis.toolbox. Verification: VERIFIED.
+- **llama.cpp inference runtime** (The ggml authors (llama.cpp)): BluxGPT, jadis.toolbox. Verification: VERIFIED.
 - **Meta Llama family** (Meta Platforms, Inc.): Outer Void (Outer-Void). Verification: OWNER_REPORTED.
 - **OpenAI Codex (cloud coding agent)** (OpenAI): AXIOM (ax) terminal cockpit, AXIOM Launcher, BLHERMES Agent, BLUX App, BLUX CogA dataset, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX System, BLUX cA dataset, BLUX cA engine, DAT - Developer's Audit Tool, LRC - Local Repo Compiler, Outer-Void legal/policy docs, Outer-Void organization profile, Roughin, TheResolverBot (Telegram bot), TheResolverBot website (theresolverbot.net), Vigyl, blux10k shell environment. Verification: INFERRED.
-- **OpenAI GPT models via API** (OpenAI): AXIOM (ax) terminal cockpit, BluxGPT, TheResolverBot (Telegram bot). Verification: VERIFIED.
+- **OpenAI GPT models via API** (OpenAI): AXIOM (ax) terminal cockpit, BLUX, BluxGPT, TheResolverBot (Telegram bot). Verification: VERIFIED.
 
 ## By project
 
@@ -1015,6 +1050,7 @@ No third-party credits recorded yet.
 
 - **Upstream sources and lineage**: github/gitignore, Hermes Agent learning-loop / skills architecture, github/gitignore (template)
 - **AI and machine assistance**: Claude / Claude Code
+- **Models and runtimes**: Anthropic Claude models via API, DeepSeek chat/reasoner via API, OpenAI GPT models via API
 - **Languages, platforms and tooling**: GitHub Actions, GitHub's official actions (checkout, setup-python, setup-java, upload/download-artifact), GNU Bash, GNU tools (bash, coreutils, diffutils and the GNU userland), PyPA packaging tools (pip, setuptools, build), Python (CPython), Python Package Index (PyPI), ruff, mypy, pytest, typeshed (types-* stub packages)
 - **Libraries and frameworks**: build, jsonschema, mypy, pytest, pyyaml, referencing, setuptools
 - **Standards and specifications**: Crockford Base32, JSON (RFC 8259 / ECMA-404), JSON Schema Draft 2020-12, RFC 3339 timestamps, Semantic Versioning 2.0.0, SHA-256 (FIPS 180-4 Secure Hash Standard), ULID specification (ulid/spec), YAML 1.2
@@ -1063,10 +1099,11 @@ No third-party credits recorded yet.
 ### BluxGPT (`repo:blux-gpt`)
 
 - **Upstream sources and lineage**: github/gitignore
-- **Models and runtimes**: Anthropic Claude models via API, DeepSeek chat/reasoner via API, OpenAI GPT models via API
+- **AI and machine assistance**: Claude / Claude Code
+- **Models and runtimes**: Anthropic Claude models via API, DeepSeek chat/reasoner via API, llama.cpp inference runtime, OpenAI GPT models via API
 - **Languages, platforms and tooling**: GNU Bash, GNU tools (bash, coreutils, diffutils and the GNU userland), PyPA packaging tools (pip, setuptools, build), Python (CPython), Python Package Index (PyPI)
 - **Libraries and frameworks**: anthropic, openai, python-dotenv, rich, setuptools, typer
-- **Standards and specifications**: JSON (RFC 8259 / ECMA-404)
+- **Standards and specifications**: Anthropic Messages API, JSON (RFC 8259 / ECMA-404), OpenAI Chat Completions API (OpenAPI specification), Server-sent events (WHATWG HTML Living Standard)
 
 ### BLUX System (`repo:blux-system`)
 

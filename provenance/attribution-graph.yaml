@@ -2749,3 +2749,178 @@ edges:
   sources:
   - kind: license_file
     ref: ov:blhermes-agent/plugins/security-guidance/LICENSE
+- id: ATT-233
+  subject: org:openai
+  role: developer
+  object: std:openai-chat-completions-api
+  status: current
+  verification: VERIFIED
+  statement: Publishes the OpenAI API and its machine-readable OpenAPI specification.
+  sources:
+  - kind: specification
+    ref: https://raw.githubusercontent.com/openai/openai-openapi/master/README.md
+    excerpt: OpenAI API · OpenAPI specification A machine-readable description of the OpenAI
+    checked: '2026-10-25'
+- id: ATT-234
+  subject: std:openai-chat-completions-api
+  role: specification
+  object: repo:blux-gpt
+  status: current
+  verification: VERIFIED
+  statement: BluxGPT implements the Chat Completions wire format for OpenAI, DeepSeek and OpenAI-compatible servers.
+  sources:
+  - kind: repository
+    ref: ov:blux-gpt/bluxgpt/providers/openai_compat.py
+- id: ATT-235
+  subject: org:deepseek
+  role: developer
+  object: std:openai-chat-completions-api
+  status: current
+  verification: INFERRED
+  statement: DeepSeek's API is OpenAI-compatible, which is why one BluxGPT provider serves both.
+  sources:
+  - kind: documentation
+    ref: https://api-docs.deepseek.com/
+    excerpt: PI Call The DeepSeek API uses an API format compatible with OpenAI/Anthropic. By modifying the configuration,
+      you can use the
+    checked: '2026-10-25'
+- id: ATT-236
+  subject: org:anthropic
+  role: developer
+  object: std:anthropic-messages-api
+  status: current
+  verification: VERIFIED
+  statement: Publishes the Messages API.
+  sources:
+  - kind: documentation
+    ref: https://docs.anthropic.com/en/api/messages
+    excerpt: Messages - Claude API Reference (function(){var m;try{m=JSON.parse(l
+    checked: '2026-10-25'
+- id: ATT-237
+  subject: std:anthropic-messages-api
+  role: specification
+  object: repo:blux-gpt
+  status: current
+  verification: VERIFIED
+  statement: BluxGPT implements the Messages API, including streaming events.
+  sources:
+  - kind: repository
+    ref: ov:blux-gpt/bluxgpt/providers/anthropic.py
+- id: ATT-238
+  subject: org:whatwg
+  role: host
+  object: std:server-sent-events
+  status: current
+  verification: VERIFIED
+  statement: Publishes Server-sent events in the HTML Living Standard.
+  sources:
+  - kind: specification
+    ref: https://html.spec.whatwg.org/multipage/server-sent-events.html
+    excerpt: on — Table of Contents — 9.3 Cross-document messaging → 9.2 Server-sent events 9.2.1 Introduction 9.2.2 The EventSource
+      interface 9.2.3 Pr
+    checked: '2026-10-25'
+- id: ATT-239
+  subject: std:server-sent-events
+  role: specification
+  object: repo:blux-gpt
+  status: current
+  verification: VERIFIED
+  statement: Provider streaming is parsed as Server-sent events.
+  sources:
+  - kind: repository
+    ref: ov:blux-gpt/bluxgpt/transport.py
+- id: ATT-240
+  subject: model:llama-cpp
+  role: runtime
+  object: repo:blux-gpt
+  status: current
+  verification: VERIFIED
+  statement: BluxGPT can route to llama.cpp's OpenAI-compatible llama-server as an optional local provider (not used by default).
+  sources:
+  - kind: documentation
+    ref: https://raw.githubusercontent.com/ggml-org/llama.cpp/master/tools/server/README.md
+    excerpt: LLM inference of F16 and quantized models on GPU and CPU * [OpenAI API](https://github.com/openai/openai-openapi)
+      compatible c
+    checked: '2026-10-25'
+  - kind: repository
+    ref: ov:blux-gpt/bluxgpt/providers/__init__.py
+- id: ATT-241
+  subject: lib:pypi/typer
+  role: dependency
+  object: repo:blux-gpt
+  status: replaced
+  verification: VERIFIED
+  statement: A BluxGPT 1.0 runtime dependency; BluxGPT 2.0 (Stage 09) replaced it with the standard library.
+  sources:
+  - kind: git_history
+    ref: ov:blux-gpt
+- id: ATT-242
+  subject: lib:pypi/rich
+  role: dependency
+  object: repo:blux-gpt
+  status: replaced
+  verification: VERIFIED
+  statement: A BluxGPT 1.0 runtime dependency; BluxGPT 2.0 (Stage 09) replaced it with the standard library.
+  sources:
+  - kind: git_history
+    ref: ov:blux-gpt
+- id: ATT-243
+  subject: lib:pypi/openai
+  role: dependency
+  object: repo:blux-gpt
+  status: replaced
+  verification: VERIFIED
+  statement: A BluxGPT 1.0 runtime dependency; BluxGPT 2.0 (Stage 09) replaced it with the standard library.
+  sources:
+  - kind: git_history
+    ref: ov:blux-gpt
+- id: ATT-244
+  subject: lib:pypi/anthropic
+  role: dependency
+  object: repo:blux-gpt
+  status: replaced
+  verification: VERIFIED
+  statement: A BluxGPT 1.0 runtime dependency; BluxGPT 2.0 (Stage 09) replaced it with the standard library.
+  sources:
+  - kind: git_history
+    ref: ov:blux-gpt
+- id: ATT-245
+  subject: lib:pypi/python-dotenv
+  role: dependency
+  object: repo:blux-gpt
+  status: replaced
+  verification: VERIFIED
+  statement: A BluxGPT 1.0 runtime dependency; BluxGPT 2.0 (Stage 09) replaced it with the standard library.
+  sources:
+  - kind: git_history
+    ref: ov:blux-gpt
+- id: ATT-246
+  subject: model:openai-gpt
+  role: model
+  object: repo:blux
+  status: current
+  verification: VERIFIED
+  statement: Served through BLUX's default Model API routes (via BluxGPT).
+  sources:
+  - kind: repository
+    ref: ov:blux/runtime/blux_runtime/models/default_routes.json
+- id: ATT-247
+  subject: model:anthropic-claude
+  role: model
+  object: repo:blux
+  status: current
+  verification: VERIFIED
+  statement: Served through BLUX's default Model API routes (via BluxGPT).
+  sources:
+  - kind: repository
+    ref: ov:blux/runtime/blux_runtime/models/default_routes.json
+- id: ATT-248
+  subject: model:deepseek
+  role: model
+  object: repo:blux
+  status: current
+  verification: VERIFIED
+  statement: Served through BLUX's default Model API routes (via BluxGPT).
+  sources:
+  - kind: repository
+    ref: ov:blux/runtime/blux_runtime/models/default_routes.json

@@ -226,3 +226,34 @@ standards:
   - repo:blux-ca
   evidence:
   - cA compares path names after NFC normalization
+# Stage 09 (2026-10-25): BLUX Model API v1 and BluxGPT 2.0.
+- id: std:openai-chat-completions-api
+  name: OpenAI Chat Completions API (OpenAPI specification)
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:blux-gpt
+  url: https://github.com/openai/openai-openapi
+  verification: VERIFIED
+  evidence:
+  - bluxgpt/providers/openai_compat.py (OpenAI, DeepSeek, OpenAI-compatible servers)
+- id: std:anthropic-messages-api
+  name: Anthropic Messages API
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:blux-gpt
+  url: https://docs.anthropic.com/en/api/messages
+  verification: VERIFIED
+  evidence:
+  - bluxgpt/providers/anthropic.py
+- id: std:server-sent-events
+  name: Server-sent events (WHATWG HTML Living Standard)
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:blux-gpt
+  url: https://html.spec.whatwg.org/multipage/server-sent-events.html
+  verification: VERIFIED
+  evidence:
+  - bluxgpt/transport.py SSE parser for provider streaming

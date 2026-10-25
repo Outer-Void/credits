@@ -17,7 +17,7 @@ Unknown provenance is listed here instead of guessed. Each item names its owner 
 | UNR-010 | open | Documentation references with unverified licences | human | `model:deepseek-r1-distill-qwen-gguf`, `proj:android-termux-llm-tutorial`, `repo:jadis-toolbox` |
 | UNR-011 | resolved | AI tools named by policy without repository evidence | human | - |
 | UNR-012 | resolved | BLACKBOX AI relationship | human | `org:blackbox-ai` |
-| UNR-013 | open | Outer Void packages without licence metadata | maintainers | `lib:pypi/bandit`, `lib:pypi/orjson`, `lib:pypi/safety`, `repo:blux-gpt` |
+| UNR-013 | resolved | Outer Void packages without licence metadata | maintainers | `lib:pypi/bandit`, `lib:pypi/orjson`, `lib:pypi/safety` |
 | UNR-016 | open | Python dependencies whose licence is declared only by an ambiguous trove classifier | maintainers | `lib:pypi/anthropic`, `lib:pypi/bcrypt`, `lib:pypi/colorama`, `lib:pypi/httpx`, `lib:pypi/passlib`, `lib:pypi/python-dateutil` (+2 more) |
 | UNR-014 | open | Public visibility of proprietary repositories | human | `repo:blux-app`, `repo:blux-ca-dataset`, `repo:blux-ca`, `repo:blux-coga-dataset`, `repo:blux-coga`, `repo:blux-system` (+5 more) |
 | UNR-015 | open | Unread non-repository directory under ~/ov | human | - |
@@ -80,7 +80,9 @@ Only an icon mapping found. Confirm whether BLACKBOX AI was used in development.
 
 ### UNR-013: Outer Void packages without licence metadata
 
-bluxgpt dist metadata declares no licence field; add license to pyproject. (blux-ca declares the BLUX Proprietary License since Stage 07, blux-ca cacae89.)
+bluxgpt dist metadata declared no licence field. (blux-ca declares the BLUX Proprietary License since Stage 07, blux-ca cacae89.)
+
+**Resolved:** 2026-10-25: bluxgpt 2.0.0 (blux-gpt dc34f80) declares license = Apache-2.0 with license-files = [LICENSE], matching its LICENSE. blux-ca was resolved in cacae89. Third-party packages listed against this item are tracked in libraries.yaml.
 
 ### UNR-016: Python dependencies whose licence is declared only by an ambiguous trove classifier
 

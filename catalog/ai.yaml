@@ -80,6 +80,7 @@ ai:
   - repo:blhermes-agent
   - repo:dotgithub
   - repo:docs
+  - repo:blux-gpt
   assistance:
   - architecture_planning
   - code_generation
@@ -89,7 +90,7 @@ ai:
   verification: VERIFIED
   evidence:
   - 'Co-authored-by: Claude Sonnet 4.6 (void.os 6, void.game 2, void.sys 1, resolver 1)'
-  - 'Co-authored-by: Claude Opus 5.5 (blux Stage 00/01/01A/02/03/04/05/06/07/08 commits; blux-system Stage 02; dat Stage 03; lrc Stage 04; god Stage 05; blux-coga Stage 06; blux-ca Stages 07/08; blux-coga-dataset and blux-ca-dataset Stage 08; blhermes-agent, .github and docs in the Stage 08 attribution pass; this credits ledger)'
+  - 'Co-authored-by: Claude Opus 5.5 (blux Stage 00/01/01A/02/03/04/05/06/07/08 commits; blux-system Stage 02; dat Stage 03; lrc Stage 04; god Stage 05; blux-coga Stage 06; blux-ca Stages 07/08; blux-coga-dataset and blux-ca-dataset Stage 08; blhermes-agent, .github and docs in the Stage 08 attribution pass; blux-gpt and god in Stage 09; this credits ledger)'
 - id: ai:gemini-code-assist
   name: Gemini Code Assist
   relationship:
