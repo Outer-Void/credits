@@ -88,6 +88,14 @@ class AttributionChecks(unittest.TestCase):
         self.edit("catalog/assets.yaml", unscope)
         self.caught("must state verified_scope")
 
+    def test_records_cannot_link_resolved_items(self) -> None:
+        def relink(d):  # type: ignore[no-untyped-def]
+            for r in d["libraries"]:
+                if r["id"] == "lib:pypi/bandit":
+                    r["unresolved"] = "UNR-013"
+        self.edit("catalog/libraries.yaml", relink)
+        self.caught("links UNR-013, which is resolved")
+
     def test_duplicate_identity(self) -> None:
         self.edit("catalog/people.yaml", lambda d: d["people"].append(
             {"id": "person:guido-2", "name": "Guido van Rossum", "relationship": ["COMMUNITY"], "affects": ["tool:python"]}))

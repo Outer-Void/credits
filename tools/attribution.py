@@ -12,7 +12,8 @@ These run inside tools/validate.py, after the original ledger checks, which are 
      `authorship: individual`
   E. contradictions: the same subject/object pair cannot be both inspiration and code lineage,
      or carry one role with two statuses
-  F. unresolved items shown as verified: VERIFIED with an open unresolved item needs `verified_scope`
+  F. unresolved items shown as verified: VERIFIED with an open unresolved item needs `verified_scope`;
+     and no record may still link an item that is resolved
   G. duplicate identities across people, organizations and communities (normalized names)
   H. orphans: people and communities must be credited for something
   I. schema drift: record fields must be known for their file
@@ -189,6 +190,9 @@ def check(root: Path, records: dict[str, tuple[str, dict[str, Any]]], sources: l
                 problems.add(label, "OWNER_REPORTED needs an owner_declaration source")
         unr = rec.get("unresolved")
         unr_list = [unr] if isinstance(unr, str) else (unr or [])
+        for u in set(unr_list) - open_unresolved:
+            if u in unresolved:
+                problems.add(label, f"links {u}, which is resolved: link an open item, or drop the link")
         if rec.get("verification") == "VERIFIED" and set(unr_list) & open_unresolved and not rec.get("verified_scope"):
             problems.add(label, "VERIFIED with an open unresolved item must state verified_scope (what is verified)")
 
