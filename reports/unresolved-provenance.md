@@ -17,12 +17,13 @@ Unknown provenance is listed here instead of guessed. Each item names its owner 
 | UNR-010 | open | Documentation references with unverified licences | human | `model:deepseek-r1-distill-qwen-gguf`, `proj:android-termux-llm-tutorial`, `repo:jadis-toolbox` |
 | UNR-011 | resolved | AI tools named by policy without repository evidence | human | - |
 | UNR-012 | resolved | BLACKBOX AI relationship | human | `org:blackbox-ai` |
-| UNR-013 | resolved | Outer Void packages without licence metadata | maintainers | `lib:pypi/bandit`, `lib:pypi/orjson`, `lib:pypi/safety` |
+| UNR-013 | resolved | Outer Void packages without licence metadata | maintainers | - |
 | UNR-016 | open | Python dependencies whose licence is declared only by an ambiguous trove classifier | maintainers | `lib:pypi/anthropic`, `lib:pypi/bcrypt`, `lib:pypi/colorama`, `lib:pypi/httpx`, `lib:pypi/passlib`, `lib:pypi/python-dateutil` (+2 more) |
 | UNR-014 | open | Public visibility of proprietary repositories | human | `repo:blux-app`, `repo:blux-ca-dataset`, `repo:blux-ca`, `repo:blux-coga-dataset`, `repo:blux-coga`, `repo:blux-system` (+5 more) |
 | UNR-015 | open | Unread non-repository directory under ~/ov | human | - |
 | UNR-017 | open | Technology originators not yet verified from an authoritative source | maintainers | - |
 | UNR-018 | open | Scope of owner-reported AI use | human | `ai:chatgpt`, `ai:deepseek-dev`, `ai:blackbox-dev`, `ai:meta-llama` |
+| UNR-019 | open | Third-party packages whose metadata declares no licence | maintainers | `lib:pypi/bandit`, `lib:pypi/orjson`, `lib:pypi/safety` |
 
 ## Details
 
@@ -82,7 +83,7 @@ Only an icon mapping found. Confirm whether BLACKBOX AI was used in development.
 
 bluxgpt dist metadata declared no licence field. (blux-ca declares the BLUX Proprietary License since Stage 07, blux-ca cacae89.)
 
-**Resolved:** 2026-10-25: bluxgpt 2.0.0 (blux-gpt dc34f80) declares license = Apache-2.0 with license-files = [LICENSE], matching its LICENSE. blux-ca was resolved in cacae89. Third-party packages listed against this item are tracked in libraries.yaml.
+**Resolved:** 2026-10-25: bluxgpt 2.0.0 (blux-gpt dc34f80) declares license = Apache-2.0 with license-files = [LICENSE], matching its LICENSE. blux-ca was resolved in cacae89. The third-party packages once listed here moved to UNR-019.
 
 ### UNR-016: Python dependencies whose licence is declared only by an ambiguous trove classifier
 
@@ -103,3 +104,7 @@ Not asserted until an authoritative source (project records, licence/AUTHORS fil
 ### UNR-018: Scope of owner-reported AI use
 
 ChatGPT, DeepSeek, BLACKBOX AI and Meta Llama models are owner-reported as used in Outer Void development. The owner may add which repositories and what kind of assistance (brainstorming, code, review, runtime ...).
+
+### UNR-019: Third-party packages whose metadata declares no licence
+
+bandit, orjson and safety: the installed distribution metadata states no licence field. Confirm each package's licence from its own LICENSE file at the version used. (Split from UNR-013, which tracked Outer Void's own packages and is resolved.)

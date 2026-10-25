@@ -109,7 +109,7 @@ libraries:
   shipped: runtime-installed (not bundled in source)
   evidence: []
   verification: REVIEW_REQUIRED
-  unresolved: UNR-013
+  unresolved: UNR-019
   notes: DAT 3.x dependency; removed in DAT 4.0 (Stage 03, dat ba58386). Kept for provenance of DAT history.
 - id: lib:pypi/bcrypt
   name: bcrypt
@@ -321,7 +321,7 @@ libraries:
   shipped: runtime-installed (not bundled in source)
   evidence: []
   verification: REVIEW_REQUIRED
-  unresolved: UNR-013
+  unresolved: UNR-019
   notes: LRC 1.x optional extra (pdf/perf/all); removed in LRC 2.0 (Stage 04, lrc 9b99551). Kept for provenance of LRC history.
 - id: lib:pypi/packaging
   name: packaging
@@ -585,7 +585,7 @@ libraries:
   shipped: runtime-installed (not bundled in source)
   evidence: []
   verification: REVIEW_REQUIRED
-  unresolved: UNR-013
+  unresolved: UNR-019
   notes: DAT 3.x dependency; removed in DAT 4.0 (Stage 03, dat ba58386). Kept for provenance of DAT history.
 - id: lib:pypi/sqlalchemy
   name: sqlalchemy

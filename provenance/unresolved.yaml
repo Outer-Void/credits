@@ -113,7 +113,7 @@ unresolved:
     blux-ca cacae89.)
   status: resolved
   resolution: '2026-10-25: bluxgpt 2.0.0 (blux-gpt dc34f80) declares license = Apache-2.0 with license-files = [LICENSE],
-    matching its LICENSE. blux-ca was resolved in cacae89. Third-party packages listed against this item are tracked in libraries.yaml.'
+    matching its LICENSE. blux-ca was resolved in cacae89. The third-party packages once listed here moved to UNR-019.'
 - id: UNR-016
   title: Python dependencies whose licence is declared only by an ambiguous trove classifier
   affects:
@@ -162,3 +162,12 @@ unresolved:
   status: open
   detail: ChatGPT, DeepSeek, BLACKBOX AI and Meta Llama models are owner-reported as used in Outer Void development. The owner
     may add which repositories and what kind of assistance (brainstorming, code, review, runtime ...).
+- id: UNR-019
+  title: Third-party packages whose metadata declares no licence
+  affects:
+  - '*'
+  owner: maintainers
+  status: open
+  detail: 'bandit, orjson and safety: the installed distribution metadata states no licence field. Confirm each package''s
+    licence from its own LICENSE file at the version used. (Split from UNR-013, which tracked Outer Void''s own packages and
+    is resolved.)'
