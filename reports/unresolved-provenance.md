@@ -11,8 +11,8 @@ Unknown provenance is listed here instead of guessed. Each item names its owner 
 | UNR-004 | open | Third-party trademarks depicted in VOID.SYS icons | human/counsel | `asset:third-party-marks-in-icons`, `org:blackbox-ai`, `repo:void-os`, `repo:void-sys` |
 | UNR-005 | open | Origin of artwork (wallpaper, mascot images, banners, logos) | human | `asset:axiom-wallpaper`, `asset:resolver-mascot-images`, `asset:blhermes-banner`, `asset:org-logos`, `repo:blhermes-agent`, `repo:resolver` (+2 more) |
 | UNR-006 | open | operationrestore authorship and licence | human | `asset:operationrestore-media`, `repo:operationrestore` |
-| UNR-007 | open | termux-background LICENSE copyright holder | human | `repo:termux-background` |
-| UNR-008 | open | Relicensing of Outer Void repos currently under Apache-2.0 / MIT | human/counsel | `repo:axiom`, `repo:blux-gpt`, `repo:blux`, `repo:bluxai-app`, `repo:dat`, `repo:docs` (+5 more) |
+| UNR-007 | resolved | termux-background LICENSE copyright holder | human | - |
+| UNR-008 | resolved | Relicensing of Outer Void repos currently under Apache-2.0 / MIT | human/counsel | - |
 | UNR-009 | open | resolver curated knowledge base origin | human | `ds:resolver-curated-kb`, `repo:resolver` |
 | UNR-010 | open | Documentation references with unverified licences | human | `model:deepseek-r1-distill-qwen-gguf`, `proj:android-termux-llm-tutorial`, `repo:jadis-toolbox` |
 | UNR-011 | resolved | AI tools named by policy without repository evidence | human | - |
@@ -55,9 +55,13 @@ All commits are by a contributor other than the Outer Void owner identities (nam
 
 MIT LICENSE names 'Termux Background' as holder; confirm intended legal holder (Outer Void / JADIS).
 
+**Resolved:** 2026-10-25: the owner confirmed Outer-Void / Justadudeinspace (JADIS) as the holder; the repository was relicensed as proprietary (see UNR-008). Copies obtained before 2026-10-25 keep the MIT licence naming 'Termux Background'.
+
 ### UNR-008: Relicensing of Outer Void repos currently under Apache-2.0 / MIT
 
 Explicit open licences exist. Already-published versions stay under those licences. Proprietary-by-default applies only if the owner chooses to relicense future versions and owns all contributions (AI-assisted commits included).
+
+**Resolved:** 2026-10-25: the owner relicensed every affected repository as proprietary (BLUX Proprietary License or Outer-Void Proprietary License; Copyright (c) 2026 Outer-Void / Justadudeinspace (JADIS)). Copies and releases published before 2026-10-25 keep their previous licence (Apache-2.0, MIT or CC BY 4.0), including god-cli 1.0.1 on PyPI. Git history shows no third-party contributors; ownership of AI-assisted output is OWNER_REPORTED. Excluded: blhermes-agent keeps the upstream MIT licence (owner instruction); operationrestore stays pending under UNR-006.
 
 ### UNR-009: resolver curated knowledge base origin
 

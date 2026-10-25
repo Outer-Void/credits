@@ -10,14 +10,15 @@ project:
   products:
   - Outer-Void organization profile
   visibility: public
-  current_license: NONE (all rights reserved by default)
+  current_license: 'LicenseRef-OuterVoid-Proprietary since 2026-10-25 (previously CC-BY-4.0 for documentation; copies obtained before then keep it)'
   decision: PUBLIC_SOURCE_PROPRIETARY
   intended_license: LicenseRef-OuterVoid-Proprietary
-  relicensing_evidence: null
+  relicensing_evidence: 'Owner decision 2026-10-25 (UNR-008 resolved): Outer Void-authored per git history, no third-party contributors; AI-assisted commits present (see provenance/ai-assistance.yaml); ownership of AI-assisted output is OWNER_REPORTED'
   surviving_obligations: []
-  traveling_notices: []
+  traveling_notices:
+  - LICENSE
   excluded_third_party: []
   lineage: []
   credits: []
   unresolved: []
-  audited: '2026-10-24'
+  audited: '2026-10-25'

@@ -10,13 +10,14 @@ project:
   products:
   - blux10k shell environment
   visibility: public
-  current_license: NONE; contains MIT-derived dotfiles/.p10k.zsh
+  current_license: 'LicenseRef-OuterVoid-Proprietary since 2026-10-25; third-party components keep their own licences'
   decision: MIXED_WITH_THIRD_PARTY_NOTICES
-  intended_license: LicenseRef-OuterVoid-Proprietary for Outer Void portions; powerlevel10k MIT notice travels
-  relicensing_evidence: null
+  intended_license: LicenseRef-OuterVoid-Proprietary for Outer Void portions; third-party notices travel
+  relicensing_evidence: 'Owner decision 2026-10-25: licence added; Outer Void-authored per git history'
   surviving_obligations:
   - lib:powerlevel10k
   traveling_notices:
+  - LICENSE
   - THIRD_PARTY_NOTICES.md
   - licenses/MIT-powerlevel10k.txt
   excluded_third_party:
@@ -25,4 +26,4 @@ project:
   - LIN-006
   credits: []
   unresolved: []
-  audited: '2026-10-24'
+  audited: '2026-10-25'

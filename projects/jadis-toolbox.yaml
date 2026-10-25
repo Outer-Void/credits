@@ -10,10 +10,10 @@ project:
   products:
   - jadis.toolbox
   visibility: public
-  current_license: MIT
-  decision: REVIEW_REQUIRED
-  intended_license: owner decision (UNR-008)
-  relicensing_evidence: Outer Void-authored per git history; AI-assisted commits present (see provenance/ai-assistance.yaml)
+  current_license: 'LicenseRef-OuterVoid-Proprietary since 2026-10-25 (previously MIT; copies obtained before then keep it)'
+  decision: PUBLIC_SOURCE_PROPRIETARY
+  intended_license: LicenseRef-OuterVoid-Proprietary
+  relicensing_evidence: 'Owner decision 2026-10-25 (UNR-008 resolved): Outer Void-authored per git history, no third-party contributors; AI-assisted commits present (see provenance/ai-assistance.yaml); ownership of AI-assisted output is OWNER_REPORTED'
   surviving_obligations: []
   traveling_notices:
   - LICENSE
@@ -24,6 +24,5 @@ project:
   - model:deepseek-r1-distill-qwen-gguf
   - insp:termux-llm-tutorial
   unresolved:
-  - UNR-008
   - UNR-010
-  audited: '2026-10-24'
+  audited: '2026-10-25'

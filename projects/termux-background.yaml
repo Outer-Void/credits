@@ -10,10 +10,10 @@ project:
   products:
   - Termux Background
   visibility: public
-  current_license: MIT (holder 'Termux Background')
-  decision: REVIEW_REQUIRED
-  intended_license: owner decision (UNR-007, UNR-008)
-  relicensing_evidence: Outer Void-authored per git history; AI-assisted commits present (see provenance/ai-assistance.yaml)
+  current_license: 'LicenseRef-OuterVoid-Proprietary since 2026-10-25 (previously MIT, holder ''Termux Background''; copies obtained before then keep it); third-party components keep their own licences'
+  decision: MIXED_WITH_THIRD_PARTY_NOTICES
+  intended_license: LicenseRef-OuterVoid-Proprietary for Outer Void portions; third-party notices travel
+  relicensing_evidence: 'Owner decision 2026-10-25 (UNR-008 resolved): Outer Void-authored per git history, no third-party contributors; AI-assisted commits present (see provenance/ai-assistance.yaml); ownership of AI-assisted output is OWNER_REPORTED'
   surviving_obligations:
   - tool:gradle
   traveling_notices:
@@ -26,7 +26,5 @@ project:
   - org:termux
   - org:termux-monet
   - std:android-run-command
-  unresolved:
-  - UNR-007
-  - UNR-008
-  audited: '2026-10-24'
+  unresolved: []
+  audited: '2026-10-25'

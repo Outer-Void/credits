@@ -46,3 +46,11 @@ Policies: [CREDIT_POLICY](CREDIT_POLICY.md) · [ATTRIBUTION_POLICY](ATTRIBUTION_
 
 This ledger is attribution and provenance infrastructure. It is **not legal advice** and does not replace
 professional review before commercial distribution.
+
+## License
+
+**Outer-Void Proprietary License** (proprietary). Copyright (c) 2026 Outer-Void / Justadudeinspace (JADIS). All rights reserved. See [LICENSE](LICENSE).
+
+Third-party components keep their own licenses; see [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md) and `licenses/`.
+
+Contact: outervoid.blux@gmail.com (main) · theoutervoid@outlook.com (fallback)

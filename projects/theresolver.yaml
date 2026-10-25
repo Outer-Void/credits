@@ -10,15 +10,16 @@ project:
   products:
   - TheResolverBot website (theresolverbot.net)
   visibility: private
-  current_license: NONE; bundles MIT Next.js/React when built
+  current_license: 'LicenseRef-OuterVoid-Proprietary since 2026-10-25; third-party components keep their own licences'
   decision: MIXED_WITH_THIRD_PARTY_NOTICES
-  intended_license: Proprietary + MIT notices for bundled runtime
-  relicensing_evidence: null
+  intended_license: LicenseRef-OuterVoid-Proprietary for Outer Void portions; third-party notices travel
+  relicensing_evidence: 'Owner decision 2026-10-25: licence added; Outer Void-authored per git history'
   surviving_obligations:
   - lib:npm/theresolver/next
   - lib:npm/theresolver/react
   - lib:npm/theresolver/react-dom
   traveling_notices:
+  - LICENSE
   - THIRD_PARTY_NOTICES.md
   excluded_third_party:
   - Third-party components listed in surviving_obligations keep their own licences
@@ -29,5 +30,5 @@ project:
   - tool:cloudflare-pages
   unresolved:
   - UNR-005
-  audited: '2026-10-24'
+  audited: '2026-10-25'
   public_ledger_note: 'Private repository: only public-safe facts are recorded here.'

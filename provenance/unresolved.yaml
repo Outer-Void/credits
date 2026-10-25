@@ -55,6 +55,8 @@ unresolved:
   - repo:termux-background
   owner: human
   detail: MIT LICENSE names 'Termux Background' as holder; confirm intended legal holder (Outer Void / JADIS).
+  status: resolved
+  resolution: '2026-10-25: the owner confirmed Outer-Void / Justadudeinspace (JADIS) as the holder; the repository was relicensed as proprietary (see UNR-008). Copies obtained before 2026-10-25 keep the MIT licence naming ''Termux Background''.'
 - id: UNR-008
   title: Relicensing of Outer Void repos currently under Apache-2.0 / MIT
   affects:
@@ -73,6 +75,8 @@ unresolved:
   detail: Explicit open licences exist. Already-published versions stay under those licences. Proprietary-by-default
     applies only if the owner chooses to relicense future versions and owns all contributions (AI-assisted commits
     included).
+  status: resolved
+  resolution: '2026-10-25: the owner relicensed every affected repository as proprietary (BLUX Proprietary License or Outer-Void Proprietary License; Copyright (c) 2026 Outer-Void / Justadudeinspace (JADIS)). Copies and releases published before 2026-10-25 keep their previous licence (Apache-2.0, MIT or CC BY 4.0), including god-cli 1.0.1 on PyPI. Git history shows no third-party contributors; ownership of AI-assisted output is OWNER_REPORTED. Excluded: blhermes-agent keeps the upstream MIT licence (owner instruction); operationrestore stays pending under UNR-006.'
 - id: UNR-009
   title: resolver curated knowledge base origin
   affects:

@@ -10,15 +10,16 @@ project:
   products:
   - Outer-Void member profile
   visibility: private
-  current_license: NONE
+  current_license: 'LicenseRef-OuterVoid-Proprietary since 2026-10-25'
   decision: PRIVATE_PROPRIETARY
   intended_license: LicenseRef-OuterVoid-Proprietary
-  relicensing_evidence: null
+  relicensing_evidence: 'Owner decision 2026-10-25: licence added; Outer Void-authored per git history'
   surviving_obligations: []
-  traveling_notices: []
+  traveling_notices:
+  - LICENSE
   excluded_third_party: []
   lineage: []
   credits: []
   unresolved: []
-  audited: '2026-10-24'
+  audited: '2026-10-25'
   public_ledger_note: 'Private repository: only public-safe facts are recorded here.'

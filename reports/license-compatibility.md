@@ -33,10 +33,16 @@ Not legal advice. These are engineering findings to support review by counsel.
 - **Test-only EPL-1.0** (JUnit 4) is not distributed.
 
 ## Relicensing constraints
-Repositories under Apache-2.0 or MIT (`UNR-008`) cannot have **already-published** versions withdrawn from
-those licences. Relicensing future versions needs:
+Already-published versions cannot be withdrawn from the licence they were published under. Relicensing future
+versions needs:
 1. an owner decision;
 2. confirmation that all contributions are Outer Void-owned;
 3. a decision on AI-assisted contributions under the AI providers' terms.
 
-god-cli 1.0.1 is on PyPI under MIT.
+**2026-10-25 (`UNR-008` resolved):** the owner relicensed axiom, blux, blux-gpt, dat, docs, god, jadis.toolbox,
+lrc, termux-background, voidforge, bluxai.app and the organization profile (previously CC BY 4.0) as proprietary,
+and added proprietary licences to blux10k, theresolver, ivrp and `.github-private`. Git history of each shows only
+Outer Void identities and automation; ownership of AI-assisted output is OWNER_REPORTED. Copies and releases
+published before that date keep their previous licence; god-cli 1.0.1 on PyPI stays MIT. Third-party
+components keep their own licences. Not relicensed: blhermes-agent (upstream MIT, Nous Research, owner
+instruction) and operationrestore (authorship pending, `UNR-006`).
