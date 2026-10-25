@@ -10,6 +10,14 @@
 5. Regenerate `python tools/render_unresolved.py`, then run `python tools/validate.py --org-root ~/ov` and
    `python -m unittest discover -s tests`.
 6. Never add prompts, conversations, secrets, credentials or private personal data.
+7. Credit people and lineage as well as packages ([GOVERNANCE.md](GOVERNANCE.md)). Add
+   `provenance/attribution-graph.yaml` edges (subject, role, object, status, verification, statement,
+   sources), then run:
+   - `python tools/validate.py --write-id-ledger` (ids are append-only);
+   - `python tools/render_acknowledgments.py`;
+   - the checks in step 5.
+8. Never delete a credit. Set `status` to `historical`, `replaced`, `migrated`, `deprecated` or
+   `former_development_tooling`.
 
 A repository's own `LICENSE`, `NOTICE`, `THIRD_PARTY_NOTICES.md` and `licenses/` stay in that repository.
 Updating this ledger never replaces them.

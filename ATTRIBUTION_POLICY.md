@@ -30,12 +30,15 @@ repository's decision is recorded in `projects/<repo>.yaml` as exactly one of:
 
 ## AI assistance
 Categories: `brainstorming`, `architecture_planning`, `code_generation`, `review`, `debugging`, `research`,
-`documentation`, `design_asset`, `runtime`, `api_backend`.
+`documentation`, `design_asset`, `runtime`, `api_backend`, and `unspecified` (owner-reported use whose
+nature has not been stated).
 
 Evidence, strongest first:
 1. commit trailers (`Co-authored-by: Claude ...`, `gemini-code-assist[bot]`) and bot authorship;
 2. tool-specific branch conventions (`codex/*`), recorded as `INFERRED`;
-3. owner statements (`OWNER_REPORTED`).
+3. owner statements (`OWNER_REPORTED`, with an `owner_declaration` source). An owner declaration is valid
+   evidence of use even when repository analysis cannot infer it. It is never evidence of someone else's
+   authorship.
 
 Upstream projects' AI trailers describe upstream contributors' tooling and are not attributed to Outer Void.
 AI tools are credited as assistance. They are not copyright holders, and no prompt or conversation content is

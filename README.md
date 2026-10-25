@@ -12,10 +12,12 @@ source tree, package, binary, app, site, model, dataset or asset. Those stay in 
 ## Layout
 | Path | Contents |
 |---|---|
-| `catalog/` | Stable-ID records: people, organizations, projects, tools, AI, models, libraries, datasets, assets, standards, inspirations |
+| [`ACKNOWLEDGMENTS.md`](ACKNOWLEDGMENTS.md) | Human-readable acknowledgments, generated from the data |
+| [`GOVERNANCE.md`](GOVERNANCE.md) | "We acknowledge the shoulders we stand on": the permanent rule and the Definition of Done |
+| `catalog/` | Stable-ID records: people, communities, organizations, projects, tools, AI, models, libraries, datasets, assets, standards, inspirations |
 | `projects/` | One record per Outer Void repository: licence decision, obligations, traveling notices, unresolved items |
 | `licenses/` | Verbatim third-party licence texts (locked by `CHECKSUMS.sha256`) |
-| `provenance/` | Repository map, source lineage (incl. Hermes → BLHERMES), AI-assistance ledger, asset lineage, unresolved items |
+| `provenance/` | Repository map, source lineage (incl. Hermes → BLHERMES), attribution graph, AI-assistance ledger, asset lineage, append-only id ledger, unresolved items |
 | `reports/` | Attribution audit, licence compatibility, unresolved provenance |
 | `templates/` | Outer Void proprietary licence and source-header policy (not applied blindly) |
 | `tools/` | `validate.py` (ledger checks), `render_unresolved.py` |
@@ -23,7 +25,7 @@ source tree, package, binary, app, site, model, dataset or asset. Those stay in 
 ## IDs
 `<kind>:<slug>`, for example `repo:void-os`, `org:nous-research`, `lib:pypi/jsonschema`,
 `asset:font/fira-code`, `ai:claude-code`. Also `UNR-nnn` (unresolved), `LIN-nnn` (lineage) and `AIL-nnn`
-(AI ledger). IDs are never reused. A repository can cite a record as `credits:<id>`.
+(AI ledger) and `ATT-nnn` (attribution-graph edges). IDs are never reused or deleted (`provenance/id-ledger.txt`). A repository can cite a record as `credits:<id>`.
 
 ## Verification states
 `VERIFIED` (primary evidence inspected), `INFERRED` (strong indirect evidence), `OWNER_REPORTED`, and
@@ -34,7 +36,8 @@ and they always link to an `UNR-` item.
 ```sh
 pip install PyYAML
 python tools/validate.py                    # ledger consistency
-python tools/validate.py --org-root ~/ov    # plus: required notices exist in each checkout
+python tools/validate.py --org-root ~/ov    # plus: required notices and ov: evidence exist in each checkout
+python tools/render_acknowledgments.py      # regenerate ACKNOWLEDGMENTS.md (validation fails if stale)
 python -m unittest discover -s tests
 ```
 

@@ -48,6 +48,7 @@ standards:
   affects:
   - repo:blux
   verification: VERIFIED
+  authorship: individual
   evidence:
   - blux_sdk/ids.py alphabet
 - id: std:semver
@@ -117,3 +118,111 @@ standards:
   verification: VERIFIED
   evidence:
   - dat 4.0 src/dat/render.py emits SARIF 2.1.0
+# Stage 08 comprehensive attribution pass (2026-10-25): roles and sources are in provenance/attribution-graph.yaml.
+- id: std:java-language-specification
+  name: The Java Language Specification
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  affects:
+  - repo:void-os
+  - repo:void-game
+  - repo:void-sys
+  - repo:voidforge
+  - repo:termux-background
+  verification: VERIFIED
+  url: https://docs.oracle.com/javase/specs/
+  evidence:
+  - Java and Kotlin/JVM sources in the Android repositories
+- id: std:toml-1.0
+  name: TOML
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  verification: VERIFIED
+  url: https://toml.io
+  affects:
+  - repo:blux-ca
+  - repo:blux-system
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  evidence:
+  - pyproject.toml packaging; tomllib use; cA config.generate
+- id: std:yaml-1.2
+  name: YAML 1.2
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  verification: VERIFIED
+  url: https://yaml.org/spec/1.2.2/
+  affects:
+  - repo:blux
+  - repo:blux-ca
+  - repo:credits
+  - repo:dat
+  evidence:
+  - PyYAML use; .blux/*.yaml; credits catalog
+- id: std:json-rfc8259
+  name: JSON (RFC 8259 / ECMA-404)
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  verification: VERIFIED
+  url: https://www.rfc-editor.org/rfc/rfc8259
+  affects:
+  - repo:blux
+  - repo:blux-app
+  - repo:blux-ca
+  - repo:blux-ca-dataset
+  - repo:blux-coga
+  - repo:blux-coga-dataset
+  - repo:blux-gpt
+  - repo:blux-system
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  - repo:resolver
+  - repo:void-os
+  - repo:void-sys
+  - repo:voidforge
+  evidence:
+  - json use across Outer Void Python repositories
+- id: std:unified-diff
+  name: Unified diff format
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  verification: VERIFIED
+  url: https://www.gnu.org/software/diffutils/manual/html_node/Unified-Format.html
+  affects:
+  - repo:blux-ca
+  evidence:
+  - cA's textdiff generator and strict applier
+- id: std:fips-180-4
+  name: SHA-256 (FIPS 180-4 Secure Hash Standard)
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  verification: VERIFIED
+  url: https://csrc.nist.gov/pubs/fips/180-4/upd1/final
+  affects:
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-ca-dataset
+  - repo:blux-coga
+  - repo:blux-coga-dataset
+  - repo:blux-system
+  - repo:credits
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  - repo:resolver
+  - repo:void-os
+  - repo:voidforge
+  evidence:
+  - sha256 content hashing across BLUX receipts, DAT, LRC, CogA, cA and the datasets
+- id: std:unicode-normalization
+  name: 'Unicode Normalization Forms (UAX #15)'
+  relationship:
+  - SPECIFICATION_OR_STANDARD
+  verification: VERIFIED
+  url: https://unicode.org/reports/tr15/
+  affects:
+  - repo:blux-ca
+  evidence:
+  - cA compares path names after NFC normalization

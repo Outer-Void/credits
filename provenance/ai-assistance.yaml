@@ -198,11 +198,11 @@ ledger:
 - id: AIL-024
   tool: ai:claude-code
   repo: repo:credits
-  commits: 8
+  commits: 9
   categories:
   - research
   - documentation
-  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08 (Co-authored-by trailers)
+  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08, and in the Stage 08 comprehensive attribution pass (Co-authored-by trailers)
   verification: VERIFIED
 - id: AIL-025
   tool: ai:gemini-code-assist
@@ -366,4 +366,31 @@ ledger:
   - documentation
   - review
   evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 08 dataset v2 rebuild, db29214)'
+  verification: VERIFIED
+- id: AIL-043
+  tool: ai:claude-code
+  repo: repo:blhermes-agent
+  commits: 1
+  categories:
+  - research
+  - review
+  evidence: 'Co-authored-by: Claude Opus 5.5 (restore upstream licence, notice and contributor-attribution text, ac51a44f1f).
+    Upstream Hermes commits with Claude trailers describe upstream contributors'' tooling and are not counted here.'
+  verification: VERIFIED
+- id: AIL-044
+  tool: ai:claude-code
+  repo: repo:dotgithub
+  commits: 1
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (ethics charter attribution principle, 9444a0a)'
+  verification: VERIFIED
+- id: AIL-045
+  tool: ai:claude-code
+  repo: repo:docs
+  commits: 2
+  categories:
+  - documentation
+  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle,
+    0c456f7)'
   verification: VERIFIED

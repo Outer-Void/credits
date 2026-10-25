@@ -249,3 +249,284 @@ tools:
   verification: VERIFIED
   evidence:
   - used to read font name tables during this audit
+# Stage 08 comprehensive attribution pass (2026-10-25): roles and sources are in provenance/attribution-graph.yaml.
+- id: tool:pypi
+  name: Python Package Index (PyPI)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blhermes-agent
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-ca-dataset
+  - repo:blux-coga
+  - repo:blux-coga-dataset
+  - repo:blux-gpt
+  - repo:blux-system
+  - repo:credits
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  - repo:resolver
+  - repo:roughin
+  - repo:vigyl
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:pypa-packaging
+  name: PyPA packaging tools (pip, setuptools, build)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blhermes-agent
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-coga
+  - repo:blux-gpt
+  - repo:blux-system
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:typeshed
+  name: typeshed (types-* stub packages)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blux
+  - repo:god
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gnu
+  name: GNU tools (bash, coreutils, diffutils and the GNU userland)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:axiom
+  - repo:blhermes-agent
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-coga
+  - repo:blux-gpt
+  - repo:blux-system
+  - repo:blux10k
+  - repo:dat
+  - repo:god
+  - repo:jadis-toolbox
+  - repo:lrc
+  - repo:resolver
+  - repo:termux-background
+  - repo:void-game
+  - repo:void-os
+  - repo:void-sys
+  - repo:voidforge
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:bash
+  name: GNU Bash
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:axiom
+  - repo:blhermes-agent
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-coga
+  - repo:blux-gpt
+  - repo:blux-system
+  - repo:blux10k
+  - repo:dat
+  - repo:god
+  - repo:jadis-toolbox
+  - repo:lrc
+  - repo:resolver
+  - repo:termux-background
+  - repo:void-game
+  - repo:void-os
+  - repo:void-sys
+  - repo:voidforge
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:zsh
+  name: Z shell (zsh)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blux10k
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gha/github-official-actions
+  name: GitHub's official actions (checkout, setup-python, setup-java, upload/download-artifact)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blhermes-agent
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-ca-dataset
+  - repo:blux-coga
+  - repo:blux-coga-dataset
+  - repo:blux-system
+  - repo:credits
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  - repo:resolver
+  - repo:termux-background
+  - repo:void-os
+  - repo:voidforge
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gha/setup-android
+  name: android-actions/setup-android
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:termux-background
+  - repo:void-os
+  - repo:voidforge
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gha/android-emulator-runner
+  name: ReactiveCircus/android-emulator-runner
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:voidforge
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gha/action-gh-release
+  name: softprops/action-gh-release
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:dat
+  - repo:lrc
+  - repo:termux-background
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gha/setup-gradle
+  name: gradle/actions (setup-gradle)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:termux-background
+  - repo:voidforge
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:aosp
+  name: Android Open Source Project (AOSP)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:void-os
+  - repo:void-game
+  - repo:void-sys
+  - repo:voidforge
+  - repo:termux-background
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gradle-plugin/agp
+  name: Android Gradle plugin (com.android.application)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:termux-background
+  - repo:void-game
+  - repo:void-os
+  - repo:void-sys
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gradle-plugin/kotlin
+  name: Kotlin Gradle plugins (org.jetbrains.kotlin.*)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:void-game
+  - repo:void-os
+  - repo:void-sys
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gradle-plugin/spotless
+  name: Spotless (com.diffplug.spotless)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:voidforge
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gradle-plugin/detekt
+  name: detekt (io.gitlab.arturbosch.detekt)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:voidforge
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gradle-plugin/cyclonedx
+  name: CycloneDX Gradle plugin (org.cyclonedx.bom)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:voidforge
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:proot
+  name: PRoot
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blhermes-agent
+  - repo:blux-ca
+  - repo:blux-coga
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:npm
+  name: npm (package manager and registry)
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blhermes-agent
+  - repo:roughin
+  - repo:theresolver
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:docker
+  name: Docker and Docker Official Images
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blhermes-agent
+  - repo:roughin
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+- id: tool:gnupg
+  name: GnuPG
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:dat
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+  notes: DAT's optional --sign uses gpg detached signatures.

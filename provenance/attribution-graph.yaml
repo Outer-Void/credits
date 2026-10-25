@@ -1,0 +1,2751 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Attribution graph: who created, wrote, maintains, stewards or hosts what, and how works relate to Outer Void.
+# One edge per claim: subject --role--> object, with status, verification, a plain-language statement and sources.
+# URL sources: 'checked' is the date the URL was fetched (HTTP 2xx). Where an 'excerpt' is given, that text was
+# found on the page that day and is what supports the statement; sources without an excerpt support only that
+# the project/repository exists (used for INFERRED community edges). credits: = a file in this ledger,
+# ov: = a file in an Outer Void checkout. Owner declarations are kind owner_declaration. Facts that could not be
+# verified are not edges; they are unresolved items (UNR-017, UNR-018). Not legal advice.
+schema_version: 1
+edges:
+- id: ATT-001
+  subject: person:guido-van-rossum
+  role: creator
+  object: tool:python
+  status: historical
+  verification: VERIFIED
+  statement: Created Python in the early 1990s at Stichting Mathematisch Centrum (CWI), the Netherlands.
+  sources:
+  - kind: official_history
+    ref: https://docs.python.org/3/license.html
+    excerpt: of the software ¶ Python was created in the early 1990s by Guido van Rossum at Stichting Mathematisch Centrum
+      (CWI, see https://www.cwi
+    checked: '2026-10-25'
+- id: ATT-002
+  subject: org:cwi
+  role: host
+  object: tool:python
+  status: historical
+  verification: VERIFIED
+  statement: 'Python''s birthplace: it was created at CWI in the Netherlands.'
+  sources:
+  - kind: official_history
+    ref: https://docs.python.org/3/license.html
+    excerpt: ython was created in the early 1990s by Guido van Rossum at Stichting Mathematisch Centrum (CWI, see https://www.cwi.nl
+      ) in the Netherlands as a succ
+    checked: '2026-10-25'
+- id: ATT-003
+  subject: org:psf
+  role: steward
+  object: tool:python
+  status: current
+  verification: VERIFIED
+  statement: Holds Python's intellectual property and licenses it (PSF License).
+  sources:
+  - kind: license_file
+    ref: https://docs.python.org/3/license.html
+    excerpt: erms and conditions for accessing or otherwise using Python PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2 BEOPEN.COM
+      LICENSE AGREEMENT FOR PYTHON 2
+    checked: '2026-10-25'
+- id: ATT-004
+  subject: community:python
+  role: community
+  object: tool:python
+  status: current
+  verification: INFERRED
+  statement: Develops and maintains Python and CPython.
+  sources:
+  - kind: repository
+    ref: https://github.com/python/cpython
+    checked: '2026-10-25'
+- id: ATT-005
+  subject: org:psf
+  role: host
+  object: tool:pypi
+  status: current
+  verification: VERIFIED
+  statement: Develops and maintains PyPI with the Python community.
+  sources:
+  - kind: website
+    ref: https://pypi.org/
+    excerpt: 'Python code for PyPI . PyPI Developed and maintained by the Python Software Foundation and Python community,
+      for the Python community. Status: all'
+    checked: '2026-10-25'
+- id: ATT-006
+  subject: org:pypa
+  role: maintainer
+  object: tool:pypa-packaging
+  status: current
+  verification: VERIFIED
+  statement: The working group that maintains pip, setuptools and build.
+  sources:
+  - kind: foundation
+    ref: https://www.pypa.io/en/latest/
+    excerpt: 'Python Packaging Authority — PyPA documentation {"ad_free": false, "api_host": "https:'
+    checked: '2026-10-25'
+  - kind: repository
+    ref: https://raw.githubusercontent.com/pypa/setuptools/main/README.rst
+    excerpt: '.. |pypi-version| image:: https://img.shields.io/pypi/v/setuptools.svg :target: https://pypi.org/project/setuptools
+      .. |py-ver'
+    checked: '2026-10-25'
+  - kind: repository
+    ref: https://raw.githubusercontent.com/pypa/build/main/README.md
+    excerpt: '# build [![pre-commit.ci status](https://results.pre-commit.ci/badg'
+    checked: '2026-10-25'
+- id: ATT-007
+  subject: org:pypa
+  role: community
+  object: tool:pypa-packaging
+  status: current
+  verification: VERIFIED
+  statement: Python packaging is a community effort under PyPA.
+  sources:
+  - kind: foundation
+    ref: https://www.pypa.io/en/latest/
+    excerpt: 'Python Packaging Authority — PyPA documentation {"ad_free": false, "api_host": "https:'
+    checked: '2026-10-25'
+- id: ATT-008
+  subject: person:julian-berman
+  role: copyright_holder
+  object: lib:pypi/jsonschema
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of the jsonschema library (2013-).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/python-jsonschema/jsonschema/main/COPYING
+    excerpt: Copyright (c) 2013 Julian Berman Permission is hereby granted, free of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-009
+  subject: community:python-jsonschema
+  role: community
+  object: lib:pypi/jsonschema
+  status: current
+  verification: INFERRED
+  statement: Maintains and contributes to the project.
+  sources:
+  - kind: repository
+    ref: https://github.com/python-jsonschema/jsonschema
+    checked: '2026-10-25'
+- id: ATT-010
+  subject: person:kirill-simonov
+  role: original_author
+  object: lib:pypi/pyyaml
+  status: current
+  verification: VERIFIED
+  statement: 'Copyright 2006-2016: the original author of PyYAML.'
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/yaml/pyyaml/main/LICENSE
+    excerpt: opyright (c) 2017-2021 Ingy döt Net Copyright (c) 2006-2016 Kirill Simonov Permission is hereby granted, free
+      of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-011
+  subject: person:ingy-dot-net
+  role: copyright_holder
+  object: lib:pypi/pyyaml
+  status: current
+  verification: VERIFIED
+  statement: Copyright 2017-2021 in PyYAML (YAML project).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/yaml/pyyaml/main/LICENSE
+    excerpt: Copyright (c) 2017-2021 Ingy döt Net Copyright (c) 2006-2016 Kirill Simonov Permission is hereby
+    checked: '2026-10-25'
+- id: ATT-012
+  subject: community:yaml-project
+  role: community
+  object: lib:pypi/pyyaml
+  status: current
+  verification: INFERRED
+  statement: Maintains and contributes to the project.
+  sources:
+  - kind: repository
+    ref: https://github.com/yaml/pyyaml
+    checked: '2026-10-25'
+- id: ATT-013
+  subject: person:holger-krekel
+  role: copyright_holder
+  object: lib:pypi/pytest
+  status: current
+  verification: VERIFIED
+  statement: 'Copyright 2004 ''Holger Krekel and others'': pytest''s original copyright holder.'
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/pytest-dev/pytest/main/LICENSE
+    excerpt: The MIT License (MIT) Copyright (c) 2004 Holger Krekel and others Permission is hereby granted, free of charge,
+      to
+    checked: '2026-10-25'
+- id: ATT-014
+  subject: community:pytest-dev
+  role: community
+  object: lib:pypi/pytest
+  status: current
+  verification: INFERRED
+  statement: Maintains and contributes to the project.
+  sources:
+  - kind: repository
+    ref: https://github.com/pytest-dev/pytest
+    checked: '2026-10-25'
+- id: ATT-015
+  subject: person:jukka-lehtosalo
+  role: copyright_holder
+  object: lib:pypi/mypy
+  status: current
+  verification: VERIFIED
+  statement: Copyright 2012- 'Jukka Lehtosalo and contributors' (with Dropbox, Inc.).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/python/mypy/master/LICENSE
+    excerpt: ed below. = = = = = The MIT License Copyright (c) 2012-2023 Jukka Lehtosalo and contributors Copyright (c) 2015-2023
+      Dropbox, Inc. Perm
+    checked: '2026-10-25'
+- id: ATT-016
+  subject: community:mypy
+  role: community
+  object: lib:pypi/mypy
+  status: current
+  verification: INFERRED
+  statement: Maintains and contributes to the project.
+  sources:
+  - kind: repository
+    ref: https://github.com/python/mypy
+    checked: '2026-10-25'
+- id: ATT-017
+  subject: person:charles-marsh
+  role: copyright_holder
+  object: lib:pypi/ruff
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of Ruff (2022-).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/astral-sh/ruff/main/LICENSE
+    excerpt: MIT License Copyright (c) 2022 Charles Marsh Permission is hereby granted, free of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-018
+  subject: community:ruff
+  role: community
+  object: lib:pypi/ruff
+  status: current
+  verification: INFERRED
+  statement: Maintains and contributes to the project.
+  sources:
+  - kind: repository
+    ref: https://github.com/astral-sh/ruff
+    checked: '2026-10-25'
+- id: ATT-019
+  subject: person:david-r-maciver
+  role: author
+  object: lib:pypi/hypothesis
+  status: current
+  verification: VERIFIED
+  statement: The primary author for most of Hypothesis (per its AUTHORS file).
+  sources:
+  - kind: authors_file
+    ref: https://raw.githubusercontent.com/HypothesisWorks/hypothesis/master/AUTHORS.rst
+    excerpt: '-------------- The primary author for most of Hypothesis is David R. MacIver (me). However the following people
+      have also contributed wo'
+    checked: '2026-10-25'
+- id: ATT-020
+  subject: community:hypothesis
+  role: community
+  object: lib:pypi/hypothesis
+  status: current
+  verification: INFERRED
+  statement: Maintains and contributes to the project.
+  sources:
+  - kind: repository
+    ref: https://github.com/HypothesisWorks/hypothesis
+    checked: '2026-10-25'
+- id: ATT-021
+  subject: person:kenneth-reitz
+  role: creator
+  object: lib:pypi/requests
+  status: current
+  verification: VERIFIED
+  statement: Created Requests (per its AUTHORS file).
+  sources:
+  - kind: authors_file
+    ref: https://raw.githubusercontent.com/psf/requests/main/AUTHORS.rst
+    excerpt: Requests was lovingly created by Kenneth Reitz. Requests Maintainers ```````````````````` - Ian Stapleton
+    checked: '2026-10-25'
+- id: ATT-022
+  subject: community:requests
+  role: community
+  object: lib:pypi/requests
+  status: current
+  verification: INFERRED
+  statement: Maintains and contributes to the project.
+  sources:
+  - kind: repository
+    ref: https://github.com/psf/requests
+    checked: '2026-10-25'
+- id: ATT-023
+  subject: person:will-mcgugan
+  role: copyright_holder
+  object: lib:pypi/rich
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of Rich (2020-).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/Textualize/rich/master/LICENSE
+    excerpt: Copyright (c) 2020 Will McGugan Permission is hereby granted, free of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-024
+  subject: community:rich
+  role: community
+  object: lib:pypi/rich
+  status: current
+  verification: INFERRED
+  statement: Maintains and contributes to the project.
+  sources:
+  - kind: repository
+    ref: https://github.com/Textualize/rich
+    checked: '2026-10-25'
+- id: ATT-025
+  subject: person:sebastian-ramirez
+  role: copyright_holder
+  object: lib:pypi/typer
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of Typer (2019-).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/fastapi/typer/master/LICENSE
+    excerpt: The MIT License (MIT) Copyright (c) 2019 Sebastián Ramírez Permission is hereby granted, free of charge, to any
+      person
+    checked: '2026-10-25'
+- id: ATT-026
+  subject: community:fastapi-org
+  role: community
+  object: lib:pypi/typer
+  status: current
+  verification: INFERRED
+  statement: Maintains and contributes to the project.
+  sources:
+  - kind: repository
+    ref: https://github.com/fastapi
+    checked: '2026-10-25'
+- id: ATT-027
+  subject: person:sebastian-ramirez
+  role: copyright_holder
+  object: lib:pypi/fastapi
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of FastAPI (2018-).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/fastapi/fastapi/master/LICENSE
+    excerpt: The MIT License (MIT) Copyright (c) 2018 Sebastián Ramírez Permission is hereby granted, free of charge, to any
+      person
+    checked: '2026-10-25'
+- id: ATT-028
+  subject: community:fastapi-org
+  role: community
+  object: lib:pypi/fastapi
+  status: current
+  verification: INFERRED
+  statement: Maintains and contributes to the project.
+  sources:
+  - kind: repository
+    ref: https://github.com/fastapi/fastapi
+    checked: '2026-10-25'
+- id: ATT-029
+  subject: org:pallets
+  role: copyright_holder
+  object: lib:pypi/click
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of Click and maintains it.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/pallets/click/main/LICENSE.txt
+    excerpt: Copyright 2014 Pallets Redistribution and use in source and binary forms, with or
+    checked: '2026-10-25'
+- id: ATT-030
+  subject: org:pydantic-services
+  role: copyright_holder
+  object: lib:pypi/pydantic
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'Pydantic Services Inc. and individual contributors'.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/pydantic/pydantic/main/LICENSE
+    excerpt: The MIT License (MIT) Copyright (c) 2017 to present Pydantic Services Inc. and individual contributors. Permission
+      is hereby granted,
+    checked: '2026-10-25'
+- id: ATT-031
+  subject: community:sqlalchemy
+  role: copyright_holder
+  object: lib:pypi/sqlalchemy
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'SQLAlchemy authors and contributors'.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/sqlalchemy/sqlalchemy/main/LICENSE
+    excerpt: Copyright 2005-2026 SQLAlchemy authors and contributors . Permission is hereby granted, free of charge, to any
+      pers
+    checked: '2026-10-25'
+- id: ATT-032
+  subject: community:pytest-dev
+  role: maintainer
+  object: lib:pypi/pytest-asyncio
+  status: current
+  verification: VERIFIED
+  statement: Maintained under the pytest-dev organization.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/pytest-dev/pytest-asyncio/main/README.rst
+    excerpt: 'pytest-asyncio ============== .. image:: https://img.shields.io/py'
+    checked: '2026-10-25'
+- id: ATT-033
+  subject: community:pytest-dev
+  role: maintainer
+  object: lib:pypi/pytest-cov
+  status: current
+  verification: VERIFIED
+  statement: Maintained under the pytest-dev organization.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/pytest-dev/pytest-cov/master/README.rst
+    excerpt: 's-since| .. |docs| image:: https://readthedocs.org/projects/pytest-cov/badge/?style=flat :target: https://readthedocs.org/proj'
+    checked: '2026-10-25'
+- id: ATT-034
+  subject: org:pypa
+  role: maintainer
+  object: lib:pypi/setuptools
+  status: current
+  verification: VERIFIED
+  statement: Maintained by the Python Packaging Authority.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/pypa/setuptools/main/README.rst
+    excerpt: '.. |pypi-version| image:: https://img.shields.io/pypi/v/setuptools.svg :target: https://pypi.org/project/setuptools
+      .. |py-ver'
+    checked: '2026-10-25'
+- id: ATT-035
+  subject: org:pypa
+  role: maintainer
+  object: lib:pypi/build
+  status: current
+  verification: VERIFIED
+  statement: Maintained by the Python Packaging Authority.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/pypa/build/main/README.md
+    excerpt: '# build [![pre-commit.ci status](https://results.pre-commit.ci/badg'
+    checked: '2026-10-25'
+- id: ATT-036
+  subject: community:typeshed
+  role: community
+  object: tool:typeshed
+  status: current
+  verification: INFERRED
+  statement: Write and maintain the external type stubs.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/python/typeshed/main/README.md
+    excerpt: '# typeshed [![Tests](https://github.com/python/typeshed/actions/workfl'
+    checked: '2026-10-25'
+- id: ATT-037
+  subject: person:richard-stallman
+  role: founder
+  object: tool:gnu
+  status: historical
+  verification: VERIFIED
+  statement: Announced and began the GNU Project on September 27, 1983.
+  sources:
+  - kind: official_history
+    ref: https://www.gnu.org/gnu/initial-announcement.html
+    excerpt: is the original announcement of the GNU Project, posted by Richard Stallman on September 27, 1983. The actual
+      history of the GNU Projec
+    checked: '2026-10-25'
+- id: ATT-038
+  subject: community:gnu-project
+  role: community
+  object: tool:gnu
+  status: current
+  verification: VERIFIED
+  statement: Develops the GNU system and its tools.
+  sources:
+  - kind: foundation
+    ref: https://www.gnu.org/software/bash/
+    excerpt: Bash - GNU Project - Free Software Foundation Skip to main text Free Software
+    checked: '2026-10-25'
+- id: ATT-039
+  subject: org:fsf
+  role: steward
+  object: tool:gnu
+  status: current
+  verification: INFERRED
+  statement: Sponsors and stewards the GNU Project.
+  sources:
+  - kind: foundation
+    ref: https://www.fsf.org/about/
+    excerpt: Free software is a matter of liberty, not price — Free Software Foundation — Working together for free software
+      @import url('//static.
+    checked: '2026-10-25'
+  - kind: foundation
+    ref: https://www.gnu.org/software/bash/
+    excerpt: Bash - GNU Project - Free Software Foundation Skip to main text Free Software
+    checked: '2026-10-25'
+- id: ATT-040
+  subject: person:brian-fox
+  role: original_author
+  object: tool:bash
+  status: historical
+  verification: VERIFIED
+  statement: Originally wrote Bash, for the Free Software Foundation.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://tiswww.case.edu/php/chet/bash/FAQ
+    excerpt: s to control shell behavior. Bash was originally written by Brian Fox of the Free Software Foundation. The current
+      developer and
+    checked: '2026-10-25'
+- id: ATT-041
+  subject: person:chet-ramey
+  role: maintainer
+  object: tool:bash
+  status: current
+  verification: VERIFIED
+  statement: Bash's current developer and maintainer.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://tiswww.case.edu/php/chet/bash/FAQ
+    excerpt: oftware Foundation. The current developer and maintainer is Chet Ramey of Case Western Reserve University. A2)
+      What's the latest v
+    checked: '2026-10-25'
+- id: ATT-042
+  subject: community:gnu-project
+  role: host
+  object: tool:bash
+  status: current
+  verification: VERIFIED
+  statement: Bash is the GNU Project's shell.
+  sources:
+  - kind: foundation
+    ref: https://www.gnu.org/software/bash/
+    excerpt: RDWARE SITEMAP GNU Bash Bash is the GNU Project's shell—the Bourne Again SHell. This is an sh-compatible shell
+      that incorporat
+    checked: '2026-10-25'
+- id: ATT-043
+  subject: person:paul-falstad
+  role: original_author
+  object: tool:zsh
+  status: historical
+  verification: VERIFIED
+  statement: Wrote the original zsh while a student at Princeton.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://zsh.sourceforge.io/FAQ/zshfaq01.html
+    excerpt: drawn from tcsh (another `custom' shell). It was written by Paul Falstad when a student at Princeton; however,
+      Paul doesn't maintain
+    checked: '2026-10-25'
+- id: ATT-044
+  subject: community:zsh
+  role: maintainer
+  object: tool:zsh
+  status: current
+  verification: INFERRED
+  statement: Maintain zsh today (its author no longer does).
+  sources:
+  - kind: maintainer_documentation
+    ref: https://zsh.sourceforge.io/FAQ/zshfaq01.html
+    excerpt: drawn from tcsh (another `custom' shell). It was written by Paul Falstad when a student at Princeton; however,
+      Paul doesn't maintain
+    checked: '2026-10-25'
+- id: ATT-045
+  subject: person:linus-torvalds
+  role: creator
+  object: tool:linux
+  status: historical
+  verification: VERIFIED
+  statement: Creator of Linux.
+  sources:
+  - kind: official_history
+    ref: https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
+    excerpt: prompted the Linux development community (and in particular Linus Torvalds, the creator of Linux) to develop
+      their own tool based on s
+    checked: '2026-10-25'
+- id: ATT-046
+  subject: person:linus-torvalds
+  role: maintainer
+  object: tool:linux
+  status: current
+  verification: VERIFIED
+  statement: Maintains the mainline kernel tree.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://docs.kernel.org/process/howto.html
+    excerpt: ing tree Mainline tree ¶ The mainline tree is maintained by Linus Torvalds, and can be found at https://kernel.org
+      or in the repo. Its
+    checked: '2026-10-25'
+- id: ATT-047
+  subject: community:linux-kernel
+  role: community
+  object: tool:linux
+  status: current
+  verification: INFERRED
+  statement: Develop the kernel through its maintainer hierarchy.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://docs.kernel.org/process/howto.html
+    excerpt: ing tree Mainline tree ¶ The mainline tree is maintained by Linus Torvalds, and can be found at https://kernel.org
+      or in the repo. Its
+    checked: '2026-10-25'
+- id: ATT-048
+  subject: org:linux-foundation
+  role: steward
+  object: tool:linux
+  status: current
+  verification: VERIFIED
+  statement: Manages the Linux Kernel Organization (kernel.org).
+  sources:
+  - kind: foundation
+    ref: https://www.kernel.org/category/about.html
+    excerpt: tion letter The Linux Kernel Organization is managed by The Linux Foundation , which provides full technical,
+      financial and staffing sup
+    checked: '2026-10-25'
+- id: ATT-049
+  subject: person:ian-murdock
+  role: founder
+  object: tool:debian
+  status: historical
+  verification: VERIFIED
+  statement: Founded the Debian Project on August 16, 1993.
+  sources:
+  - kind: official_history
+    ref: https://www.debian.org/doc/manuals/project-history/intro.en.html
+    excerpt: the Beginning The Debian Project was officially founded by Ian Murdock on August 16th, 1993 . (There is also
+      a scanned printout of
+    checked: '2026-10-25'
+- id: ATT-050
+  subject: community:debian
+  role: community
+  object: tool:debian
+  status: current
+  verification: INFERRED
+  statement: Develop and maintain the Debian distribution.
+  sources:
+  - kind: official_history
+    ref: https://www.debian.org/doc/manuals/project-history/intro.en.html
+    excerpt: the Beginning The Debian Project was officially founded by Ian Murdock on August 16th, 1993 . (There is also
+      a scanned printout of
+    checked: '2026-10-25'
+- id: ATT-051
+  subject: person:linus-torvalds
+  role: developer
+  object: tool:git
+  status: historical
+  verification: VERIFIED
+  statement: Led the Linux community's development of Git in 2005, after the BitKeeper relationship ended.
+  sources:
+  - kind: official_history
+    ref: https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
+    excerpt: prompted the Linux development community (and in particular Linus Torvalds, the creator of Linux) to develop
+      their own tool based on s
+    checked: '2026-10-25'
+- id: ATT-052
+  subject: person:junio-c-hamano
+  role: maintainer
+  object: tool:git
+  status: current
+  verification: INFERRED
+  statement: Maintains Git (author of the project's maintainer notes).
+  sources:
+  - kind: maintainer_documentation
+    ref: https://raw.githubusercontent.com/git/git/master/Documentation/howto/maintain-git.adoc
+    excerpt: 'From: Junio C Hamano Date: Wed, 21 Nov 2007 16:32:55 -0800 Subject: Addendum to'
+    checked: '2026-10-25'
+- id: ATT-053
+  subject: community:git
+  role: community
+  object: tool:git
+  status: current
+  verification: VERIFIED
+  statement: The Linux development community that built Git, and its contributors since.
+  sources:
+  - kind: official_history
+    ref: https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
+    excerpt: prompted the Linux development community (and in particular Linus Torvalds, the creator of Linux) to develop
+      their own tool based on s
+    checked: '2026-10-25'
+- id: ATT-054
+  subject: org:github
+  role: host
+  object: tool:github-actions
+  status: current
+  verification: VERIFIED
+  statement: Runs GitHub and GitHub Actions, which host Outer Void's repositories and CI.
+  sources:
+  - kind: website
+    ref: https://github.com/about
+    excerpt: '{"imports":{"react":"https://github.githubassets.com/assets/react-fa5e2e82e6e0ecc0.js","react-d'
+    checked: '2026-10-25'
+- id: ATT-055
+  subject: org:github
+  role: copyright_holder
+  object: tool:gha/github-official-actions
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'GitHub, Inc. and contributors' (actions/checkout).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/actions/checkout/main/LICENSE
+    excerpt: The MIT License (MIT) Copyright (c) 2018 GitHub, Inc. and contributors Permission is hereby granted, free o
+    checked: '2026-10-25'
+- id: ATT-056
+  subject: community:github-actions-contributors
+  role: contributor
+  object: tool:gha/github-official-actions
+  status: current
+  verification: VERIFIED
+  statement: Co-copyright holders with GitHub.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/actions/checkout/main/LICENSE
+    excerpt: The MIT License (MIT) Copyright (c) 2018 GitHub, Inc. and contributors Permission is hereby granted, free o
+    checked: '2026-10-25'
+- id: ATT-057
+  subject: person:dave-olsthoorn
+  role: copyright_holder
+  object: tool:gha/setup-android
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of android-actions/setup-android.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/android-actions/setup-android/main/LICENSE
+    excerpt: MIT License Copyright (c) 2020 Dave Olsthoorn Permission is her
+    checked: '2026-10-25'
+- id: ATT-058
+  subject: community:gha/setup-android
+  role: community
+  object: tool:gha/setup-android
+  status: current
+  verification: INFERRED
+  statement: Open-source action maintained with its contributors.
+  sources:
+  - kind: repository
+    ref: https://github.com/android-actions/setup-android
+    checked: '2026-10-25'
+- id: ATT-059
+  subject: person:yang-chen
+  role: copyright_holder
+  object: tool:gha/android-emulator-runner
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of ReactiveCircus/android-emulator-runner.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/ReactiveCircus/android-emulator-runner/main/LICENSE
+    excerpt: entification within third-party archives. Copyright [2019] [Yang Chen] Licensed under the Apache License, Version
+      2.0 (the "Licen
+    checked: '2026-10-25'
+- id: ATT-060
+  subject: community:gha/android-emulator-runner
+  role: community
+  object: tool:gha/android-emulator-runner
+  status: current
+  verification: INFERRED
+  statement: Open-source action maintained with its contributors.
+  sources:
+  - kind: repository
+    ref: https://github.com/ReactiveCircus/android-emulator-runner
+    checked: '2026-10-25'
+- id: ATT-061
+  subject: person:doug-tangren
+  role: copyright_holder
+  object: tool:gha/action-gh-release
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of softprops/action-gh-release.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/softprops/action-gh-release/master/LICENSE
+    excerpt: Copyright (c) 2019-current Doug Tangren Permission is hereby granted, free of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-062
+  subject: community:gha/action-gh-release
+  role: community
+  object: tool:gha/action-gh-release
+  status: current
+  verification: INFERRED
+  statement: Open-source action maintained with its contributors.
+  sources:
+  - kind: repository
+    ref: https://github.com/softprops/action-gh-release
+    checked: '2026-10-25'
+- id: ATT-063
+  subject: org:gradle
+  role: maintainer
+  object: tool:gha/setup-gradle
+  status: current
+  verification: INFERRED
+  statement: Published by Gradle in the gradle/actions repository.
+  sources:
+  - kind: repository
+    ref: https://github.com/gradle/actions
+    checked: '2026-10-25'
+- id: ATT-064
+  subject: person:james-gosling
+  role: author
+  object: std:java-language-specification
+  status: current
+  verification: VERIFIED
+  statement: An author of The Java Language Specification (Java SE 21 edition).
+  sources:
+  - kind: specification
+    ref: https://docs.oracle.com/javase/specs/jls/se21/html/index.html
+    excerpt: n Next The Java ® Language Specification Java SE 21 Edition James Gosling Bill Joy Guy Steele Gilad Bracha Alex
+      Buckley Daniel Smith
+    checked: '2026-10-25'
+- id: ATT-065
+  subject: person:bill-joy
+  role: author
+  object: std:java-language-specification
+  status: current
+  verification: VERIFIED
+  statement: An author of The Java Language Specification (Java SE 21 edition).
+  sources:
+  - kind: specification
+    ref: https://docs.oracle.com/javase/specs/jls/se21/html/index.html
+    excerpt: a ® Language Specification Java SE 21 Edition James Gosling Bill Joy Guy Steele Gilad Bracha Alex Buckley Daniel
+      Smith Gavin Bie
+    checked: '2026-10-25'
+- id: ATT-066
+  subject: person:guy-steele
+  role: author
+  object: std:java-language-specification
+  status: current
+  verification: VERIFIED
+  statement: An author of The Java Language Specification (Java SE 21 edition).
+  sources:
+  - kind: specification
+    ref: https://docs.oracle.com/javase/specs/jls/se21/html/index.html
+    excerpt: age Specification Java SE 21 Edition James Gosling Bill Joy Guy Steele Gilad Bracha Alex Buckley Daniel Smith
+      Gavin Bierman 2023-0
+    checked: '2026-10-25'
+- id: ATT-067
+  subject: person:gilad-bracha
+  role: author
+  object: std:java-language-specification
+  status: current
+  verification: VERIFIED
+  statement: An author of The Java Language Specification (Java SE 21 edition).
+  sources:
+  - kind: specification
+    ref: https://docs.oracle.com/javase/specs/jls/se21/html/index.html
+    excerpt: cation Java SE 21 Edition James Gosling Bill Joy Guy Steele Gilad Bracha Alex Buckley Daniel Smith Gavin Bierman
+      2023-08-23 Legal No
+    checked: '2026-10-25'
+- id: ATT-068
+  subject: person:alex-buckley
+  role: author
+  object: std:java-language-specification
+  status: current
+  verification: VERIFIED
+  statement: An author of The Java Language Specification (Java SE 21 edition).
+  sources:
+  - kind: specification
+    ref: https://docs.oracle.com/javase/specs/jls/se21/html/index.html
+    excerpt: E 21 Edition James Gosling Bill Joy Guy Steele Gilad Bracha Alex Buckley Daniel Smith Gavin Bierman 2023-08-23
+      Legal Notice Table of
+    checked: '2026-10-25'
+- id: ATT-069
+  subject: person:daniel-smith
+  role: author
+  object: std:java-language-specification
+  status: current
+  verification: VERIFIED
+  statement: An author of The Java Language Specification (Java SE 21 edition).
+  sources:
+  - kind: specification
+    ref: https://docs.oracle.com/javase/specs/jls/se21/html/index.html
+    excerpt: n Next The Java ® Language Specification Java SE 21 Edition James Gosling Bill Joy Guy Steele Gilad Bracha Alex
+      Buckley Daniel Smith
+    checked: '2026-10-25'
+- id: ATT-070
+  subject: person:gavin-bierman
+  role: author
+  object: std:java-language-specification
+  status: current
+  verification: VERIFIED
+  statement: An author of The Java Language Specification (Java SE 21 edition).
+  sources:
+  - kind: specification
+    ref: https://docs.oracle.com/javase/specs/jls/se21/html/index.html
+    excerpt: age Specification Java SE 21 Edition James Gosling Bill Joy Guy Steele Gilad Bracha Alex Buckley Daniel Smith
+      Gavin Bierman 2023-0
+    checked: '2026-10-25'
+- id: ATT-071
+  subject: org:oracle
+  role: host
+  object: std:java-language-specification
+  status: current
+  verification: INFERRED
+  statement: Publishes the Java SE specifications.
+  sources:
+  - kind: specification
+    ref: https://docs.oracle.com/javase/specs/jls/se21/html/index.html
+    excerpt: n Next The Java ® Language Specification Java SE 21 Edition James Gosling Bill Joy Guy Steele Gilad Bracha Alex
+      Buckley Daniel Smith
+    checked: '2026-10-25'
+- id: ATT-072
+  subject: community:openjdk
+  role: community
+  object: tool:openjdk
+  status: current
+  verification: VERIFIED
+  statement: Develop the OpenJDK.
+  sources:
+  - kind: website
+    ref: https://openjdk.org/
+    excerpt: 'OpenJDK /**/ #openjdk-sidebar-logo IMG { display: none; } TABLE.mai'
+    checked: '2026-10-25'
+- id: ATT-073
+  subject: org:jetbrains
+  role: developer
+  object: tool:kotlin
+  status: current
+  verification: VERIFIED
+  statement: Develops Kotlin (project started 2010; open source from early on).
+  sources:
+  - kind: documentation
+    ref: https://kotlinlang.org/docs/faq.html
+    excerpt: M, Android, JavaScript, Wasm, and Native. It's developed by JetBrains . The project started in 2010 and was open
+      source from very
+    checked: '2026-10-25'
+- id: ATT-074
+  subject: community:kotlin
+  role: community
+  object: tool:kotlin
+  status: current
+  verification: INFERRED
+  statement: Contribute to Kotlin, its libraries and tooling.
+  sources:
+  - kind: repository
+    ref: https://github.com/JetBrains/kotlin
+    checked: '2026-10-25'
+- id: ATT-075
+  subject: person:hans-dockter
+  role: co_founder
+  object: org:gradle
+  status: current
+  verification: VERIFIED
+  statement: Co-founder and CEO of Gradle, Inc. (now Develocity).
+  sources:
+  - kind: official_history
+    ref: https://gradle.com/about/
+    excerpt: https://develocity.ai/","member":[{"@type":"Person","name":"Hans Dockter","jobTitle":"Co-Founder & CEO","sameAs":["https://www.linke
+    checked: '2026-10-25'
+- id: ATT-076
+  subject: community:gradle
+  role: community
+  object: tool:gradle
+  status: current
+  verification: INFERRED
+  statement: Develop and maintain the Gradle Build Tool with Gradle, Inc.
+  sources:
+  - kind: repository
+    ref: https://github.com/gradle/gradle
+    checked: '2026-10-25'
+- id: ATT-077
+  subject: org:gradle
+  role: steward
+  object: tool:gradle
+  status: current
+  verification: INFERRED
+  statement: Gradle, Inc. leads development of the Gradle Build Tool.
+  sources:
+  - kind: official_history
+    ref: https://gradle.com/about/
+    excerpt: https://develocity.ai/","member":[{"@type":"Person","name":"Hans Dockter","jobTitle":"Co-Founder & CEO","sameAs":["https://www.linke
+    checked: '2026-10-25'
+- id: ATT-078
+  subject: org:google
+  role: steward
+  object: tool:aosp
+  status: current
+  verification: INFERRED
+  statement: Leads the Android Open Source Project.
+  sources:
+  - kind: documentation
+    ref: https://source.android.com/
+    excerpt: 'Android Open Source Project { "@context": "https://schema.org", "@type": "Article", "he'
+    checked: '2026-10-25'
+- id: ATT-079
+  subject: community:aosp
+  role: community
+  object: tool:aosp
+  status: current
+  verification: INFERRED
+  statement: Contribute to the Android platform.
+  sources:
+  - kind: documentation
+    ref: https://source.android.com/
+    excerpt: 'Android Open Source Project { "@context": "https://schema.org", "@type": "Article", "he'
+    checked: '2026-10-25'
+- id: ATT-080
+  subject: org:google
+  role: developer
+  object: tool:gradle-plugin/agp
+  status: current
+  verification: VERIFIED
+  statement: Develops the Android Gradle plugin.
+  sources:
+  - kind: documentation
+    ref: https://developer.android.com/build/releases/gradle-plugin
+    excerpt: Android Gradle plugin 9.4.0 (September 2026) | Android Studio | Android Developer
+    checked: '2026-10-25'
+- id: ATT-081
+  subject: org:jetbrains
+  role: developer
+  object: tool:gradle-plugin/kotlin
+  status: current
+  verification: INFERRED
+  statement: Part of the Kotlin toolchain developed by JetBrains.
+  sources:
+  - kind: documentation
+    ref: https://kotlinlang.org/docs/faq.html
+    excerpt: M, Android, JavaScript, Wasm, and Native. It's developed by JetBrains . The project started in 2010 and was open
+      source from very
+    checked: '2026-10-25'
+- id: ATT-082
+  subject: org:diffplug
+  role: developer
+  object: tool:gradle-plugin/spotless
+  status: current
+  verification: VERIFIED
+  statement: Publishes the Spotless formatter plugin.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/diffplug/spotless/main/README.md
+    excerpt: e Plugin](https://img.shields.io/gradle-plugin-portal/v/com.diffplug.spotless?color=blue&label=gradle%20plugin)](plugin-gradle)
+    checked: '2026-10-25'
+- id: ATT-083
+  subject: community:detekt
+  role: community
+  object: tool:gradle-plugin/detekt
+  status: current
+  verification: INFERRED
+  statement: Develop detekt.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/detekt/detekt/main/README.md
+    excerpt: '# detekt [![Join the chat at #detekt on KotlinLang](https://img.shie'
+    checked: '2026-10-25'
+- id: ATT-084
+  subject: community:cyclonedx
+  role: developer
+  object: tool:gradle-plugin/cyclonedx
+  status: current
+  verification: VERIFIED
+  statement: Develops the CycloneDX Gradle plugin.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/CycloneDX/cyclonedx-gradle-plugin/master/README.md
+    excerpt: '# CycloneDX Gradle Plugin [![Build Status](https://github.com/CycloneDX'
+    checked: '2026-10-25'
+- id: ATT-085
+  subject: org:google
+  role: developer
+  object: lib:maven/androidx.compose.ui:ui
+  status: current
+  verification: VERIFIED
+  statement: Jetpack Compose is Google's Android UI toolkit.
+  sources:
+  - kind: documentation
+    ref: https://developer.android.com/compose
+    excerpt: Jetpack Compose UI App Development Toolkit - Android Developers { "@context
+    checked: '2026-10-25'
+- id: ATT-086
+  subject: org:termux
+  role: developer
+  object: tool:termux
+  status: current
+  verification: VERIFIED
+  statement: Develops the Termux app and packages.
+  sources:
+  - kind: repository
+    ref: https://github.com/termux
+    excerpt: com","cmcApiUrl":"https://api.github.com/cmc_internal/api"} Termux · GitHub Skip to content {"props":{"docsUrl":"https://docs.
+    checked: '2026-10-25'
+- id: ATT-087
+  subject: community:termux
+  role: community
+  object: tool:termux
+  status: current
+  verification: INFERRED
+  statement: Maintain Termux and its package ecosystem.
+  sources:
+  - kind: repository
+    ref: https://github.com/termux
+    excerpt: com","cmcApiUrl":"https://api.github.com/cmc_internal/api"} Termux · GitHub Skip to content {"props":{"docsUrl":"https://docs.
+    checked: '2026-10-25'
+- id: ATT-088
+  subject: org:termux
+  role: developer
+  object: tool:proot-distro
+  status: current
+  verification: VERIFIED
+  statement: PRoot-Distro is published in the Termux organization.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/termux/proot-distro/master/README.md
+    excerpt: '# PRoot-Distro PRoot-Distro is a utility for managing rootless Linu'
+    checked: '2026-10-25'
+- id: ATT-089
+  subject: person:cedric-vincent
+  role: original_author
+  object: tool:proot
+  status: historical
+  verification: VERIFIED
+  statement: Original author and maintainer of PRoot (per its AUTHORS file).
+  sources:
+  - kind: authors_file
+    ref: https://raw.githubusercontent.com/proot-me/proot/master/AUTHORS
+    excerpt: 'riginally developed in the Compilation Expertise Center by: Cédric VINCENT Original author, maintainer. Rémi
+      DURAFFORT Improved the -0'
+    checked: '2026-10-25'
+- id: ATT-090
+  subject: community:proot
+  role: community
+  object: tool:proot
+  status: current
+  verification: VERIFIED
+  statement: Improve and maintain PRoot.
+  sources:
+  - kind: authors_file
+    ref: https://raw.githubusercontent.com/proot-me/proot/master/AUTHORS
+    excerpt: 'riginally developed in the Compilation Expertise Center by: Cédric VINCENT Original author, maintainer. Rémi
+      DURAFFORT Improved the -0'
+    checked: '2026-10-25'
+- id: ATT-091
+  subject: tool:proot
+  role: upstream_source
+  object: tool:proot-distro
+  status: current
+  verification: INFERRED
+  statement: PRoot-Distro manages rootless Linux distributions on top of PRoot.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/termux/proot-distro/master/README.md
+    excerpt: '# PRoot-Distro PRoot-Distro is a utility for managing rootless Linu'
+    checked: '2026-10-25'
+- id: ATT-092
+  subject: community:nodejs
+  role: copyright_holder
+  object: tool:node
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'Node.js contributors'.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/nodejs/node/main/LICENSE
+    excerpt: 'Node.js is licensed for use as follows: """ Copyright Node.js contributors. All rights reserved. Permission
+      is hereby granted, free of'
+    checked: '2026-10-25'
+- id: ATT-093
+  subject: org:openjs-foundation
+  role: host
+  object: tool:node
+  status: current
+  verification: VERIFIED
+  statement: Node.js is a project of the OpenJS Foundation.
+  sources:
+  - kind: documentation
+    ref: https://nodejs.org/en/about
+    excerpt: odejs pkgjs Official Communication Channels Node.js and the OpenJS Foundation communicate through various official
+      and community-supporte
+    checked: '2026-10-25'
+- id: ATT-094
+  subject: org:github
+  role: host
+  object: tool:npm
+  status: current
+  verification: INFERRED
+  statement: npm is operated by GitHub.
+  sources:
+  - kind: documentation
+    ref: https://docs.npmjs.com/about-npm
+    excerpt: About npm | npm Docs .prc-TextInput-CharacterCounter-vJZBe{align-item
+    checked: '2026-10-25'
+  notes: npm's documentation is published by npm/GitHub; ownership statement to be confirmed against an authoritative page.
+- id: ATT-095
+  subject: org:voidzero
+  role: copyright_holder
+  object: lib:npm/roughin/vite
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'VoidZero Inc. and Vite contributors'.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/vitejs/vite/main/LICENSE
+    excerpt: MIT License Copyright (c) 2019-present, VoidZero Inc. and Vite contributors Permission is hereby granted, free
+      of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-096
+  subject: community:vite
+  role: copyright_holder
+  object: lib:npm/roughin/vite
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'VoidZero Inc. and Vite contributors'.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/vitejs/vite/main/LICENSE
+    excerpt: MIT License Copyright (c) 2019-present, VoidZero Inc. and Vite contributors Permission is hereby granted, free
+      of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-097
+  subject: org:tailwind-labs
+  role: copyright_holder
+  object: lib:npm/roughin/tailwindcss
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of Tailwind CSS.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/tailwindlabs/tailwindcss/main/LICENSE
+    excerpt: MIT License Copyright (c) Tailwind Labs, Inc. Permission is hereby granted, free of charge, to any
+    checked: '2026-10-25'
+- id: ATT-098
+  subject: org:tailwind-labs
+  role: copyright_holder
+  object: lib:npm/theresolver/tailwindcss
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of Tailwind CSS.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/tailwindlabs/tailwindcss/main/LICENSE
+    excerpt: MIT License Copyright (c) Tailwind Labs, Inc. Permission is hereby granted, free of charge, to any
+    checked: '2026-10-25'
+- id: ATT-099
+  subject: org:openjs-foundation
+  role: copyright_holder
+  object: lib:npm/theresolver/eslint
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'OpenJS Foundation and other contributors'.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/eslint/eslint/main/LICENSE
+    excerpt: Copyright OpenJS Foundation and other contributors, Permission is hereby granted, free
+    checked: '2026-10-25'
+- id: ATT-100
+  subject: community:eslint
+  role: contributor
+  object: lib:npm/theresolver/eslint
+  status: current
+  verification: VERIFIED
+  statement: ESLint's contributors.
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/eslint/eslint/main/LICENSE
+    excerpt: Copyright OpenJS Foundation and other contributors, Permission is hereby granted, free
+    checked: '2026-10-25'
+- id: ATT-101
+  subject: org:microsoft
+  role: developer
+  object: lib:npm/theresolver/typescript
+  status: current
+  verification: INFERRED
+  statement: TypeScript is developed in Microsoft's repository.
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/microsoft/TypeScript/main/README.md
+    excerpt: '# TypeScript [![CI](https://github.com/microsoft/TypeScript/actions/work'
+    checked: '2026-10-25'
+- id: ATT-102
+  subject: org:meta
+  role: copyright_holder
+  object: lib:npm/roughin/react
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'Meta Platforms, Inc. and affiliates' (React licence).
+  sources:
+  - kind: license_file
+    ref: credits:licenses/MIT-react-19.txt
+- id: ATT-103
+  subject: org:meta
+  role: copyright_holder
+  object: lib:npm/theresolver/react
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'Meta Platforms, Inc. and affiliates' (React licence).
+  sources:
+  - kind: license_file
+    ref: credits:licenses/MIT-react-19.txt
+- id: ATT-104
+  subject: org:meta
+  role: copyright_holder
+  object: lib:npm/roughin/react-dom
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'Meta Platforms, Inc. and affiliates' (React licence).
+  sources:
+  - kind: license_file
+    ref: credits:licenses/MIT-react-19.txt
+- id: ATT-105
+  subject: org:meta
+  role: copyright_holder
+  object: lib:npm/theresolver/react-dom
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'Meta Platforms, Inc. and affiliates' (React licence).
+  sources:
+  - kind: license_file
+    ref: credits:licenses/MIT-react-19.txt
+- id: ATT-106
+  subject: org:vercel
+  role: copyright_holder
+  object: lib:npm/theresolver/next
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of Next.js (per its licence).
+  sources:
+  - kind: license_file
+    ref: credits:licenses/MIT-next.txt
+- id: ATT-107
+  subject: community:react
+  role: community
+  object: lib:npm/roughin/react
+  status: current
+  verification: INFERRED
+  statement: Develop React with Meta.
+  sources:
+  - kind: repository
+    ref: https://github.com/facebook/react
+    checked: '2026-10-25'
+- id: ATT-108
+  subject: community:react
+  role: community
+  object: lib:npm/theresolver/react
+  status: current
+  verification: INFERRED
+  statement: Develop React with Meta.
+  sources:
+  - kind: repository
+    ref: https://github.com/facebook/react
+    checked: '2026-10-25'
+- id: ATT-109
+  subject: community:react
+  role: community
+  object: lib:npm/roughin/react-dom
+  status: current
+  verification: INFERRED
+  statement: Develop React with Meta.
+  sources:
+  - kind: repository
+    ref: https://github.com/facebook/react
+    checked: '2026-10-25'
+- id: ATT-110
+  subject: community:react
+  role: community
+  object: lib:npm/theresolver/react-dom
+  status: current
+  verification: INFERRED
+  statement: Develop React with Meta.
+  sources:
+  - kind: repository
+    ref: https://github.com/facebook/react
+    checked: '2026-10-25'
+- id: ATT-111
+  subject: community:nextjs
+  role: community
+  object: lib:npm/theresolver/next
+  status: current
+  verification: INFERRED
+  statement: Develop Next.js with Vercel.
+  sources:
+  - kind: repository
+    ref: https://github.com/vercel/next.js
+    checked: '2026-10-25'
+- id: ATT-112
+  subject: person:vidar-holen
+  role: copyright_holder
+  object: tool:shellcheck
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of ShellCheck (2012-2019 source headers).
+  sources:
+  - kind: source_header
+    ref: https://raw.githubusercontent.com/koalaman/shellcheck/master/shellcheck.hs
+    excerpt: '{- Copyright 2012-2019 Vidar Holen This file is part of ShellCheck. https://www.shellcheck.net'
+    checked: '2026-10-25'
+- id: ATT-113
+  subject: community:shellcheck
+  role: community
+  object: tool:shellcheck
+  status: current
+  verification: INFERRED
+  statement: Contribute to ShellCheck.
+  sources:
+  - kind: repository
+    ref: https://github.com/koalaman/shellcheck
+    checked: '2026-10-25'
+- id: ATT-114
+  subject: person:just-van-rossum
+  role: copyright_holder
+  object: tool:fonttools
+  status: current
+  verification: VERIFIED
+  statement: Holds the copyright of fontTools (per its licence).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/fonttools/fonttools/main/LICENSE
+    excerpt: MIT License Copyright (c) 2017 Just van Rossum Permission is hereby granted, free of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-115
+  subject: community:fonttools
+  role: community
+  object: tool:fonttools
+  status: current
+  verification: INFERRED
+  statement: Maintain fontTools.
+  sources:
+  - kind: repository
+    ref: https://github.com/fonttools/fonttools
+    checked: '2026-10-25'
+- id: ATT-116
+  subject: org:docker
+  role: developer
+  object: tool:docker
+  status: current
+  verification: VERIFIED
+  statement: Develops Docker and curates Docker Official Images (node, python base images).
+  sources:
+  - kind: documentation
+    ref: https://docs.docker.com/get-started/docker-overview/
+    excerpt: What is Docker? | Docker Docs {"@context":"https://schema.org","@type":"Te
+    checked: '2026-10-25'
+  - kind: documentation
+    ref: https://docs.docker.com/docker-hub/repos/manage/trusted-content/official-images/
+    excerpt: Docker Official Images | Docker Docs {"@context":"https://schema.org","@type":"Tec
+    checked: '2026-10-25'
+- id: ATT-117
+  subject: person:werner-koch
+  role: founder
+  object: tool:gnupg
+  status: current
+  verification: VERIFIED
+  statement: Started GnuPG in 1997; core components maintainer.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://gnupg.org/people/index.html
+    excerpt: 'ee who is working on GnuPG. Here is a list of some of them: Werner Koch Core components maintainer Werner started
+      GnuPG in 1997 and'
+    checked: '2026-10-25'
+- id: ATT-118
+  subject: community:gnupg
+  role: community
+  object: tool:gnupg
+  status: current
+  verification: VERIFIED
+  statement: Develop GnuPG.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://gnupg.org/people/index.html
+    excerpt: 'ee who is working on GnuPG. Here is a list of some of them: Werner Koch Core components maintainer Werner started
+      GnuPG in 1997 and'
+    checked: '2026-10-25'
+- id: ATT-119
+  subject: person:jean-loup-gailly
+  role: co_creator
+  object: lib:zlib
+  status: current
+  verification: VERIFIED
+  statement: Wrote zlib's compression.
+  sources:
+  - kind: website
+    ref: https://zlib.net/
+    excerpt: is completely coincidental. No, really. zlib was written by Jean-loup Gailly (compression) and Mark Adler (decompression).
+      Current relea
+    checked: '2026-10-25'
+- id: ATT-120
+  subject: person:mark-adler
+  role: co_creator
+  object: lib:zlib
+  status: current
+  verification: VERIFIED
+  statement: Wrote zlib's decompression and maintains the zlib home page.
+  sources:
+  - kind: website
+    ref: https://zlib.net/
+    excerpt: pages originally created by Greg Roelofs and maintained by Mark Adler . If this page seems suspiciously similar
+      to the PNG Home P
+    checked: '2026-10-25'
+- id: ATT-121
+  subject: community:zlib
+  role: contributor
+  object: lib:zlib
+  status: current
+  verification: INFERRED
+  statement: Contribute to zlib's releases.
+  sources:
+  - kind: repository
+    ref: https://github.com/madler/zlib
+    checked: '2026-10-25'
+- id: ATT-122
+  subject: person:austin-wright
+  role: editor
+  object: std:json-schema-2020-12
+  status: current
+  verification: VERIFIED
+  statement: Editor of JSON Schema Draft 2020-12 (Core).
+  sources:
+  - kind: specification
+    ref: https://json-schema.org/draft/2020-12/json-schema-core
+    excerpt: 'raft-zyp-json-schema-00 Initial draft. ¶ Authors'' Addresses Austin Wright ( editor ) Email: Henry Andrews (
+      editor'
+    checked: '2026-10-25'
+- id: ATT-123
+  subject: person:henry-andrews
+  role: editor
+  object: std:json-schema-2020-12
+  status: current
+  verification: VERIFIED
+  statement: Editor of JSON Schema Draft 2020-12 (Core).
+  sources:
+  - kind: specification
+    ref: https://json-schema.org/draft/2020-12/json-schema-core
+    excerpt: 'Addresses Austin Wright ( editor ) Email: Henry Andrews ( editor ) Email: Ben Hutton ( editor ) P'
+    checked: '2026-10-25'
+- id: ATT-124
+  subject: person:ben-hutton
+  role: editor
+  object: std:json-schema-2020-12
+  status: current
+  verification: VERIFIED
+  statement: Editor of JSON Schema Draft 2020-12 (Core).
+  sources:
+  - kind: specification
+    ref: https://json-schema.org/draft/2020-12/json-schema-core
+    excerpt: 'rotected] Henry Andrews ( editor ) Email: Ben Hutton ( editor ) Postman Email: URI: https://js'
+    checked: '2026-10-25'
+- id: ATT-125
+  subject: person:greg-dennis
+  role: author
+  object: std:json-schema-2020-12
+  status: current
+  verification: VERIFIED
+  statement: Author of JSON Schema Draft 2020-12 (Core).
+  sources:
+  - kind: specification
+    ref: https://json-schema.org/draft/2020-12/json-schema-core
+    excerpt: 'ostman Email: URI: https://jsonschema.dev Greg Dennis Email: URI: https://github.com/gregsdenni'
+    checked: '2026-10-25'
+- id: ATT-126
+  subject: community:json-schema
+  role: host
+  object: std:json-schema-2020-12
+  status: current
+  verification: VERIFIED
+  statement: Publishes the JSON Schema specifications.
+  sources:
+  - kind: specification
+    ref: https://json-schema.org/draft/2020-12/json-schema-core
+    excerpt: 'raft-zyp-json-schema-00 Initial draft. ¶ Authors'' Addresses Austin Wright ( editor ) Email: Henry Andrews (
+      editor'
+    checked: '2026-10-25'
+- id: ATT-127
+  subject: person:tom-preston-werner
+  role: author
+  object: std:semver
+  status: current
+  verification: VERIFIED
+  statement: Author of the Semantic Versioning specification.
+  sources:
+  - kind: specification
+    ref: https://semver.org/
+    excerpt: a.org","@type":"WebSite","author":{"@type":"Person","name":"Tom Preston-Werner"},"description":"Semantic Versioning
+      spec and website","hea
+    checked: '2026-10-25'
+- id: ATT-128
+  subject: community:semver
+  role: community
+  object: std:semver
+  status: current
+  verification: INFERRED
+  statement: Maintain the specification.
+  sources:
+  - kind: repository
+    ref: https://github.com/semver/semver
+    checked: '2026-10-25'
+- id: ATT-129
+  subject: person:tom-preston-werner
+  role: creator
+  object: std:toml-1.0
+  status: current
+  verification: VERIFIED
+  statement: Created TOML (Tom's Obvious, Minimal Language); holds its copyright.
+  sources:
+  - kind: specification
+    ref: https://raw.githubusercontent.com/toml-lang/toml/main/README.md
+    excerpt: '# TOML Tom''s Obvious, Minimal Language. By Tom Preston-Werner, Pradyun Gedam, et al. > This repository contains
+      the in-de'
+    checked: '2026-10-25'
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/toml-lang/toml/main/LICENSE
+    excerpt: The MIT License Copyright (c) Tom Preston-Werner Permission is hereby granted, free of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-130
+  subject: person:pradyun-gedam
+  role: author
+  object: std:toml-1.0
+  status: current
+  verification: VERIFIED
+  statement: Named author of the TOML specification.
+  sources:
+  - kind: specification
+    ref: https://raw.githubusercontent.com/toml-lang/toml/main/README.md
+    excerpt: '# TOML Tom''s Obvious, Minimal Language. By Tom Preston-Werner, Pradyun Gedam, et al. > This repository contains
+      the in-de'
+    checked: '2026-10-25'
+- id: ATT-131
+  subject: community:toml
+  role: community
+  object: std:toml-1.0
+  status: current
+  verification: VERIFIED
+  statement: The 'et al.' behind the TOML specification.
+  sources:
+  - kind: specification
+    ref: https://raw.githubusercontent.com/toml-lang/toml/main/README.md
+    excerpt: '# TOML Tom''s Obvious, Minimal Language. By Tom Preston-Werner, Pradyun Gedam, et al. > This repository contains
+      the in-de'
+    checked: '2026-10-25'
+- id: ATT-132
+  subject: person:oren-ben-kiki
+  role: author
+  object: std:yaml-1.2
+  status: current
+  verification: VERIFIED
+  statement: Copyright holder and author of the YAML specification (2001-2009).
+  sources:
+  - kind: specification
+    ref: https://yaml.org/spec/1.2.2/
+    excerpt: by YAML Language Development Team 1 Copyright 2001-2009 by Oren Ben-Kiki, Clark Evans, Ingy döt Net This document
+      may be freely copi
+    checked: '2026-10-25'
+- id: ATT-133
+  subject: person:clark-evans
+  role: author
+  object: std:yaml-1.2
+  status: current
+  verification: VERIFIED
+  statement: Copyright holder and author of the YAML specification (2001-2009).
+  sources:
+  - kind: specification
+    ref: https://yaml.org/spec/1.2.2/
+    excerpt: ge Development Team 1 Copyright 2001-2009 by Oren Ben-Kiki, Clark Evans, Ingy döt Net This document may be freely
+      copied, provided
+    checked: '2026-10-25'
+- id: ATT-134
+  subject: person:ingy-dot-net
+  role: author
+  object: std:yaml-1.2
+  status: current
+  verification: VERIFIED
+  statement: Copyright holder and author of the YAML specification (2001-2009).
+  sources:
+  - kind: specification
+    ref: https://yaml.org/spec/1.2.2/
+    excerpt: t Team 1 Copyright 2001-2009 by Oren Ben-Kiki, Clark Evans, Ingy döt Net This document may be freely copied,
+      provided it is not modi
+    checked: '2026-10-25'
+- id: ATT-135
+  subject: community:yaml-project
+  role: community
+  object: std:yaml-1.2
+  status: current
+  verification: VERIFIED
+  statement: The YAML Language Development Team.
+  sources:
+  - kind: specification
+    ref: https://yaml.org/spec/1.2.2/
+    excerpt: by YAML Language Development Team 1 Copyright 2001-2009 by Oren Ben-Kiki, Clark Evans, Ingy döt Net This document
+      may be freely copi
+    checked: '2026-10-25'
+- id: ATT-136
+  subject: person:graham-klyne
+  role: author
+  object: std:rfc3339
+  status: current
+  verification: VERIFIED
+  statement: Author of RFC 3339.
+  sources:
+  - kind: specification
+    ref: https://www.rfc-editor.org/rfc/rfc3339.txt
+    excerpt: 'Network Working Group G. Klyne Request for Comments: 3339 Clearswift Corporation Category:'
+    checked: '2026-10-25'
+- id: ATT-137
+  subject: person:chris-newman
+  role: author
+  object: std:rfc3339
+  status: current
+  verification: VERIFIED
+  statement: Author of RFC 3339.
+  sources:
+  - kind: specification
+    ref: https://www.rfc-editor.org/rfc/rfc3339.txt
+    excerpt: 's: 3339 Clearswift Corporation Category: Standards Track C. Newman Sun Microsystems July 2002 Date and Time
+      on the Internet: T'
+    checked: '2026-10-25'
+- id: ATT-138
+  subject: org:ietf
+  role: host
+  object: std:rfc3339
+  status: current
+  verification: VERIFIED
+  statement: Published as an IETF RFC.
+  sources:
+  - kind: specification
+    ref: https://www.rfc-editor.org/rfc/rfc3339.txt
+    excerpt: 'Network Working Group G. Klyne Request for Comments: 3339 Clearswift Corporation Category:'
+    checked: '2026-10-25'
+- id: ATT-139
+  subject: person:tim-bray
+  role: editor
+  object: std:json-rfc8259
+  status: current
+  verification: VERIFIED
+  statement: Editor of RFC 8259.
+  sources:
+  - kind: specification
+    ref: https://www.rfc-editor.org/rfc/rfc8259.txt
+    excerpt: 'Internet Engineering Task Force (IETF) T. Bray, Ed. Request for Comments: 8259 Textuality Obsoletes: 7159 Decem'
+    checked: '2026-10-25'
+- id: ATT-140
+  subject: org:ietf
+  role: host
+  object: std:json-rfc8259
+  status: current
+  verification: VERIFIED
+  statement: Published as an IETF RFC.
+  sources:
+  - kind: specification
+    ref: https://www.rfc-editor.org/rfc/rfc8259.txt
+    excerpt: 'Internet Engineering Task Force (IETF) T. Bray, Ed. Request for Comments: 8259 Textuality Obsoletes: 7159 Decem'
+    checked: '2026-10-25'
+- id: ATT-141
+  subject: person:douglas-crockford
+  role: author
+  object: std:crockford-base32
+  status: current
+  verification: VERIFIED
+  statement: Author of the Base 32 encoding used by ULIDs.
+  sources:
+  - kind: specification
+    ref: https://www.crockford.com/base32.html
+    excerpt: Base 32 Douglas Crockford Blog Books Videos 2026 Appearance Slides JavaScript Misty J
+    checked: '2026-10-25'
+- id: ATT-142
+  subject: community:ulid
+  role: community
+  object: std:ulid
+  status: current
+  verification: INFERRED
+  statement: Maintain the ULID specification.
+  sources:
+  - kind: repository
+    ref: https://github.com/ulid/spec
+    checked: '2026-10-25'
+- id: ATT-143
+  subject: person:michael-c-fanning
+  role: editor
+  object: std:sarif-2.1.0
+  status: current
+  verification: VERIFIED
+  statement: Editor of SARIF 2.1.0.
+  sources:
+  - kind: specification
+    ref: https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html
+    excerpt: 'mber Luke Cartey ( ), Microsoft Editors: Michael C. Fanning ( ), Microsoft Laurence J. Golding ('
+    checked: '2026-10-25'
+- id: ATT-144
+  subject: person:laurence-j-golding
+  role: editor
+  object: std:sarif-2.1.0
+  status: current
+  verification: VERIFIED
+  statement: Editor of SARIF 2.1.0.
+  sources:
+  - kind: specification
+    ref: https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html
+    excerpt: 'rs: Michael C. Fanning ( ), Microsoft Laurence J. Golding ( ), Microsoft Additional artifacts :'
+    checked: '2026-10-25'
+- id: ATT-145
+  subject: org:oasis-open
+  role: host
+  object: std:sarif-2.1.0
+  status: current
+  verification: INFERRED
+  statement: SARIF is an OASIS standard.
+  sources:
+  - kind: specification
+    ref: https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html
+    excerpt: 'mber Luke Cartey ( ), Microsoft Editors: Michael C. Fanning ( ), Microsoft Laurence J. Golding ('
+    checked: '2026-10-25'
+- id: ATT-146
+  subject: org:linux-foundation
+  role: host
+  object: std:spdx
+  status: current
+  verification: VERIFIED
+  statement: SPDX is an open-source project hosted by the Linux Foundation.
+  sources:
+  - kind: foundation
+    ref: https://spdx.dev/about/overview/
+    excerpt: ability. About SPDX is an open source project hosted by the Linux Foundation. The grass-roots effort includes
+      representatives from a div
+    checked: '2026-10-25'
+- id: ATT-147
+  subject: community:spdx
+  role: community
+  object: std:spdx
+  status: current
+  verification: VERIFIED
+  statement: Develop the SPDX specification and licence list.
+  sources:
+  - kind: foundation
+    ref: https://spdx.dev/about/overview/
+    excerpt: ability. About SPDX is an open source project hosted by the Linux Foundation. The grass-roots effort includes
+      representatives from a div
+    checked: '2026-10-25'
+- id: ATT-148
+  subject: person:wayne-davison
+  role: creator
+  object: std:unified-diff
+  status: historical
+  verification: VERIFIED
+  statement: Designed and implemented the unified output format.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://www.gnu.org/software/diffutils/manual/html_node/Overview.html
+    excerpt: Mike Haertel, David Hayes, Richard Stallman, and Len Tower. Wayne Davison designed and implemented the unified
+      output format. The bas
+    checked: '2026-10-25'
+- id: ATT-149
+  subject: person:paul-eggert
+  role: author
+  object: std:unified-diff
+  status: historical
+  verification: VERIFIED
+  statement: An author of GNU diff, which defines and implements the format.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://www.gnu.org/software/diffutils/manual/html_node/Overview.html
+    excerpt: s how to use diffs to update files. GNU diff was written by Paul Eggert, Mike Haertel, David Hayes, Richard Stallman,
+      and Len Tower
+    checked: '2026-10-25'
+- id: ATT-150
+  subject: person:mike-haertel
+  role: author
+  object: std:unified-diff
+  status: historical
+  verification: VERIFIED
+  statement: An author of GNU diff, which defines and implements the format.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://www.gnu.org/software/diffutils/manual/html_node/Overview.html
+    excerpt: s how to use diffs to update files. GNU diff was written by Paul Eggert, Mike Haertel, David Hayes, Richard Stallman,
+      and Len Tower
+    checked: '2026-10-25'
+- id: ATT-151
+  subject: person:david-hayes
+  role: author
+  object: std:unified-diff
+  status: historical
+  verification: VERIFIED
+  statement: An author of GNU diff, which defines and implements the format.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://www.gnu.org/software/diffutils/manual/html_node/Overview.html
+    excerpt: s how to use diffs to update files. GNU diff was written by Paul Eggert, Mike Haertel, David Hayes, Richard Stallman,
+      and Len Tower
+    checked: '2026-10-25'
+- id: ATT-152
+  subject: person:richard-stallman
+  role: author
+  object: std:unified-diff
+  status: historical
+  verification: VERIFIED
+  statement: An author of GNU diff, which defines and implements the format.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://www.gnu.org/software/diffutils/manual/html_node/Overview.html
+    excerpt: s how to use diffs to update files. GNU diff was written by Paul Eggert, Mike Haertel, David Hayes, Richard Stallman,
+      and Len Tower
+    checked: '2026-10-25'
+- id: ATT-153
+  subject: person:len-tower
+  role: author
+  object: std:unified-diff
+  status: historical
+  verification: VERIFIED
+  statement: An author of GNU diff, which defines and implements the format.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://www.gnu.org/software/diffutils/manual/html_node/Overview.html
+    excerpt: s how to use diffs to update files. GNU diff was written by Paul Eggert, Mike Haertel, David Hayes, Richard Stallman,
+      and Len Tower
+    checked: '2026-10-25'
+- id: ATT-154
+  subject: community:gnu-project
+  role: host
+  object: std:unified-diff
+  status: current
+  verification: VERIFIED
+  statement: GNU diffutils documents the format.
+  sources:
+  - kind: maintainer_documentation
+    ref: https://www.gnu.org/software/diffutils/manual/html_node/Overview.html
+    excerpt: Mike Haertel, David Hayes, Richard Stallman, and Len Tower. Wayne Davison designed and implemented the unified
+      output format. The bas
+    checked: '2026-10-25'
+- id: ATT-155
+  subject: org:nist
+  role: host
+  object: std:fips-180-4
+  status: current
+  verification: VERIFIED
+  statement: Publishes the Secure Hash Standard.
+  sources:
+  - kind: specification
+    ref: https://csrc.nist.gov/pubs/fips/180-4/upd1/final
+    excerpt: 'FIPS 180-4, Secure Hash Standard (SHS) | CSRC .grecaptcha-badge { visibility: hidden; } body'
+    checked: '2026-10-25'
+- id: ATT-156
+  subject: org:unicode-consortium
+  role: host
+  object: std:unicode-normalization
+  status: current
+  verification: VERIFIED
+  statement: 'Publishes the Unicode Standard Annex #15.'
+  sources:
+  - kind: specification
+    ref: https://unicode.org/reports/tr15/
+    excerpt: 'UAX #15: Unicode Normalization Forms Technical Reports Unicode® Standard Annex #15 Unicode Norma'
+    checked: '2026-10-25'
+- id: ATT-157
+  subject: person:georgi-gerganov
+  role: founder
+  object: org:ggml-ai
+  status: current
+  verification: VERIFIED
+  statement: Founded ggml.ai in 2023 to support the development of ggml.
+  sources:
+  - kind: official_history
+    ref: https://ggml.ai/
+    excerpt: on GitHub. Company ggml.ai is a company founded in 2023 by Georgi Gerganov to support the development of ggml
+      . Nat Friedman and Danie
+    checked: '2026-10-25'
+- id: ATT-158
+  subject: org:ggml
+  role: copyright_holder
+  object: model:llama-cpp
+  status: current
+  verification: VERIFIED
+  statement: Copyright 'The ggml authors' (llama.cpp licence).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/ggml-org/llama.cpp/master/LICENSE
+    excerpt: MIT License Copyright (c) 2023-2026 The ggml authors Permission is hereby granted, free of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-159
+  subject: org:ggml-ai
+  role: steward
+  object: model:llama-cpp
+  status: current
+  verification: INFERRED
+  statement: Supports the development of ggml, the library under llama.cpp.
+  sources:
+  - kind: official_history
+    ref: https://ggml.ai/
+    excerpt: on GitHub. Company ggml.ai is a company founded in 2023 by Georgi Gerganov to support the development of ggml
+      . Nat Friedman and Danie
+    checked: '2026-10-25'
+- id: ATT-160
+  subject: ai:chatgpt
+  role: ai_assistance
+  object: org:outer-void
+  status: current
+  verification: OWNER_REPORTED
+  statement: ChatGPT was used in Outer Void development (owner-reported).
+  sources:
+  - kind: owner_declaration
+    ref: owner:2026-10-25
+    title: Project owner's answer during the Stage 08 attribution pass
+  - kind: website
+    ref: https://chatgpt.com/
+    excerpt: 'ChatGPT @layer theme, base, components, utilities; @layer theme { :'
+    checked: '2026-10-25'
+- id: ATT-161
+  subject: org:openai
+  role: developer
+  object: ai:chatgpt
+  status: current
+  verification: VERIFIED
+  statement: Develops this AI product or model family.
+  sources:
+  - kind: website
+    ref: https://chatgpt.com/
+    excerpt: 'ChatGPT @layer theme, base, components, utilities; @layer theme { :'
+    checked: '2026-10-25'
+- id: ATT-162
+  subject: ai:deepseek-dev
+  role: ai_assistance
+  object: org:outer-void
+  status: current
+  verification: OWNER_REPORTED
+  statement: DeepSeek was used in Outer Void development (owner-reported).
+  sources:
+  - kind: owner_declaration
+    ref: owner:2026-10-25
+    title: Project owner's answer during the Stage 08 attribution pass
+  - kind: website
+    ref: https://www.deepseek.com/en
+    excerpt: DeepSeek | Into the Unknown (function { var n = navigator; var hi
+    checked: '2026-10-25'
+- id: ATT-163
+  subject: org:deepseek
+  role: developer
+  object: ai:deepseek-dev
+  status: current
+  verification: VERIFIED
+  statement: Develops this AI product or model family.
+  sources:
+  - kind: website
+    ref: https://www.deepseek.com/en
+    excerpt: DeepSeek | Into the Unknown (function { var n = navigator; var hi
+    checked: '2026-10-25'
+- id: ATT-164
+  subject: ai:blackbox-dev
+  role: ai_assistance
+  object: org:outer-void
+  status: current
+  verification: OWNER_REPORTED
+  statement: BLACKBOX AI was used in Outer Void development (owner-reported).
+  sources:
+  - kind: owner_declaration
+    ref: owner:2026-10-25
+    title: Project owner's answer during the Stage 08 attribution pass
+  - kind: website
+    ref: https://www.blackbox.ai/
+    excerpt: 'Blackbox: The high-trust platform for frontier inference (function(a'
+    checked: '2026-10-25'
+- id: ATT-165
+  subject: org:blackbox-ai
+  role: developer
+  object: ai:blackbox-dev
+  status: current
+  verification: VERIFIED
+  statement: Develops this AI product or model family.
+  sources:
+  - kind: website
+    ref: https://www.blackbox.ai/
+    excerpt: 'Blackbox: The high-trust platform for frontier inference (function(a'
+    checked: '2026-10-25'
+- id: ATT-166
+  subject: ai:meta-llama
+  role: model
+  object: org:outer-void
+  status: current
+  verification: OWNER_REPORTED
+  statement: Meta Llama models were used in Outer Void development (owner-reported).
+  sources:
+  - kind: owner_declaration
+    ref: owner:2026-10-25
+    title: Project owner's answer during the Stage 08 attribution pass
+  - kind: website
+    ref: https://www.llama.com/
+    excerpt: velopers | Meta (function{try{var t=localStorage.getItem('llama-theme')||'system';var d=t==='dark'||(t==='system'&&window.m
+    checked: '2026-10-25'
+- id: ATT-167
+  subject: org:meta
+  role: developer
+  object: ai:meta-llama
+  status: current
+  verification: VERIFIED
+  statement: Develops this AI product or model family.
+  sources:
+  - kind: website
+    ref: https://www.llama.com/
+    excerpt: velopers | Meta (function{try{var t=localStorage.getItem('llama-theme')||'system';var d=t==='dark'||(t==='system'&&window.m
+    checked: '2026-10-25'
+- id: ATT-168
+  subject: org:anthropic
+  role: developer
+  object: ai:claude-code
+  status: current
+  verification: VERIFIED
+  statement: Develops Claude and Claude Code.
+  sources:
+  - kind: documentation
+    ref: https://docs.anthropic.com/en/docs/claude-code/overview
+    excerpt: sable-scrollbar::-webkit-scrollbar{display:none} Overview - Claude Code Docs !function{var b="/docs"; function
+      a(p){if(p==null)re
+    checked: '2026-10-25'
+- id: ATT-169
+  subject: org:google
+  role: developer
+  object: ai:gemini-code-assist
+  status: current
+  verification: VERIFIED
+  statement: Develops Gemini Code Assist.
+  sources:
+  - kind: documentation
+    ref: https://developers.google.com/gemini-code-assist/docs/overview
+    excerpt: 'Gemini Code Assist overview | Google for Developers { "@context": "https://sch'
+    checked: '2026-10-25'
+- id: ATT-170
+  subject: org:github
+  role: developer
+  object: ai:github-copilot
+  status: current
+  verification: VERIFIED
+  statement: Develops GitHub Copilot.
+  sources:
+  - kind: documentation
+    ref: https://docs.github.com/en/copilot/about-github-copilot/what-is-github-copilot
+    excerpt: About GitHub Copilot - GitHub Docs (function{ var MODES=["auto","light","dark"
+    checked: '2026-10-25'
+- id: ATT-171
+  subject: org:nous-research
+  role: copyright_holder
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Copyright (c) 2025 Nous Research (MIT).
+  sources:
+  - kind: license_file
+    ref: https://raw.githubusercontent.com/NousResearch/hermes-agent/main/LICENSE
+    excerpt: MIT License Copyright (c) 2025 Nous Research Permission is hereby granted, free of charge, to any person
+    checked: '2026-10-25'
+- id: ATT-172
+  subject: org:nous-research
+  role: developer
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Builds Hermes Agent ('the self-improving AI agent built by Nous Research').
+  sources:
+  - kind: repository
+    ref: https://raw.githubusercontent.com/NousResearch/hermes-agent/main/README.md
+    excerpt: nt | Hermes Desktop **The self-improving AI agent built by [Nous Research](https://nousresearch.com).** It's
+      the only agent with a bu
+    checked: '2026-10-25'
+- id: ATT-173
+  subject: person:hermes-upstream-contributors
+  role: community
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: 'Upstream contributors: 4,391 distinct git author identities in the fork''s history (identities not merged).'
+  sources:
+  - kind: git_history
+    ref: ov:blhermes-agent
+  - kind: authors_file
+    ref: ov:blhermes-agent/contributors/README.md
+- id: ATT-174
+  subject: proj:hermes-agent
+  role: fork_origin
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: BLHermes Agent is a fork of Hermes Agent (merge base 3fa571a5).
+  sources:
+  - kind: repository
+    ref: ov:blhermes-agent/README.md
+  - kind: git_history
+    ref: credits:provenance/source-lineage.yaml
+- id: ATT-175
+  subject: proj:hermes-agent
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: The MIT notice 'Copyright (c) 2025 Nous Research' must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/LICENSE
+- id: ATT-176
+  subject: proj:hermes-agent
+  role: architectural_influence
+  object: repo:blux
+  status: current
+  verification: VERIFIED
+  statement: Hermes's agent architecture informs BLUX's plans for an agent layer (BLHermes migration); no Hermes code is in
+    BLUX.
+  sources:
+  - kind: documentation
+    ref: ov:blux/docs/ecosystem/baseline-report.md
+- id: ATT-177
+  subject: proj:claude-plugins-official
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: The security-guidance plugin includes patterns.py from Anthropic's claude-plugins-official (Apache-2.0).
+  sources:
+  - kind: notice_file
+    ref: ov:blhermes-agent/plugins/security-guidance/NOTICE
+- id: ATT-178
+  subject: org:anthropic
+  role: copyright_holder
+  object: proj:claude-plugins-official
+  status: current
+  verification: VERIFIED
+  statement: Published by Anthropic, PBC. under the Apache License 2.0.
+  sources:
+  - kind: notice_file
+    ref: ov:blhermes-agent/plugins/security-guidance/NOTICE
+- id: ATT-179
+  subject: org:nous-research
+  role: copyright_holder
+  object: proj:hermes-nested/hermes-bots
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Nous Research''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/apps/desktop/src/plugins/hermes-bots/LICENSE
+- id: ATT-180
+  subject: proj:hermes-nested/hermes-bots
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/apps/desktop/src/plugins/hermes-bots/LICENSE
+- id: ATT-181
+  subject: proj:hermes-nested/hermes-bots
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/apps/desktop/src/plugins/hermes-bots/LICENSE
+- id: ATT-182
+  subject: person:lanshu
+  role: copyright_holder
+  object: proj:hermes-nested/ai-presenter-video
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 lanshu''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/ai-presenter-video/LICENSE
+- id: ATT-183
+  subject: proj:hermes-nested/ai-presenter-video
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/ai-presenter-video/LICENSE
+- id: ATT-184
+  subject: proj:hermes-nested/ai-presenter-video
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/ai-presenter-video/LICENSE
+- id: ATT-185
+  subject: person:ryan-anatomy-skill
+  role: copyright_holder
+  object: proj:hermes-nested/anatomy
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Ryan''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/anatomy/LICENSE.txt
+- id: ATT-186
+  subject: proj:hermes-nested/anatomy
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/anatomy/LICENSE.txt
+- id: ATT-187
+  subject: proj:hermes-nested/anatomy
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/anatomy/LICENSE.txt
+- id: ATT-188
+  subject: person:agiwhitelist
+  role: copyright_holder
+  object: proj:hermes-nested/auteur
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Upstream author / copyright holder: agiwhitelist (https://github.com/agiwhitelist)''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/auteur/LICENSE
+- id: ATT-189
+  subject: proj:hermes-nested/auteur
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/auteur/LICENSE
+- id: ATT-190
+  subject: proj:hermes-nested/auteur
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/auteur/LICENSE
+- id: ATT-191
+  subject: person:anshu-chimala
+  role: copyright_holder
+  object: proj:hermes-nested/dream-loop
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Anshu Chimala''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/dream-loop/LICENSE.txt
+- id: ATT-192
+  subject: proj:hermes-nested/dream-loop
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/dream-loop/LICENSE.txt
+- id: ATT-193
+  subject: proj:hermes-nested/dream-loop
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/dream-loop/LICENSE.txt
+- id: ATT-194
+  subject: person:s1dashu
+  role: copyright_holder
+  object: proj:hermes-nested/ip-as-logo
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Upstream author / copyright holder: s1dashu (https://github.com/s1dashu)''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/ip-as-logo/LICENSE
+- id: ATT-195
+  subject: proj:hermes-nested/ip-as-logo
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/ip-as-logo/LICENSE
+- id: ATT-196
+  subject: proj:hermes-nested/ip-as-logo
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/ip-as-logo/LICENSE
+- id: ATT-197
+  subject: person:yan-liu
+  role: copyright_holder
+  object: proj:hermes-nested/mono-color
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Yan Liu''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/mono-color/LICENSE.txt
+- id: ATT-198
+  subject: proj:hermes-nested/mono-color
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/mono-color/LICENSE.txt
+- id: ATT-199
+  subject: proj:hermes-nested/mono-color
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/mono-color/LICENSE.txt
+- id: ATT-200
+  subject: person:harshyt-goel
+  role: copyright_holder
+  object: proj:hermes-nested/system-atlas
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Harshyt Goel''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/system-atlas/LICENSE.txt
+- id: ATT-201
+  subject: proj:hermes-nested/system-atlas
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/system-atlas/LICENSE.txt
+- id: ATT-202
+  subject: proj:hermes-nested/system-atlas
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/creative/system-atlas/LICENSE.txt
+- id: ATT-203
+  subject: person:yeongyu-kim
+  role: copyright_holder
+  object: proj:hermes-nested/ast-grep
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Yeongyu Kim''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/software-development/ast-grep/LICENSE
+- id: ATT-204
+  subject: proj:hermes-nested/ast-grep
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/software-development/ast-grep/LICENSE
+- id: ATT-205
+  subject: proj:hermes-nested/ast-grep
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/software-development/ast-grep/LICENSE
+- id: ATT-206
+  subject: org:coldtea-ai
+  role: copyright_holder
+  object: proj:hermes-nested/pr-lens
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Coldtea AI''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/software-development/pr-lens/LICENSE.txt
+- id: ATT-207
+  subject: proj:hermes-nested/pr-lens
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/software-development/pr-lens/LICENSE.txt
+- id: ATT-208
+  subject: proj:hermes-nested/pr-lens
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/software-development/pr-lens/LICENSE.txt
+- id: ATT-209
+  subject: person:nate-herk
+  role: copyright_holder
+  object: proj:hermes-nested/scrollcraft
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Nate Herk''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/web-development/scrollcraft/LICENSE.txt
+- id: ATT-210
+  subject: proj:hermes-nested/scrollcraft
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/web-development/scrollcraft/LICENSE.txt
+- id: ATT-211
+  subject: proj:hermes-nested/scrollcraft
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/optional-skills/web-development/scrollcraft/LICENSE.txt
+- id: ATT-212
+  subject: community:hermes-achievements
+  role: copyright_holder
+  object: proj:hermes-nested/hermes-achievements
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Hermes Achievements contributors''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/plugins/hermes-achievements/LICENSE
+- id: ATT-213
+  subject: proj:hermes-nested/hermes-achievements
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/plugins/hermes-achievements/LICENSE
+- id: ATT-214
+  subject: proj:hermes-nested/hermes-achievements
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/plugins/hermes-achievements/LICENSE
+- id: ATT-215
+  subject: person:siqi-chen
+  role: copyright_holder
+  object: proj:hermes-nested/humanizer
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2025 Siqi Chen''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/creative/humanizer/LICENSE
+- id: ATT-216
+  subject: proj:hermes-nested/humanizer
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/creative/humanizer/LICENSE
+- id: ATT-217
+  subject: proj:hermes-nested/humanizer
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/creative/humanizer/LICENSE
+- id: ATT-218
+  subject: org:nous-research
+  role: copyright_holder
+  object: proj:hermes-nested/docx
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Nous Research''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/docx/LICENSE
+- id: ATT-219
+  subject: proj:hermes-nested/docx
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/docx/LICENSE
+- id: ATT-220
+  subject: proj:hermes-nested/docx
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/docx/LICENSE
+- id: ATT-221
+  subject: org:nous-research
+  role: copyright_holder
+  object: proj:hermes-nested/pdf
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Nous Research''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/pdf/LICENSE
+- id: ATT-222
+  subject: proj:hermes-nested/pdf
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/pdf/LICENSE
+- id: ATT-223
+  subject: proj:hermes-nested/pdf
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/pdf/LICENSE
+- id: ATT-224
+  subject: org:nous-research
+  role: copyright_holder
+  object: proj:hermes-nested/powerpoint
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Nous Research''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/powerpoint/LICENSE
+- id: ATT-225
+  subject: proj:hermes-nested/powerpoint
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/powerpoint/LICENSE
+- id: ATT-226
+  subject: proj:hermes-nested/powerpoint
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/powerpoint/LICENSE
+- id: ATT-227
+  subject: org:nous-research
+  role: copyright_holder
+  object: proj:hermes-nested/xlsx
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Copyright (c) 2026 Nous Research''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/xlsx/LICENSE
+- id: ATT-228
+  subject: proj:hermes-nested/xlsx
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/xlsx/LICENSE
+- id: ATT-229
+  subject: proj:hermes-nested/xlsx
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its MIT notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/skills/productivity/xlsx/LICENSE
+- id: ATT-230
+  subject: org:anthropic
+  role: copyright_holder
+  object: proj:hermes-nested/security-guidance
+  status: current
+  verification: VERIFIED
+  statement: 'Named in the component''s licence: ''Apache-2.0 (claude-plugins-official, Anthropic, PBC.); see NOTICE''.'
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/plugins/security-guidance/LICENSE
+- id: ATT-231
+  subject: proj:hermes-nested/security-guidance
+  role: nested_upstream
+  object: proj:hermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Nested upstream component of Hermes Agent with its own licence.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/plugins/security-guidance/LICENSE
+- id: ATT-232
+  subject: proj:hermes-nested/security-guidance
+  role: legal_attribution
+  object: repo:blhermes-agent
+  status: current
+  verification: VERIFIED
+  statement: Its Apache-2.0 notice must travel with BLHermes.
+  sources:
+  - kind: license_file
+    ref: ov:blhermes-agent/plugins/security-guidance/LICENSE

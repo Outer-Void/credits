@@ -42,14 +42,21 @@ ai:
   - AI_ASSISTANCE
   vendor: org:openai
   affects:
+  - org:outer-void
   - repo:axiom
   assistance:
-  - REVIEW_REQUIRED
-  verification: REVIEW_REQUIRED
-  unresolved: UNR-011
+  - unspecified
+  verification: OWNER_REPORTED
+  unresolved: UNR-018
   evidence:
   - 3 axiom commit messages mention ChatGPT/GPT
-  notes: Mentioned; nature of use not established.
+  - Owner declaration, 2026-10-25
+  notes: 'Owner-reported use in Outer Void development (2026-10-25). Which repositories and what kind of help are not stated
+    (UNR-018). Before 2026-10-25 this record was REVIEW_REQUIRED: Mentioned; nature of use not established.'
+  sources:
+  - kind: owner_declaration
+    ref: owner:2026-10-25
+    title: Project owner's answer during the Stage 08 attribution pass
 - id: ai:claude-code
   name: Claude / Claude Code
   relationship:
@@ -70,6 +77,9 @@ ai:
   - repo:blux-ca
   - repo:blux-coga-dataset
   - repo:blux-ca-dataset
+  - repo:blhermes-agent
+  - repo:dotgithub
+  - repo:docs
   assistance:
   - architecture_planning
   - code_generation
@@ -79,7 +89,7 @@ ai:
   verification: VERIFIED
   evidence:
   - 'Co-authored-by: Claude Sonnet 4.6 (void.os 6, void.game 2, void.sys 1, resolver 1)'
-  - 'Co-authored-by: Claude Opus 5.5 (blux Stage 00/01/01A/02/03/04/05/06/07/08 commits; blux-system Stage 02; dat Stage 03; lrc Stage 04; god Stage 05; blux-coga Stage 06; blux-ca Stages 07/08; blux-coga-dataset and blux-ca-dataset Stage 08; this credits ledger)'
+  - 'Co-authored-by: Claude Opus 5.5 (blux Stage 00/01/01A/02/03/04/05/06/07/08 commits; blux-system Stage 02; dat Stage 03; lrc Stage 04; god Stage 05; blux-coga Stage 06; blux-ca Stages 07/08; blux-coga-dataset and blux-ca-dataset Stage 08; blhermes-agent, .github and docs in the Stage 08 attribution pass; this credits ledger)'
 - id: ai:gemini-code-assist
   name: Gemini Code Assist
   relationship:
@@ -123,33 +133,59 @@ ai:
 - id: ai:deepseek-dev
   name: DeepSeek (as development assistant)
   relationship:
-  - UNKNOWN_OR_REVIEW_REQUIRED
+  - AI_ASSISTANCE
   vendor: org:deepseek
-  affects: []
-  assistance: []
-  verification: REVIEW_REQUIRED
-  unresolved: UNR-011
-  evidence: []
-  notes: No evidence of development use. Runtime/provider use is recorded in models.yaml.
+  affects:
+  - org:outer-void
+  assistance:
+  - unspecified
+  verification: OWNER_REPORTED
+  unresolved: UNR-018
+  evidence:
+  - Owner declaration, 2026-10-25
+  notes: 'Owner-reported use in Outer Void development (2026-10-25). Which repositories and what kind of help are not stated
+    (UNR-018). Before 2026-10-25 this record was REVIEW_REQUIRED: No evidence of development use. Runtime/provider use is
+    recorded in models.yaml.'
+  sources:
+  - kind: owner_declaration
+    ref: owner:2026-10-25
+    title: Project owner's answer during the Stage 08 attribution pass
 - id: ai:blackbox-dev
   name: BLACKBOX AI (as development assistant)
   relationship:
-  - UNKNOWN_OR_REVIEW_REQUIRED
+  - AI_ASSISTANCE
   vendor: org:blackbox-ai
-  affects: []
-  assistance: []
-  verification: REVIEW_REQUIRED
-  unresolved: UNR-011
-  evidence: []
-  notes: No evidence found.
+  affects:
+  - org:outer-void
+  assistance:
+  - unspecified
+  verification: OWNER_REPORTED
+  unresolved: UNR-018
+  evidence:
+  - Owner declaration, 2026-10-25
+  notes: 'Owner-reported use in Outer Void development (2026-10-25). Which repositories and what kind of help are not stated
+    (UNR-018). Before 2026-10-25 this record was REVIEW_REQUIRED: No evidence found.'
+  sources:
+  - kind: owner_declaration
+    ref: owner:2026-10-25
+    title: Project owner's answer during the Stage 08 attribution pass
 - id: ai:meta-llama
   name: Meta Llama family
   relationship:
-  - UNKNOWN_OR_REVIEW_REQUIRED
+  - MODEL_OR_RUNTIME
   vendor: org:meta
-  affects: []
-  assistance: []
-  verification: REVIEW_REQUIRED
-  unresolved: UNR-011
-  evidence: []
-  notes: No Llama-family model reference found; llama.cpp (ggml) is a separate project and is credited as org:ggml.
+  affects:
+  - org:outer-void
+  assistance:
+  - runtime
+  verification: OWNER_REPORTED
+  unresolved: UNR-018
+  evidence:
+  - Owner declaration, 2026-10-25
+  notes: 'Owner-reported use in Outer Void development (2026-10-25). Which repositories and what kind of help are not stated
+    (UNR-018). Before 2026-10-25 this record was REVIEW_REQUIRED: No Llama-family model reference found; llama.cpp (ggml)
+    is a separate project and is credited as org:ggml.'
+  sources:
+  - kind: owner_declaration
+    ref: owner:2026-10-25
+    title: Project owner's answer during the Stage 08 attribution pass

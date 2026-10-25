@@ -91,14 +91,20 @@ unresolved:
   affects:
   - '*'
   owner: human
-  detail: 'ChatGPT (mentions only), DeepSeek, BLACKBOX AI, Meta Llama: no verifiable development-use evidence. Owner
-    may add OWNER_REPORTED entries; do not assume.'
+  detail: 'ChatGPT (mentions only), DeepSeek, BLACKBOX AI, Meta Llama: no verifiable development-use evidence. Owner may add
+    OWNER_REPORTED entries; do not assume.'
+  status: resolved
+  resolution: '2026-10-25: the owner declared use of ChatGPT, DeepSeek, BLACKBOX AI and Meta Llama models in Outer Void development;
+    recorded as OWNER_REPORTED. Remaining scope questions moved to UNR-018.'
 - id: UNR-012
   title: BLACKBOX AI relationship
   affects:
   - repo:void-sys
   owner: human
   detail: Only an icon mapping found. Confirm whether BLACKBOX AI was used in development.
+  status: resolved
+  resolution: '2026-10-25: the owner declared BLACKBOX AI was used in development (ai:blackbox-dev, OWNER_REPORTED). The icon
+    mapping remains a trademark matter (UNR-004).'
 - id: UNR-013
   title: Outer Void packages without licence metadata
   affects:
@@ -136,3 +142,21 @@ unresolved:
   owner: human
   detail: One non-git directory was intentionally not inspected because its name indicates sensitive content. Not
     part of this ledger.
+- id: UNR-017
+  title: Technology originators not yet verified from an authoritative source
+  affects:
+  - '*'
+  owner: maintainers
+  status: open
+  detail: 'Not asserted until an authoritative source (project records, licence/AUTHORS files, official history) is found:
+    Termux''s original author; Kotlin''s language designers (only JetBrains is verified); JUnit 4''s authors; the ULID specification''s
+    author; Android Inc.''s founders; Node.js''s original author; React''s original author; GitHub''s founders; the operator
+    of npm (recorded as INFERRED). Sources tried are in the Stage 08 research log.'
+- id: UNR-018
+  title: Scope of owner-reported AI use
+  affects:
+  - org:outer-void
+  owner: human
+  status: open
+  detail: ChatGPT, DeepSeek, BLACKBOX AI and Meta Llama models are owner-reported as used in Outer Void development. The owner
+    may add which repositories and what kind of assistance (brainstorming, code, review, runtime ...).

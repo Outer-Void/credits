@@ -10,8 +10,11 @@ Checks (each failure names the file and record):
   6. unresolved provenance is visible (REVIEW_REQUIRED / UNKNOWN link to provenance/unresolved.yaml,
      and every unresolved item appears in reports/unresolved-provenance.md)
   7. SPDX licence expressions are syntactically valid and use known identifiers
+  8. comprehensive attribution (tools/attribution.py): roles, sources, the attribution graph, no sole credit
+     for collective work, contradictions, duplicate identities, orphans, schema drift, the append-only id
+     ledger, and a current ACKNOWLEDGMENTS.md
 
-Usage: tools/validate.py [--root DIR] [--org-root ~/ov] [--strict-checkouts] [--write-lock]
+Usage: tools/validate.py [--root DIR] [--org-root ~/ov] [--strict-checkouts] [--write-lock] [--write-id-ledger]
 Exit 0 when valid, 1 with a list of problems otherwise.
 """
 
@@ -50,7 +53,7 @@ SPDX_EXCEPTIONS = {"Classpath-exception-2.0", "LLVM-exception"}
 LICENSE_SENTINELS = {"UNKNOWN", "NONE", "NOASSERTION"}
 LICENSE_FIELDS = ("license", "spdx")
 REF_FIELDS = ("affects", "refs", "credits", "surviving_obligations", "lineage", "upstream", "vendor", "source", "target", "tool", "repo", "asset")
-ID_RE = re.compile(r"^[a-z]+:[A-Za-z0-9._/@:+-]+$|^(UNR|LIN|AIL)-[0-9]{3}$")
+ID_RE = re.compile(r"^[a-z]+:[A-Za-z0-9._/@:+-]+$|^(UNR|LIN|AIL|ATT)-[0-9]{3}$")
 TOKEN_RE = re.compile(r"\s*(\(|\)|AND\b|OR\b|WITH\b|[A-Za-z0-9.+-]+)")
 
 
@@ -260,7 +263,25 @@ def validate(root: Path, org_root: Path | None = None, strict_checkouts: bool = 
             for notice in rec.get("traveling_notices") or []:
                 if not (checkout / notice).is_file():
                     problems.add(f"projects:{rid}", f"required notice missing in checkout: {notice}")
+
+    # 8: comprehensive attribution
+    import attribution
+
+    attribution.check(root, records, sources, problems, org_root)
     return problems
+
+
+def all_ids(root: Path) -> set[str]:
+    ids: set[str] = set()
+    problems = Problems()
+    for path in sorted((root / "catalog").glob("*.yaml")) + sorted((root / "provenance").glob("*.yaml")):
+        doc = load(path, problems) or {}
+        for key, items in doc.items():
+            if key != "schema_version":
+                ids.update(r["id"] for r in items or [] if isinstance(r, dict) and "id" in r)
+    for path in sorted((root / "projects").glob("*.yaml")):
+        ids.add((load(path, problems) or {})["project"]["id"])
+    return ids
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -269,7 +290,13 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--org-root", type=Path, help="directory containing the repository checkouts (e.g. ~/ov)")
     ap.add_argument("--strict-checkouts", action="store_true", help="fail if a checkout is missing")
     ap.add_argument("--write-lock", action="store_true", help="record licence text checksums after review")
+    ap.add_argument("--write-id-ledger", action="store_true", help="append newly issued ids to provenance/id-ledger.txt")
     args = ap.parse_args(argv)
+    if args.write_id_ledger:
+        import attribution
+
+        attribution.write_id_ledger(args.root, all_ids(args.root))
+        return 0
     if args.write_lock:
         (args.root / "licenses" / "CHECKSUMS.sha256").write_text(license_checksums(args.root), encoding="utf-8")
         return 0

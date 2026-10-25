@@ -334,6 +334,7 @@ assets:
   evidence:
   - embedded OpenType name table (IDs 0, 13, 14) read with fontTools
   verification: VERIFIED
+  verified_scope: Licence (OFL-1.1) and version read from the embedded name table; the copyright notice is missing (UNR-002).
   upstream: proj:nerd-fonts
   unresolved: UNR-002
   notes: 'Nerd Fonts patched build: added glyph-set licences tracked under UNR-003. Licence stated (OFL-1.1) but

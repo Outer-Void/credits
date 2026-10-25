@@ -8,7 +8,7 @@ project:
   path: ~/ov/blux-coga
   origin: git@github.com:Outer-Void/blux-coga.git
   products:
-  - BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract)
+  - 'BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract)'
   visibility: public
   current_license: LicenseRef-BLUX-Proprietary
   decision: PUBLIC_SOURCE_PROPRIETARY

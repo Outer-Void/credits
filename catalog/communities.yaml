@@ -1,0 +1,271 @@
+# Outer Void credits catalog. Stable IDs: <kind>:<slug>. Do not renumber or reuse IDs.
+# verification: VERIFIED (primary evidence inspected) | INFERRED (strong indirect evidence) |
+#               OWNER_REPORTED (stated by Outer Void, not independently checked) | REVIEW_REQUIRED
+# Communities credited collectively (contributors, developer communities, projects with no single owner).
+# Added in the Stage 08 comprehensive attribution pass (2026-10-25); see provenance/attribution-graph.yaml.
+schema_version: 1
+communities:
+- id: community:python
+  name: Python core developers and contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: The CPython developers and the wider Python community; credited collectively.
+- id: community:python-jsonschema
+  name: python-jsonschema contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively; see https://github.com/python-jsonschema/jsonschema.
+- id: community:yaml-project
+  name: The YAML project (yaml.org, github.com/yaml)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively; see https://github.com/yaml/pyyaml.
+- id: community:pytest-dev
+  name: pytest-dev
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively; see https://github.com/pytest-dev/pytest.
+- id: community:mypy
+  name: mypy contributors (python/mypy)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively; see https://github.com/python/mypy.
+- id: community:ruff
+  name: Ruff contributors (astral-sh/ruff)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively; see https://github.com/astral-sh/ruff.
+- id: community:hypothesis
+  name: Hypothesis contributors (HypothesisWorks)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively; see https://github.com/HypothesisWorks/hypothesis.
+- id: community:requests
+  name: Requests maintainers and contributors (psf/requests)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively; see https://github.com/psf/requests.
+- id: community:rich
+  name: Rich contributors (Textualize/rich)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively; see https://github.com/Textualize/rich.
+- id: community:fastapi-org
+  name: FastAPI / Typer contributors (github.com/fastapi)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively; see https://github.com/fastapi.
+- id: community:sqlalchemy
+  name: SQLAlchemy authors and contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named collectively in SQLAlchemy's licence.
+- id: community:typeshed
+  name: typeshed contributors (python/typeshed)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:gnu-project
+  name: The GNU Project
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Free-software operating system project begun in 1983; credited collectively.
+- id: community:zsh
+  name: Z shell developers (zsh.org)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Zsh is maintained by its developer community.
+- id: community:linux-kernel
+  name: Linux kernel developers
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Thousands of kernel contributors; credited collectively.
+- id: community:debian
+  name: The Debian Project
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Debian developers and contributors; credited collectively.
+- id: community:git
+  name: Git developers and contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:github-actions-contributors
+  name: Contributors to GitHub's official actions
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named collectively in their licences.
+- id: community:openjdk
+  name: OpenJDK Community
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: The open-source Java SE implementation community; credited collectively.
+- id: community:kotlin
+  name: Kotlin community and contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:gradle
+  name: Gradle community and contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:aosp
+  name: Android Open Source Project contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:detekt
+  name: detekt contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Kotlin static analysis community; credited collectively.
+- id: community:cyclonedx
+  name: CycloneDX project
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Software bill-of-materials standard and tooling community.
+- id: community:termux
+  name: Termux contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:proot
+  name: PRoot contributors (proot-me)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named in PRoot's AUTHORS file; credited collectively.
+- id: community:nodejs
+  name: Node.js contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named collectively in the Node.js licence.
+- id: community:vite
+  name: Vite contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named collectively in Vite's licence.
+- id: community:eslint
+  name: ESLint contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named with the OpenJS Foundation in ESLint's licence.
+- id: community:react
+  name: React contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:nextjs
+  name: Next.js contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:shellcheck
+  name: ShellCheck contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:fonttools
+  name: fontTools contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:gnupg
+  name: GnuPG developers
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:zlib
+  name: zlib contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:json-schema
+  name: JSON Schema organization and community
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:semver
+  name: Semantic Versioning contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:toml
+  name: TOML contributors (toml-lang)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: '''By Tom Preston-Werner, Pradyun Gedam, et al.'''
+- id: community:ulid
+  name: ULID specification contributors (ulid/spec)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively; individual authorship not yet verified.
+- id: community:spdx
+  name: SPDX contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: A grass-roots effort; credited collectively.
+- id: community:hermes-achievements
+  name: Hermes Achievements contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named collectively in a nested Hermes Agent licence file.
+- id: community:gha/setup-android
+  name: android-actions/setup-android contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:gha/android-emulator-runner
+  name: ReactiveCircus/android-emulator-runner contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.
+- id: community:gha/action-gh-release
+  name: softprops/action-gh-release contributors
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Credited collectively.

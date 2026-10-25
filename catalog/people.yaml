@@ -92,3 +92,341 @@ people:
   notes: 'Most frequent upstream git author identities as recorded (aliases not merged, roles not inferred): Teknium
     (16200), teknium1 (7611), kshitijk4poor (4382), Brooklyn Nicholson (3279), ethernet (2277), brooklyn! (1304).
     Copyright is held as stated in the upstream LICENSE (Nous Research).'
+# Stage 08 comprehensive attribution pass (2026-10-25): roles and sources are in provenance/attribution-graph.yaml.
+- id: person:guido-van-rossum
+  name: Guido van Rossum
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:julian-berman
+  name: Julian Berman
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:kirill-simonov
+  name: Kirill Simonov
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:ingy-dot-net
+  name: Ingy döt Net
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:holger-krekel
+  name: Holger Krekel
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:jukka-lehtosalo
+  name: Jukka Lehtosalo
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:charles-marsh
+  name: Charles Marsh
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:david-r-maciver
+  name: David R. MacIver
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:kenneth-reitz
+  name: Kenneth Reitz
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:will-mcgugan
+  name: Will McGugan
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:sebastian-ramirez
+  name: Sebastián Ramírez
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:richard-stallman
+  name: Richard Stallman
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:brian-fox
+  name: Brian Fox
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:chet-ramey
+  name: Chet Ramey
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:paul-falstad
+  name: Paul Falstad
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:linus-torvalds
+  name: Linus Torvalds
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:ian-murdock
+  name: Ian Murdock
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:junio-c-hamano
+  name: Junio C Hamano
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:dave-olsthoorn
+  name: Dave Olsthoorn
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:yang-chen
+  name: Yang Chen
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:doug-tangren
+  name: Doug Tangren
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:james-gosling
+  name: James Gosling
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:bill-joy
+  name: Bill Joy
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:guy-steele
+  name: Guy Steele
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:gilad-bracha
+  name: Gilad Bracha
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:alex-buckley
+  name: Alex Buckley
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:daniel-smith
+  name: Daniel Smith
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:gavin-bierman
+  name: Gavin Bierman
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:hans-dockter
+  name: Hans Dockter
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:cedric-vincent
+  name: Cédric Vincent
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  aliases:
+  - Cédric VINCENT
+- id: person:vidar-holen
+  name: Vidar Holen
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:just-van-rossum
+  name: Just van Rossum
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:werner-koch
+  name: Werner Koch
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:jean-loup-gailly
+  name: Jean-loup Gailly
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:mark-adler
+  name: Mark Adler
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:austin-wright
+  name: Austin Wright
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:henry-andrews
+  name: Henry Andrews
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:ben-hutton
+  name: Ben Hutton
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:greg-dennis
+  name: Greg Dennis
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:tom-preston-werner
+  name: Tom Preston-Werner
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:pradyun-gedam
+  name: Pradyun Gedam
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:oren-ben-kiki
+  name: Oren Ben-Kiki
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:clark-evans
+  name: Clark Evans
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:graham-klyne
+  name: Graham Klyne
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:chris-newman
+  name: Chris Newman
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:tim-bray
+  name: Tim Bray
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:douglas-crockford
+  name: Douglas Crockford
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:michael-c-fanning
+  name: Michael C. Fanning
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:laurence-j-golding
+  name: Laurence J. Golding
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:wayne-davison
+  name: Wayne Davison
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:paul-eggert
+  name: Paul Eggert
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:mike-haertel
+  name: Mike Haertel
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:david-hayes
+  name: David Hayes
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:len-tower
+  name: Len Tower
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:georgi-gerganov
+  name: Georgi Gerganov
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+- id: person:lanshu
+  name: lanshu
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named as written in a nested Hermes Agent licence file.
+- id: person:ryan-anatomy-skill
+  name: Ryan (as written in the anatomy skill licence)
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named as written in a nested Hermes Agent licence file.
+- id: person:agiwhitelist
+  name: agiwhitelist
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named as written in a nested Hermes Agent licence file.
+- id: person:anshu-chimala
+  name: Anshu Chimala
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named as written in a nested Hermes Agent licence file.
+- id: person:s1dashu
+  name: s1dashu
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named as written in a nested Hermes Agent licence file.
+- id: person:yan-liu
+  name: Yan Liu
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named as written in a nested Hermes Agent licence file.
+- id: person:harshyt-goel
+  name: Harshyt Goel
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named as written in a nested Hermes Agent licence file.
+- id: person:yeongyu-kim
+  name: Yeongyu Kim
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named as written in a nested Hermes Agent licence file.
+- id: person:nate-herk
+  name: Nate Herk
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named as written in a nested Hermes Agent licence file.
+- id: person:siqi-chen
+  name: Siqi Chen
+  relationship:
+  - COMMUNITY
+  verification: VERIFIED
+  notes: Named as written in a nested Hermes Agent licence file.

@@ -341,3 +341,119 @@ organizations:
   evidence:
   - react-router LICENSE 6.30.6
   verification: VERIFIED
+# Stage 08 comprehensive attribution pass (2026-10-25): roles and sources are in provenance/attribution-graph.yaml.
+- id: org:psf
+  name: Python Software Foundation
+  relationship:
+  - COMMUNITY
+  url: https://www.python.org/psf/
+  verification: VERIFIED
+- id: org:cwi
+  name: Stichting Mathematisch Centrum (CWI)
+  relationship:
+  - COMMUNITY
+  url: https://www.cwi.nl
+  verification: VERIFIED
+- id: org:pypa
+  name: Python Packaging Authority (PyPA)
+  relationship:
+  - COMMUNITY
+  url: https://www.pypa.io
+  verification: VERIFIED
+- id: org:pallets
+  name: Pallets
+  relationship:
+  - COMMUNITY
+  url: https://palletsprojects.com
+  verification: VERIFIED
+- id: org:pydantic-services
+  name: Pydantic Services Inc.
+  relationship:
+  - COMMUNITY
+  url: https://pydantic.dev
+  verification: VERIFIED
+- id: org:fsf
+  name: Free Software Foundation
+  relationship:
+  - COMMUNITY
+  url: https://www.fsf.org
+  verification: VERIFIED
+- id: org:linux-foundation
+  name: The Linux Foundation
+  relationship:
+  - COMMUNITY
+  url: https://www.linuxfoundation.org
+  verification: VERIFIED
+- id: org:oracle
+  name: Oracle
+  relationship:
+  - COMMUNITY
+  url: https://www.oracle.com
+  verification: VERIFIED
+- id: org:diffplug
+  name: DiffPlug
+  relationship:
+  - COMMUNITY
+  url: https://www.diffplug.com
+  verification: VERIFIED
+- id: org:openjs-foundation
+  name: OpenJS Foundation
+  relationship:
+  - COMMUNITY
+  url: https://openjsf.org
+  verification: VERIFIED
+- id: org:voidzero
+  name: VoidZero Inc.
+  relationship:
+  - COMMUNITY
+  url: https://voidzero.dev
+  verification: VERIFIED
+- id: org:tailwind-labs
+  name: Tailwind Labs, Inc.
+  relationship:
+  - COMMUNITY
+  url: https://tailwindcss.com
+  verification: VERIFIED
+- id: org:docker
+  name: Docker, Inc.
+  relationship:
+  - COMMUNITY
+  url: https://www.docker.com
+  verification: VERIFIED
+- id: org:ietf
+  name: Internet Engineering Task Force (IETF)
+  relationship:
+  - COMMUNITY
+  url: https://www.ietf.org
+  verification: VERIFIED
+- id: org:oasis-open
+  name: OASIS Open
+  relationship:
+  - COMMUNITY
+  url: https://www.oasis-open.org
+  verification: VERIFIED
+- id: org:nist
+  name: National Institute of Standards and Technology (NIST)
+  relationship:
+  - COMMUNITY
+  url: https://www.nist.gov
+  verification: VERIFIED
+- id: org:unicode-consortium
+  name: Unicode Consortium
+  relationship:
+  - COMMUNITY
+  url: https://home.unicode.org
+  verification: VERIFIED
+- id: org:ggml-ai
+  name: ggml.ai
+  relationship:
+  - COMMUNITY
+  url: https://ggml.ai
+  verification: VERIFIED
+- id: org:coldtea-ai
+  name: Coldtea AI
+  relationship:
+  - COPYRIGHT_HOLDER
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/software-development/pr-lens/LICENSE.txt

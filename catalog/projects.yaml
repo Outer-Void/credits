@@ -85,3 +85,233 @@ projects:
   verification: REVIEW_REQUIRED
   notes: Patched fonts keep the base font licence; added glyph sets carry their own licences (see Nerd Fonts LICENSE).
     Per-glyph-set notices not yet enumerated.
+# Stage 08 comprehensive attribution pass (2026-10-25): roles and sources are in provenance/attribution-graph.yaml.
+- id: proj:claude-plugins-official
+  name: claude-plugins-official (Anthropic)
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: Apache-2.0
+  url: https://github.com/anthropics/claude-plugins-official
+  required_notice: plugins/security-guidance/NOTICE and LICENSE (Apache-2.0) must travel with the plugin
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/plugins/security-guidance/NOTICE
+- id: proj:hermes-nested/hermes-bots
+  name: 'Hermes Agent nested component: hermes-bots'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Nous Research
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/apps/desktop/src/plugins/hermes-bots/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/ai-presenter-video
+  name: 'Hermes Agent nested component: ai-presenter-video'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 lanshu
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/creative/ai-presenter-video/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/anatomy
+  name: 'Hermes Agent nested component: anatomy'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Ryan
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/creative/anatomy/LICENSE.txt (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/auteur
+  name: 'Hermes Agent nested component: auteur'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: 'Upstream author / copyright holder: agiwhitelist (https://github.com/agiwhitelist)'
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/creative/auteur/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/dream-loop
+  name: 'Hermes Agent nested component: dream-loop'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Anshu Chimala
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/creative/dream-loop/LICENSE.txt (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/ip-as-logo
+  name: 'Hermes Agent nested component: ip-as-logo'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: 'Upstream author / copyright holder: s1dashu (https://github.com/s1dashu)'
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/creative/ip-as-logo/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/mono-color
+  name: 'Hermes Agent nested component: mono-color'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Yan Liu
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/creative/mono-color/LICENSE.txt (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/system-atlas
+  name: 'Hermes Agent nested component: system-atlas'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Harshyt Goel
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/creative/system-atlas/LICENSE.txt (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/ast-grep
+  name: 'Hermes Agent nested component: ast-grep'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Yeongyu Kim
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/software-development/ast-grep/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/pr-lens
+  name: 'Hermes Agent nested component: pr-lens'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Coldtea AI
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/software-development/pr-lens/LICENSE.txt (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/scrollcraft
+  name: 'Hermes Agent nested component: scrollcraft'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Nate Herk
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/optional-skills/web-development/scrollcraft/LICENSE.txt (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/hermes-achievements
+  name: 'Hermes Agent nested component: hermes-achievements'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Hermes Achievements contributors
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/plugins/hermes-achievements/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/humanizer
+  name: 'Hermes Agent nested component: humanizer'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2025 Siqi Chen
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/skills/creative/humanizer/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/docx
+  name: 'Hermes Agent nested component: docx'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Nous Research
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/skills/productivity/docx/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/pdf
+  name: 'Hermes Agent nested component: pdf'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Nous Research
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/skills/productivity/pdf/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/powerpoint
+  name: 'Hermes Agent nested component: powerpoint'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Nous Research
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/skills/productivity/powerpoint/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/xlsx
+  name: 'Hermes Agent nested component: xlsx'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: MIT
+  required_notice: Copyright (c) 2026 Nous Research
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/skills/productivity/xlsx/LICENSE (present at upstream merge base 3fa571a5)
+- id: proj:hermes-nested/security-guidance
+  name: 'Hermes Agent nested component: security-guidance'
+  relationship:
+  - UPSTREAM_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blhermes-agent
+  license: Apache-2.0
+  required_notice: Apache-2.0 (claude-plugins-official, Anthropic, PBC.); see NOTICE
+  verification: VERIFIED
+  evidence:
+  - blhermes-agent/plugins/security-guidance/LICENSE (present at upstream merge base 3fa571a5)

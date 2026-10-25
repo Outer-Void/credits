@@ -1428,3 +1428,117 @@ libraries:
   - pyproject.toml/uv.lock, pm/, package-lock.json, nested sidecar locks
   verification: REVIEW_REQUIRED
   notes: Thousands of transitive packages; per-package ledger deferred to Stage 11 migration.
+# Stage 08 comprehensive attribution pass (2026-10-25): roles and sources are in provenance/attribution-graph.yaml.
+- id: lib:pypi/pytest
+  name: pytest
+  relationship:
+  - DEPENDENCY
+  - TOOLCHAIN
+  affects:
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-ca-dataset
+  - repo:blux-coga
+  - repo:blux-coga-dataset
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  - repo:roughin
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+  ecosystem: pypi
+- id: lib:pypi/mypy
+  name: mypy
+  relationship:
+  - DEPENDENCY
+  - TOOLCHAIN
+  affects:
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-ca-dataset
+  - repo:blux-coga
+  - repo:blux-coga-dataset
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+  ecosystem: pypi
+- id: lib:pypi/hypothesis
+  name: Hypothesis
+  relationship:
+  - DEPENDENCY
+  - TOOLCHAIN
+  affects:
+  - repo:blux-ca
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+  ecosystem: pypi
+- id: lib:pypi/pytest-asyncio
+  name: pytest-asyncio
+  relationship:
+  - DEPENDENCY
+  - TOOLCHAIN
+  affects:
+  - repo:roughin
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+  ecosystem: pypi
+- id: lib:pypi/pytest-cov
+  name: pytest-cov
+  relationship:
+  - DEPENDENCY
+  - TOOLCHAIN
+  affects:
+  - repo:roughin
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+  ecosystem: pypi
+- id: lib:pypi/setuptools
+  name: setuptools
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blhermes-agent
+  - repo:blux
+  - repo:blux-ca
+  - repo:blux-coga
+  - repo:blux-gpt
+  - repo:blux-system
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+  ecosystem: pypi
+- id: lib:pypi/build
+  name: build
+  relationship:
+  - TOOLCHAIN
+  affects:
+  - repo:blux
+  - repo:blux-coga
+  - repo:dat
+  - repo:god
+  - repo:lrc
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+  ecosystem: pypi
+- id: lib:zlib
+  name: zlib
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux-ca
+  verification: VERIFIED
+  evidence:
+  - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
+  ecosystem: c
+  notes: Used through Python's zlib module for cA's rollback object store.
