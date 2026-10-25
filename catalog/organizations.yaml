@@ -258,16 +258,25 @@ organizations:
 - id: org:blackbox-ai
   name: BLACKBOX AI
   relationship:
-  - UNKNOWN_OR_REVIEW_REQUIRED
+  - AI_ASSISTANCE
   affects:
+  - org:outer-void
   - repo:void-sys
   - repo:void-os
-  verification: REVIEW_REQUIRED
-  unresolved: UNR-012
+  verification: OWNER_REPORTED
+  unresolved:
+  - UNR-018
+  - UNR-004
   evidence:
   - void.sys icon_map.json maps codes.side.blackbox / com.blackboxai.app to a VOID.SYS icon
-  notes: Appears only as a third-party app icon mapping (trademark depiction). No evidence of development use; not
-    credited as AI assistance unless the owner confirms.
+  - Owner declaration, 2026-10-25 (development use of BLACKBOX AI; see ai:blackbox-dev)
+  sources:
+  - kind: owner_declaration
+    ref: owner:2026-10-25
+    title: Project owner's answer during the Stage 08 attribution pass
+  notes: Vendor of ai:blackbox-dev, whose development use the owner reported on 2026-10-25 (UNR-012 resolved). The VOID.SYS
+    icon mapping is a separate trademark depiction (UNR-004). Before 2026-10-25 this record was REVIEW_REQUIRED (icon
+    mapping only).
 - id: org:adobe
   name: Adobe
   relationship:

@@ -8,7 +8,7 @@ Unknown provenance is listed here instead of guessed. Each item names its owner 
 | UNR-001 | open | BLHERMES per-file and per-dependency lineage | Stage 11 | `lib:blhermes-dependency-graph`, `repo:blhermes-agent` |
 | UNR-002 | open | Bundled fonts without verifiable licence metadata | human | `asset:font/meslolgs-nerd`, `asset:font/monaspace`, `asset:font/mononoki-nerd`, `asset:font/victormono-nerd`, `repo:void-os` |
 | UNR-003 | open | Nerd Fonts glyph-set notices | human | `proj:nerd-fonts`, `repo:void-os` |
-| UNR-004 | open | Third-party trademarks depicted in VOID.SYS icons | human/counsel | `asset:third-party-marks-in-icons`, `repo:void-os`, `repo:void-sys` |
+| UNR-004 | open | Third-party trademarks depicted in VOID.SYS icons | human/counsel | `asset:third-party-marks-in-icons`, `org:blackbox-ai`, `repo:void-os`, `repo:void-sys` |
 | UNR-005 | open | Origin of artwork (wallpaper, mascot images, banners, logos) | human | `asset:axiom-wallpaper`, `asset:resolver-mascot-images`, `asset:blhermes-banner`, `asset:org-logos`, `repo:blhermes-agent`, `repo:resolver` (+2 more) |
 | UNR-006 | open | operationrestore authorship and licence | human | `asset:operationrestore-media`, `repo:operationrestore` |
 | UNR-007 | open | termux-background LICENSE copyright holder | human | `repo:termux-background` |
@@ -16,13 +16,13 @@ Unknown provenance is listed here instead of guessed. Each item names its owner 
 | UNR-009 | open | resolver curated knowledge base origin | human | `ds:resolver-curated-kb`, `repo:resolver` |
 | UNR-010 | open | Documentation references with unverified licences | human | `model:deepseek-r1-distill-qwen-gguf`, `proj:android-termux-llm-tutorial`, `repo:jadis-toolbox` |
 | UNR-011 | resolved | AI tools named by policy without repository evidence | human | - |
-| UNR-012 | resolved | BLACKBOX AI relationship | human | `org:blackbox-ai` |
+| UNR-012 | resolved | BLACKBOX AI relationship | human | - |
 | UNR-013 | resolved | Outer Void packages without licence metadata | maintainers | - |
 | UNR-016 | open | Python dependencies whose licence is declared only by an ambiguous trove classifier | maintainers | `lib:pypi/anthropic`, `lib:pypi/bcrypt`, `lib:pypi/colorama`, `lib:pypi/httpx`, `lib:pypi/passlib`, `lib:pypi/python-dateutil` (+2 more) |
 | UNR-014 | open | Public visibility of proprietary repositories | human | `repo:blux-app`, `repo:blux-ca-dataset`, `repo:blux-ca`, `repo:blux-coga-dataset`, `repo:blux-coga`, `repo:blux-system` (+5 more) |
 | UNR-015 | open | Unread non-repository directory under ~/ov | human | - |
 | UNR-017 | open | Technology originators not yet verified from an authoritative source | maintainers | - |
-| UNR-018 | open | Scope of owner-reported AI use | human | `ai:chatgpt`, `ai:deepseek-dev`, `ai:blackbox-dev`, `ai:meta-llama` |
+| UNR-018 | open | Scope of owner-reported AI use | human | `ai:chatgpt`, `ai:deepseek-dev`, `ai:blackbox-dev`, `ai:meta-llama`, `org:blackbox-ai` |
 | UNR-019 | open | Third-party packages whose metadata declares no licence | maintainers | `lib:pypi/bandit`, `lib:pypi/orjson`, `lib:pypi/safety` |
 
 ## Details
