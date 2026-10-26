@@ -258,6 +258,7 @@ lineage:
       subsystem_map: ov:blux/migration/blhermes/inventory.py (SUBSYSTEMS)
       inventory: ov:blux/migration/blhermes/inventory.json
       parity_matrix: ov:blux/migration/blhermes/parity-matrix.json
+    stage_16_decoupling: 'BLUX proven independent of the fork on 2026-10-26: isolated clone without blhermes-agent passes build, tests, wheel, Termux .deb audit and DAT release gate; fork untouched at ac51a44f1f; report ov:blux/docs/migration/blhermes-deletion-readiness.md recommends archiving (Stage 17 human decision). This lineage record must survive retirement.'
   gates:
     stage_11: refine file/subsystem lineage during migration
     stage_16: audit this record
