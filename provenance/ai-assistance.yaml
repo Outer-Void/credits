@@ -186,23 +186,23 @@ ledger:
 - id: AIL-023
   tool: ai:claude-code
   repo: repo:blux
-  commits: 18
+  commits: 19
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin, Stage 09 Model API v1); also Stage 10 direct blux CLI; 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); operationrestore licensing mirror; Stage 11 BLHermes inventory, parity matrix and characterization; Stage 12 Hook System v1; Stage 13 BLHermes core migration; Stage 14 BLHermes extensions'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin, Stage 09 Model API v1); also Stage 10 direct blux CLI; 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); operationrestore licensing mirror; Stage 11 BLHermes inventory, parity matrix and characterization; Stage 12 Hook System v1; Stage 13 BLHermes core migration; Stage 14 BLHermes extensions; Stage 15 Termux packaging'
   verification: VERIFIED
 - id: AIL-024
   tool: ai:claude-code
   repo: repo:credits
-  commits: 20
+  commits: 21
   categories:
   - research
   - documentation
-  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08, in the Stage 08 comprehensive attribution pass, and in Stage 09 (Co-authored-by trailers); also the 2026-10-25 relicensing record (UNR-008, UNR-007, UNR-006), Stage 10, the Stage 11 BLHermes file/subsystem lineage, the Stage 12 record, the Stage 13 record, and the Stage 14 record
+  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08, in the Stage 08 comprehensive attribution pass, and in Stage 09 (Co-authored-by trailers); also the 2026-10-25 relicensing record (UNR-008, UNR-007, UNR-006), Stage 10, the Stage 11 BLHermes file/subsystem lineage, the Stage 12 record, the Stage 13 record, the Stage 14 record, and the Stage 15 record
   verification: VERIFIED
 - id: AIL-025
   tool: ai:gemini-code-assist

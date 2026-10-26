@@ -500,6 +500,7 @@ lib:pypi/aiosqlite
 lib:pypi/alembic
 lib:pypi/anthropic
 lib:pypi/asyncpg
+lib:pypi/attrs
 lib:pypi/bandit
 lib:pypi/bcrypt
 lib:pypi/boto3
@@ -514,6 +515,7 @@ lib:pypi/greenlet
 lib:pypi/httpx
 lib:pypi/hypothesis
 lib:pypi/jsonschema
+lib:pypi/jsonschema-specifications
 lib:pypi/mypy
 lib:pypi/openai
 lib:pypi/orjson
@@ -534,6 +536,7 @@ lib:pypi/referencing
 lib:pypi/reportlab
 lib:pypi/requests
 lib:pypi/rich
+lib:pypi/rpds-py
 lib:pypi/ruff
 lib:pypi/safety
 lib:pypi/setuptools

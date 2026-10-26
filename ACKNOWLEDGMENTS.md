@@ -1053,7 +1053,7 @@ No third-party credits recorded yet.
 - **AI and machine assistance**: Claude / Claude Code
 - **Models and runtimes**: Anthropic Claude models via API, DeepSeek chat/reasoner via API, OpenAI GPT models via API
 - **Languages, platforms and tooling**: GitHub Actions, GitHub's official actions (checkout, setup-python, setup-java, upload/download-artifact), GNU Bash, GNU tools (bash, coreutils, diffutils and the GNU userland), PyPA packaging tools (pip, setuptools, build), Python (CPython), Python Package Index (PyPI), ruff, mypy, pytest, typeshed (types-* stub packages)
-- **Libraries and frameworks**: build, jsonschema, mypy, pytest, pyyaml, referencing, setuptools, tomli
+- **Libraries and frameworks**: attrs, build, jsonschema, jsonschema-specifications, mypy, pytest, pyyaml, referencing, rpds-py, setuptools, tomli
 - **Standards and specifications**: Crockford Base32, JSON (RFC 8259 / ECMA-404), JSON Schema Draft 2020-12, RFC 3339 timestamps, Semantic Versioning 2.0.0, SHA-256 (FIPS 180-4 Secure Hash Standard), ULID specification (ulid/spec), YAML 1.2
 - **Inspirations (voluntary credit; no code derivation implied)**: Hermes Agent learning-loop / skills architecture
 
@@ -1263,6 +1263,7 @@ repositories that ship the works. This index points to them; it does not replace
 | androidx.lifecycle:lifecycle-runtime-ktx | Apache-2.0 | licenses/Apache-2.0.txt |
 | androidx.lifecycle:lifecycle-viewmodel-compose | Apache-2.0 | licenses/Apache-2.0.txt |
 | androidx.room:room-runtime | Apache-2.0 | licenses/Apache-2.0.txt |
+| attrs | MIT | Copyright (c) 2015 Hynek Schlawack and the attrs contributors |
 | axios | MIT | licenses/MIT-axios.txt |
 | CaskaydiaCove NF | OFL-1.1 | © 2021 Microsoft Corporation. All Rights Reserved. |
 | CaskaydiaCove NF | OFL-1.1 | © 2021 Microsoft Corporation. All Rights Reserved. |
@@ -1302,6 +1303,8 @@ repositories that ship the works. This index points to them; it does not replace
 | Iosevka NF | OFL-1.1 | Copyright 2015-2024, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). |
 | JetBrains Mono | OFL-1.1 | Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono) |
 | JetBrainsMono NF | OFL-1.1 | Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono) |
+| jsonschema | MIT | Copyright (c) 2013 Julian Berman |
+| jsonschema-specifications | MIT | Copyright (c) 2022 Julian Berman |
 | Lato | OFL-1.1 | Copyright (c) 2011-2015 by tyPoland Lukasz Dziedzic (http://www.typoland.com/) with Reserved Font Name "Lato". Licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL). |
 | libGDX authors | Apache-2.0 |  |
 | libGDX native libraries (libgdx.so x4) | Apache-2.0 | licenses/Apache-2.0.txt |
@@ -1320,12 +1323,14 @@ repositories that ship the works. This index points to them; it does not replace
 | Oxanium ExtraLight | OFL-1.1 | Copyright 2019 The Oxanium Project Authors (https://github.com/sevmeyer/oxanium) |
 | Playfair Display | OFL-1.1 | Copyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display), with Reserved Font Name "Playfair Display". |
 | Poppins | OFL-1.1 | Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins) |
+| pyyaml | MIT | Copyright (c) 2017-2021 Ingy döt Net; Copyright (c) 2006-2016 Kirill Simonov |
 | Rajdhani | OFL-1.1 | Copyright (c) 2014 Indian Type Foundry (info@indiantypefoundry.com) |
 | react | MIT | licenses/MIT-react-18.txt |
 | react | MIT | licenses/MIT-react-19.txt |
 | react-dom | MIT | licenses/MIT-react-dom-18.txt |
 | react-dom | MIT | licenses/MIT-react-dom-19.txt |
 | react-router-dom | MIT | licenses/MIT-react-router.txt |
+| referencing | MIT | Copyright (c) 2022 Julian Berman |
 | Roboto | OFL-1.1 | Copyright 2011 The Roboto Project Authors (https://github.com/googlefonts/roboto-classic) |
 | Roboto Mono | OFL-1.1 | Copyright 2015 The Roboto Mono Project Authors (https://github.com/googlefonts/robotomono) |
 | romkatv/powerlevel10k (p10k-lean.zsh config template) | MIT | licenses/MIT-powerlevel10k.txt |

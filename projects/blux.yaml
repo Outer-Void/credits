@@ -16,10 +16,16 @@ project:
   relicensing_evidence: 'Owner decision 2026-10-25 (UNR-008 resolved): Outer Void-authored per git history, no third-party contributors; AI-assisted commits present (see provenance/ai-assistance.yaml); ownership of AI-assisted output is OWNER_REPORTED'
   surviving_obligations:
   - proj:hermes-agent
+  - lib:pypi/jsonschema
+  - lib:pypi/referencing
+  - lib:pypi/jsonschema-specifications
+  - lib:pypi/attrs
+  - lib:pypi/pyyaml
   traveling_notices:
   - LICENSE
   - CREDITS.md
   - migration/blhermes/UPSTREAM-NOTICE.md
+  - packaging/termux/THIRD_PARTY_NOTICES.md
   excluded_third_party: []
   lineage:
   - LIN-007

@@ -271,11 +271,63 @@ libraries:
   - dist-info METADATA in Stage 00/01 audit venvs
   verification: REVIEW_REQUIRED
   unresolved: UNR-016
+- id: lib:pypi/attrs
+  name: attrs
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blux
+  license_as_declared: MIT
+  spdx: MIT
+  required_notice: 'Copyright (c) 2015 Hynek Schlawack and the attrs contributors'
+  versions_observed:
+  - 26.1.0
+  shipped: bundled (pure-Python) in the BLUX Termux .deb since Stage 15; transitive dependency of jsonschema/referencing
+  evidence:
+  - 'wheel dist-info licenses/LICENSE: Copyright (c) 2015 Hynek Schlawack and the attrs contributors'
+  - blux packaging/termux/vendor.lock.json (sha256-pinned)
+  verification: VERIFIED
+- id: lib:pypi/jsonschema-specifications
+  name: jsonschema-specifications
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:blux
+  license_as_declared: MIT
+  spdx: MIT
+  required_notice: 'Copyright (c) 2022 Julian Berman'
+  versions_observed:
+  - 2025.9.1
+  shipped: bundled (pure-Python) in the BLUX Termux .deb since Stage 15; transitive dependency of jsonschema
+  evidence:
+  - 'wheel dist-info licenses/COPYING: Copyright (c) 2022 Julian Berman'
+  - blux packaging/termux/vendor.lock.json (sha256-pinned)
+  verification: VERIFIED
+- id: lib:pypi/rpds-py
+  name: rpds-py
+  ecosystem: pypi
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:blux
+  license_as_declared: MIT
+  spdx: MIT
+  versions_observed:
+  - 2026.9.1 (Termux package python-rpds-py)
+  shipped: not bundled; the BLUX Termux .deb depends on the Termux package python-rpds-py (installed by APT)
+  evidence:
+  - Termux main repository index (python-rpds-py 2026.9.1, sha256 72fcecf2...) used for Bionic runtime acceptance (extracted only)
+  verification: OWNER_REPORTED
 - id: lib:pypi/jsonschema
   name: jsonschema
   ecosystem: pypi
   relationship:
   - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
   affects:
   - repo:blux
   - repo:blux-ca
@@ -285,11 +337,13 @@ libraries:
   - repo:god
   license_as_declared: MIT
   spdx: MIT
+  required_notice: 'Copyright (c) 2013 Julian Berman'
   versions_observed:
   - 4.26.0
-  shipped: runtime-installed (not bundled in source)
+  shipped: runtime-installed (not bundled in source); since Stage 15 the pure-Python package is BUNDLED in the BLUX Termux .deb (licence text in share/doc/blux/licenses/)
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
+  - 'blux packaging/termux/vendor.lock.json (sha256-pinned) and THIRD_PARTY_NOTICES.md'
   verification: VERIFIED
 - id: lib:pypi/openai
   name: openai
@@ -473,6 +527,7 @@ libraries:
   ecosystem: pypi
   relationship:
   - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
   affects:
   - repo:blux
   - repo:blux-system
@@ -480,11 +535,13 @@ libraries:
   - repo:god
   license_as_declared: 'OSI Approved :: MIT License'
   spdx: MIT
+  required_notice: 'Copyright (c) 2017-2021 Ingy döt Net; Copyright (c) 2006-2016 Kirill Simonov'
   versions_observed:
   - 6.0.3
-  shipped: runtime-installed (not bundled in source)
+  shipped: runtime-installed (not bundled in source); since Stage 15 the pure-Python package is BUNDLED in the BLUX Termux .deb (licence text in share/doc/blux/licenses/)
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
+  - 'blux packaging/termux/vendor.lock.json (sha256-pinned) and THIRD_PARTY_NOTICES.md'
   verification: VERIFIED
   notes: DAT dropped this dependency in 4.0 (Stage 03, dat ba58386); other listed repos still use it.
 - id: lib:pypi/referencing
@@ -492,16 +549,19 @@ libraries:
   ecosystem: pypi
   relationship:
   - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
   affects:
   - repo:blux
   - repo:god
   license_as_declared: MIT
   spdx: MIT
+  required_notice: 'Copyright (c) 2022 Julian Berman'
   versions_observed:
   - 0.37.0
-  shipped: runtime-installed (not bundled in source)
+  shipped: runtime-installed (not bundled in source); since Stage 15 the pure-Python package is BUNDLED in the BLUX Termux .deb (licence text in share/doc/blux/licenses/)
   evidence:
   - dist-info METADATA in Stage 00/01 audit venvs
+  - 'blux packaging/termux/vendor.lock.json (sha256-pinned) and THIRD_PARTY_NOTICES.md'
   verification: VERIFIED
 - id: lib:pypi/reportlab
   name: reportlab
