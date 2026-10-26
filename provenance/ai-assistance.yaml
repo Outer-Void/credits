@@ -508,10 +508,10 @@ ledger:
 - id: AIL-059
   tool: ai:claude-code
   repo: repo:voidforge
-  commits: 6
+  commits: 7
   categories:
   - documentation
   - code_generation
   - architecture_planning
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary (ADR-008); 2026-10-25; Stage 19 standalone workstation core, operation classes and local authorization, 0d660ff; Stage 20 Magisk and root workflows with fail-closed safety, 5f07ec9; Stage 21 restricted members-only distribution, 114278d; Stage 22 integration adapter for BLUX and ax devices, b34a104 and 91fba7e)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary (ADR-008); 2026-10-25; Stage 19 standalone workstation core, operation classes and local authorization, 0d660ff; Stage 20 Magisk and root workflows with fail-closed safety, 5f07ec9; Stage 21 restricted members-only distribution, 114278d; Stage 22 integration adapter for BLUX and ax devices, b34a104 and 91fba7e; Stage 23 real-device acceptance recorder, BLOCKED probe recorded, 463b921)'
   verification: VERIFIED
