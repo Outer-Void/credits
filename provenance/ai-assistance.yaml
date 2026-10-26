@@ -153,11 +153,11 @@ ledger:
 - id: AIL-019
   tool: ai:claude-code
   repo: repo:void-os
-  commits: 10
+  commits: 11
   categories:
   - code_generation
   - debugging
-  evidence: 'Co-authored-by: Claude Sonnet 4.6; also Claude Opus 5.5: Stage 01A third-party notices and the 2026-10-25 licence update (standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 Shooter component lock and release foundations, 097f50d'
+  evidence: 'Co-authored-by: Claude Sonnet 4.6; also Claude Opus 5.5: Stage 01A third-party notices and the 2026-10-25 licence update (standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 Shooter component lock and release foundations, 097f50d; Stage 25 VOID.SYS bundle consumption, 4964895'
   verification: VERIFIED
 - id: AIL-020
   tool: ai:claude-code
@@ -170,10 +170,10 @@ ledger:
 - id: AIL-021
   tool: ai:claude-code
   repo: repo:void-sys
-  commits: 4
+  commits: 5
   categories:
   - code_generation
-  evidence: 'Co-authored-by: Claude Sonnet 4.6; also Claude Opus 5.5: Stage 01A third-party notices and the 2026-10-25 licence update (standard copyright and contact lines); 2026-10-26 documentation synchronization pass'
+  evidence: 'Co-authored-by: Claude Sonnet 4.6; also Claude Opus 5.5: Stage 01A third-party notices and the 2026-10-25 licence update (standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 25 VOID.SYS release track, 09cf56f'
   verification: VERIFIED
 - id: AIL-022
   tool: ai:claude-code
@@ -388,10 +388,10 @@ ledger:
 - id: AIL-045
   tool: ai:claude-code
   repo: repo:docs
-  commits: 5
+  commits: 6
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 incremental sync, 7fb901a'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 incremental sync, 7fb901a; Stage 25 incremental sync, e2ddace'
   verification: VERIFIED
 - id: AIL-046
   tool: ai:claude-code
