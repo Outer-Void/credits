@@ -323,6 +323,7 @@ lineage:
     upstream: proj:hermes-agent (MIT, Copyright (c) 2025 Nous Research)
     notice: migration/blhermes/UPSTREAM-NOTICE.md reproduces the upstream MIT licence verbatim
     personal_data: contributor records summarized by count; e-mail addresses scrubbed
+    stage_14: 'Extensions (skills loader, plugins, MCP client, agents/subagents, scheduler, gateway) are clean-room BLUX implementations; the skills loader reads the upstream SKILL.md format; no upstream code copied (ADR-0014).'
     stage_13: 'Core slices (state, tools, approvals, file safety, environment, redaction, sessions, legacy import) are clean-room BLUX implementations tested against the goldens; no upstream code copied (ADR-0013).'
   gates:
     stage_12_plus: any code ported from BLHermes adds a per-file provenance header and keeps the notice
