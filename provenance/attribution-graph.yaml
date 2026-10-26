@@ -2924,3 +2924,17 @@ edges:
   sources:
   - kind: repository
     ref: ov:blux/runtime/blux_runtime/models/default_routes.json
+- id: ATT-249
+  subject: proj:hermes-agent
+  role: documentation_reference
+  object: repo:blux
+  status: current
+  verification: VERIFIED
+  statement: 'BLUX''s Stage 11 BLHermes inventory, parity matrix and characterization goldens are derived from Hermes
+    Agent (via blhermes-agent ac51a44f1f): identifiers, paths and recorded outputs, no code. The MIT notice travels
+    in migration/blhermes/UPSTREAM-NOTICE.md.'
+  sources:
+  - kind: repository
+    ref: ov:blux/migration/blhermes/UPSTREAM-NOTICE.md
+  - kind: license_file
+    ref: ov:blhermes-agent/LICENSE

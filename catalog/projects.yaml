@@ -13,6 +13,7 @@ projects:
   - REQUIRED_LICENSE_NOTICE
   affects:
   - repo:blhermes-agent
+  - repo:blux
   license: MIT
   license_file: licenses/MIT-hermes-agent-NousResearch.txt
   required_notice: Copyright (c) 2025 Nous Research

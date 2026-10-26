@@ -29,7 +29,7 @@ Unknown provenance is listed here instead of guessed. Each item names its owner 
 
 ### UNR-001: BLHERMES per-file and per-dependency lineage
 
-Upstream MIT root and 23 nested licences recorded; Outer Void-modified areas beyond branding/Termux docs not mapped file-by-file; transitive dependency licences not enumerated.
+Upstream MIT root and 23 nested licences recorded; Outer Void-modified areas beyond branding/Termux docs not mapped file-by-file; transitive dependency licences not enumerated. Stage 11 (2026-10-26) progress - file-level lineage mapped at fork ac51a44f1f (LIN-001 stage_11_file_lineage - 16,456 unchanged, 4,198 rebrand-only, 36 modified, 19 added, 0 deleted). Still open - transitive dependency licences of the fork are not enumerated.
 
 ### UNR-002: Bundled fonts without verifiable licence metadata
 

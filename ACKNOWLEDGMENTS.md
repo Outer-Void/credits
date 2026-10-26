@@ -87,6 +87,7 @@ Used by: BluxGPT.
 ### BLUX
 
 - **Hermes Agent (NousResearch/hermes-agent)**: Hermes's agent architecture informs BLUX's plans for an agent layer (BLHermes migration); no Hermes code is in BLUX. (documentation (ov:blux/docs/ecosystem/baseline-report.md))
+- **Hermes Agent (NousResearch/hermes-agent)**: BLUX's Stage 11 BLHermes inventory, parity matrix and characterization goldens are derived from Hermes Agent (via blhermes-agent ac51a44f1f): identifiers, paths and recorded outputs, no code. The MIT notice travels in migration/blhermes/UPSTREAM-NOTICE.md. (repository (ov:blux/migration/blhermes/UPSTREAM-NOTICE.md), license_file (ov:blhermes-agent/LICENSE))
 - **Anthropic Claude models via API**: Served through BLUX's default Model API routes (via BluxGPT). (repository (ov:blux/runtime/blux_runtime/models/default_routes.json))
 - **DeepSeek chat/reasoner via API**: Served through BLUX's default Model API routes (via BluxGPT). (repository (ov:blux/runtime/blux_runtime/models/default_routes.json))
 - **OpenAI GPT models via API**: Served through BLUX's default Model API routes (via BluxGPT). (repository (ov:blux/runtime/blux_runtime/models/default_routes.json))
@@ -270,7 +271,7 @@ Used by: Termux Background, VoidForge.
 
 ### Hermes Agent (NousResearch/hermes-agent)
 
-Used by: BLHERMES Agent.
+Used by: BLHERMES Agent, BLUX.
 
 - **Hermes Agent upstream contributors**: Upstream contributors: 4,391 distinct git author identities in the fork's history (identities not merged). (git_history (ov:blhermes-agent), authors_file (ov:blhermes-agent/contributors/README.md))
 - **Nous Research**: Copyright (c) 2025 Nous Research (MIT). ([license_file](https://raw.githubusercontent.com/NousResearch/hermes-agent/main/LICENSE))
@@ -1048,7 +1049,7 @@ No third-party credits recorded yet.
 
 ### BLUX (`repo:blux`)
 
-- **Upstream sources and lineage**: github/gitignore, Hermes Agent learning-loop / skills architecture, github/gitignore (template)
+- **Upstream sources and lineage**: github/gitignore, Hermes Agent (NousResearch/hermes-agent), Hermes Agent learning-loop / skills architecture, github/gitignore (template), BLHERMES Agent (fork or derivative)
 - **AI and machine assistance**: Claude / Claude Code
 - **Models and runtimes**: Anthropic Claude models via API, DeepSeek chat/reasoner via API, OpenAI GPT models via API
 - **Languages, platforms and tooling**: GitHub Actions, GitHub's official actions (checkout, setup-python, setup-java, upload/download-artifact), GNU Bash, GNU tools (bash, coreutils, diffutils and the GNU userland), PyPA packaging tools (pip, setuptools, build), Python (CPython), Python Package Index (PyPI), ruff, mypy, pytest, typeshed (types-* stub packages)

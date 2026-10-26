@@ -10,7 +10,10 @@ unresolved:
   - repo:blhermes-agent
   owner: Stage 11
   detail: Upstream MIT root and 23 nested licences recorded; Outer Void-modified areas beyond branding/Termux docs
-    not mapped file-by-file; transitive dependency licences not enumerated.
+    not mapped file-by-file; transitive dependency licences not enumerated. Stage 11 (2026-10-26) progress -
+    file-level lineage mapped at fork ac51a44f1f (LIN-001 stage_11_file_lineage - 16,456 unchanged, 4,198
+    rebrand-only, 36 modified, 19 added, 0 deleted). Still open - transitive dependency licences of the fork are
+    not enumerated.
 - id: UNR-002
   title: Bundled fonts without verifiable licence metadata
   affects:

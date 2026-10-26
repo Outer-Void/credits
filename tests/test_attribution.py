@@ -13,6 +13,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
+import attribution  # noqa: E402
 import validate  # noqa: E402
 
 GRAPH = "provenance/attribution-graph.yaml"
@@ -170,9 +171,12 @@ class ProtectedAttributions(unittest.TestCase):
         self.assertEqual(len(nested), 18)
         lineage = load("provenance/source-lineage.yaml")["lineage"]
         self.assertIn("LIN-001", {r["id"] for r in lineage})
-        # BLUX credits Hermes as influence, never as code lineage (no Hermes code is in BLUX).
+        # BLUX credits Hermes as influence, never as code lineage (no Hermes code is in BLUX). Since Stage 11 it also
+        # references Hermes for the derived migration data (inventory, goldens; lineage LIN-008), which is not code.
         blux = {e["role"] for e in edges() if e["subject"] == "proj:hermes-agent" and e["object"] == "repo:blux"}
-        self.assertEqual(blux, {"architectural_influence"})
+        self.assertIn("architectural_influence", blux)
+        self.assertLessEqual(blux, {"architectural_influence", "documentation_reference"})
+        self.assertEqual(blux & attribution.CODE_LINEAGE, set())
 
     def test_owner_reported_ai(self) -> None:
         ai = {r["id"]: r for r in load("catalog/ai.yaml")["ai"]}

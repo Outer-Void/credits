@@ -14,13 +14,16 @@ project:
   decision: PUBLIC_SOURCE_PROPRIETARY
   intended_license: LicenseRef-BLUX-Proprietary
   relicensing_evidence: 'Owner decision 2026-10-25 (UNR-008 resolved): Outer Void-authored per git history, no third-party contributors; AI-assisted commits present (see provenance/ai-assistance.yaml); ownership of AI-assisted output is OWNER_REPORTED'
-  surviving_obligations: []
+  surviving_obligations:
+  - proj:hermes-agent
   traveling_notices:
   - LICENSE
   - CREDITS.md
+  - migration/blhermes/UPSTREAM-NOTICE.md
   excluded_third_party: []
   lineage:
   - LIN-007
+  - LIN-008
   credits:
   - ai:claude-code
   - std:json-schema-2020-12
@@ -29,5 +32,6 @@ project:
   - lib:pypi/pyyaml
   - insp:hermes-agent-architecture
   - proj:gitignore-templates
+  - proj:hermes-agent
   unresolved: []
-  audited: '2026-10-25'
+  audited: '2026-10-26'

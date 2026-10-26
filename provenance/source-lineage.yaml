@@ -23,6 +23,241 @@ lineage:
     - Termux qualification + acceptance tooling and BLHERMES_*.md docs (168931886a, 1e6c382569, 75624a7a0b)
     - assets/banner.png (UNR-005)
     unknown_areas: file-level attribution of the rebrand commit; see UNR-001
+    stage_11_file_lineage:
+      observed: '2026-10-26'
+      fork_head: ac51a44f1f73452446ddea8e51c58e9e5e9098fc
+      fork_commits_since_base: 15
+      method: git diff --name-status merge_base..fork_head; a modified file is rebrand_only when replacing BLHermes/BLHERMES/blhermes
+        with Hermes/HERMES/hermes reproduces the merge-base blob exactly
+      totals:
+        tracked_files: 20709
+        unchanged_upstream: 16456
+        rebrand_only: 4198
+        modified_by_fork: 36
+        added_by_fork: 19
+        deleted: 0
+      by_subsystem:
+        acp:
+          rebrand_only: 13
+          unchanged_upstream: 9
+        agent.core:
+          rebrand_only: 131
+          unchanged_upstream: 233
+        agent.lsp:
+          rebrand_only: 5
+          unchanged_upstream: 9
+        agent.telemetry:
+          rebrand_only: 1
+          unchanged_upstream: 8
+        attribution.contributors:
+          unchanged_upstream: 2112
+        attribution.license:
+          unchanged_upstream: 1
+        ci:
+          modified_by_fork: 2
+          rebrand_only: 15
+          unchanged_upstream: 63
+        cli:
+          modified_by_fork: 1
+          rebrand_only: 352
+          unchanged_upstream: 413
+        core:
+          rebrand_only: 6
+          unchanged_upstream: 6
+        cron:
+          rebrand_only: 10
+          unchanged_upstream: 36
+        desktop.app:
+          rebrand_only: 599
+          unchanged_upstream: 3613
+        desktop.installer:
+          modified_by_fork: 1
+          rebrand_only: 19
+          unchanged_upstream: 30
+        desktop.shared:
+          rebrand_only: 12
+          unchanged_upstream: 40
+        docs:
+          added_by_fork: 2
+        docs.website:
+          modified_by_fork: 6
+          rebrand_only: 754
+          unchanged_upstream: 79
+        evals:
+          modified_by_fork: 1
+          rebrand_only: 34
+          unchanged_upstream: 201
+        gateway.core:
+          rebrand_only: 45
+          unchanged_upstream: 244
+        gateway.platform_plugins:
+          rebrand_only: 76
+          unchanged_upstream: 114
+        gateway.platforms:
+          rebrand_only: 6
+          unchanged_upstream: 32
+        i18n:
+          rebrand_only: 33
+          unchanged_upstream: 2
+        install:
+          rebrand_only: 3
+        mcp.client:
+          modified_by_fork: 1
+          rebrand_only: 16
+          unchanged_upstream: 10
+        mcp.optional:
+          rebrand_only: 66
+        mcp.server:
+          rebrand_only: 1
+        memory.providers:
+          rebrand_only: 2
+          unchanged_upstream: 7
+        native:
+          unchanged_upstream: 5
+        packaging.docker:
+          rebrand_only: 9
+          unchanged_upstream: 15
+        packaging.nix:
+          rebrand_only: 12
+          unchanged_upstream: 14
+        packaging.pm:
+          rebrand_only: 14
+          unchanged_upstream: 44
+        packaging.scripts:
+          modified_by_fork: 2
+          rebrand_only: 53
+          unchanged_upstream: 150
+        packaging.termux:
+          added_by_fork: 8
+          modified_by_fork: 10
+          unchanged_upstream: 14
+        platform:
+          added_by_fork: 1
+          rebrand_only: 3
+          unchanged_upstream: 13
+        plugins:
+          rebrand_only: 31
+          unchanged_upstream: 115
+        plugins.catalog:
+          rebrand_only: 521
+          unchanged_upstream: 242
+        providers.core:
+          rebrand_only: 2
+          unchanged_upstream: 1
+        providers.plugins:
+          rebrand_only: 17
+          unchanged_upstream: 68
+        repository:
+          added_by_fork: 3
+          modified_by_fork: 6
+          rebrand_only: 14
+          unchanged_upstream: 27
+        skills.bundled:
+          rebrand_only: 150
+          unchanged_upstream: 181
+        skills.optional:
+          rebrand_only: 145
+          unchanged_upstream: 712
+        state.paths:
+          rebrand_only: 3
+          unchanged_upstream: 1
+        state.sessions:
+          rebrand_only: 14
+          unchanged_upstream: 46
+        tests:
+          added_by_fork: 5
+          modified_by_fork: 5
+          rebrand_only: 774
+          unchanged_upstream: 6442
+        tools.approval:
+          rebrand_only: 4
+          unchanged_upstream: 5
+        tools.browser:
+          rebrand_only: 13
+          unchanged_upstream: 12
+        tools.builtin:
+          modified_by_fork: 1
+          rebrand_only: 97
+          unchanged_upstream: 180
+        tools.environments:
+          rebrand_only: 12
+          unchanged_upstream: 10
+        tools.registry_glue:
+          unchanged_upstream: 1
+        tools.subagents:
+          unchanged_upstream: 9
+        tools.toolsets:
+          rebrand_only: 1
+          unchanged_upstream: 1
+        tui.gateway:
+          rebrand_only: 27
+          unchanged_upstream: 92
+        tui.ink:
+          rebrand_only: 39
+          unchanged_upstream: 588
+        web.dashboard:
+          rebrand_only: 44
+          unchanged_upstream: 206
+      modified_by_fork:
+      - .github/workflows/desktop-bundled-release.yml
+      - .github/workflows/termux-verify.yml
+      - CONTRIBUTING.md
+      - README.es.md
+      - README.md
+      - README.ur-pk.md
+      - README.zh-CN.md
+      - apps/bootstrap-installer/vite.config.ts
+      - assets/banner.png
+      - evals/compaction/results/SCORECARD-2026-08-15.md
+      - hermes_cli/banner.py
+      - scripts/build/launchers.py
+      - scripts/run_tests.sh
+      - scripts/termux/build.py
+      - scripts/termux/build_deb.sh
+      - scripts/termux/build_wheels.py
+      - scripts/termux/check_apt.sh
+      - scripts/termux/check_deb.sh
+      - scripts/termux/deb_version.py
+      - scripts/termux/payload_facts.py
+      - scripts/termux/stage_apt_repo.py
+      - scripts/termux/termux_build.sh
+      - scripts/termux/validate_installed.py
+      - tests/hermes_cli/test_skin_engine.py
+      - tests/scripts/test_termux_agent_assembly.py
+      - tests/scripts/test_termux_build_wheels.py
+      - tests/scripts/test_termux_deb_version.py
+      - tests/scripts/test_termux_launchers.py
+      - tools/code_execution_env.py
+      - tools/mcp_tool_config.py
+      - website/docs/getting-started/installation.md
+      - website/docs/getting-started/platform-support.md
+      - website/docs/getting-started/termux.md
+      - website/docs/getting-started/updating.md
+      - website/docs/reference/package-management.md
+      - website/package.json
+      added_by_fork:
+      - BLHERMES_BASELINE.md
+      - BLHERMES_PRE_DEVICE_COMPLETE.md
+      - BLHERMES_TERMUX_RELEASE.md
+      - docs/termux-device-acceptance.md
+      - docs/termux.md
+      - hermes_platform/termux.py
+      - scripts/termux/README.md
+      - scripts/termux/audit_deb.py
+      - scripts/termux/device_acceptance.py
+      - scripts/termux/diagnostics.py
+      - scripts/termux/mcp_fixture.py
+      - scripts/termux/mcp_probe.py
+      - scripts/termux/release_manifest.py
+      - scripts/termux/runtime_probe.py
+      - tests/hermes_cli/test_termux_plugin_fixtures.py
+      - tests/hermes_platform/test_termux_child_environment.py
+      - tests/scripts/test_termux_acceptance.py
+      - tests/scripts/test_termux_artifact_audit.py
+      - tests/scripts/test_termux_runtime_probe.py
+      subsystem_map: ov:blux/migration/blhermes/inventory.py (SUBSYSTEMS)
+      inventory: ov:blux/migration/blhermes/inventory.json
+      parity_matrix: ov:blux/migration/blhermes/parity-matrix.json
   gates:
     stage_11: refine file/subsystem lineage during migration
     stage_16: audit this record
@@ -76,3 +311,17 @@ lineage:
   facts:
     file: .gitignore
     license: CC0-1.0
+- id: LIN-008
+  target: repo:blux
+  source: repo:blhermes-agent
+  kind: FORK_OR_DERIVATIVE
+  verification: VERIFIED
+  facts:
+    scope: 'derived data only: migration/blhermes/inventory.json (upstream identifiers, paths, URLs, file names)
+      and characterization/golden/*.json (recorded outputs of upstream code); no upstream source code copied'
+    source_commit: ac51a44f1f73452446ddea8e51c58e9e5e9098fc
+    upstream: proj:hermes-agent (MIT, Copyright (c) 2025 Nous Research)
+    notice: migration/blhermes/UPSTREAM-NOTICE.md reproduces the upstream MIT licence verbatim
+    personal_data: contributor records summarized by count; e-mail addresses scrubbed
+  gates:
+    stage_12_plus: any code ported from BLHermes adds a per-file provenance header and keeps the notice
