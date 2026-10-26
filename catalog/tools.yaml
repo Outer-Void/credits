@@ -199,6 +199,7 @@ tools:
   relationship:
   - TOOLCHAIN
   affects:
+  - repo:jadis-toolbox
   - repo:blux
   - repo:dat
   - repo:lrc
@@ -278,6 +279,7 @@ tools:
   relationship:
   - TOOLCHAIN
   affects:
+  - repo:jadis-toolbox
   - repo:blhermes-agent
   - repo:blux
   - repo:blux-ca

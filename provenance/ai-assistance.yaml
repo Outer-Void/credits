@@ -460,10 +460,13 @@ ledger:
 - id: AIL-053
   tool: ai:claude-code
   repo: repo:jadis-toolbox
-  commits: 2
+  commits: 3
   categories:
+  - code_generation
+  - architecture_planning
+  - review
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary; 2026-10-25); 2026-10-26 documentation synchronization pass'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary; 2026-10-25); 2026-10-26 documentation synchronization pass; 2026-10-26 JADIS Toolbox overhaul (portable workstation CLI, doctor, safe repair, tests, CI, docs), 64f5d08'
   verification: VERIFIED
 - id: AIL-054
   tool: ai:claude-code

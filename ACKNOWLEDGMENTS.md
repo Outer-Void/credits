@@ -470,7 +470,7 @@ Used by: BluxGPT, jadis.toolbox.
 
 ### mypy
 
-Used by: BLUX, BLUX CogA dataset, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX cA dataset, BLUX cA engine, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler.
+Used by: BLUX, BLUX CogA dataset, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX cA dataset, BLUX cA engine, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler, jadis.toolbox.
 
 - **mypy contributors (python/mypy)**: Maintains and contributes to the project. [INFERRED] ([repository](https://github.com/python/mypy))
 - **Jukka Lehtosalo**: Copyright 2012- 'Jukka Lehtosalo and contributors' (with Dropbox, Inc.). ([license_file](https://raw.githubusercontent.com/python/mypy/master/LICENSE))
@@ -537,14 +537,14 @@ Used by: TheResolverBot (Telegram bot), Vigyl.
 
 ### PyPA packaging tools (pip, setuptools, build)
 
-Used by: BLHERMES Agent, BLUX, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX System, BLUX cA engine, BluxGPT, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler.
+Used by: BLHERMES Agent, BLUX, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX System, BLUX cA engine, BluxGPT, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler, jadis.toolbox.
 
 - **Python Packaging Authority (PyPA)**: Python packaging is a community effort under PyPA. ([foundation](https://www.pypa.io/en/latest/))
 - **Python Packaging Authority (PyPA)**: The working group that maintains pip, setuptools and build. ([foundation](https://www.pypa.io/en/latest/), [repository](https://raw.githubusercontent.com/pypa/setuptools/main/README.rst), [repository](https://raw.githubusercontent.com/pypa/build/main/README.md))
 
 ### pytest
 
-Used by: BLUX, BLUX CogA dataset, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX cA dataset, BLUX cA engine, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler, Roughin.
+Used by: BLUX, BLUX CogA dataset, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX cA dataset, BLUX cA engine, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler, Roughin, jadis.toolbox.
 
 - **pytest-dev**: Maintains and contributes to the project. [INFERRED] ([repository](https://github.com/pytest-dev/pytest))
 - **Holger Krekel**: Copyright 2004 'Holger Krekel and others': pytest's original copyright holder. ([license_file](https://raw.githubusercontent.com/pytest-dev/pytest/main/LICENSE))
@@ -643,7 +643,7 @@ Used by: BluxGPT, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabiliti
 
 ### ruff
 
-Used by: Roughin.
+Used by: Roughin, jadis.toolbox.
 
 - **Ruff contributors (astral-sh/ruff)**: Maintains and contributes to the project. [INFERRED] ([repository](https://github.com/astral-sh/ruff))
 - **Charles Marsh**: Holds the copyright of Ruff (2022-). ([license_file](https://raw.githubusercontent.com/astral-sh/ruff/main/LICENSE))
@@ -671,7 +671,7 @@ Used by: BluxGPT.
 
 ### setuptools
 
-Used by: BLHERMES Agent, BLUX, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX System, BLUX cA engine, BluxGPT, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler.
+Used by: BLHERMES Agent, BLUX, BLUX CogA engine (2.0: deterministic reason.* capabilities; frozen 1.0 dialogue contract), BLUX System, BLUX cA engine, BluxGPT, DAT - Developer's Audit Tool, GOD - BLUX discovery (capabilities, projects, commands); 1.x was a global help indexer, LRC - Local Repo Compiler, jadis.toolbox.
 
 - **Python Packaging Authority (PyPA)**: Maintained by the Python Packaging Authority. ([repository](https://raw.githubusercontent.com/pypa/setuptools/main/README.rst))
 
@@ -1151,7 +1151,8 @@ No third-party credits recorded yet.
 
 - **Upstream sources and lineage**: Jie-Qiao/Android-Termux-LLM-Tutorial
 - **Models and runtimes**: DeepSeek-R1-Distill-Qwen-1.5B GGUF (bartowski quantization), llama.cpp inference runtime
-- **Languages, platforms and tooling**: Debian GNU/Linux, GNU Bash, GNU tools (bash, coreutils, diffutils and the GNU userland), Termux
+- **Languages, platforms and tooling**: Debian GNU/Linux, GNU Bash, GNU tools (bash, coreutils, diffutils and the GNU userland), PyPA packaging tools (pip, setuptools, build), ruff, mypy, pytest, Termux
+- **Libraries and frameworks**: mypy, pytest, ruff, setuptools
 - **Inspirations (voluntary credit; no code derivation implied)**: Android Termux LLM tutorial (Jie-Qiao)
 
 ### LRC - Local Repo Compiler (`repo:lrc`)

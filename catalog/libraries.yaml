@@ -623,6 +623,7 @@ libraries:
   relationship:
   - DEPENDENCY
   affects:
+  - repo:jadis-toolbox
   - repo:roughin
   license_as_declared: MIT
   spdx: MIT
@@ -1511,6 +1512,7 @@ libraries:
   - DEPENDENCY
   - TOOLCHAIN
   affects:
+  - repo:jadis-toolbox
   - repo:blux
   - repo:blux-ca
   - repo:blux-ca-dataset
@@ -1530,6 +1532,7 @@ libraries:
   - DEPENDENCY
   - TOOLCHAIN
   affects:
+  - repo:jadis-toolbox
   - repo:blux
   - repo:blux-ca
   - repo:blux-ca-dataset
@@ -1580,6 +1583,7 @@ libraries:
   relationship:
   - TOOLCHAIN
   affects:
+  - repo:jadis-toolbox
   - repo:blhermes-agent
   - repo:blux
   - repo:blux-ca
