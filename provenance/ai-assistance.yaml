@@ -186,14 +186,14 @@ ledger:
 - id: AIL-023
   tool: ai:claude-code
   repo: repo:blux
-  commits: 21
+  commits: 22
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin, Stage 09 Model API v1); also Stage 10 direct blux CLI; 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); operationrestore licensing mirror; Stage 11 BLHermes inventory, parity matrix and characterization; Stage 12 Hook System v1; Stage 13 BLHermes core migration; Stage 14 BLHermes extensions; Stage 15 Termux packaging; Stage 16 BLHermes decoupling; Stage 18 blux agent'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin, Stage 09 Model API v1); also Stage 10 direct blux CLI; 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); operationrestore licensing mirror; Stage 11 BLHermes inventory, parity matrix and characterization; Stage 12 Hook System v1; Stage 13 BLHermes core migration; Stage 14 BLHermes extensions; Stage 15 Termux packaging; Stage 16 BLHermes decoupling; Stage 18 blux agent; Stage 22 VoidForge device capabilities'
   verification: VERIFIED
 - id: AIL-024
   tool: ai:claude-code
@@ -408,12 +408,12 @@ ledger:
 - id: AIL-047
   tool: ai:claude-code
   repo: repo:axiom
-  commits: 2
+  commits: 3
   categories:
   - documentation
   - code_generation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary; 2026-10-25; Stage 18 ax control plane and corrected shell tests)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary; 2026-10-25; Stage 18 ax control plane and corrected shell tests; Stage 22 ax devices route)'
   verification: VERIFIED
 - id: AIL-048
   tool: ai:claude-code
@@ -508,10 +508,10 @@ ledger:
 - id: AIL-059
   tool: ai:claude-code
   repo: repo:voidforge
-  commits: 4
+  commits: 6
   categories:
   - documentation
   - code_generation
   - architecture_planning
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary (ADR-008); 2026-10-25; Stage 19 standalone workstation core, operation classes and local authorization, 0d660ff; Stage 20 Magisk and root workflows with fail-closed safety, 5f07ec9; Stage 21 restricted members-only distribution, 114278d)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary (ADR-008); 2026-10-25; Stage 19 standalone workstation core, operation classes and local authorization, 0d660ff; Stage 20 Magisk and root workflows with fail-closed safety, 5f07ec9; Stage 21 restricted members-only distribution, 114278d; Stage 22 integration adapter for BLUX and ax devices, b34a104 and 91fba7e)'
   verification: VERIFIED
