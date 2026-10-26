@@ -508,8 +508,10 @@ ledger:
 - id: AIL-059
   tool: ai:claude-code
   repo: repo:voidforge
-  commits: 1
+  commits: 2
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary (ADR-008); 2026-10-25)'
+  - code_generation
+  - architecture_planning
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary (ADR-008); 2026-10-25; Stage 19 standalone workstation core, operation classes and local authorization, 0d660ff)'
   verification: VERIFIED
