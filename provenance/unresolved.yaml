@@ -180,3 +180,15 @@ unresolved:
   detail: 'bandit, orjson and safety: the installed distribution metadata states no licence field. Confirm each package''s
     licence from its own LICENSE file at the version used. (Split from UNR-013, which tracked Outer Void''s own packages and
     is resolved.)'
+- id: UNR-020
+  title: Upstream and licence of libGDX's bundled default font (lsans-15)
+  affects:
+  - repo:void-game
+  - repo:void-os
+  owner: maintainers
+  status: open
+  detail: AXIOM Shooter renders all text with libGDX's built-in BitmapFont (com/badlogic/gdx/utils/lsans-15.fnt and .png
+    inside gdx-1.14.2.jar; the .fnt header says only face="LSans"). The jar ships no licence or notice for it. The face
+    is probably derived from Liberation Sans, but that is not yet confirmed from an authoritative libGDX source, so
+    no font attribution or licence is asserted. Confirm from the libGDX repository history, then record the font
+    and any required notice. Found in the Stage 26 asset-licensing audit.

@@ -31,4 +31,5 @@ project:
   - ai:claude-code
   unresolved:
   - UNR-014
+  - UNR-020
   audited: '2026-10-24'
