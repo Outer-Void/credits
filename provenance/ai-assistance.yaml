@@ -499,10 +499,12 @@ ledger:
 - id: AIL-057
   tool: ai:claude-code
   repo: repo:theresolver
-  commits: 3
+  commits: 4
   categories:
+  - code_generation
+  - review
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 01A third-party notices and verbatim licence texts; proprietary LICENSE added; 2026-10-25); 2026-10-26 documentation synchronization pass'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 01A third-party notices and verbatim licence texts; proprietary LICENSE added; 2026-10-25); 2026-10-26 documentation synchronization pass; Stage 31 website overhaul (49dbeff: status/pricing/privacy corrections, Next upgrade, SEO, headers, tests) (2026-10-27)'
   verification: VERIFIED
 - id: AIL-058
   tool: ai:claude-code
