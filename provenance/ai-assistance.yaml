@@ -491,10 +491,11 @@ ledger:
 - id: AIL-056
   tool: ai:claude-code
   repo: repo:termux-background
-  commits: 3
+  commits: 4
   categories:
+  - review
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 01A third-party notices and verbatim licence texts (#10); relicense as proprietary; 2026-10-25); 2026-10-26 documentation synchronization pass'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 01A third-party notices and verbatim licence texts (#10); relicense as proprietary; 2026-10-25); 2026-10-26 documentation synchronization pass; Stage 32 release checks (75cfb97: test assertions fixed, CI shellcheck, uninstall docs, RELEASE_CHECKS.md) (2026-10-27)'
   verification: VERIFIED
 - id: AIL-057
   tool: ai:claude-code
