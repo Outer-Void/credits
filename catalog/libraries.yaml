@@ -1233,15 +1233,19 @@ libraries:
   ecosystem: npm
   relationship:
   - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
   affects:
   - repo:roughin
   license_as_declared: MIT
   spdx: MIT
   version: 3.4.19
-  shipped: development-only
-  license_file: null
+  shipped: shipped (generated stylesheet frontend assets/*.css, including preflight base styles; since Stage 28 added the missing PostCSS config, 2026-10-27)
+  license_file: licenses/MIT-tailwindcss.txt
+  required_notice: Copyright (c) Tailwind Labs, Inc.
   evidence:
   - node_modules/<pkg>/package.json license field
+  - node_modules/tailwindcss/LICENSE (copied verbatim to roughin licenses/MIT-tailwindcss.txt)
+  - 'Stage 28 vite build: dist/assets/*.css 9.49 kB (was 0.11 kB before postcss.config.js)'
   verification: VERIFIED
 - id: lib:npm/roughin/vite
   name: vite

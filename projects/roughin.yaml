@@ -20,6 +20,7 @@ project:
   - lib:npm/roughin/react-router-dom
   - lib:npm/roughin/axios
   - lib:npm/roughin/workbox
+  - lib:npm/roughin/tailwindcss
   traveling_notices:
   - LICENSE
   - THIRD_PARTY_NOTICES.md

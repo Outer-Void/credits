@@ -1341,6 +1341,7 @@ repositories that ship the works. This index points to them; it does not replace
 | Source Sans 3 ExtraLight | OFL-1.1 | © 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’ |
 | Source Serif 4 | OFL-1.1 | © 2014 - 2021 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’. |
 | Space Mono | OFL-1.1 | Copyright 2016 The Space Mono Project Authors (https://github.com/googlefonts/spacemono) |
+| tailwindcss | MIT | Copyright (c) Tailwind Labs, Inc. |
 | UbuntuMono Nerd Font | Ubuntu-font-1.0 | Copyright 2011 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0 |
 | UbuntuMono Nerd Font | Ubuntu-font-1.0 | Copyright 2011 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0 |
 | Work Sans | OFL-1.1 | Copyright 2019 The Work Sans Project Authors (https://github.com/weiweihuanghuang/Work-Sans) |
