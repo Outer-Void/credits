@@ -186,23 +186,23 @@ ledger:
 - id: AIL-023
   tool: ai:claude-code
   repo: repo:blux
-  commits: 29
+  commits: 30
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin, Stage 09 Model API v1); also Stage 10 direct blux CLI; 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); operationrestore licensing mirror; Stage 11 BLHermes inventory, parity matrix and characterization; Stage 12 Hook System v1; Stage 13 BLHermes core migration; Stage 14 BLHermes extensions; Stage 15 Termux packaging; Stage 16 BLHermes decoupling; Stage 18 blux agent; Stage 22 VoidForge device capabilities; 2026-10-26 documentation synchronization pass; Stages 34-36 (2026-10-27: blux_training pipeline 7bdd076, Generation 0 evaluation harness and baseline 8ef10d5, specialist register and adb wipe rule fix ba160c3); Stage 37 Generation 2 readiness and logical-model isolation guard (b634dd3 and its lint fix, 2026-10-27); Stage 43 release-candidate fix: blux agent records receipts in BLUX System (83ded6f, 2026-10-27)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin, Stage 09 Model API v1); also Stage 10 direct blux CLI; 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); operationrestore licensing mirror; Stage 11 BLHermes inventory, parity matrix and characterization; Stage 12 Hook System v1; Stage 13 BLHermes core migration; Stage 14 BLHermes extensions; Stage 15 Termux packaging; Stage 16 BLHermes decoupling; Stage 18 blux agent; Stage 22 VoidForge device capabilities; 2026-10-26 documentation synchronization pass; Stages 34-36 (2026-10-27: blux_training pipeline 7bdd076, Generation 0 evaluation harness and baseline 8ef10d5, specialist register and adb wipe rule fix ba160c3); Stage 37 Generation 2 readiness and logical-model isolation guard (b634dd3 and its lint fix, 2026-10-27); Stage 43 release-candidate fix: blux agent records receipts in BLUX System (83ded6f, 2026-10-27); Stage 44 historical banner for the Stage 00 baseline (51134af, 2026-10-27)'
   verification: VERIFIED
 - id: AIL-024
   tool: ai:claude-code
   repo: repo:credits
-  commits: 46
+  commits: 47
   categories:
   - research
   - documentation
-  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08, in the Stage 08 comprehensive attribution pass, and in Stage 09 (Co-authored-by trailers); also the 2026-10-25 relicensing record (UNR-008, UNR-007, UNR-006), Stage 10, the Stage 11 BLHermes file/subsystem lineage, the Stage 12 record, the Stage 13 record, the Stage 14 record, the Stage 15 record, the Stage 16 record, the Stage 18 record, the Stage 19-23 records, and the 2026-10-26 documentation synchronization pass, and the Stage 24-43 records (2026-10-27) (count from Co-Authored-By trailers)
+  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08, in the Stage 08 comprehensive attribution pass, and in Stage 09 (Co-authored-by trailers); also the 2026-10-25 relicensing record (UNR-008, UNR-007, UNR-006), Stage 10, the Stage 11 BLHermes file/subsystem lineage, the Stage 12 record, the Stage 13 record, the Stage 14 record, the Stage 15 record, the Stage 16 record, the Stage 18 record, the Stage 19-23 records, and the 2026-10-26 documentation synchronization pass, and the Stage 24-44 records (2026-10-27) (count from Co-Authored-By trailers)
   verification: VERIFIED
 - id: AIL-025
   tool: ai:gemini-code-assist
@@ -388,10 +388,10 @@ ledger:
 - id: AIL-045
   tool: ai:claude-code
   repo: repo:docs
-  commits: 24
+  commits: 25
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 incremental sync, 7fb901a; Stage 25 incremental sync, e2ddace; Stage 26 incremental sync, 1f62927; Stage 28, Stage 29 and the full reconciliation after Stage 30 (58b5614, 6cfbd70 and the 2026-10-27 reconciliation commit); Stages 30-40 syncs, full reconciliation and the ecosystem constitution (2026-10-27); Stage 42 cross-repository contract verification and Stage 43 release-candidate report (ef7d357) (2026-10-27)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 incremental sync, 7fb901a; Stage 25 incremental sync, e2ddace; Stage 26 incremental sync, 1f62927; Stage 28, Stage 29 and the full reconciliation after Stage 30 (58b5614, 6cfbd70 and the 2026-10-27 reconciliation commit); Stages 30-40 syncs, full reconciliation and the ecosystem constitution (2026-10-27); Stage 42 cross-repository contract verification and Stage 43 release-candidate report (ef7d357) (2026-10-27); Stage 44 Definition of Done pass and final matrix (9cb9798, 2026-10-27)'
   verification: VERIFIED
 - id: AIL-046
   tool: ai:claude-code
@@ -418,12 +418,12 @@ ledger:
 - id: AIL-048
   tool: ai:claude-code
   repo: repo:blux-app
-  commits: 3
+  commits: 4
   categories:
   - review
   - code_generation
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (License: standard copyright and contact lines; 2026-10-25); Stage 38 BLUX App 2.0 mission control (6c8e8dd, 2026-10-27); Stage 40 capability-grouping fix (dbdd2a4, 2026-10-27)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (License: standard copyright and contact lines; 2026-10-25); Stage 38 BLUX App 2.0 mission control (6c8e8dd, 2026-10-27); Stage 40 capability-grouping fix (dbdd2a4, 2026-10-27); Stage 44 lint fixes and CI ruff step (0de2d9a, 2026-10-27)'
   verification: VERIFIED
 - id: AIL-049
   tool: ai:claude-code
@@ -438,12 +438,12 @@ ledger:
 - id: AIL-050
   tool: ai:claude-code
   repo: repo:bluxai-app
-  commits: 3
+  commits: 4
   categories:
   - api_backend
   - code_generation
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary; 2026-10-25); 2026-10-26 documentation synchronization pass; Stage 39 workspace service (9fdb0a2, 2026-10-27)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Relicense as proprietary; 2026-10-25); 2026-10-26 documentation synchronization pass; Stage 39 workspace service (9fdb0a2, 2026-10-27); Stage 44 BLUX-absent 503 fix (9e5706a, 2026-10-27)'
   verification: VERIFIED
 - id: AIL-051
   tool: ai:claude-code
