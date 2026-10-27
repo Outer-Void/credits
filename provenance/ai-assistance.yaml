@@ -286,14 +286,14 @@ ledger:
 - id: AIL-036
   tool: ai:claude-code
   repo: repo:dat
-  commits: 3
+  commits: 4
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 03 DAT 4.0 rebuild, ba58386); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 03 DAT 4.0 rebuild, ba58386); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; 2026-10-27 full reconciliation: historical banner on snapshot.md, 8898290'
   verification: VERIFIED
 - id: AIL-037
   tool: ai:claude-code
@@ -380,18 +380,18 @@ ledger:
 - id: AIL-044
   tool: ai:claude-code
   repo: repo:dotgithub
-  commits: 3
+  commits: 5
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (ethics charter attribution principle, 9444a0a); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (ethics charter attribution principle, 9444a0a); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; 2026-10-27 profile corrections (Roughin estimates 9a9c0ca; Vigyl stack and jadis.toolbox 7c9ad5a)'
   verification: VERIFIED
 - id: AIL-045
   tool: ai:claude-code
   repo: repo:docs
-  commits: 7
+  commits: 13
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 incremental sync, 7fb901a; Stage 25 incremental sync, e2ddace; Stage 26 incremental sync, 1f62927'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 incremental sync, 7fb901a; Stage 25 incremental sync, e2ddace; Stage 26 incremental sync, 1f62927; Stage 28, Stage 29 and the full reconciliation after Stage 30 (58b5614, 6cfbd70 and the 2026-10-27 reconciliation commit)'
   verification: VERIFIED
 - id: AIL-046
   tool: ai:claude-code
