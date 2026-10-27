@@ -286,6 +286,18 @@ ledger:
 - id: AIL-036
   tool: ai:claude-code
   repo: repo:dat
+  commits: 5
+  categories:
+  - research
+  - architecture_planning
+  - code_generation
+  - documentation
+  - review
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 03 DAT 4.0 rebuild, ba58386); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; 2026-10-27 full reconciliation: historical banner on snapshot.md, 8898290; Stage 41 classifier corrected to Beta (2026-10-27)'
+  verification: VERIFIED
+- id: AIL-037
+  tool: ai:claude-code
+  repo: repo:lrc
   commits: 4
   categories:
   - research
@@ -293,31 +305,19 @@ ledger:
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 03 DAT 4.0 rebuild, ba58386); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; 2026-10-27 full reconciliation: historical banner on snapshot.md, 8898290'
-  verification: VERIFIED
-- id: AIL-037
-  tool: ai:claude-code
-  repo: repo:lrc
-  commits: 3
-  categories:
-  - research
-  - architecture_planning
-  - code_generation
-  - documentation
-  - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 04 LRC 2.0 rebuild, e64c138 and 9b99551); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 04 LRC 2.0 rebuild, e64c138 and 9b99551); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); Stage 41 classifier corrected to Beta (2026-10-27)'
   verification: VERIFIED
 - id: AIL-038
   tool: ai:claude-code
   repo: repo:god
-  commits: 3
+  commits: 4
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 05 GOD 2.0 rebuild, 26fa415; Stage 09 blux-sdk 0.2 pin, 8a02a1d); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 05 GOD 2.0 rebuild, 26fa415; Stage 09 blux-sdk 0.2 pin, 8a02a1d); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); Stage 41 classifier corrected to Beta (2026-10-27)'
   verification: VERIFIED
 - id: AIL-039
   tool: ai:claude-code
@@ -380,18 +380,18 @@ ledger:
 - id: AIL-044
   tool: ai:claude-code
   repo: repo:dotgithub
-  commits: 5
+  commits: 6
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (ethics charter attribution principle, 9444a0a); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; 2026-10-27 profile corrections (Roughin estimates 9a9c0ca; Vigyl stack and jadis.toolbox 7c9ad5a)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (ethics charter attribution principle, 9444a0a); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; 2026-10-27 profile corrections (Roughin estimates 9a9c0ca; Vigyl stack and jadis.toolbox 7c9ad5a); Stage 41 organization metadata (fictional repository links removed, SECURITY/CONTRIBUTING/templates) (2026-10-27)'
   verification: VERIFIED
 - id: AIL-045
   tool: ai:claude-code
   repo: repo:docs
-  commits: 13
+  commits: 21
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 incremental sync, 7fb901a; Stage 25 incremental sync, e2ddace; Stage 26 incremental sync, 1f62927; Stage 28, Stage 29 and the full reconciliation after Stage 30 (58b5614, 6cfbd70 and the 2026-10-27 reconciliation commit)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 incremental sync, 7fb901a; Stage 25 incremental sync, e2ddace; Stage 26 incremental sync, 1f62927; Stage 28, Stage 29 and the full reconciliation after Stage 30 (58b5614, 6cfbd70 and the 2026-10-27 reconciliation commit); Stages 30-40 syncs, full reconciliation and the ecosystem constitution (2026-10-27)'
   verification: VERIFIED
 - id: AIL-046
   tool: ai:claude-code
@@ -418,12 +418,12 @@ ledger:
 - id: AIL-048
   tool: ai:claude-code
   repo: repo:blux-app
-  commits: 2
+  commits: 3
   categories:
   - review
   - code_generation
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (License: standard copyright and contact lines; 2026-10-25); Stage 38 BLUX App 2.0 mission control (6c8e8dd, 2026-10-27)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (License: standard copyright and contact lines; 2026-10-25); Stage 38 BLUX App 2.0 mission control (6c8e8dd, 2026-10-27); Stage 40 capability-grouping fix (dbdd2a4, 2026-10-27)'
   verification: VERIFIED
 - id: AIL-049
   tool: ai:claude-code
@@ -448,10 +448,10 @@ ledger:
 - id: AIL-051
   tool: ai:claude-code
   repo: repo:dotgithub-private
-  commits: 2
+  commits: 3
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (proprietary LICENSE added; 2026-10-25); 2026-10-26 documentation synchronization pass'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (proprietary LICENSE added; 2026-10-25); 2026-10-26 documentation synchronization pass; Stage 41 members-only profile guidance (2026-10-27)'
   verification: VERIFIED
 - id: AIL-052
   tool: ai:claude-code
