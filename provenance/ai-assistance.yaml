@@ -186,14 +186,14 @@ ledger:
 - id: AIL-023
   tool: ai:claude-code
   repo: repo:blux
-  commits: 23
+  commits: 26
   categories:
   - research
   - architecture_planning
   - code_generation
   - documentation
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin, Stage 09 Model API v1); also Stage 10 direct blux CLI; 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); operationrestore licensing mirror; Stage 11 BLHermes inventory, parity matrix and characterization; Stage 12 Hook System v1; Stage 13 BLHermes core migration; Stage 14 BLHermes extensions; Stage 15 Termux packaging; Stage 16 BLHermes decoupling; Stage 18 blux agent; Stage 22 VoidForge device capabilities; 2026-10-26 documentation synchronization pass'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 00 baseline, Stage 01 contract/SDK/runtime/CLI, Stage 01A licensing, Stage 02 BLUX System integration, Stage 03 subprocess providers, Stage 04 LRC -> DAT chain hard gate, Stage 05 GOD discovery chain hard gate, Stage 06 CogA hard gate, Stage 07 CogA -> cA -> DAT repair chain hard gate, Stage 08 cA 2.0.1 pin, Stage 09 Model API v1); also Stage 10 direct blux CLI; 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); operationrestore licensing mirror; Stage 11 BLHermes inventory, parity matrix and characterization; Stage 12 Hook System v1; Stage 13 BLHermes core migration; Stage 14 BLHermes extensions; Stage 15 Termux packaging; Stage 16 BLHermes decoupling; Stage 18 blux agent; Stage 22 VoidForge device capabilities; 2026-10-26 documentation synchronization pass; Stages 34-36 (2026-10-27: blux_training pipeline 7bdd076, Generation 0 evaluation harness and baseline 8ef10d5, specialist register and adb wipe rule fix ba160c3)'
   verification: VERIFIED
 - id: AIL-024
   tool: ai:claude-code

@@ -192,3 +192,14 @@ unresolved:
     is probably derived from Liberation Sans, but that is not yet confirmed from an authoritative libGDX source, so
     no font attribution or licence is asserted. Confirm from the libGDX repository history, then record the font
     and any required notice. Found in the Stage 26 asset-licensing audit.
+- id: UNR-021
+  title: Tooling behind the 2026-10-27 BLUX native-router commits
+  affects:
+  - repo:blux
+  owner: maintainers
+  status: open
+  detail: Four commits on Outer-Void/blux main (a107205, 19bca2c, 605e3ec, 0e4b4f6; training/router, research,
+    phase2, WAKE_UP_REPORT.md) are authored by the Outer Void account with no co-author trailers. Their text refers
+    to a cloud /workspace environment and to Codex, which suggests an automated agent session, but the tool and
+    model are not declared. No AI-assistance record is asserted until the owner confirms which tool produced them.
+    Found during the Stage 34 rebase.

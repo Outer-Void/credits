@@ -25,6 +25,7 @@ Unknown provenance is listed here instead of guessed. Each item names its owner 
 | UNR-018 | open | Scope of owner-reported AI use | human | `ai:chatgpt`, `ai:deepseek-dev`, `ai:blackbox-dev`, `ai:meta-llama`, `org:blackbox-ai` |
 | UNR-019 | open | Third-party packages whose metadata declares no licence | maintainers | `lib:pypi/bandit`, `lib:pypi/orjson`, `lib:pypi/safety` |
 | UNR-020 | open | Upstream and licence of libGDX's bundled default font (lsans-15) | maintainers | `repo:void-game`, `repo:void-os` |
+| UNR-021 | open | Tooling behind the 2026-10-27 BLUX native-router commits | maintainers | - |
 
 ## Details
 
@@ -119,3 +120,7 @@ bandit, orjson and safety: the installed distribution metadata states no licence
 ### UNR-020: Upstream and licence of libGDX's bundled default font (lsans-15)
 
 AXIOM Shooter renders all text with libGDX's built-in BitmapFont (com/badlogic/gdx/utils/lsans-15.fnt and .png inside gdx-1.14.2.jar; the .fnt header says only face="LSans"). The jar ships no licence or notice for it. The face is probably derived from Liberation Sans, but that is not yet confirmed from an authoritative libGDX source, so no font attribution or licence is asserted. Confirm from the libGDX repository history, then record the font and any required notice. Found in the Stage 26 asset-licensing audit.
+
+### UNR-021: Tooling behind the 2026-10-27 BLUX native-router commits
+
+Four commits on Outer-Void/blux main (a107205, 19bca2c, 605e3ec, 0e4b4f6; training/router, research, phase2, WAKE_UP_REPORT.md) are authored by the Outer Void account with no co-author trailers. Their text refers to a cloud /workspace environment and to Codex, which suggests an automated agent session, but the tool and model are not declared. No AI-assistance record is asserted until the owner confirms which tool produced them. Found during the Stage 34 rebase.
