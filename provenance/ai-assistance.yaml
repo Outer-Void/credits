@@ -479,14 +479,14 @@ ledger:
 - id: AIL-055
   tool: ai:claude-code
   repo: repo:roughin
-  commits: 5
+  commits: 6
   categories:
   - documentation
   - code_generation
   - api_backend
   - debugging
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 01A third-party notices and verbatim licence texts; standard copyright and contact lines; 2026-10-25); 2026-10-26 documentation synchronization pass; Stage 28 release readiness (9e5cf12: billing/webhook/auth/tenant/lifecycle fixes, migrations 0002-0003, 91 tests, frontend fixes, ops scripts, CI, docs) and README status correction (2026-10-27)'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (Stage 01A third-party notices and verbatim licence texts; standard copyright and contact lines; 2026-10-25); 2026-10-26 documentation synchronization pass; Stage 28 release readiness (9e5cf12: billing/webhook/auth/tenant/lifecycle fixes, migrations 0002-0003, 91 tests, frontend fixes, ops scripts, CI, docs), README status correction, python-jose to PyJWT swap (2026-10-27)'
   verification: VERIFIED
 - id: AIL-056
   tool: ai:claude-code
