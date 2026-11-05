@@ -9,7 +9,7 @@ project:
   origin: git@github.com:Outer-Void/roughin.git
   products:
   - Roughin
-  visibility: public
+  visibility: private  # authenticated GitHub API, 2026-11-04 (OV-46); public until 2026-10-27
   current_license: 'LicenseRef-OuterVoid-Proprietary (header: proprietary and confidential)'
   decision: MIXED_WITH_THIRD_PARTY_NOTICES
   intended_license: Proprietary + MIT notices for bundled frontend runtime
@@ -17,6 +17,7 @@ project:
   surviving_obligations:
   - lib:npm/roughin/react
   - lib:npm/roughin/react-dom
+  - lib:npm/roughin/scheduler
   - lib:npm/roughin/react-router-dom
   - lib:npm/roughin/axios
   - lib:npm/roughin/workbox

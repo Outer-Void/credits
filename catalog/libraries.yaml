@@ -1128,7 +1128,7 @@ libraries:
   - repo:roughin
   license_as_declared: MIT
   spdx: MIT
-  version: 4.7.0
+  version: 6.1.2
   shipped: development-only
   license_file: null
   evidence:
@@ -1222,7 +1222,7 @@ libraries:
   - repo:roughin
   license_as_declared: MIT
   spdx: MIT
-  version: 6.30.6
+  version: 7.18.4
   shipped: shipped (bundled JS)
   license_file: licenses/MIT-react-router.txt
   evidence:
@@ -1256,7 +1256,7 @@ libraries:
   - repo:roughin
   license_as_declared: MIT
   spdx: MIT
-  version: 5.4.21
+  version: 8.3.5
   shipped: development-only
   license_file: null
   evidence:
@@ -1271,7 +1271,7 @@ libraries:
   - repo:roughin
   license_as_declared: MIT
   spdx: MIT
-  version: 0.20.5
+  version: 2.0.0
   shipped: development-only
   license_file: null
   evidence:
@@ -1626,3 +1626,247 @@ libraries:
   - Stage 08 attribution discovery pass (manifests, CI workflows, shebangs, imports)
   ecosystem: c
   notes: Used through Python's zlib module for cA's rollback object store.
+- id: lib:npm/roughin/scheduler
+  name: scheduler
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 0.23.2
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-scheduler-0.23.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/roughin/vitest
+  name: vitest
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 4.1.12
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/roughin/jsdom
+  name: jsdom
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 29.1.1
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/roughin/@testing-library/react
+  name: '@testing-library/react'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 16.3.3
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/roughin/@testing-library/user-event
+  name: '@testing-library/user-event'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 14.6.8
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/roughin/@testing-library/jest-dom
+  name: '@testing-library/jest-dom'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:roughin
+  license_as_declared: MIT
+  spdx: MIT
+  version: 6.9.1
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/vigyl/react
+  name: react
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  version: 19.3.1
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-react-19.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/vigyl/react-dom
+  name: react-dom
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  version: 19.3.1
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-react-dom-19.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/vigyl/scheduler
+  name: scheduler
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  version: 0.28.0
+  shipped: shipped (bundled JS)
+  license_file: licenses/MIT-scheduler-0.28.txt
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/vigyl/vite
+  name: vite
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  version: 8.3.5
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/vigyl/@vitejs/plugin-react
+  name: '@vitejs/plugin-react'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  version: 6.1.2
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/vigyl/vitest
+  name: vitest
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  version: 4.1.12
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/vigyl/jsdom
+  name: jsdom
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  version: 29.1.1
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/vigyl/@testing-library/react
+  name: '@testing-library/react'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  version: 16.3.3
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/vigyl/@testing-library/user-event
+  name: '@testing-library/user-event'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  version: 14.6.8
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED
+- id: lib:npm/vigyl/@testing-library/jest-dom
+  name: '@testing-library/jest-dom'
+  ecosystem: npm
+  relationship:
+  - DEPENDENCY
+  affects:
+  - repo:vigyl
+  license_as_declared: MIT
+  spdx: MIT
+  version: 6.9.1
+  shipped: development-only
+  license_file: null
+  evidence:
+  - node_modules/<pkg>/package.json license field (OV-49, 2026-11-04)
+  verification: VERIFIED

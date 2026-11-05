@@ -1177,7 +1177,7 @@ No third-party credits recorded yet.
 
 - **AI and machine assistance**: OpenAI Codex (cloud coding agent)
 - **Languages, platforms and tooling**: Docker and Docker Official Images, Node.js / npm, npm (package manager and registry), Python (CPython), Python Package Index (PyPI)
-- **Libraries and frameworks**: @vitejs/plugin-react, aiosqlite, alembic, asyncpg, autoprefixer, axios, bcrypt, boto3, email-validator, fastapi, greenlet, httpx, passlib, postcss, pydantic-settings, pytest, pytest-asyncio, pytest-cov, python-jose, python-multipart, react, react-dom, react-router-dom, reportlab, ruff, sqlalchemy, stripe, tailwindcss, uvicorn, vite, vite-plugin-pwa, workbox-* runtime (via vite-plugin-pwa)
+- **Libraries and frameworks**: @testing-library/jest-dom, @testing-library/react, @testing-library/user-event, @vitejs/plugin-react, aiosqlite, alembic, asyncpg, autoprefixer, axios, bcrypt, boto3, email-validator, fastapi, greenlet, httpx, jsdom, passlib, postcss, pydantic-settings, pytest, pytest-asyncio, pytest-cov, python-jose, python-multipart, react, react-dom, react-router-dom, reportlab, ruff, scheduler, sqlalchemy, stripe, tailwindcss, uvicorn, vite, vite-plugin-pwa, vitest, workbox-* runtime (via vite-plugin-pwa)
 
 ### Termux Background (`repo:termux-background`)
 
@@ -1190,7 +1190,7 @@ No third-party credits recorded yet.
 - **Upstream sources and lineage**: github/gitignore
 - **AI and machine assistance**: OpenAI Codex (cloud coding agent)
 - **Languages, platforms and tooling**: Python (CPython), Python Package Index (PyPI)
-- **Libraries and frameworks**: email-validator, fastapi, pydantic, sqlalchemy, uvicorn
+- **Libraries and frameworks**: @testing-library/jest-dom, @testing-library/react, @testing-library/user-event, @vitejs/plugin-react, email-validator, fastapi, jsdom, pydantic, react, react-dom, scheduler, sqlalchemy, uvicorn, vite, vitest
 
 ### AXIOM Shooter / VOID.GAME (`repo:void-game`)
 
@@ -1328,7 +1328,9 @@ repositories that ship the works. This index points to them; it does not replace
 | Rajdhani | OFL-1.1 | Copyright (c) 2014 Indian Type Foundry (info@indiantypefoundry.com) |
 | react | MIT | licenses/MIT-react-18.txt |
 | react | MIT | licenses/MIT-react-19.txt |
+| react | MIT | licenses/MIT-react-19.txt |
 | react-dom | MIT | licenses/MIT-react-dom-18.txt |
+| react-dom | MIT | licenses/MIT-react-dom-19.txt |
 | react-dom | MIT | licenses/MIT-react-dom-19.txt |
 | react-router-dom | MIT | licenses/MIT-react-router.txt |
 | referencing | MIT | Copyright (c) 2022 Julian Berman |
@@ -1336,6 +1338,8 @@ repositories that ship the works. This index points to them; it does not replace
 | Roboto Mono | OFL-1.1 | Copyright 2015 The Roboto Mono Project Authors (https://github.com/googlefonts/robotomono) |
 | romkatv/powerlevel10k (p10k-lean.zsh config template) | MIT | licenses/MIT-powerlevel10k.txt |
 | SauceCodePro NF | OFL-1.1 | © 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’ |
+| scheduler | MIT | licenses/MIT-scheduler-0.23.txt |
+| scheduler | MIT | licenses/MIT-scheduler-0.28.txt |
 | Share Tech Mono | OFL-1.1 | Copyright (c) 2012, Carrois Type Design, Ralph du Carrois (post@carrois.com www.carrois.com), with Reserved Font Name 'Share' |
 | Source Code Pro ExtraLight | OFL-1.1 | © 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’ |
 | Source Sans 3 ExtraLight | OFL-1.1 | © 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’ |

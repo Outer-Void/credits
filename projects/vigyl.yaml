@@ -9,15 +9,20 @@ project:
   origin: git@github.com:Outer-Void/vigyl.git
   products:
   - Vigyl
-  visibility: public
+  visibility: private  # authenticated GitHub API, 2026-11-04 (OV-46); public until 2026-10-27
   current_license: LicenseRef-Vigyl-Proprietary
-  decision: PUBLIC_SOURCE_PROPRIETARY
-  intended_license: LicenseRef-Vigyl-Proprietary
+  decision: MIXED_WITH_THIRD_PARTY_NOTICES
+  intended_license: Proprietary + MIT notices for the bundled frontend runtime
   relicensing_evidence: null
-  surviving_obligations: []
+  surviving_obligations:
+  - lib:npm/vigyl/react
+  - lib:npm/vigyl/react-dom
+  - lib:npm/vigyl/scheduler
   traveling_notices:
   - LICENSE
-  excluded_third_party: []
+  - THIRD_PARTY_NOTICES.md
+  excluded_third_party:
+  - Third-party components listed in surviving_obligations keep their own licences
   lineage: []
   credits: []
   unresolved:

@@ -9,7 +9,7 @@ project:
   origin: git@github.com:Outer-Void/void.game.git
   products:
   - AXIOM Shooter / VOID.GAME
-  visibility: public
+  visibility: private  # authenticated GitHub API, 2026-11-04 (OV-46); public until 2026-10-27
   current_license: LicenseRef-OuterVoid-AllRightsReserved; bundles Apache-2.0 libGDX natives
   decision: MIXED_WITH_THIRD_PARTY_NOTICES
   intended_license: Proprietary + Apache-2.0 notices
