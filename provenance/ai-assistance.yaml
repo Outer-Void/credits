@@ -198,11 +198,11 @@ ledger:
 - id: AIL-024
   tool: ai:claude-code
   repo: repo:credits
-  commits: 56
+  commits: 57
   categories:
   - research
   - documentation
-  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08, in the Stage 08 comprehensive attribution pass, and in Stage 09 (Co-authored-by trailers); also the 2026-10-25 relicensing record (UNR-008, UNR-007, UNR-006), Stage 10, the Stage 11 BLHermes file/subsystem lineage, the Stage 12 record, the Stage 13 record, the Stage 14 record, the Stage 15 record, the Stage 16 record, the Stage 18 record, the Stage 19-23 records, and the 2026-10-26 documentation synchronization pass, and the Stage 24-45 and Stage 27 records, the final-report record and UNR-022 (2026-10-27), the system-report record (2026-11-03) (count from Co-Authored-By trailers); the OV-46 record (2026-11-04); the OV-47 record (2026-11-04); the OV-48 record (2026-11-04); the OV-49 record and library catalog update (2026-11-05); OV-55/OV-56 (2026-11-05) auth hardening, alert receipts, UI flows and stage records; OV-56 follow-up (2026-11-05) repeating tasks and remaining screens
+  evidence: Claude Code (Opus 5.5) built this ledger in Stage 01A and updated it in Stages 02, 03, 04, 05, 06, 07 and 08, in the Stage 08 comprehensive attribution pass, and in Stage 09 (Co-authored-by trailers); also the 2026-10-25 relicensing record (UNR-008, UNR-007, UNR-006), Stage 10, the Stage 11 BLHermes file/subsystem lineage, the Stage 12 record, the Stage 13 record, the Stage 14 record, the Stage 15 record, the Stage 16 record, the Stage 18 record, the Stage 19-23 records, and the 2026-10-26 documentation synchronization pass, and the Stage 24-45 and Stage 27 records, the final-report record and UNR-022 (2026-10-27), the system-report record (2026-11-03) (count from Co-Authored-By trailers); the OV-46 record (2026-11-04); the OV-47 record (2026-11-04); the OV-48 record (2026-11-04); the OV-49 record and library catalog update (2026-11-05); OV-55/OV-56 (2026-11-05) auth hardening, alert receipts, UI flows and stage records; OV-56 follow-up (2026-11-05) repeating tasks and remaining screens; OV-56 reminders (2026-11-06)
   verification: VERIFIED
 - id: AIL-025
   tool: ai:gemini-code-assist
@@ -388,10 +388,10 @@ ledger:
 - id: AIL-045
   tool: ai:claude-code
   repo: repo:docs
-  commits: 35
+  commits: 36
   categories:
   - documentation
-  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 incremental sync, 7fb901a; Stage 25 incremental sync, e2ddace; Stage 26 incremental sync, 1f62927; Stage 28, Stage 29 and the full reconciliation after Stage 30 (58b5614, 6cfbd70 and the 2026-10-27 reconciliation commit); Stages 30-40 syncs, full reconciliation and the ecosystem constitution (2026-10-27); Stage 42 cross-repository contract verification and Stage 43 release-candidate report (ef7d357) (2026-10-27); Stage 44 Definition of Done pass and final matrix (9cb9798, 2026-10-27); Stage 45 freeze and reassessment input (43d9a6c) and the Stage 27 circle-back record (faccc83) (2026-10-27); final Stage 00-45 integration report (0b5800a, 2026-11-03); full system report (efe411f, 2026-11-03); OV-46 master plan and inventory (de4f8ee, 2026-11-04); OV-47 findings projection (6ccecec, 2026-11-04); OV-48 CI recheck and workflow audit (0f38675, 2026-11-04); OV-49 and the OV-46-49 final report (95408c1, 2026-11-05); OV-55/OV-56 (2026-11-05) auth hardening, alert receipts, UI flows and stage records; OV-56 follow-up (2026-11-05) repeating tasks and remaining screens'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (licensing default and third-party rights policy, 7b0d956; attribution principle, 0c456f7); also 2026-10-25 licence update (proprietary relicensing or standard copyright and contact lines); 2026-10-26 documentation synchronization pass; Stage 24 incremental sync, 7fb901a; Stage 25 incremental sync, e2ddace; Stage 26 incremental sync, 1f62927; Stage 28, Stage 29 and the full reconciliation after Stage 30 (58b5614, 6cfbd70 and the 2026-10-27 reconciliation commit); Stages 30-40 syncs, full reconciliation and the ecosystem constitution (2026-10-27); Stage 42 cross-repository contract verification and Stage 43 release-candidate report (ef7d357) (2026-10-27); Stage 44 Definition of Done pass and final matrix (9cb9798, 2026-10-27); Stage 45 freeze and reassessment input (43d9a6c) and the Stage 27 circle-back record (faccc83) (2026-10-27); final Stage 00-45 integration report (0b5800a, 2026-11-03); full system report (efe411f, 2026-11-03); OV-46 master plan and inventory (de4f8ee, 2026-11-04); OV-47 findings projection (6ccecec, 2026-11-04); OV-48 CI recheck and workflow audit (0f38675, 2026-11-04); OV-49 and the OV-46-49 final report (95408c1, 2026-11-05); OV-55/OV-56 (2026-11-05) auth hardening, alert receipts, UI flows and stage records; OV-56 follow-up (2026-11-05) repeating tasks and remaining screens; OV-56 reminders (2026-11-06)'
   verification: VERIFIED
 - id: AIL-046
   tool: ai:claude-code
@@ -515,13 +515,13 @@ ledger:
 - id: AIL-058
   tool: ai:claude-code
   repo: repo:vigyl
-  commits: 9
+  commits: 10
   categories:
   - documentation
   - code_generation
   - api_backend
   - review
-  evidence: 'Co-authored-by: Claude Opus 5.5 (License: standard copyright and contact lines; 2026-10-25); 2026-10-26 documentation synchronization pass; Stage 29 core rebuild (a01497d: auth, groups/invitations, access boundaries, task lifecycle, escalation, timeline, messaging, export/delete, migrations, ops, 78 tests, docs) and FastAPI/starlette upgrade (a0816a4) (2026-10-27); OV-47 README reconciliation (2026-11-04); OV-49 DAT target policy and third-party notices (2026-11-05); OV-55/OV-56 (2026-11-05) auth hardening, alert receipts, UI flows and stage records; OV-56 follow-up (2026-11-05) repeating tasks and remaining screens'
+  evidence: 'Co-authored-by: Claude Opus 5.5 (License: standard copyright and contact lines; 2026-10-25); 2026-10-26 documentation synchronization pass; Stage 29 core rebuild (a01497d: auth, groups/invitations, access boundaries, task lifecycle, escalation, timeline, messaging, export/delete, migrations, ops, 78 tests, docs) and FastAPI/starlette upgrade (a0816a4) (2026-10-27); OV-47 README reconciliation (2026-11-04); OV-49 DAT target policy and third-party notices (2026-11-05); OV-55/OV-56 (2026-11-05) auth hardening, alert receipts, UI flows and stage records; OV-56 follow-up (2026-11-05) repeating tasks and remaining screens; OV-56 reminders (2026-11-06)'
   verification: VERIFIED
 - id: AIL-059
   tool: ai:claude-code
