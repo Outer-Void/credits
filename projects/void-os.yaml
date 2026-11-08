@@ -30,6 +30,7 @@ project:
   - asset:font/jetbrainsmono-nerd
   - asset:font/lato
   - asset:font/libre-baskerville
+  - asset:font/lsans-15
   - asset:font/manrope
   - asset:font/merriweather
   - asset:font/meslolgs-nerd
@@ -57,6 +58,8 @@ project:
   - asset:font/victormono-nerd
   - asset:font/work-sans
   - lib:maven/com.badlogicgames.gdx:gdx
+  - lib:maven/com.badlogicgames.gdx:gdx-backend-android
+  - asset:libgdx-natives
   - lib:maven/androidx.core:core-ktx
   - tool:kotlin
   - tool:gradle
@@ -82,5 +85,4 @@ project:
   - UNR-004
   - UNR-005
   - UNR-014
-  - UNR-020
   audited: '2026-10-24'

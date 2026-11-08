@@ -745,12 +745,38 @@ assets:
   - REQUIRED_LICENSE_NOTICE
   affects:
   - repo:void-game
+  - repo:void-os
   license: Apache-2.0
   license_file: licenses/Apache-2.0.txt
-  shipped: shipped (jniLibs)
+  shipped: shipped (APK lib/, extracted from Maven gdx-platform at build time; no longer tracked in git)
   verification: VERIFIED
   evidence:
-  - arm64-v8a libgdx.so sha256 prefix 6bace080aa384af7 == gdx-platform-1.12.1-natives-arm64-v8a.jar
+  - arm64-v8a libgdx.so sha256 prefix 6bace080aa384af7 == gdx-platform-1.12.1-natives-arm64-v8a.jar (Stage 26, tracked jniLibs)
+  - 'OV-60 (2026-11-08): void.game release APK lib/arm64-v8a/libgdx.so sha256 prefix 7f81e8c16e222b77 == gdx-platform-1.14.2-natives-arm64-v8a.jar'
+- id: asset:font/lsans-15
+  name: LSans 15 (libGDX default bitmap font; Liberation Sans renamed)
+  file: com/badlogic/gdx/utils/lsans-15.fnt and lsans-15.png inside gdx-1.14.2.jar
+  relationship:
+  - ASSET_SOURCE
+  - REQUIRED_LICENSE_NOTICE
+  affects:
+  - repo:void-game
+  - repo:void-os
+  license: OFL-1.1
+  license_file: licenses/OFL-1.1.txt
+  required_notice: Digitized data copyright (c) 2010 Google Corporation with Reserved Font Arimo, Tinos and Cousine.
+    Copyright (c) 2012 Red Hat, Inc. with Reserved Font Name Liberation.
+  shipped: shipped (APK, inside the gdx jar, which carries no licence for it)
+  evidence:
+  - libGDX PR 6727 (commit 50bc5e2c89, merged 2021-12-14) replaced arial-15 with lsans-15 and states LSans is Liberation
+    Sans renamed because Liberation is a Reserved Font Name under the OFL
+  - Liberation Fonts LICENSE (github.com/liberationfonts/liberation-fonts) gives the copyright lines above and OFL-1.1
+  - the .fnt and .png in gdx-1.14.2.jar have the same git blob ids as gdx/res/com/badlogic/gdx/utils/ at libGDX tag 1.14.2
+    (6adbdfdf, 62658ff8); both release APKs ship them (OV-60, 2026-11-08)
+  verification: VERIFIED
+  upstream: org:libgdx
+  notes: Resolves UNR-020. void.game and void.os THIRD_PARTY_NOTICES.md carry the notice; tools/check_notices.py in each
+    fails if a shipped font is missing from the notices.
 - id: asset:axiom-wallpaper
   name: AXIOM launcher wallpaper and docs artwork
   relationship:

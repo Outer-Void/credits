@@ -139,14 +139,11 @@ unresolved:
   - repo:blux-coga
   - repo:blux-coga-dataset
   - repo:blux-system
-  - repo:roughin
-  - repo:vigyl
-  - repo:void-os
-  - repo:void-game
-  - repo:void-sys
   owner: human
   detail: Proprietary/all-rights-reserved code is publicly visible. Visibility change is a human decision (gh access
-    required); licence text alone does not keep source private.
+    required); licence text alone does not keep source private. 2026-11-08 (OV-60, authenticated GitHub API) roughin,
+    vigyl, void.os, void.game and void.sys are now private, so they were removed from this item; the six repositories
+    above are still public under proprietary licences.
 - id: UNR-015
   title: Unread non-repository directory under ~/ov
   affects: []
@@ -186,12 +183,16 @@ unresolved:
   - repo:void-game
   - repo:void-os
   owner: maintainers
-  status: open
+  status: resolved
   detail: AXIOM Shooter renders all text with libGDX's built-in BitmapFont (com/badlogic/gdx/utils/lsans-15.fnt and .png
     inside gdx-1.14.2.jar; the .fnt header says only face="LSans"). The jar ships no licence or notice for it. The face
     is probably derived from Liberation Sans, but that is not yet confirmed from an authoritative libGDX source, so
     no font attribution or licence is asserted. Confirm from the libGDX repository history, then record the font
     and any required notice. Found in the Stage 26 asset-licensing audit.
+  resolution: '2026-11-08 (OV-60): libGDX PR 6727 (merged 2021-12-14) states LSans is Liberation Sans renamed (Reserved
+    Font Name), under OFL-1.1; the Liberation Fonts LICENSE gives the copyright lines. The bundled files equal libGDX
+    1.14.2 upstream. Recorded as asset:font/lsans-15; void.game and void.os THIRD_PARTY_NOTICES.md carry the notice and
+    licenses/OFL-1.1.txt.'
 - id: UNR-021
   title: Tooling behind the 2026-10-27 BLUX native-router commits
   affects:

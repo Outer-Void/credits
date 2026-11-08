@@ -10,12 +10,13 @@ project:
   products:
   - AXIOM Shooter / VOID.GAME
   visibility: private  # authenticated GitHub API, 2026-11-04 (OV-46); public until 2026-10-27
-  current_license: LicenseRef-OuterVoid-AllRightsReserved; bundles Apache-2.0 libGDX natives
+  current_license: LicenseRef-OuterVoid-AllRightsReserved; bundles Apache-2.0 libGDX natives and the OFL-1.1 lsans-15 font
   decision: MIXED_WITH_THIRD_PARTY_NOTICES
-  intended_license: Proprietary + Apache-2.0 notices
+  intended_license: Proprietary + Apache-2.0 and OFL-1.1 notices
   relicensing_evidence: null
   surviving_obligations:
   - asset:libgdx-natives
+  - asset:font/lsans-15
   - lib:maven/com.badlogicgames.gdx:gdx
   - lib:maven/com.badlogicgames.gdx:gdx-backend-android
   - tool:gradle
@@ -23,6 +24,7 @@ project:
   - LICENSE
   - THIRD_PARTY_NOTICES.md
   - licenses/Apache-2.0.txt
+  - licenses/OFL-1.1.txt
   excluded_third_party:
   - Third-party components listed in surviving_obligations keep their own licences
   lineage:
@@ -31,5 +33,4 @@ project:
   - ai:claude-code
   unresolved:
   - UNR-014
-  - UNR-020
   audited: '2026-10-24'

@@ -24,7 +24,7 @@ Unknown provenance is listed here instead of guessed. Each item names its owner 
 | UNR-017 | open | Technology originators not yet verified from an authoritative source | maintainers | - |
 | UNR-018 | open | Scope of owner-reported AI use | human | `ai:chatgpt`, `ai:deepseek-dev`, `ai:blackbox-dev`, `ai:meta-llama`, `org:blackbox-ai` |
 | UNR-019 | open | Third-party packages whose metadata declares no licence | maintainers | `lib:pypi/bandit`, `lib:pypi/orjson`, `lib:pypi/safety` |
-| UNR-020 | open | Upstream and licence of libGDX's bundled default font (lsans-15) | maintainers | `repo:void-game`, `repo:void-os` |
+| UNR-020 | resolved | Upstream and licence of libGDX's bundled default font (lsans-15) | maintainers | - |
 | UNR-021 | open | Tooling behind the 2026-10-27 BLUX native-router commits | maintainers | - |
 | UNR-022 | open | Tooling behind the 2026-10-27 post-freeze forward-execution commits | maintainers | - |
 
@@ -100,7 +100,7 @@ Classifiers such as 'Apache Software License' or 'BSD License' do not state a ve
 
 ### UNR-014: Public visibility of proprietary repositories
 
-Proprietary/all-rights-reserved code is publicly visible. Visibility change is a human decision (gh access required); licence text alone does not keep source private.
+Proprietary/all-rights-reserved code is publicly visible. Visibility change is a human decision (gh access required); licence text alone does not keep source private. 2026-11-08 (OV-60, authenticated GitHub API) roughin, vigyl, void.os, void.game and void.sys are now private, so they were removed from this item; the six repositories above are still public under proprietary licences.
 
 ### UNR-015: Unread non-repository directory under ~/ov
 
@@ -121,6 +121,8 @@ bandit, orjson and safety: the installed distribution metadata states no licence
 ### UNR-020: Upstream and licence of libGDX's bundled default font (lsans-15)
 
 AXIOM Shooter renders all text with libGDX's built-in BitmapFont (com/badlogic/gdx/utils/lsans-15.fnt and .png inside gdx-1.14.2.jar; the .fnt header says only face="LSans"). The jar ships no licence or notice for it. The face is probably derived from Liberation Sans, but that is not yet confirmed from an authoritative libGDX source, so no font attribution or licence is asserted. Confirm from the libGDX repository history, then record the font and any required notice. Found in the Stage 26 asset-licensing audit.
+
+**Resolved:** 2026-11-08 (OV-60): libGDX PR 6727 (merged 2021-12-14) states LSans is Liberation Sans renamed (Reserved Font Name), under OFL-1.1; the Liberation Fonts LICENSE gives the copyright lines. The bundled files equal libGDX 1.14.2 upstream. Recorded as asset:font/lsans-15; void.game and void.os THIRD_PARTY_NOTICES.md carry the notice and licenses/OFL-1.1.txt.
 
 ### UNR-021: Tooling behind the 2026-10-27 BLUX native-router commits
 

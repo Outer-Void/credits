@@ -364,6 +364,7 @@ asset:font/jetbrains-mono
 asset:font/jetbrainsmono-nerd
 asset:font/lato
 asset:font/libre-baskerville
+asset:font/lsans-15
 asset:font/manrope
 asset:font/merriweather
 asset:font/meslolgs-nerd
